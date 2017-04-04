@@ -3,22 +3,88 @@
 \usepackage{url}
 \usepackage{natbib}
 \usepackage{todonotes}
-\title{Big Literature in Climate Change}
+\title{A Topic Model of Climate Change Literature}
 \begin{document}
 \maketitle
 \begin{abstract}
-Where are the topics?
+IPCC motivation, assessment making
 \end{abstract}
 
 \section{Introduction}
-\begin{itemize}	
-
-	\item Science policy, assessments - challenges of explosion.
-    
-	
+\begin{itemize}
+	\item Literature exploding, IPCC not keeping up \citep{minx2016learning}
+    \item No systematic way of selecting references, no comprehensive assessment
+    \item First step towards this is a map provided by topic models
+    \item What is the topic structure of climate change research? How has it changed over time?
 \end{itemize}
 
-\section{Topics}
+\section{Methodology}
 
+\begin{itemize}
+\item Model selection: NMF
+\item How does it work? Advantages: Simple, scalable: better results than with other solutions, if only because it was possible to iterate with large document collections. LDA can be better but relies on tuning hyperparameters, hard to do with such big corpus
+\item Topic model browser \citet{Chaney2012}
+\item Human Validation: 
+\item Compare topic space to keyword space. Reduces dimensionality, ignores non-standardisation
+
+\end{itemize}
+
+\section{Data}
+\begin{itemize}
+	\item Queries: use \citet{Grieneisen2011}, or take the best bits of \citet{Grieneisen2011} and other?
+    \item Sources: WoS, Scopus or both?
+\end{itemize}
+
+\section{Results}
+\begin{itemize}
+	\item The biggest topics are x and y
+	\item These topics have grown, these have decreased
+    \item X keywords fit into Y topics like so...
+    \item Finding similar documents works across topics, rather than just by keywords, so better.
+    \item Similar documents more or less likely to be across disciplinary boundaries ??
+    \item Model selection validated by these measurements.
+\end{itemize}
+
+\section{Conclusion}
+\begin{itemize}
+	\item A very simple topic model provides an overview of the whole landscape.
+    \item This allows researchers / assessment makers to identify areas that have grown recently
+    \item Topic models aid document discovery, have the potential to contribute to more comprehensive assessments.
+    \item Next steps for research: using topic models to assess the assessment process: find gaps etc.
+\end{itemize}
+
+\begin{figure}
+	%\includegraphics{}
+    \caption{Topic structure of climate change literature [network plot]}
+\end{figure}
+
+\begin{figure}
+	%\includegraphics{}
+    \caption{5 topics with most growth and 5 topics with biggest decline}
+\end{figure}
+
+\begin{figure}
+	%\includegraphics{}
+    \caption{Focus on [biochar?] showing document with highlighted words}
+\end{figure}
+
+\begin{figure}
+	%\includegraphics{}
+    \caption{Model validation graph, showing error for different topic numbers, feature numbers}
+\end{figure}
+
+
+\begin{figure}
+	%\includegraphics{}
+    \caption{Some relation of topics to other features of dataset: e.g. most interdisciplinary journals and least, or so...}
+\end{figure}
+
+
+
+\listoffigures
+
+\bibliography{Mendeley.bib}
+\bibliographystyle{apalike}
 
 \end{document}
+
