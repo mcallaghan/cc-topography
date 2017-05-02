@@ -44,6 +44,7 @@ sys.path.append('/home/galm/software/tmv/BasicBrowser/')
 # sys.path.append('/home/max/Desktop/django/BasicBrowser/')
 import db3 as db
 from tmv_app.models import *
+from scoping.models import Doc
 
 
 def main():
@@ -57,11 +58,16 @@ def main():
     # The n in ngram
     try:
         ng = int(sys.argv[2])
-        print(K)
+        print(ng)
     except:
         ng = 1
+    try:
+        n_features = int(sys.argv[3])
+        print(n_features)
+    except:
+        n_features = 50000
 
-    n_features = 50000
+
     n_samples = 1000
 
     #############################################
@@ -75,10 +81,11 @@ def main():
     stoplist.add('sons')
     stoplist.add('copyright')
 
-    docs = Doc.objects.all().exclude(UT__contains='WOS2:').exclude(UT__contains='2WOS').filter(content__iregex='\w').values('UT','title','content')
+    docs = Doc.objects.filter(query=365,content__iregex='\w').values('UT','title','content')
+    #docs = docs
 
     print(len(docs))
-    abstracts = [re.split("\(C\) [1-2][0-9]{3} Elsevier",x['content'])[0] for x in docs]
+    abstracts = [re.split("\([C-c]\) [1-2][0-9]{3} Elsevier",x['content'])[0] for x in docs]
     abstracts = [x.split("Published by Elsevier")[0] for x in abstracts]
     abstracts = [x.split("Copyright (C)")[0] for x in abstracts]
     abstracts = [re.split("\. \(C\) [1-2][0-9]{3} ",x)[0] for x in abstracts]
@@ -89,22 +96,22 @@ def main():
         transtable = {ord(c): None for c in string.punctuation + string.digits}
         tokens = nltk.word_tokenize(text.translate(transtable))
         tokens = [i for i in tokens if len(i) > 2]
-        return tokens        
+        return tokens
 
     class snowball_stemmer(object):
         def __init__(self):
             self.stemmer = SnowballStemmer("english")
         def __call__(self, doc):
             return [self.stemmer.stem(t) for t in tokenize(doc)]
-    
 
 
-    run_id = db.init()
-    
+
+    run_id = db.init(n_features,ng)
+
     #############################################
     # Use tf-idf features for NMF.
     print("Extracting tf-idf features for NMF...")
-    tfidf_vectorizer = TfidfVectorizer(max_df=0.95, min_df=1,
+    tfidf_vectorizer = TfidfVectorizer(max_df=0.95, min_df=10,
                                        max_features=n_features,
                                        ngram_range=(ng,ng),
                                        tokenizer=snowball_stemmer(),
@@ -116,11 +123,8 @@ def main():
 
     vocab = tfidf_vectorizer.get_feature_names()
 
-    sys.exit()
-
     print(len(vocab))
 
-    
 
     # add terms to db
     vocab_ids = db.add_features(vocab)
@@ -167,14 +171,14 @@ def main():
     topics = range(len(nmf.components_))
     pool = Pool(processes=8)
     pool.map(partial(f_lambda, ldalambda=nmf.components_,
-                    vocab_ids=vocab_ids,topic_ids=topic_ids),topics) 
+                    vocab_ids=vocab_ids,topic_ids=topic_ids),topics)
     pool.terminate()
 
     gamma = nmf.transform(tfidf)
     docs = range(len(gamma))
 
     pool = Pool(processes=8)
-    pool.map(partial(f_gamma, gamma=gamma, 
+    pool.map(partial(f_gamma, gamma=gamma,
                     docset=abstracts, docUTset=ids,topic_ids=topic_ids),docs)
     pool.terminate()
 

@@ -1,0 +1,352 @@
+5
+1
+10000
+254099
+Extracting tf-idf features for NMF...
+done in 1315.806s.
+10000
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
+done in 94.700s.
+done! total time: 47 minutes and 48 seconds
+5
+2
+10000
+254099
+Extracting tf-idf features for NMF...
+done in 1380.134s.
+10000
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
+done in 28.120s.
+done! total time: 46 minutes and 46 seconds
+5
+3
+10000
+254099
+Extracting tf-idf features for NMF...
+done in 1644.549s.
+10000
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
+done in 14.351s.
+done! total time: 63 minutes and 28 seconds
+5
+1
+50000
+254099
+Extracting tf-idf features for NMF...
+done in 1275.915s.
+34992
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 108.347s.
+done! total time: 54 minutes and 4 seconds
+5
+2
+50000
+254099
+Extracting tf-idf features for NMF...
+done in 1381.606s.
+50000
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 42.915s.
+multiprocess.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/postgresql/base.py", line 176, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.4/dist-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+psycopg2.OperationalError: FATAL:  sorry, too many clients already
+FATAL:  sorry, too many clients already
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 44, in mapstar
+    return list(map(*args))
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 146, in f_gamma
+    db.add_doc_topic_sk(doc_id, topic_ids[k], gamma[d][k], gamma[d][k]/doc_size)
+  File "/home/galm/software/tmv/BasicBrowser/db3.py", line 119, in add_doc_topic_sk
+    doc = Doc.objects.get(UT=doc_id)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/sql/compiler.py", line 833, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 231, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 204, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/postgresql/base.py", line 176, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.4/dist-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+django.db.utils.OperationalError: FATAL:  sorry, too many clients already
+FATAL:  sorry, too many clients already
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 200, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 182, in main
+    docset=abstracts, docUTset=ids,topic_ids=topic_ids),docs)
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 260, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 599, in get
+    raise self._value
+django.db.utils.OperationalError: FATAL:  sorry, too many clients already
+FATAL:  sorry, too many clients already
+
+5
+3
+50000
+254099
+Extracting tf-idf features for NMF...
+done in 1604.354s.
+50000
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 15.029s.
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 200, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 182, in main
+    docset=abstracts, docUTset=ids,topic_ids=topic_ids),docs)
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 260, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 599, in get
+    raise self._value
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 383, in _handle_tasks
+    put(task)
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/connection.py", line 206, in send
+    self._send_bytes(ForkingPickler.dumps(obj))
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/reduction.py", line 53, in dumps
+    cls(buf, protocol).dump(obj)
+  File "/usr/lib/python3.4/pickle.py", line 412, in dump
+    self.save(obj)
+  File "/usr/lib/python3.4/pickle.py", line 479, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/lib/python3.4/pickle.py", line 744, in save_tuple
+    save(element)
+  File "/usr/lib/python3.4/pickle.py", line 479, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/lib/python3.4/pickle.py", line 729, in save_tuple
+    save(element)
+  File "/usr/lib/python3.4/pickle.py", line 479, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/lib/python3.4/pickle.py", line 729, in save_tuple
+    save(element)
+  File "/usr/lib/python3.4/pickle.py", line 479, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/local/lib/python3.4/dist-packages/dill/dill.py", line 960, in save_functor
+    log.info("Fu: %s" % obj)
+MemoryError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/util.py", line 252, in _run_finalizers
+    finalizer()
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/util.py", line 185, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 526, in _terminate_pool
+    cls._help_stuff_finish(inqueue, task_handler, len(pool))
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 513, in _help_stuff_finish
+    inqueue._reader.recv()
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/connection.py", line 251, in recv
+    return ForkingPickler.loads(buf.getbuffer())
+  File "/usr/local/lib/python3.4/dist-packages/dill/dill.py", line 260, in loads
+    return load(file)
+  File "/usr/local/lib/python3.4/dist-packages/dill/dill.py", line 250, in load
+    obj = pik.load()
+  File "/usr/lib/python3.4/pickle.py", line 1036, in load
+    raise EOFError
+EOFError
+5
+1
+100000
+254099
+Extracting tf-idf features for NMF...
+done in 1280.639s.
+34992
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
+done in 109.605s.
+done! total time: 63 minutes and 28 seconds
+5
+2
+100000
+254099
+Extracting tf-idf features for NMF...
+done in 1380.193s.
+100000
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
+done in 59.059s.
+multiprocess.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/postgresql/base.py", line 176, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.4/dist-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+psycopg2.OperationalError: FATAL:  sorry, too many clients already
+FATAL:  sorry, too many clients already
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 44, in mapstar
+    return list(map(*args))
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 146, in f_gamma
+    db.add_doc_topic_sk(doc_id, topic_ids[k], gamma[d][k], gamma[d][k]/doc_size)
+  File "/home/galm/software/tmv/BasicBrowser/db3.py", line 119, in add_doc_topic_sk
+    doc = Doc.objects.get(UT=doc_id)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/sql/compiler.py", line 833, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 231, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 204, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/postgresql/base.py", line 176, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/usr/local/lib/python3.4/dist-packages/psycopg2/__init__.py", line 164, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, async=async)
+django.db.utils.OperationalError: FATAL:  sorry, too many clients already
+FATAL:  sorry, too many clients already
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 200, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 182, in main
+    docset=abstracts, docUTset=ids,topic_ids=topic_ids),docs)
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 260, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 599, in get
+    raise self._value
+django.db.utils.OperationalError: FATAL:  sorry, too many clients already
+FATAL:  sorry, too many clients already
+
+5
+3
+100000
+254099
+Extracting tf-idf features for NMF...
+done in 1612.483s.
+100000
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
+done in 15.472s.
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 200, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 182, in main
+    docset=abstracts, docUTset=ids,topic_ids=topic_ids),docs)
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 260, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 599, in get
+    raise self._value
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 383, in _handle_tasks
+    put(task)
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/connection.py", line 206, in send
+    self._send_bytes(ForkingPickler.dumps(obj))
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/reduction.py", line 53, in dumps
+    cls(buf, protocol).dump(obj)
+  File "/usr/lib/python3.4/pickle.py", line 412, in dump
+    self.save(obj)
+  File "/usr/lib/python3.4/pickle.py", line 479, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/lib/python3.4/pickle.py", line 744, in save_tuple
+    save(element)
+  File "/usr/lib/python3.4/pickle.py", line 479, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/lib/python3.4/pickle.py", line 729, in save_tuple
+    save(element)
+  File "/usr/lib/python3.4/pickle.py", line 479, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/lib/python3.4/pickle.py", line 729, in save_tuple
+    save(element)
+  File "/usr/lib/python3.4/pickle.py", line 479, in save
+    f(self, obj) # Call unbound method with explicit self
+  File "/usr/local/lib/python3.4/dist-packages/dill/dill.py", line 960, in save_functor
+    log.info("Fu: %s" % obj)
+MemoryError
+5
+1
+200000
+254099
+Extracting tf-idf features for NMF...
+done in 1278.925s.
+34992
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=200000...
+done in 108.409s.
+done! total time: 73 minutes and 21 seconds
+5
+2
+200000
+254099
+Extracting tf-idf features for NMF...
+done in 1364.001s.
+200000
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=200000...
+done in 55.041s.
+done! total time: 215 minutes and 37 seconds
+5
+3
+200000
+254099
+Extracting tf-idf features for NMF...
+done in 1615.913s.
+133814
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=200000...
+done in 22.541s.
+done! total time: 183 minutes and 19 seconds
