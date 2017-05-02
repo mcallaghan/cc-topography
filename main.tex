@@ -4,35 +4,45 @@
 \usepackage{natbib}
 \usepackage{todonotes}
 \title{A Topic Model of Climate Change Literature}
+\title{Words, words, words: Mapping the Matter of Climate Change Literature}
+\title{A Topography of Climate Change Research}
+\author{Max Callaghan}
 \begin{document}
 \maketitle
 \begin{abstract}
-IPCC motivation, assessment making
+To contribute to evidence-based policies on tackling climate change, the IPCC aims to comprehensively assess the relevant scientific literature \citep{IPCC2013}. With the size of this literature currently at least [x] times larger than at the time of the IPCC's first assessment report \citep{Houghton1990ClimateAssessment}, this task has become impossible without the aid of machine-reading. We collect over 300,000 abstracts from Web of Science (WoS) and Scopus, and develop a topic model in order to allow an overview of this unmanageably large corpus. We find that new topics, such as [biochar] can be identified as they emerge, an application with a high potential for increasing the relevance and comprehensiveness of further IPCC reports.
 \end{abstract}
+
+
+
+
 
 \section{Introduction}
 \begin{itemize}
 	\item Literature exploding, IPCC not keeping up \citep{minx2016learning}
     \item No systematic way of selecting references, no comprehensive assessment
-    \item First step towards this is a map provided by topic models
+    \item First step towards this is a map provided by topic models. 
+    \item A map shows the places which the assessment makers need to navigate, leaving them to decide course. Computer assisted not computer decided.
     \item What is the topic structure of climate change research? How has it changed over time?
 \end{itemize}
 
 \section{Methodology}
 
 \begin{itemize}
-\item Model selection: NMF
+\item Model selection: NMF \citep{Lee1999}
 \item How does it work? Advantages: Simple, scalable: better results than with other solutions, if only because it was possible to iterate with large document collections. LDA can be better but relies on tuning hyperparameters, hard to do with such big corpus
 \item Topic model browser \citet{Chaney2012}
 \item Human Validation: 
-\item Compare topic space to keyword space. Reduces dimensionality, ignores non-standardisation
+\item Compare topic space to keyword space. Reduces dimensionality, overcomes non-standardisation
+\item Which topics get the most citations?
 
 \end{itemize}
 
 \section{Data}
 \begin{itemize}
-	\item Queries: use \citet{Grieneisen2011}, or take the best bits of \citet{Grieneisen2011} and other?
+	\item Queries: use \citet{Grieneisen2011}, or take the best bits of \citet{Grieneisen2011} and \citet{Haunschild2016}?
     \item Sources: WoS, Scopus or both?
+    \item Preprocessing: Remove punctuation, numbers, common, uncommon words, stemming
 \end{itemize}
 
 \section{Results}
