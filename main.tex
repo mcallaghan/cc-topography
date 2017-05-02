@@ -9,10 +9,21 @@
 \author{Max Callaghan}
 \begin{document}
 \maketitle
-\begin{abstract}
-To contribute to evidence-based policies on tackling climate change, the IPCC aims to comprehensively assess the relevant scientific literature \citep{IPCC2013}. With the size of this literature currently at least [x] times larger than at the time of the IPCC's first assessment report \citep{Houghton1990ClimateAssessment}, this task has become impossible without the aid of machine-reading. We collect over 300,000 abstracts from Web of Science (WoS) and Scopus, and develop a topic model in order to allow an overview of this unmanageably large corpus. We find that new topics, such as [biochar] can be identified as they emerge, an application with a high potential for increasing the relevance and comprehensiveness of further IPCC reports.
-\end{abstract}
+\textbf{
+To contribute to evidence-based policies on tackling climate change, the IPCC aims to comprehensively assess the relevant scientific literature \citep{IPCC2013}. With the size of this literature currently at least [x] times larger than at the time of the IPCC's first assessment report \citep{Houghton1990ClimateAssessment}, this task has become impossible without the aid of machine-reading. We collect over 300,000 abstracts from Web of Science (WoS) and Scopus, and develop a topic model in order to give an overview of this unmanageably large corpus. We find that new topics, such as [biochar] can be identified as they emerge, an application with a high potential for increasing the relevance and comprehensiveness of further IPCC reports.
+}
 
+The size of the scientific literature on climate change has expanded rapidly over the lifetime of the IPCC. While the first assessment report had around 7,000 articles to assess, 5,000 new articles are now published every month, bringing the total size of the literature to well over half a million papers, (Figure \ref{growth}). The increase in volume, velocity, and variety of content to be assessed has turned the task of the IPCC into a `Big Literature` challenge. To ask questions about the literature \textit{at scale}, we now need to employ computational techniques involving natural language processing.
+
+Topic models are one such technique. A topic model learns the latent topics that structure a large corpus of documents, by leveraging the systematic co-occurrence of words across documents. Topics are distributions of words, and the topic mixture of each document explains the words observed in that document. This means that topic models can aid the understanding of large corpuses, and of the place of individual documents within them, by showing a document or corpus as a combination of 100 or so intelligible topics, rather than combinations of thousands of words.
+
+The topic model presented here is a rough map of climate change research since 1985. It shows the topics that make up this research and how they relate to each other, and demonstrates how this has changed over time.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{plots/wos_scopus_docs_time}
+    \caption{Growth in relevant literature in WoS and Scopus}
+    \label{growth}
+\end{figure}
 
 
 
