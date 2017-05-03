@@ -42,7 +42,7 @@ sys.stdout.flush()
 sys.path.append('/home/galm/software/tmv/BasicBrowser/')
 
 # sys.path.append('/home/max/Desktop/django/BasicBrowser/')
-import db3 as db
+import db as db
 from tmv_app.models import *
 from scoping.models import Doc
 
