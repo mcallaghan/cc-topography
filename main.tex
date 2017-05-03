@@ -3,6 +3,7 @@
 \usepackage{url}
 \usepackage{natbib}
 \usepackage{todonotes}
+\usepackage{booktabs}
 \title{A Topic Model of Climate Change Literature}
 \title{Words, words, words: Mapping the Matter of Climate Change Literature}
 \title{A Topography of Climate Change Research}
@@ -28,6 +29,21 @@ While topic modelling has been employed to answer specific questions about small
     \caption{Growth in relevant literature in WoS and Scopus}
     \label{growth}
 \end{figure}
+
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{plots/hot_topics}
+    \caption{Topic growth over time. The 3 topics in each assessment period that grew by the largest amount are labelled}
+\end{figure}
+
+\begin{table}
+\begin{tabular}{cc}
+AR1 & AR2 \\
+\input{tables/topAR1}
+&
+\input{tables/topAR2}
+\end{tabular}
+\end{table}
 
 
 
@@ -83,10 +99,6 @@ While topic modelling has been employed to answer specific questions about small
     \caption{Topic structure of climate change literature [network plot]}
 \end{figure}
 
-\begin{figure}
-	\includegraphics[width=\linewidth]{plots/hot_topics}
-    \caption{Topic growth over time. The 3 topics in each assessment period that grew by the largest amount are labelled}
-\end{figure}
 
 \begin{figure}
 	%\includegraphics{}
