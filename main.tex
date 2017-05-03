@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{natbib}
@@ -37,11 +38,12 @@ While topic modelling has been employed to answer specific questions about small
 \end{figure}
 
 \begin{table}
-\begin{tabular}{cc}
-AR1 & AR2 \\
-\input{tables/topAR1}
-&
-\input{tables/topAR2}
+\tiny
+\begin{tabular}{cccccc}
+AR1 & AR2 & AR3 & AR4 & AR5 & AR6 \\
+\midrule \\
+\input{tables/topAR1} & \input{tables/topAR2}  & \input{tables/topAR3}
+ & \input{tables/topAR4}  & \input{tables/topAR5}  & \input{tables/topAR6}
 \end{tabular}
 \end{table}
 
