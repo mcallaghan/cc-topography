@@ -1,6 +1,7 @@
-topics=(10 20 40 60 80 100)
+topics=(20 40 75 100)
 features=(5000 10000 50000)
 ngrams=(1 2)
+
 
 for t in "${topics[@]}"
 do
