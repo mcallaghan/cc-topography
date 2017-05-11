@@ -1,215 +1,489 @@
 20
 1
 5000
-610815
+###################################
+Starting     NMF.py with K=20, ngrame=1 and n_features=5000
+610815 documents found
 Extracting tf-idf features for NMF...
-done in 3047.378s.
+done in 3033.712s.
 5000
+Adding features to db
+done in 14.686s.
 Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 794.970s.
-Exception in thread Thread-4:
-Traceback (most recent call last):
-  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.4/threading.py", line 868, in run
-    self._target(*self._args, **self._kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 366, in _handle_workers
-    pool._maintain_pool()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 240, in _maintain_pool
-    self._repopulate_pool()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 233, in _repopulate_pool
-    w.start()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/process.py", line 105, in start
-    self._popen = self._Popen(self)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/context.py", line 267, in _Popen
-    return Popen(process_obj)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/popen_fork.py", line 21, in __init__
-    self._launch(process_obj)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/popen_fork.py", line 70, in _launch
-    self.pid = os.fork()
-OSError: [Errno 12] Cannot allocate memory
-
-Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 203, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 185, in main
-    docset=abstracts, docUTset=ids,topic_ids=topic_ids),docs)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 260, in map
-    return self._map_async(func, iterable, mapstar, chunksize).get()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 599, in get
-    raise self._value
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 383, in _handle_tasks
-    put(task)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/connection.py", line 206, in send
-    self._send_bytes(ForkingPickler.dumps(obj))
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/reduction.py", line 53, in dumps
-    cls(buf, protocol).dump(obj)
-  File "/usr/lib/python3.4/pickle.py", line 412, in dump
-    self.save(obj)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/lib/python3.4/pickle.py", line 744, in save_tuple
-    save(element)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/lib/python3.4/pickle.py", line 729, in save_tuple
-    save(element)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/lib/python3.4/pickle.py", line 729, in save_tuple
-    save(element)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/local/lib/python3.4/dist-packages/dill/dill.py", line 966, in save_functor
-    log.info("Fu: %s" % obj)
-MemoryError
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/util.py", line 252, in _run_finalizers
-    finalizer()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/util.py", line 185, in __call__
-    res = self._callback(*self._args, **self._kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 544, in _terminate_pool
-    p.terminate()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/process.py", line 113, in terminate
-    self._popen.terminate()
-AttributeError: 'NoneType' object has no attribute 'terminate'
+done in 780.513s.
+Adding topicterms to db
+done in 6.400s.
+Adding doctopics to db
+done in 9893.675s.
+done! total time: 229 minutes and 58 seconds
+a maximum of 4073.248 MB was used
 20
 2
 5000
-610815
+###################################
+Starting     NMF.py with K=20, ngrame=2 and n_features=5000
+610815 documents found
 Extracting tf-idf features for NMF...
-done in 3109.735s.
+done in 3153.646s.
 5000
+Adding features to db
+done in 14.572s.
 Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 357.440s.
+done in 355.683s.
+Adding topicterms to db
+done in 13.025s.
+Adding doctopics to db
+done in 8747.072s.
+done! total time: 205 minutes and 50 seconds
+a maximum of 6503.804 MB was used
+20
+1
+10000
+###################################
+Starting     NMF.py with K=20, ngrame=1 and n_features=10000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 2981.741s.
+10000
+Adding features to db
+done in 30.001s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
+done in 793.115s.
+Adding topicterms to db
+done in 9.509s.
+Adding doctopics to db
+done in 10922.030s.
+done! total time: 247 minutes and 11 seconds
+a maximum of 4072.224 MB was used
+20
+2
+10000
+###################################
+Starting     NMF.py with K=20, ngrame=2 and n_features=10000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 3099.759s.
+10000
+Adding features to db
+done in 30.447s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
+done in 323.092s.
+Adding topicterms to db
+done in 18.545s.
+Adding doctopics to db
+done in 8864.362s.
+done! total time: 206 minutes and 46 seconds
+a maximum of 6503.404 MB was used
+20
+1
+50000
+###################################
+Starting     NMF.py with K=20, ngrame=1 and n_features=50000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 3036.945s.
+50000
+Adding features to db
+done in 147.463s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 850.913s.
+Adding topicterms to db
+done in 14.227s.
+Adding doctopics to db
+20
+1
+5000
+###################################
+Starting     NMF.py with K=20, ngrame=1 and n_features=5000
+610815 documents found
+Extracting tf-idf features for NMF...
 Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 203, in <module>
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 298, in <module>
     main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 185, in main
-    docset=abstracts, docUTset=ids,topic_ids=topic_ids),docs)
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 198, in main
+    tfidf = tfidf_vectorizer.fit_transform(abstracts)
+  File "/usr/local/lib/python3.4/dist-packages/sklearn/feature_extraction/text.py", line 1352, in fit_transform
+    X = super(TfidfVectorizer, self).fit_transform(raw_documents)
+  File "/usr/local/lib/python3.4/dist-packages/sklearn/feature_extraction/text.py", line 839, in fit_transform
+    self.fixed_vocabulary_)
+  File "/usr/local/lib/python3.4/dist-packages/sklearn/feature_extraction/text.py", line 762, in _count_vocab
+    for feature in analyze(doc):
+  File "/usr/local/lib/python3.4/dist-packages/sklearn/feature_extraction/text.py", line 241, in <lambda>
+    tokenize(preprocess(self.decode(doc))), stop_words)
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 183, in __call__
+    return [self.stemmer.stem(t) for t in tokenize(doc)]
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 183, in <listcomp>
+    return [self.stemmer.stem(t) for t in tokenize(doc)]
+  File "/usr/local/lib/python3.4/dist-packages/nltk/stem/snowball.py", line 1016, in stem
+    if word.endswith(suffix):
+KeyboardInterrupt
+20
+1
+5000
+###################################
+Starting     NMF.py with K=20, ngrame=1 and n_features=5000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 2973.764s.
+5000
+Adding features to db
+multiprocess.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 211, in _commit
+    return self.connection.commit()
+psycopg2.IntegrityError: insert or update on table "tmv_app_term_run_id" violates foreign key constraint "tmv_app_term_ru_runstats_id_696891ec_fk_tmv_app_runstats_run_id"
+DETAIL:  Key (runstats_id)=(88) is not present in table "tmv_app_runstats".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 44, in mapstar
+    return list(map(*args))
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 109, in add_features
+    term.run_id.add(run_id)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/models/fields/related_descriptors.py", line 885, in add
+    self._add_items(self.target_field_name, self.source_field_name, *objs)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/transaction.py", line 223, in __exit__
+    connection.commit()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 242, in commit
+    self._commit()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 211, in _commit
+    return self.connection.commit()
+  File "/usr/local/lib/python3.4/dist-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python3.4/dist-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 211, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: insert or update on table "tmv_app_term_run_id" violates foreign key constraint "tmv_app_term_ru_runstats_id_696891ec_fk_tmv_app_runstats_run_id"
+DETAIL:  Key (runstats_id)=(88) is not present in table "tmv_app_runstats".
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 298, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 214, in main
+    vocab_ids.append(pool.map(add_features,vocab))
   File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 260, in map
     return self._map_async(func, iterable, mapstar, chunksize).get()
   File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 599, in get
     raise self._value
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 383, in _handle_tasks
-    put(task)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/connection.py", line 206, in send
-    self._send_bytes(ForkingPickler.dumps(obj))
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/reduction.py", line 53, in dumps
-    cls(buf, protocol).dump(obj)
-  File "/usr/lib/python3.4/pickle.py", line 412, in dump
-    self.save(obj)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/lib/python3.4/pickle.py", line 744, in save_tuple
-    save(element)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/lib/python3.4/pickle.py", line 729, in save_tuple
-    save(element)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/lib/python3.4/pickle.py", line 729, in save_tuple
-    save(element)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/local/lib/python3.4/dist-packages/dill/dill.py", line 966, in save_functor
-    log.info("Fu: %s" % obj)
+django.db.utils.IntegrityError: insert or update on table "tmv_app_term_run_id" violates foreign key constraint "tmv_app_term_ru_runstats_id_696891ec_fk_tmv_app_runstats_run_id"
+DETAIL:  Key (runstats_id)=(88) is not present in table "tmv_app_runstats".
+
+20
+2
+5000
+###################################
+Starting     NMF.py with K=20, ngrame=2 and n_features=5000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 3189.765s.
+5000
+Adding features to db
+done in 15.974s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
+done in 339.557s.
+Adding topicterms to db
+done in 17.090s.
+Adding doctopics to db
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 298, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 271, in main
+    dts.append(pool.map(partial(f_gamma, gamma=gamma,
+AttributeError: 'generator' object has no attribute 'append'
+20
+1
+10000
+###################################
+Starting     NMF.py with K=20, ngrame=1 and n_features=10000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 3073.816s.
+10000
+Adding features to db
+done in 34.795s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
+done in 792.930s.
+Adding topicterms to db
+done in 12.010s.
+Adding doctopics to db
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 298, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 271, in main
+    dts.append(pool.map(partial(f_gamma, gamma=gamma,
+AttributeError: 'generator' object has no attribute 'append'
+code/do_runs.sh: line 12: 26169 Terminated              python3 /home/galm/projects/cc-topography/code/nmf.py $t $n $f
+code/do_runs.sh: line 12: 26379 Terminated              python3 /home/galm/projects/cc-topography/code/nmf.py $t $n $f
+20
+1
+5000
+###################################
+Starting     NMF.py with K=20, ngrame=1 and n_features=5000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 2959.808s.
+5000
+Adding features to db
+done in 15.324s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
+done in 789.028s.
+Adding topicterms to db
+done in 8.120s.
+making sparse matrix
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
+MemoryError
+20
+2
+5000
+###################################
+Starting     NMF.py with K=20, ngrame=2 and n_features=5000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 3137.704s.
+5000
+Adding features to db
+done in 15.752s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
+done in 355.661s.
+Adding topicterms to db
+done in 17.996s.
+making sparse matrix
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
 MemoryError
 20
 1
 10000
-610815
+###################################
+Starting     NMF.py with K=20, ngrame=1 and n_features=10000
+610815 documents found
 Extracting tf-idf features for NMF...
-done in 2927.487s.
+done in 2984.722s.
 10000
+Adding features to db
+done in 30.999s.
 Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 792.203s.
-Process ForkPoolWorker-16:
+done in 836.613s.
+Adding topicterms to db
+done in 11.362s.
+making sparse matrix
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/process.py", line 254, in _bootstrap
-    self.run()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/process.py", line 93, in run
-    self._target(*self._args, **self._kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 108, in worker
-    task = get()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/queues.py", line 355, in get
-    res = self._reader.recv_bytes()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/connection.py", line 219, in recv_bytes
-    return buf.getvalue()
-MemoryError
-Exception in thread Thread-4:
-Traceback (most recent call last):
-  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.4/threading.py", line 868, in run
-    self._target(*self._args, **self._kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 366, in _handle_workers
-    pool._maintain_pool()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 240, in _maintain_pool
-    self._repopulate_pool()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 233, in _repopulate_pool
-    w.start()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/process.py", line 105, in start
-    self._popen = self._Popen(self)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/context.py", line 267, in _Popen
-    return Popen(process_obj)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/popen_fork.py", line 21, in __init__
-    self._launch(process_obj)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/popen_fork.py", line 70, in _launch
-    self.pid = os.fork()
-OSError: [Errno 12] Cannot allocate memory
-
-Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 203, in <module>
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
     main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 185, in main
-    docset=abstracts, docUTset=ids,topic_ids=topic_ids),docs)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 260, in map
-    return self._map_async(func, iterable, mapstar, chunksize).get()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 599, in get
-    raise self._value
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 383, in _handle_tasks
-    put(task)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/connection.py", line 206, in send
-    self._send_bytes(ForkingPickler.dumps(obj))
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/reduction.py", line 53, in dumps
-    cls(buf, protocol).dump(obj)
-  File "/usr/lib/python3.4/pickle.py", line 412, in dump
-    self.save(obj)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/lib/python3.4/pickle.py", line 744, in save_tuple
-    save(element)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/lib/python3.4/pickle.py", line 729, in save_tuple
-    save(element)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/lib/python3.4/pickle.py", line 729, in save_tuple
-    save(element)
-  File "/usr/lib/python3.4/pickle.py", line 479, in save
-    f(self, obj) # Call unbound method with explicit self
-  File "/usr/local/lib/python3.4/dist-packages/dill/dill.py", line 966, in save_functor
-    log.info("Fu: %s" % obj)
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
 MemoryError
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/util.py", line 252, in _run_finalizers
-    finalizer()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/util.py", line 185, in __call__
-    res = self._callback(*self._args, **self._kwargs)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 544, in _terminate_pool
-    p.terminate()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/process.py", line 113, in terminate
-    self._popen.terminate()
-AttributeError: 'NoneType' object has no attribute 'terminate'
 20
 2
 10000
-610815
+###################################
+Starting     NMF.py with K=20, ngrame=2 and n_features=10000
+610815 documents found
 Extracting tf-idf features for NMF...
-done in 3126.558s.
+done in 3211.370s.
 10000
+Adding features to db
+done in 29.170s.
 Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 327.902s.
+done in 337.907s.
+Adding topicterms to db
+done in 25.846s.
+making sparse matrix
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
+MemoryError
+20
+1
+50000
+###################################
+Starting     NMF.py with K=20, ngrame=1 and n_features=50000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 2983.222s.
+50000
+Adding features to db
+done in 142.220s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 860.057s.
+Adding topicterms to db
+done in 18.451s.
+making sparse matrix
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
+MemoryError
+20
+2
+50000
+###################################
+Starting     NMF.py with K=20, ngrame=2 and n_features=50000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 3161.076s.
+50000
+Adding features to db
+done in 150.796s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 634.063s.
+Adding topicterms to db
+done in 45.492s.
+making sparse matrix
+Traceback (most recent call last):
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
+    main()
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
+  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
+    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
+MemoryError
+20
+1
+5000
+###################################
+Starting     NMF.py with K=20, ngrame=1 and n_features=5000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 2985.769s.
+5000
+Adding features to db
+done in 16.400s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
+done in 778.404s.
+Adding topicterms to db
+done in 11.004s.
+making sparse matrix
+done in 21.736s.
+adding 5580196 doctopics to the db
+done in 13386.001s.
+Making the objects took in 5129.931s.
+Adding the objects took in 8192.162s.
+updating features in db
+done in 16.472s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
+done in 1857.877s.
+Adding topicterms to db
+done in 13.643s.
+making sparse matrix
+done in 43.366s.
+adding 8817063 doctopics to the db
+done in 27476.595s.
+Making the objects took in 8639.446s.
+Adding the objects took in 18723.397s.
+updating features in db
+done in 17.054s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
+done in 3624.948s.
+Adding topicterms to db
+done in 18.228s.
+making sparse matrix
+done in 99.477s.
+adding 13630697 doctopics to the db
+code/do_runs.sh: line 9: 20904 Terminated              python3 /home/galm/projects/cc-topography/code/nmf_multi.py 20 $n $f
+20
+2
+5000
+###################################
+Starting     NMF.py with K=20, ngrame=2 and n_features=5000
+610815 documents found
+Extracting tf-idf features for NMF...
+done in 3223.282s.
+5000
+Adding features to db
+done in 17.885s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
+done in 332.717s.
+Adding topicterms to db
+done in 17.532s.
+making sparse matrix
+done in 7.074s.
+adding 3086473 doctopics to the db
+###################################
+Starting     NMF.py with K=40, ngrame=1 and n_features=50000
+254099 documents found
+Extracting tf-idf features for NMF...
+done in 1287.967s.
+34990
+Adding features to db
+Traceback (most recent call last):
+  File "code/nmf_multi.py", line 387, in <module>
+    main()
+  File "code/nmf_multi.py", line 223, in main
+    vocab_ids.append(pool.map(add_features,vocab))
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 260, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 593, in get
+    self.wait(timeout)
+  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 590, in wait
+    self._event.wait(timeout)
+  File "/usr/lib/python3.4/threading.py", line 553, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.4/threading.py", line 290, in wait
+    waiter.acquire()
+KeyboardInterrupt
+50
+1
+10000
+###################################
+Starting     NMF.py with K=50, ngrame=1 and n_features=10000
+1000 documents found
+Extracting tf-idf features for NMF...
+done in 5.162s.
+1524
+Adding features to db
+done in 4.465s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
+done in 0.938s.
+Adding topicterms to db
+done in 1.663s.
+making sparse matrix
+done in 0.043s.
+adding 4881000 doctopics to the db
+done in 1289.933s.
+Making the objects took in 242.621s.
+Adding the objects took in 1031.436s.
+updating features in db
+done in 4.467s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
+done in 0.932s.
+Adding topicterms to db
+done in 1.510s.
+making sparse matrix
+done in 0.045s.
+adding 4881000 doctopics to the db
+done in 2327.511s.
+Making the objects took in 257.220s.
+Adding the objects took in 779.584s.
+done! total time: 60 minutes and 37 seconds
+a maximum of 434.368 MB was used

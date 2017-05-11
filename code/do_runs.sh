@@ -1,18 +1,14 @@
-topics=(20 40 75 100)
+
 features=(5000 10000 50000)
 ngrams=(1 2)
 
 
-for t in "${topics[@]}"
-do
+  for f in "${features[@]}"
+  do
     :
-    for f in "${features[@]}"
+    for n in "${ngrams[@]}"
     do
       :
-      for n in "${ngrams[@]}"
-      do
-        :
-        python3 /home/galm/projects/cc-topography/code/nmf.py $t $n $f
-      done
+      python3 /home/galm/projects/cc-topography/code/nmf_multi.py 20 $n $f
     done
-done
+  done
