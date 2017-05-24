@@ -14,7 +14,7 @@
 \title{A Topic Model of Climate Change Literature}
 \title{Words, words, words: Mapping the Matter of Climate Change Literature}
 \title{A Topography of Climate Change Research}
-\author{Max Callaghan}
+%\author{Max Callaghan}
 
 
 \begin{document}
@@ -23,16 +23,17 @@
 \linenumbers
 
 \textbf{
-To contribute to evidence-based policies on tackling climate change, the IPCC aims to comprehensively assess the relevant scientific literature \citep{IPCC2013}. With the size of this literature currently almost two orders of magnitude larger than at the time of the IPCC's first assessment report \citep{Houghton1990ClimateAssessment}, this task has become impossible without the aid of machine-reading. We collect over 400,000 abstracts from Web of Science (WoS) and Scopus, and develop a topic model in order to give an overview of this unmanageably large corpus. This overview shows us that the distribution and development of topics across the literature, and allows us to identify topics with greater and lesser representation in IPCC reports. We find that new topics, such as [biochar] can be identified as they emerge, an application with a high potential for increasing the relevance and comprehensiveness of future IPCC assessments.
+To contribute to evidence-based policies on tackling climate change, the IPCC aims to comprehensively assess the relevant scientific literature \citep{IPCC2013}. With the size of this literature currently almost two orders of magnitude larger than at the time of the IPCC's first assessment report \citep{Houghton1990ClimateAssessment}, this task has become impossible without the aid of machine-reading. We collect over 400,000 abstracts from Web of Science (WoS) and Scopus, and develop a topic model in order to give an overview of this unmanageably large corpus. This overview shows us the distribution and development of topics across the literature, and allows us to identify topics with greater and lesser representation in IPCC reports. [We find that new topics, such as [biochar] can be identified as they emerge, an application with a high potential for increasing the relevance and comprehensiveness of future IPCC assessments.]
 }
 
-The size of the scientific literature on climate change has expanded rapidly over the lifetime of the IPCC. While the first assessment report had around 5,500 articles to assess, nearly 5,000 new articles are now published every month, bringing the total size of the literature to close to half a million papers, (Figure \ref{growth}).  The increase in volume, velocity, and variety of content to be assessed has turned the task of the IPCC into a `Big Literature' challenge. To ask questions about the literature \textit{at scale}, we now need to apply computational techniques to the analysis of large document collections.
+The size of the scientific literature on climate change has expanded rapidly over the lifetime of the IPCC. While the first assessment report had around 5,500 articles to assess, nearly 5,000 new articles are now published every month, bringing the total size of the literature to close to half a million papers, (Figure \ref{growth}).  The increase in volume, velocity, and variety of content to be assessed has turned the task of the IPCC into a `Big Literature' challenge \citep{Minx2017BigChange}. To ask questions about the literature \textit{at scale}, we now need to apply computational techniques to the analysis of large document collections.
 
 Topic models are one such technique. A topic model learns the latent topics that structure a large corpus of documents, by leveraging the systematic co-occurrence of words across documents. Topics are distributions of words, and the topic mixture of each document explains the words observed in that document. This means that topic models can aid the understanding of large corpuses, and of the place of individual documents within them, by showing a document or corpus as a combination of 100 or so intelligible topics, rather than combinations of thousands of words.
 
 The topic model presented here is a rough map of climate change research since 1985. It shows a broad outline of the topics that make up this research and how they relate to each other, and demonstrates how this has changed over time. This relief map should supplement the maps drawn by assessment-makers-as-cartographers for policymakers described in \citet{Edenhofer2015}, by allowing assessment makers to have an overview of unmanageably large and diverse landscape. Moreover, as demonstrated in this paper, such a map can be used as a reference to quantitatively measure whether the more detailed maps produced, for example, in IPCC reports, accurately reflect the underlying landscape. [map metaphor overworked?]
 
-While topic modelling has been employed to answer specific questions about small aspects of climate literature, e.g. \citep[e.g.][]{minx2016negative,Grubert2016}, this is the first application of topic models to gain an overview of the entire field.
+While topic modelling has been employed to answer specific questions about small aspects of climate literature, e.g. \citep[e.g.][]{Minx2017FastEmissions, Grubert2016}, this is the first application of topic models to gain an overview of the entire field.
+
 
 
 
