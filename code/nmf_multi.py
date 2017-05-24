@@ -78,7 +78,7 @@ def f_gamma(docs,gamma,docsizes,docUTset,topic_ids):
 def f_gamma2(docs,gamma,docsizes,docUTset,topic_ids):
     vl = []
     for d in docs:
-        if gamma[2][d] > 0.005:
+        if gamma[2][d] > 0.001:
             dt = (
                 docUTset[gamma[0][d]],
                 topic_ids[gamma[1][d]],
@@ -163,7 +163,7 @@ def main():
     stoplist.add('copyright')
 
     #docs = Doc.objects.filter(query=893,content__iregex='\w').values('UT','title','content')
-    docs = Doc.objects.filter(query=365,content__iregex='\w')
+    docs = Doc.objects.filter(query=894,content__iregex='\w')
     docs = docs#.values('UT','content')
     if limit is not False:
         docs = docs[:limit]
