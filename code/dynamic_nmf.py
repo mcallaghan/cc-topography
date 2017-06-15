@@ -71,6 +71,15 @@ def f_lambda(t,m,v_ids,t_ids):
     )
     return tt
 
+def f_dlambda(t,m,v_ids,t_ids):
+    tt = DynamicTopicTerm(
+        term_id = v_ids[m[1][t]],
+        topic_id = t_ids[m[0][t]],
+        score = m[2][t],
+        run_id = run_id
+    )
+    return tt
+
 def tokenize(text):
     transtable = {ord(c): None for c in string.punctuation + string.digits}
     tokens = nltk.word_tokenize(text.translate(transtable))
@@ -121,12 +130,12 @@ def proc_docs(docs):
     return [abstracts, docsizes, ids, stoplist]
 
 def main():
-    qid = 1263
-    K = 10
+    qid = 1253
+    K = 60
     n_features = 50000
     n_samples = 1000
     ng = 1
-    yrange=list(range(2010,2015))
+    yrange=list(range(1990,2016))
 
 
 
@@ -257,21 +266,116 @@ def main():
 
         i+=1
 
-    # django.db.connections.close_all()
-    # stats = RunStats.objects.get(run_id=run_id)
-    # stats.error = nmf.reconstruction_err_
-    # stats.errortype = "Frobenius"
-    # stats.iterations = nmf.n_iter_
-    # stats.method = "nm"
-    # stats.last_update=timezone.now()
-    # stats.query=Query.objects.get(pk=qid)
-    # stats.save()
-    # django.db.connections.close_all()
+    ## After all the years have been run, update the dtops
 
-    subprocess.Popen(["python3",
-        "/home/galm/software/tmv/BasicBrowser/update_all_topics.py",
-        str(run_id)
-    ]).wait()
+    K = K
+
+    DynamicTopic.objects.filter(run_id=run_id).delete()
+
+    tops = Topic.objects.filter(run_id=run_id)
+    terms = Term.objects.all()
+
+    B = numpy.zeros((tops.count(),terms.count()))
+
+    print(tops)
+
+    #
+
+    wt = 0
+    for topic in tops:
+        tts = TopicTerm.objects.filter(
+            topic=topic, run_id=run_id,
+            score__gt=0.00001
+        ).order_by('-score')[:20]
+        for tt in tts:
+            B[wt,tt.term.id] = tt.score
+        wt+=1
+
+    col_sum = np.sum(B,axis=0)
+    vocab_ids = np.flatnonzero(col_sum)
+
+
+    B = B[:,vocab_ids]
+
+
+    nmf = NMF(
+        n_components=K, random_state=1,
+        alpha=.1, l1_ratio=.5
+    ).fit(B)
+
+
+    ## Add dynamic topics
+    dtopics = []
+    for k in range(K):
+        dtopic = DynamicTopic(
+            run_id=RunStats.objects.get(pk=run_id)
+        )
+        dtopic.save()
+        dtopics.append(dtopic)
+
+    dtopic_ids = list(DynamicTopic.objects.filter(run_id=run_id).values_list('id',flat=True))
+
+    print(dtopic_ids)
+
+    ##################
+    ## Add the dtopic*term matrix to the db
+    print("Adding topicterms to db")
+    t0 = time()
+    ldalambda = find(csr_matrix(nmf.components_))
+    topics = range(len(ldalambda[0]))
+    tts = []
+    pool = Pool(processes=8)
+    tts.append(pool.map(partial(f_dlambda, m=ldalambda,
+                    v_ids=vocab_ids,t_ids=dtopic_ids),topics))
+    pool.terminate()
+    tts = flatten(tts)
+    gc.collect()
+    sys.stdout.flush()
+    django.db.connections.close_all()
+    DynamicTopicTerm.objects.bulk_create(tts)
+    print("done in %0.3fs." % (time() - t0))
+
+    ## Add the wtopic*dtopic matrix to the database
+    gamma = nmf.transform(B)
+
+    for topic in range(len(gamma)):
+        for dtopic in range(len(gamma[topic])):
+            if gamma[topic][dtopic] > 0:
+                tdt = TopicDTopic(
+                    topic = tops[topic],
+                    dynamictopic = dtopics[dtopic],
+                    score = gamma[topic][dtopic]
+                )
+                tdt.save()
+
+    ## Calculate the primary dtopic for each topic
+    for t in tops:
+        try:
+            t.primary_dtopic = TopicDTopic.objects.filter(
+                topic=t
+            ).order_by('-score').first().dynamictopic
+            t.save()
+        except:
+            pass
+
+    # dts = DynamicTopic.objects.filter(run_id=run_id)
+    # for dt in dts:
+    #     for y in yrange:
+    #         dtopic = TopicDTopic.objects.filter(
+    #             dynamictopic=dt,topic__year=y
+    #         ).order_by('-score').first()
+    #         topic = dtopic.topic
+    #         topic.primary_dtopic = dt
+    #         topic.save()
+
+    stats = RunStats.objects.get(run_id=run_id)
+    stats.last_update=timezone.now()
+    stats.save()
+
+
+
+
+
 
 if __name__ == '__main__':
     t0 = time()
