@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[a4paper, total={7in, 8in}]{geometry}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{natbib}
@@ -23,35 +23,42 @@
 \linenumbers
 
 \textbf{
-To contribute to evidence-based policies on tackling climate change, the IPCC aims to comprehensively assess the relevant scientific literature \citep{IPCC2013}. With the size of this literature currently almost two orders of magnitude larger than at the time of the IPCC's first assessment report \citep{Houghton1990ClimateAssessment}, this task has become impossible without the aid of machine-reading. We collect over 400,000 abstracts from Web of Science (WoS) and Scopus, and develop a topic model in order to give an overview of this unmanageably large corpus. This overview shows us the distribution and development of topics across the literature, and allows us to identify topics with greater and lesser representation in IPCC reports. [We find that new topics, such as [biochar] can be identified as they emerge, an application with a high potential for increasing the relevance and comprehensiveness of future IPCC assessments.]
+To contribute to evidence-based policies on tackling climate change, the IPCC aims to comprehensively assess the relevant scientific literature \citep{IPCC2013}. With the size of this literature currently almost two orders of magnitude larger than at the time of the IPCC's first assessment report \citep{Houghton1990ClimateAssessment}, this task has become impossible without the aid of machine-reading. We collect over 400,000 abstracts from Web of Science (WoS) and Scopus, and develop a topic model in order to give an overview of this unmanageably large corpus. This overview shows us the distribution and development of topics across the literature, and allows us to identify topics with greater and lesser representation in IPCC reports. %[We find that new topics, such as [biochar] can be identified as they emerge, an application with a high potential for increasing the relevance and comprehensiveness of future IPCC assessments.]
 }
+
+\begin{figure}
+\begin{center}
+	\includegraphics[width=0.8\linewidth]{plots/wos_scopus_docs_time}
+    \caption{Growth in relevant literature in WoS and Scopus}
+    \label{growth}
+    \end{center}
+\end{figure}
 
 The size of the scientific literature on climate change has expanded rapidly over the lifetime of the IPCC. While the first assessment report had around 5,500 articles to assess, nearly 5,000 new articles are now published every month, bringing the total size of the literature to close to half a million papers, (Figure \ref{growth}).  The increase in volume, velocity, and variety of content to be assessed has turned the task of the IPCC into a `Big Literature' challenge \citep{Minx2017BigChange}. To ask questions about the literature \textit{at scale}, we now need to apply computational techniques to the analysis of large document collections.
 
 Topic models are one such technique. A topic model learns the latent topics that structure a large corpus of documents, by leveraging the systematic co-occurrence of words across documents. Topics are distributions of words, and the topic mixture of each document explains the words observed in that document. This means that topic models can aid the understanding of large corpuses, and of the place of individual documents within them, by showing a document or corpus as a combination of 100 or so intelligible topics, rather than combinations of thousands of words.
 
-The topic model presented here is a rough map of climate change research since 1985. It shows a broad outline of the topics that make up this research and how they relate to each other, and demonstrates how this has changed over time. This relief map should supplement the maps drawn by assessment-makers-as-cartographers for policymakers described in \citet{Edenhofer2015}, by allowing assessment makers to have an overview of unmanageably large and diverse landscape. Moreover, as demonstrated in this paper, such a map can be used as a reference to quantitatively measure whether the more detailed maps produced, for example, in IPCC reports, accurately reflect the underlying landscape. [map metaphor overworked?]
+Assessment-makers like the IPCC have been described as cartographers for policymakers \citep{Edenhofer2015}. As such their purpose is, summarising available scientific knowledge, to describe the problem and solution space of a policy issue. The topic model presented here is a rough map of climate change research since 1985. It shows a broad outline of the topics that make up this research and how they relate to each other, and demonstrates how this has changed over time. Such a map sheds light on the terrain of knowledge about a policy issue, making an overview of an unmanageably large and diverse landscape possible. This overview allows both for the production of policy pathways that are well informed by science, and, as demonstrated in this paper, the assessment of the comprehensiveness with which these pathways reflect the landscape.
+
 
 While topic modelling has been employed to answer specific questions about small aspects of climate literature, e.g. \citep[e.g.][]{Minx2017FastEmissions, Grubert2016}, this is the first application of topic models to gain an overview of the entire field.
 
 
 
 
-\begin{figure}
-	\includegraphics[width=\linewidth]{plots/wos_scopus_docs_time}
-    \caption{Growth in relevant literature in WoS and Scopus}
-    \label{growth}
-\end{figure}
+
 
 
 \begin{figure}
-	\includegraphics[width=\linewidth]{plots/hot_topics}
+	\includegraphics[width=\linewidth]{plots/hot_topics_65}
     \caption{Topic growth over time. The 3 topics in each assessment period that grew by the largest amount are labelled [Example figure]}
+    \label{topic_growth}
 \end{figure}
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{plots/ipcc_topics}
     \caption{IPCC references by topic. The bars show the percentage of each topic that has been matched to an IPCC reference}
+    \label{IPCC}
 \end{figure}
 
 \begin{table}
@@ -80,27 +87,35 @@ AR1 & AR2 & AR3 & AR4 & AR5 & AR6 \\
 
 
 \section*{Results}
+\subsection*{Literature Description}
 \begin{itemize}
-	\item The biggest topics are x and y
-	\item These topics have grown, these have decreased
-    \item X keywords fit into Y topics like so...
-    \item Finding similar documents works across topics, rather than just by keywords, so better.
-    \item Similar documents more or less likely to be across disciplinary boundaries ??
-    \item Model selection validated by these measurements.
+	\item Some big/interesting topics are x and y
+	\item These topics have grown at particularly interesting times (Figure \ref{topic_growth})
+    \item These topics are better covered in IPCC, these are less well covered \ref{IPCC}
+    \item Some interesting topic correlations are x and y; well fitting documents to both include x and y
+    \item
 \end{itemize}
 
-\section{*Conclusion}
+\subsection*{Information Retrieval Implications}
+\begin{itemize}
+    \item X keywords fit into Y topics like so...
+    \item Finding similar documents, how does this work with topics as opposed to keywords?
+    \item Similar documents more or less likely to be across disciplinary boundaries ??
+\end{itemize}
+
+\section*{Conclusion}
 \begin{itemize}
 	\item A very simple topic model provides an overview of the whole landscape.
     \item This allows researchers / assessment makers to identify areas that have grown recently
     \item Topic models aid document discovery, have the potential to contribute to more comprehensive assessments.
-    \item Next steps for research: using topic models to assess the assessment process: find gaps etc.
+    \item Next steps for research: using topic models to assess the assessment process: more thorough gapfinding etc.
 \end{itemize}
 
 
 \begin{figure}
-	%\includegraphics{}
+	\includegraphics[width=\linewidth]{plots/snip}
     \caption{Topic structure of climate change literature [network plot]}
+    \label{network}
 \end{figure}
 
 
