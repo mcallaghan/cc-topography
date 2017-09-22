@@ -1,0 +1,42 @@
+\documentclass[9pt]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{tikz}
+
+\usetheme{Boadilla}
+
+\usefonttheme{professionalfonts}
+
+\title[Short Title]{Title}
+\subtitle{}
+\author{Max Callaghan}
+\institute[MCC]{\includegraphics[height=1cm,width=2cm]{/home/max/Pictures/MCC_Logo_RZ_rgb.jpg}}
+
+\newtheorem*{remark}{}
+
+\bibliographystyle{apalike}
+
+\begin{document}
+	
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\addtobeamertemplate{frametitle}{}{%
+	\begin{tikzpicture}[remember picture,overlay]
+	\node[anchor=north east,yshift=2pt] at (current page.north east) {\includegraphics[height=0.8cm]{/home/max/Pictures/MCC_Logo_RZ_rgb.jpg}};
+	\end{tikzpicture}}
+
+\begin{frame}{Frame Title}
+
+\end{frame}
+
+\begin{frame}{Frame Title}
+	\small
+	\bibliography{/home/max/Documents/library/bibliography}
+\end{frame}
+
+\end{document}

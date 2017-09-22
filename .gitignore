@@ -1,1 +1,7 @@
 *.ipynb_check*
+*.aux
+*.bbl
+*.blg
+*.log
+*.synctex*
+*.lof
