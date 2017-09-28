@@ -68,7 +68,7 @@ While topic modelling has been employed to answer specific questions about small
 \subsection*{Topic Model}
 \begin{itemize}
 	\item Figure \ref{network} shows the structure of the topic model with 100 topics, with each node coloured according to the IPCC working group in which the highest proportion of the topic's documents are cited.
-    \item Topics that systematically co-occur in documents are linked, and the resulting network is displayed with links weighted according to topic correlation score. The strength of links is greater where two topics are categorised as 
+    \item Topics that systematically co-occur in documents are linked, and the resulting network is displayed with links weighted according to topic correlation score. The strength of links is greater where two topics are categorised as being in the same working group. This relationship is statistically significant (see SI)
 \end{itemize}
 
 \begin{figure}
@@ -107,7 +107,6 @@ AR1 & AR2 & AR3 & AR4 & AR5 & AR6 \\
 \caption{The bottom 5 topics in each assessment period by percentage growth since the last assessment period}
 \end{table}
 
-\subsection*{Literature Description}
 \begin{itemize}
 	\item Some big/interesting topics are x and y
 	\item These topics have grown at particularly interesting times (Figure \ref{topic_growth})
@@ -116,19 +115,23 @@ AR1 & AR2 & AR3 & AR4 & AR5 & AR6 \\
     \item
 \end{itemize}
 
-\subsection*{Information Retrieval Implications}
-\begin{itemize}
-    \item X keywords fit into Y topics like so...
-    \item Finding similar documents, how does this work with topics as opposed to keywords?
-    \item Similar documents more or less likely to be across disciplinary boundaries ??
-\end{itemize}
+%\subsection*{Information Retrieval Implications}
+%\begin{itemize}
+%    \item X keywords fit into Y topics like so...
+%    \item Finding similar documents, how does this work with topics as opposed to keywords?
+%    \item Similar documents more or less likely to be across disciplinary boundaries ??
+%\end{itemize}
 
 \section*{Conclusion}
 \begin{itemize}
 	\item A very simple topic model provides an overview of the whole landscape.
     \item This allows researchers / assessment makers to identify areas that have grown recently
     \item Topic models aid document discovery, have the potential to contribute to more comprehensive assessments.
-    \item Next steps for research: using topic models to assess the assessment process: more thorough gapfinding etc.
+	\item AR5 seemed to have less comprehensive coverage of x topics. This was a particular issue in WG y.
+	\item This may not be an issue, there could be good reasons for this, but these should be made transparent.
+	\item For the next assessment report, x topics may require particular attention.
+	\item The emerging topic on CCS resonates with a growing recognition of the importance of negative emissions and the lack of understanding about how they could fill their role. This will be of particular importance for the IPCC special report on 1.5 degrees.
+    %\item Next steps for research: using topic models to assess the assessment process: more thorough gapfinding etc.
 \end{itemize}
 
 
@@ -154,12 +157,15 @@ AR1 & AR2 & AR3 & AR4 & AR5 & AR6 \\
 \section*{Methodology}
 
 \begin{itemize}
+\item Topic modelling in general: reducing large matrix of documents to words to two smaller matrices of topics x words and topics x documents.
 \item Model selection: NMF \citep{Lee1999}
-\item How does it work? Advantages: Simple, scalable: better results than with other solutions, if only because it was possible to iterate with large document collections. LDA can be better but relies on tuning hyperparameters, hard to do with such big corpus
+\item How does it work? Advantages: Simple, scalable: better results than with other solutions%, if only because it was possible to iterate with large document collections. LDA can be better but relies on tuning hyperparameters, hard to do with such big corpus
 \item Topic model browser \citet{Chaney2012}
-\item Human Validation: 
-\item Compare topic space to keyword space. Reduces dimensionality, overcomes non-standardisation
-\item Which topics get the most citations?
+\item Merging with IPCC citation dataset - caveats...
+\item Network explanation
+\item Regression of network score on dummy variable for same
+%\item Compare topic space to keyword space. Reduces dimensionality, overcomes non-standardisation
+%\item Which topics get the most citations?
 
 \end{itemize}
 
