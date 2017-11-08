@@ -55,27 +55,67 @@ While topic modelling has been employed to answer specific questions about small
 
 \section*{Results}
 
-\todo{From here on in, the paper is more of an outline, with a mixture of bullet points about results that exist or I would still like to generate}
 
 \begin{figure}
 \begin{center}
-	\includegraphics[width=0.8\linewidth]{plots/network_wg_65}
+	\includegraphics[width=0.7\linewidth]{plots/network_wg_65}
     \caption{Topic structure of climate change literature}
     \label{network}
     \end{center}
 \end{figure}
 
 \subsection*{Topic Model}
+
+\subsubsection*{Model Structure}
 \begin{itemize}
 	\item Figure \ref{network} shows the structure of the topic model with 100 topics, with each node coloured according to the IPCC working group in which the highest proportion of the topic's documents are cited.
     \item Topics that systematically co-occur in documents are linked, and the resulting network is displayed with links weighted according to topic correlation score. The strength of links is greater where two topics are categorised as being in the same working group. This relationship is statistically significant (see SI)
+    \item The largest topic is formed of the words \{research, sustain, issu, science, social, challeng\}. This is a broad topic that focuses on meta-issues of research priorities. The documents which score most highly on this topic discuss the role of research and science in tackling sustainability problems. [E.g. Miller2014].
+    \begin{itemize}
+    	\item sustainability as overarching thing
+    	\item connections of topic, wg mix of topic
+    	\item Number of documents it occurs in
+    \end{itemize}
+	\item The smallest topic contains the words \{rice, paddi, field, straw, yield\}.  It describes the relatively discrete topic of GHG emissions from rice fields. A closely related topic (Correlation=[x]) is \{methan, oxid, wetland\}, as the methane emissions from rice fields are of primary concern. This is not necessarily the smallest topic in an abstract sense in climate change research. Rather, it is an outcome of the decision to choose 100 topics, and represents the smallest topic visible at the scale implied by 100 clusters.
+	\begin{itemize}
+		\item number or documents it occurs in
+		\item WG balance
+	\end{itemize}
 \end{itemize}
+
+\subsubsection*{Model Dynamics}
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{plots/hot_topics_65}
-    \caption{Topic growth over time. The 3 topics in each assessment period that grew by the largest amount are labelled [Example figure]}
-    \label{topic_growth}
+	\caption{Topic growth over time. The 3 topics in each assessment period that grew by the largest amount are labelled [Example figure]}
+	\label{topic_growth}
 \end{figure}
+
+As well as describing the structure of a research landscape, applying a topic model can indicate areas that have grown especially fast. This can give us an indicator of changing research priorities, and emerging areas of study. For each topic, we sum all topic document scores in each IPCC assessment period, and calculate the AR growth as the percentage increase from one period to the next.
+
+\begin{itemize}
+	\item Figure \ref{growth} plots the growth of topics across the 6 assessment periods of the IPCC. Table \ref{AR6} highlights the five topics that show the smallest and largest growth from AR5 to AR6
+	\begin{itemize}
+		\item \{Captur, adsopt, sorbent\} deals with the chemical process of capturing CO2, either from chimneys, or directly from the air. Though this topic has been discussed for some time, e.g. [Ward1983], the stringency of climate targets implied and lack of ambitious near term mitigation implied in the Paris Agreement [cite Dependency/betting] have made this topic, as a key component of many negative emissions, all the more relevant. Here we see evidence that the policy requirements is driving technical research. [What disciplines is this research in?]
+		\item \{urban, citi, plan\} Also reflects a growing interest in cities  - in relation to mitigation, decentralised, bla and impacts, urbanisation.
+		\item \{drought, stress, sever\} related to SDGs?
+	\end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% IPCC topics
+
+\subsubsection*{
+
+\begin{itemize}
+	\item For each topic, we sum the document-topic scores to calculate the size of the topic. The proportion of that sum which is accounted for by articles which we matched to the set of IPCC references can thus be seen as a measure of the coverage of each topic by IPCC reports. There is considerable variation in IPCC coverage between topics, with the extreme ends show in figure \ref{IPCC}.
+	\begin{itemize}
+		\item Is the propensity to be included in IPCC reports independent from topic scores?
+		\item This could be accounted for by bad matching, a larger pool to draw from (non explicitly climate papers).  [Do Matching by WG, AR]
+		\item This is an important area for future research.
+	\end{itemize}
+\end{itemize}
+
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{plots/ipcc_topics_65}
@@ -84,32 +124,40 @@ While topic modelling has been employed to answer specific questions about small
 \end{figure}
 
 \begin{table}
-\small
-\setlength\tabcolsep{0.1cm}
-\begin{tabular}{cccccc}
-AR1 & AR2 & AR3 & AR4 & AR5 & AR6 \\
-\midrule \\
-\input{tables/topAR1} & \input{tables/topAR2}  & \input{tables/topAR3}
- & \input{tables/topAR4}  & \input{tables/topAR5}  & \input{tables/topAR6}
-\end{tabular}
-\caption{The top 5 topics in each assessment period by percentage growth since the last assessment period}
+	\begin{center}
+	\begin{tabular}{cc}
+	\input{tables/65_bottomAR6} & \input{tables/65_topAR6}
+	\end{tabular}
+	\caption{Topics displaying the smallest (left) and largest (right) growth from AR5 to AR6}
+	\end{center}
+	\label{AR6}
 \end{table}
 
-\begin{table}
-\small
-\setlength\tabcolsep{0.1cm}
-\begin{tabular}{cccccc}
-AR1 & AR2 & AR3 & AR4 & AR5 & AR6 \\
-\midrule \\
-\input{tables/bottomAR1} & \input{tables/bottomAR2}  & \input{tables/bottomAR3}
- & \input{tables/bottomAR4}  & \input{tables/bottomAR5}  & \input{tables/bottomAR6}
-\end{tabular}
-\caption{The bottom 5 topics in each assessment period by percentage growth since the last assessment period}
-\end{table}
+%\begin{table}
+%\small
+%\setlength\tabcolsep{0.1cm}
+%\begin{tabular}{cccccc}
+%AR1 & AR2 & AR3 & AR4 & AR5 & AR6 \\
+%\midrule \\
+%\input{tables/topAR1} & \input{tables/topAR2}  & \input{tables/topAR3}
+% & \input{tables/topAR4}  & \input{tables/topAR5}  & \input{tables/topAR6}
+%\end{tabular}
+%\caption{The top 5 topics in each assessment period by percentage growth since the last assessment period}
+%\end{table}
+%
+%\begin{table}
+%\small
+%\setlength\tabcolsep{0.1cm}
+%\begin{tabular}{cccccc}
+%AR1 & AR2 & AR3 & AR4 & AR5 & AR6 \\
+%\midrule \\
+%\input{tables/bottomAR1} & \input{tables/bottomAR2}  & \input{tables/bottomAR3}
+% & \input{tables/bottomAR4}  & \input{tables/bottomAR5}  & \input{tables/bottomAR6}
+%\end{tabular}
+%\caption{The bottom 5 topics in each assessment period by percentage growth since the last assessment period}
+%\end{table}
 
 \begin{itemize}
-	\item Some big/interesting topics are x and y
-	\item These topics have grown at particularly interesting times (Figure \ref{topic_growth})
     \item These topics are better covered in IPCC, these are less well covered \ref{IPCC}
     \item Some interesting topic correlations are x and y; well fitting documents to both include x and y
     \item
