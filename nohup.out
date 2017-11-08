@@ -2125,3 +2125,201 @@ Adding topicterms to db
 done in 1.069s.
 done! total time: 29 minutes and 31 seconds
 a maximum of 496.756 MB was used
+
+###############################        
+## Doing NMF on query 365 with 254100 documents and 100 topics
+
+Extracting tf-idf features for NMF...
+done in 1278.285s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 2948.891s.
+Adding topicterms to db
+done in 173.350s.
+347
+RunStats object
+347
+{'name': 'AR0', 'n': 0, 'years': range(0, 1985)}
+{'name': 'AR1', 'n': 1, 'years': range(1985, 1991)}
+{'name': 'AR2', 'n': 2, 'years': range(1991, 1995)}
+{'name': 'AR3', 'n': 3, 'years': range(1995, 2001)}
+{'name': 'AR4', 'n': 4, 'years': range(2001, 2008)}
+{'name': 'AR5', 'n': 5, 'years': range(2008, 2014)}
+{'name': 'AR6', 'n': 6, 'years': range(2014, 9999)}
+done! total time: 870 minutes and 15 seconds
+a maximum of 5872.004 MB was used
+usage: manage.py nmf [-h] [--version] [-v {0,1,2,3}] [--settings SETTINGS]
+                     [--pythonpath PYTHONPATH] [--traceback] [--no-color]
+                     [--alpha ALPHA] [--limit LIMIT] [--n_features N_FEATURES]
+                     [--n_samples N_SAMPLES] [--ng NG]
+                     qid K
+manage.py nmf: error: argument --alpha: invalid int value: '0.1'
+
+###############################        
+## Doing NMF on query 365 with 254100 documents and 100 topics
+
+Extracting tf-idf features for NMF...
+done in 1291.104s.
+Traceback (most recent call last):
+  File "/home/galm/software/django/tmv/BasicBrowser/manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 367, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 359, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 294, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 345, in execute
+    output = self.handle(*args, **options)
+  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/management/commands/nmf.py", line 80, in handle
+    stat.process_id = os.getpid()
+NameError: name 'os' is not defined
+
+###############################        
+## Doing NMF on query 365 with 254100 documents and 100 topics
+
+Extracting tf-idf features for NMF...
+done in 1302.001s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 2598.864s.
+Adding topicterms to db
+done in 93.361s.
+349
+RunStats object
+349
+{'n': 0, 'years': range(0, 1985), 'name': 'AR0'}
+{'n': 1, 'years': range(1985, 1991), 'name': 'AR1'}
+{'n': 2, 'years': range(1991, 1995), 'name': 'AR2'}
+{'n': 3, 'years': range(1995, 2001), 'name': 'AR3'}
+{'n': 4, 'years': range(2001, 2008), 'name': 'AR4'}
+{'n': 5, 'years': range(2008, 2014), 'name': 'AR5'}
+{'n': 6, 'years': range(2014, 9999), 'name': 'AR6'}
+done! total time: 538 minutes and 14 seconds
+a maximum of 4140.768 MB was used
+
+###############################        
+## Doing NMF on query 365 with 254100 documents and 100 topics
+
+Extracting tf-idf features for NMF...
+done in 1248.112s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 2456.842s.
+Adding topicterms to db
+done in 111.936s.
+350
+RunStats object
+350
+{'name': 'AR0', 'n': 0, 'years': range(0, 1985)}
+{'name': 'AR1', 'n': 1, 'years': range(1985, 1991)}
+{'name': 'AR2', 'n': 2, 'years': range(1991, 1995)}
+{'name': 'AR3', 'n': 3, 'years': range(1995, 2001)}
+{'name': 'AR4', 'n': 4, 'years': range(2001, 2008)}
+{'name': 'AR5', 'n': 5, 'years': range(2008, 2014)}
+{'name': 'AR6', 'n': 6, 'years': range(2014, 9999)}
+done! total time: 512 minutes and 28 seconds
+a maximum of 4893.692 MB was used
+
+###############################        
+## Doing NMF on query 365 with 254100 documents and 120 topics
+
+Extracting tf-idf features for NMF...
+done in 1327.927s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 3090.666s.
+Adding topicterms to db
+done in 93.902s.
+362
+RunStats object
+362
+{'years': range(0, 1985), 'n': 0, 'name': 'AR0'}
+{'years': range(1985, 1991), 'n': 1, 'name': 'AR1'}
+{'years': range(1991, 1995), 'n': 2, 'name': 'AR2'}
+{'years': range(1995, 2001), 'n': 3, 'name': 'AR3'}
+{'years': range(2001, 2008), 'n': 4, 'name': 'AR4'}
+{'years': range(2008, 2014), 'n': 5, 'name': 'AR5'}
+{'years': range(2014, 9999), 'n': 6, 'name': 'AR6'}
+done! total time: 1056 minutes and 29 seconds
+a maximum of 5439.444 MB was used
+
+###############################        
+## Doing NMF on query 365 with 254100 documents and 80 topics
+
+Extracting tf-idf features for NMF...
+done in 1290.298s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 2233.823s.
+Adding topicterms to db
+done in 107.509s.
+363
+RunStats object
+363
+{'years': range(0, 1985), 'name': 'AR0', 'n': 0}
+{'years': range(1985, 1991), 'name': 'AR1', 'n': 1}
+{'years': range(1991, 1995), 'name': 'AR2', 'n': 2}
+{'years': range(1995, 2001), 'name': 'AR3', 'n': 3}
+{'years': range(2001, 2008), 'name': 'AR4', 'n': 4}
+{'years': range(2008, 2014), 'name': 'AR5', 'n': 5}
+{'years': range(2014, 9999), 'name': 'AR6', 'n': 6}
+done! total time: 1055 minutes and 38 seconds
+a maximum of 4340.408 MB was used
+
+###############################        
+## Doing NMF on query 365 with 254100 documents and 100 topics
+
+Traceback (most recent call last):
+  File "/home/galm/software/django/tmv/BasicBrowser/manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 367, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 359, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 294, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 345, in execute
+    output = self.handle(*args, **options)
+  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/management/commands/nmf.py", line 59, in handle
+    abstracts, docsizes, ids = proc_docs(docs, stoplist)
+  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 23, in proc_docs
+    abstracts = [re.split("\([C-c]\) [1-2][0-9]{3} Elsevier",x.content)[0] for x in docs.iterator()]
+AttributeError: 'list' object has no attribute 'iterator'
+
+###############################        
+## Doing NMF on query 365 with 254100 documents and 100 topics
+
+Traceback (most recent call last):
+  File "/home/galm/software/django/tmv/BasicBrowser/manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 367, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 359, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 294, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 345, in execute
+    output = self.handle(*args, **options)
+  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/management/commands/nmf.py", line 59, in handle
+    abstracts, docsizes, ids = proc_docs(docs, stoplist)
+  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 28, in proc_docs
+    ids = [x.UT for x in docs.iterator()]
+AttributeError: 'list' object has no attribute 'iterator'
+
+###############################        
+## Doing NMF on query 365 with 254100 documents and 100 topics
+
+Extracting tf-idf features for NMF...
+done in 1303.397s.
+Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
+done in 1242.582s.
+Adding topicterms to db
+done in 87.747s.
+364
+RunStats object
+364
+{'name': 'AR0', 'n': 0, 'years': range(0, 1985)}
+{'name': 'AR1', 'n': 1, 'years': range(1985, 1991)}
+{'name': 'AR2', 'n': 2, 'years': range(1991, 1995)}
+{'name': 'AR3', 'n': 3, 'years': range(1995, 2001)}
+{'name': 'AR4', 'n': 4, 'years': range(2001, 2008)}
+{'name': 'AR5', 'n': 5, 'years': range(2008, 2014)}
+{'name': 'AR6', 'n': 6, 'years': range(2014, 9999)}
+done! total time: 507 minutes and 18 seconds
+a maximum of 3773.712 MB was used

@@ -1,3 +1,23 @@
+#!/usr/bin/env python3
+
+# onlinewikipedia.py: Demonstrates the use of online VB for LDA to
+# analyze a bunch of random Wikipedia articles.
+#
+# Copyright (C) 2010  Matthew D. Hoffman
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import pickle, string, numpy, getopt, sys, random, time, re, pprint, gc, resource
 import pandas as pd
 import onlineldavb
@@ -24,7 +44,7 @@ import psycopg2
 sys.stdout.flush()
 
 # import file for easy access to browser database
-sys.path.append('/home/galm/software/django/tmv/BasicBrowser/')
+sys.path.append('/home/galm/software/tmv/BasicBrowser/')
 
 # sys.path.append('/home/max/Desktop/django/BasicBrowser/')
 import db as db
@@ -40,6 +60,28 @@ def flatten(container):
                 yield j
         else:
             yield i
+
+# def f_gamma(d,gamma,docsizes,docUTset,topic_ids):
+#     dts = []
+#     django.db.connections.close_all()
+#     doc_size = docsizes[d]
+#     doc_id = docUTset[d]
+#     row = gamma[d]
+#     nzs = find(row)
+#     for nz in range(len(nzs[1])):
+#         k = nzs[1][nz]
+#         score = nzs[2][nz]
+#         doc = Doc.objects.get(UT=doc_id)
+#         topic = Topic.objects.get(pk=topic_ids[k])
+#         dt = DocTopic(
+#             doc=doc, topic=topic, score=score,
+#             scaled_score=score,
+#             run_id=run_id
+#         )
+#         dts.append(dt)
+#         # db.add_doc_topic_sk(doc_id, topic_ids[k], gamma[d][k], gamma[d][k]/doc_size)
+#     return dts
+#     django.db.connections.close_all()
 
 def f_gamma(docs,gamma,docsizes,docUTset,topic_ids):
     dts = []
