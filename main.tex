@@ -23,7 +23,8 @@
 \linenumbers
 
 \textbf{
-To contribute to evidence-based policies on tackling climate change, the IPCC aims to comprehensively assess the relevant scientific literature \citep{IPCC2013}. With the size of this literature currently almost two orders of magnitude larger than at the time of the IPCC's first assessment report, this task has become impossible without the aid of machine-reading. We collect over 400,000 abstracts from Web of Science (WoS) and Scopus, and develop a topic model in order to give an overview of this unmanageably large corpus. This overview shows us the distribution and development of topics across the literature, and allows us to identify topics with greater and lesser representation in IPCC reports. %[We find that new topics, such as [biochar] can be identified as they emerge, an application with a high potential for increasing the relevance and comprehensiveness of future IPCC assessments.]
+%To contribute to evidence-based policies to tackle climate change, the IPCC aims to comprehensively assess the relevant scientific literature \citep{IPCC2013}. With the size of this literature currently almost two orders of magnitude larger than at the time of the IPCC's first assessment report, this task has become intractable without the aid of machine-reading. We collect over 400,000 abstracts from Web of Science (WoS) and Scopus, and develop a topic model in order to give an overview of this unmanageably large corpus. This overview shows us the distribution and development of topics across the literature, and allows us to identify topics with greater and lesser representation in IPCC reports. Endogenously discovered topics on cities and carbon capture are shown to have experienced a period of high growth since the last assessment report. While topics on the basic science of climate change are well covered by IPCC reports, topics on specific solutions such as electric vehicles or building design are less well covered. %[We find that new topics, such as [biochar] can be identified as they emerge, an application with a high potential for increasing the relevance and comprehensiveness of future IPCC assessments.]
+To contribute to evidence-based policies to tackle climate change, the IPCC aims to comprehensively assess the relevant scientific literature \citep{IPCC2013}. With the size of this literature currently almost two orders of magnitude larger than at the time of the IPCC's first assessment report, this task has become intractable without the aid of machine-reading. We collect over 250,000 abstracts from Web of Science (WoS), and develop a topic model in order to give an overview of this unmanageably large corpus. This overview shows us the distribution and development of topics across the literature, and allows us to identify topics with greater and lesser representation in IPCC reports. Endogenously discovered topics on cities and on negative emissions are shown to have experienced a period of high growth since the last assessment report. While topics on the basic science of climate change are well covered by IPCC reports, topics on specific solutions such as N or building design are less well covered. %[We find that new topics, such as [biochar] can be identified as they emerge, an application with a high potential for increasing the relevance and comprehensiveness of future IPCC assessments.]
 }
 
 \begin{figure}
@@ -34,16 +35,24 @@ To contribute to evidence-based policies on tackling climate change, the IPCC ai
     \end{center}
 \end{figure}
 
-The size of the scientific literature on climate change has expanded rapidly over the lifetime of the IPCC. While the first assessment report had around 5,500 articles to assess, nearly 5,000 new articles are now published every month, bringing the total size of the literature to close to half a million papers, (Figure \ref{growth}).  The increase in volume, velocity, and variety of content to be assessed has turned the task of the IPCC into a `Big Literature' challenge \citep{Minx2017BigChange}. To ask questions about the literature \textit{at scale}, we now need to apply computational techniques to the analysis of large document collections.
+The size of the scientific literature on climate change has expanded rapidly over the lifetime of the IPCC. While the first assessment report had around 5,500 articles to assess, nearly 5,000 new articles are now published every month, bringing the total size of the literature to close to half a million papers, (Figure \ref{growth}).  The increase in volume, velocity, and variety of content to be assessed has turned the task of the IPCC into a `Big Literature' challenge \citep{Minx2017b}. To ask questions about the literature \textit{at scale}, we now need to apply computational techniques to the analysis of large document collections.
 
 Topic models are one such technique. A topic model learns the latent topics that structure a large corpus of documents, by leveraging the systematic co-occurrence of words across documents. Topics are distributions of words, and the topic mixture of each document explains the words observed in that document. This means that topic models can aid the understanding of large corpuses, and of the place of individual documents within them, by showing a document or corpus as a combination of 100 or so intelligible topics, rather than combinations of thousands of words.
 
-Assessment-makers like the IPCC have been described as cartographers for policymakers \citep{Edenhofer2015}. As such their purpose is, summarising available scientific knowledge, to describe the problem and solution space of a policy issue. The topic model presented here is a rough map of climate change research since 1985. It shows a broad outline of the topics that make up this research and how they relate to each other, and demonstrates how this has changed over time. Such a map sheds light on the terrain of knowledge about a policy issue, making an overview of an unmanageably large and diverse landscape possible. This overview allows both for the production of policy pathways that are well informed by science, and, as demonstrated in this paper, the assessment of the comprehensiveness with which these pathways reflect the landscape.
+Assessment-makers like the IPCC have been described as cartographers for policymakers \citep{Edenhofer2015}. As such their purpose is, summarising available scientific knowledge, to describe the problem and solution space of a policy issue. The topic model presented here is a rough map of 440,000 papers making up climate change research. It shows a broad outline of the topics that make up this research and how they relate to each other, and demonstrates how this has changed over time. Such a map sheds light on the terrain of knowledge about a policy issue, making an overview of an unmanageably large and diverse landscape possible. This overview allows both for the production of policy pathways that are well informed by science, and, as demonstrated in this paper, the assessment of the comprehensiveness with which these pathways reflect the landscape.
 
+An important feature of the topic-modelling approach is that topics emerge endogenously from the structure of the corpus. This means that they can be used to answer open-ended as well as specific questions about a corpus. 
 
+This paper aims to address the following questions:
 
+\begin{itemize}
+	\item What topics are discovered endogenously from a corpus of > 200,000 abstracts on climate change?
+	\item How do these topics describe the structure of the literature?
+	\item Which topics have grown recently?
+	\item Which topics are better and worse represented in IPCC assessment reports?
+\end{itemize}
 
-While topic modelling has been employed to answer specific questions about small aspects of climate literature, e.g. \citep[e.g.][]{Minx2017FastEmissions, Grubert2016}, this is the first application of topic models to gain an overview of the entire field.
+While topic modelling has been employed to explore and characterise the development and structure of subfields of climate literature, e.g. \citep[e.g.][]{Minx2017c, Grubert2016}, this is the first application of topic models to gain an overview of the entire field.
 
 
 
@@ -68,21 +77,32 @@ While topic modelling has been employed to answer specific questions about small
 
 \subsubsection*{Model Structure}
 \begin{itemize}
+
 	\item Figure \ref{network} shows the structure of the topic model with 100 topics, with each node coloured according to the IPCC working group in which the highest proportion of the topic's documents are cited.
+    
     \item Topics that systematically co-occur in documents are linked, and the resulting network is displayed with links weighted according to topic correlation score. The strength of links is greater where two topics are categorised as being in the same working group. This relationship is statistically significant (see SI)
-    \item The largest topic is formed of the words \{research, sustain, issu, science, social, challeng\}. This is a broad topic that focuses on meta-issues of research priorities. The documents which score most highly on this topic discuss the role of research and science in tackling sustainability problems. [E.g. Miller2014].
+    
+    \item The largest topic is formed of the words \{research, sustain, issu, science, social, challeng\}. This is a broad topic that focuses on meta-issues of research priorities. The documents which score most highly on this topic discuss the role of research and science in tackling sustainability problems. \citep[e.g.][]{Miller2014}.
+    
     \begin{itemize}
-    	\item sustainability as overarching thing
+    	\item sustainability as overarching concept
     	\item connections of topic, wg mix of topic
     	\item Number of documents it occurs in
     \end{itemize}
+    
 	\item The smallest topic contains the words \{rice, paddi, field, straw, yield\}.  It describes the relatively discrete topic of GHG emissions from rice fields. A closely related topic (Correlation=[x]) is \{methan, oxid, wetland\}, as the methane emissions from rice fields are of primary concern. This is not necessarily the smallest topic in an abstract sense in climate change research. Rather, it is an outcome of the decision to choose 100 topics, and represents the smallest topic visible at the scale implied by 100 clusters.
+    
 	\begin{itemize}
 		\item number or documents it occurs in
 		\item WG balance
 	\end{itemize}
+    
+    \item Some interesting topic correlations are x and y; well fitting documents to both include x and y
+    
 \end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Time stuff
 \subsubsection*{Model Dynamics}
 
 \begin{figure}
@@ -91,29 +111,31 @@ While topic modelling has been employed to answer specific questions about small
 	\label{topic_growth}
 \end{figure}
 
+\begin{table}
+	\begin{center}
+	\begin{tabular}{cc}
+	\input{tables/65_bottomAR6} & \input{tables/65_topAR6}
+	\end{tabular}
+	\caption{Topics displaying the smallest (left) and largest (right) growth from AR5 to AR6}
+    \label{AR6}
+	\end{center}
+	
+\end{table}
+
 As well as describing the structure of a research landscape, applying a topic model can indicate areas that have grown especially fast. This can give us an indicator of changing research priorities, and emerging areas of study. For each topic, we sum all topic document scores in each IPCC assessment period, and calculate the AR growth as the percentage increase from one period to the next.
 
 \begin{itemize}
 	\item Figure \ref{growth} plots the growth of topics across the 6 assessment periods of the IPCC. Table \ref{AR6} highlights the five topics that show the smallest and largest growth from AR5 to AR6
 	\begin{itemize}
-		\item \{Captur, adsopt, sorbent\} deals with the chemical process of capturing CO2, either from chimneys, or directly from the air. Though this topic has been discussed for some time, e.g. [Ward1983], the stringency of climate targets implied and lack of ambitious near term mitigation implied in the Paris Agreement [cite Dependency/betting] have made this topic, as a key component of many negative emissions, all the more relevant. Here we see evidence that the policy requirements is driving technical research. [What disciplines is this research in?]
-		\item \{urban, citi, plan\} Also reflects a growing interest in cities  - in relation to mitigation, decentralised, bla and impacts, urbanisation.
+		\item \{Captur, adsopt, sorbent\} deals with the chemical process of isolating CO2. The topic model points to articles which indicate that study of the chemical sorption of CO2 has existed for some time \citep[e.g][]{Ward1983}. However, the current policy landscape on climate change mitigation has given this topic a greatly increased relevance. The stringency of climate targets and lack of ambitious near term mitigation action implied in the Paris Agreement imply a much greater dependence on negative emissions [cite Dependency/betting]. As the negative emissions technologies of Direct Air Capture [ref] and BECCS [ref] rely on the chemical isolation of CO2, either directly from the air, or from the chimney of power plants, this topic plays a much wider role in literature dealing with climate change. Here we see evidence that the policy requirements is driving technical research. [What disciplines is this research in?]
+		\item \{urban, citi, plan\} Also reflects a growing interest in cities  - in relation to mitigation, decentralised - and impacts, urbanisation.
 		\item \{drought, stress, sever\} related to SDGs?
+        \item \{adapt, vulner, strategi\} shows increasing acceptance of and focus on adaptation as a response to climate change.
 	\end{itemize}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% IPCC topics
-
-\begin{itemize}
-	\item For each topic, we sum the document-topic scores to calculate the size of the topic. The proportion of that sum which is accounted for by articles which we matched to the set of IPCC references can thus be seen as a measure of the coverage of each topic by IPCC reports. There is considerable variation in IPCC coverage between topics, with the extreme ends show in figure \ref{IPCC}.
-	\begin{itemize}
-		\item Is the propensity to be included in IPCC reports independent from topic scores?
-		\item This could be accounted for by bad matching, a larger pool to draw from (non explicitly climate papers).  [Do Matching by WG, AR]
-		\item This is an important area for future research.
-	\end{itemize}
-\end{itemize}
-
 
 \begin{figure}
 	\includegraphics[width=\linewidth]{plots/ipcc_topics_65}
@@ -121,15 +143,22 @@ As well as describing the structure of a research landscape, applying a topic mo
     \label{IPCC}
 \end{figure}
 
-\begin{table}
-	\begin{center}
-	\begin{tabular}{cc}
-	\input{tables/65_bottomAR6} & \input{tables/65_topAR6}
-	\end{tabular}
-	\caption{Topics displaying the smallest (left) and largest (right) growth from AR5 to AR6}
-	\end{center}
-	\label{AR6}
-\end{table}
+
+\begin{itemize}
+	\item For each topic, we sum the document-topic scores to calculate the size of the topic. The proportion of that sum (only counting documents published before 2014) which is accounted for by articles which we matched to the set of IPCC references can thus be seen as a measure of the coverage of each topic by IPCC reports. There is considerable variation in IPCC coverage between topics, with the extreme ends show in figure \ref{IPCC}.
+	\begin{itemize}
+    	\item Topics that deal with the basic science of climate change, such as \{cloud, aerosol, radiat\}, or \{ozon, stratospher, topospher\}, as well as it's impacts (\{climat, chang, impact\}, \{precipit, extrem, annual\} are relatively well covered.
+        \item Topics that talk about specific sectors that could contribute to climate solutions (e.g. \{build, design, construct\}, \{oil, biodiesel, palm\}, \{vehicl, electr, hybrid\}) are much less well covered by IPCC reports. 
+        \item Articles dealing with radiative forcing and climate change are more than [5] times more likely to be cited by the IPCC than articles dealing with electric vehicles and climate change. This observation highlights the challenges facing the IPCC in responding to the wishes of policy-makers to see more focus on solutions in environmental assessments documented in \citet{Kowarsch2017}
+		\item Is the propensity to be included in IPCC reports independent from topic scores?
+		\item This could be accounted for by bad matching, a larger pool to draw from (non explicitly climate papers).  [Do Matching by WG, AR]
+		\item This is an important area for future research.
+	\end{itemize}
+\end{itemize}
+
+
+
+
 
 %\begin{table}
 %\small
@@ -155,12 +184,6 @@ As well as describing the structure of a research landscape, applying a topic mo
 %\caption{The bottom 5 topics in each assessment period by percentage growth since the last assessment period}
 %\end{table}
 
-\begin{itemize}
-    \item These topics are better covered in IPCC, these are less well covered \ref{IPCC}
-    \item Some interesting topic correlations are x and y; well fitting documents to both include x and y
-    \item
-\end{itemize}
-
 %\subsection*{Information Retrieval Implications}
 %\begin{itemize}
 %    \item X keywords fit into Y topics like so...
@@ -171,42 +194,47 @@ As well as describing the structure of a research landscape, applying a topic mo
 \section*{Conclusion}
 \begin{itemize}
 	\item A very simple topic model provides an overview of the whole landscape.
+    \item The endogenous nature of the approach reveals trends that were not explicitly looked for.
     \item This allows researchers / assessment makers to identify areas that have grown recently
     \item Topic models aid document discovery, have the potential to contribute to more comprehensive assessments.
-	\item AR5 seemed to have less comprehensive coverage of x topics. This was a particular issue in WG y.
+    \item The relative sparsity of references to solution-orientated topics points to challenge for future assessment reports.
+	%\item AR5 seemed to have less comprehensive coverage of x topics. This was a particular issue in WG y.
 	\item This may not be an issue, there could be good reasons for this, but these should be made transparent.
-	\item For the next assessment report, x topics may require particular attention.
-	\item The emerging topic on CCS resonates with a growing recognition of the importance of negative emissions and the lack of understanding about how they could fill their role. This will be of particular importance for the IPCC special report on 1.5 degrees.
+	\item Already, the analysis of quickly growing topics points to those areas where AR6 may want to focus its attentions. For example, CCS / cities.
+	%\item The emerging topic on CCS resonates with a growing recognition of the importance of negative emissions and the lack of understanding about how they could fill their role. This will be of particular importance for the IPCC special report on 1.5 degrees.
     %\item Next steps for research: using topic models to assess the assessment process: more thorough gapfinding etc.
 \end{itemize}
 
 
 
 
-\begin{figure}
+%\begin{figure}
 	%\includegraphics{}
-    \caption{Focus on [biochar?] showing document with highlighted words}
-\end{figure}
+%    \caption{Focus on [biochar?] showing document with highlighted words}
+%\end{figure}
 
-\begin{figure}
+%\begin{figure}
 	%\includegraphics{}
-    \caption{Model validation graph, showing error for different topic numbers, feature numbers}
-\end{figure}
+%    \caption{Model validation graph, showing error for different topic numbers, feature numbers}
+%\end{figure}
 
 
-\begin{figure}
+%\begin{figure}
 	%\includegraphics{}
-    \caption{Some relation of topics to other features of dataset: e.g. most interdisciplinary journals and least, or so...}
-\end{figure}
+%    \caption{Some relation of topics to other features of dataset: e.g. most interdisciplinary journals and least, or so...}
+%\end{figure}
 
 
 \section*{Methodology}
+
+Topic modelling describes 
 
 \begin{itemize}
 \item Topic modelling in general: reducing large matrix of documents to words to two smaller matrices of topics x words and topics x documents.
 \item Model selection: NMF \citep{Lee1999}
 \item How does it work? Advantages: Simple, scalable: better results than with other solutions%, if only because it was possible to iterate with large document collections. LDA can be better but relies on tuning hyperparameters, hard to do with such big corpus
 \item Topic model browser \citet{Chaney2012}
+\item Time trends: post-hoc \citep{Hall2008}
 \item Merging with IPCC citation dataset - caveats...
 \item Network explanation
 \item Regression of network score on dummy variable for same
