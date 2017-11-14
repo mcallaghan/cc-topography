@@ -112,6 +112,47 @@
 
 \end{frame}
 
+\begin{frame}{Approach - Words, words, words}
+
+\begin{figure}
+	
+	\[V_{i\mu} \]
+	
+	\includegraphics[width=\linewidth]{../plots/VWH_blank.png}
+	
+	\caption{A topic model of 3495 documents on climate change from the year 2000}
+	
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Approach - Words, words, words}
+
+\begin{figure}
+	
+	\[V_{i\mu} \approx (WH)_{i\mu} = \sum_{a=1}^{r}W_{ia}H_{a\mu} \]
+	
+	\includegraphics[width=\linewidth]{../plots/VWH.png}
+	
+	\caption{A topic model of 3495 documents on climate change from the year 2000}
+	
+\end{figure}
+
+
+\end{frame}
+
+\begin{frame}{Research Questions}
+\begin{itemize}
+	\item What topics are discovered endogenously from a corpus of > 200,000 abstracts on climate change?
+	\item How do these topics describe the structure of the literature?
+	\item Which topics have grown recently?
+	\item Which topics are better and less well represented in IPCC assessment reports?
+\end{itemize}
+
+\end{frame}
+
+
 \begin{frame}{Preliminary results - explanation}
 
 \begin{columns}
@@ -135,12 +176,14 @@
 \begin{frame}{Preliminary results - structure}
 
 \begin{columns}
-	\begin{column}{0.6\linewidth}
-		\begin{center}
-			\includegraphics[width=0.85\linewidth]{../plots/network_wg_372.PNG}
+	\begin{column}{0.65\linewidth}
+		\begin{center}	
+			\vspace*{-0.1\linewidth}
+			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372.PNG}
 		\end{center}
 	\end{column}
-	\begin{column}{0.4\linewidth}
+	\begin{column}{0.35\linewidth}
+		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
 		\begin{center}
 			\begin{itemize}
 				\item A network of comprehensible topics is generated with 100 topics
@@ -153,22 +196,103 @@
 
 \end{frame}
 
+\begin{frame}{Preliminary results - structure - WGI}
+
+\begin{columns}
+	\begin{column}{0.65\linewidth}
+		\begin{center}
+			\vspace*{-0.1\linewidth}
+			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_1.PNG}
+		\end{center}
+	\end{column}
+	\begin{column}{0.35\linewidth}
+		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
+		\begin{center}
+			\begin{itemize}
+				\item The largest topic in WGI is on models.
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Preliminary results - structure - WGII}
+
+\begin{columns}
+	\begin{column}{0.65\linewidth}
+		\begin{center}
+			\vspace*{-0.1\linewidth}
+			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_2.PNG}
+		\end{center}
+	\end{column}
+	\begin{column}{0.35\linewidth}
+		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
+		\begin{center}
+			\begin{itemize}
+				\item The largest primarily WGII topic is on climate change impacts
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Preliminary results - structure - WGIII}
+
+\begin{columns}
+	\begin{column}{0.65\linewidth}
+		\begin{center}
+			\vspace*{-0.1\linewidth}
+			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_3.PNG}
+		\end{center}
+	\end{column}
+	\begin{column}{0.35\linewidth}
+		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
+		\begin{center}
+			\begin{itemize}
+				\item The largest WGIII topic is on emissions reductions.
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Preliminary results - structure - other clusters}
+
+\begin{columns}
+	\begin{column}{0.65\linewidth}
+		\begin{center}
+			\vspace*{-0.1\linewidth}
+			\hspace*{-0.1\linewidth}
+			\includegraphics[width=1.25\linewidth]{../plots/network_wg_372_4.PNG}
+		\end{center}
+	\end{column}
+	\begin{column}{0.35\linewidth}
+		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
+		\begin{center}
+			\begin{itemize}
+				\item A fourth cluster of mostly WGII references contains topics on ecosystems, species and habitats
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
 \begin{frame}{Preliminary results - structure}
 
 \begin{columns}
 	\begin{column}{0.6\linewidth}
-		\begin{center}
-			\includegraphics[width=0.85\linewidth]{../plots/shares_10_372.PNG}
-			
-			\medskip
-			
-			\includegraphics[width=0.85\linewidth]{../plots/sustainability.PNG}
+		\begin{center}			
+			\includegraphics[width=\linewidth]{../plots/sustainability.PNG}
 		\end{center}
 	\end{column}
 	\begin{column}{0.4\linewidth}
 		\begin{center}
 			\begin{itemize}
-				\item In later assessment periods, the largest topic is on research priorities and sustainability
+				\item In later assessment periods, a large meta-topic on research priorities and sustainability emerges
 			\end{itemize}
 		\end{center}
 	\end{column}
@@ -181,7 +305,7 @@
 \begin{columns}
 	\begin{column}{0.6\linewidth}
 		\begin{center}
-			\includegraphics[width=\linewidth]{../plots/top_20_372.png}
+			\includegraphics[width=\linewidth]{../plots/top_20_386.png}
 		\end{center}
 	\end{column}
 	\begin{column}{0.4\linewidth}
@@ -196,19 +320,48 @@
 
 \end{frame}
 
+\begin{frame}{Preliminary results - growth - biochar}
+
+
+		\begin{center}
+			\includegraphics[width=\linewidth]{../plots/biochar_growth.png}
+
+		\medskip
+
+			\begin{itemize}
+				\item Biochar has emerged as an entirely new topic in the last 10 years
+			\end{itemize}
+		\end{center}
+
+\end{frame}
+
+\begin{frame}{Preliminary results - gaps in coverage}
+
+How can we get a sense of which topics are better covered in IPCC reports?
+
+\begin{itemize}
+	\item Each document \(d\) either matches or does not match an IPCC reference
+	\item For each topic \(h\), we can sum the scores for each category of document
+	\item The ``IPCC proportion'' of each topic is the proportion of the sum of the document score accounted for by documents which match IPCC references.
+\end{itemize}
+
+
+
+\end{frame}
+
 \begin{frame}{Preliminary results - gaps in coverage}
 
 \begin{columns}
-	\begin{column}{0.6\linewidth}
+	\begin{column}{0.7\linewidth}
 		\begin{center}
-			\includegraphics[width=\linewidth]{../plots/ipcc_topics_65.png}
+			\includegraphics[width=\linewidth]{../plots/ipcc_topics_386.png}
 		\end{center}
 	\end{column}
-	\begin{column}{0.4\linewidth}
+	\begin{column}{0.3\linewidth}
 		\begin{center}
 			\begin{itemize}
 				\item The physical science aspects of climate change, as well topics on impacts, adaptation and scenarios are well covered by the IPCC
-				\item ``Niche'' topics on specific technological solutions, are less well covered
+				\item Topics on specific technological solutions (particularly NETs), as well as soils, are less well covered
 			\end{itemize}
 		\end{center}
 	\end{column}
@@ -216,22 +369,65 @@
 
 \end{frame}
 
-\begin{frame}{Next steps}
+\begin{frame}{Conclusions}
+
+
+\begin{itemize}
+	\item Endogenously discovered topics make substantive sense of an unmanageable dataset of climate-relevant literature
+	\item Topic modelling discovers over-arching topics such as that on sustainability and research priorities, as well as individual, fast growing topics such as biochar or CCS
+	\item Topics from the same IPCC working group are more likely to be connected to each other.
+	\item Quantitative evidence is found to support policy makers' dissatisfaction with a lack of `solution orientation' in IPCC reports \citep{Kowarsch2017} 
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Extra results - Journals}
 
 \begin{columns}
-%	\begin{column}{0.6\linewidth}
-%		\begin{center}
-%			\includegraphics[width=\linewidth]{../plots/ipcc_topics_65.png}
-%		\end{center}
-%	\end{column}
-	\begin{column}{0.7\linewidth}
+	\begin{column}{0.55\linewidth}
+		\begin{center}
+			\includegraphics[width=\linewidth]{../plots/journals/journal_papers.png}
+		\end{center}
+	\end{column}
+	\begin{column}{0.45\linewidth}
 		\begin{center}
 			\begin{itemize}
-				\item Can I get a clearer research question, and make the analysis less descriptive?
+				\item Nature has been publishing about climate change for a long time
+				\item Plos One has very recently overtaken all other journals
+				\item The number of journals has risen very steeply
 			\end{itemize}
+		\includegraphics[width=0.9\linewidth]{../plots/journals/n_journals.png}
 		\end{center}
 	\end{column}
 \end{columns}
+
+\end{frame}
+
+\begin{frame}{Extra results - Journals}
+
+\begin{columns}
+	\begin{column}{0.55\linewidth}
+		\begin{center}
+			\includegraphics[width=\linewidth]{../plots/journals/journal_entropy_386.png}
+		\end{center}
+	\end{column}
+	\begin{column}{0.45\linewidth}
+		\begin{center}
+			\begin{itemize}
+				\item Journal Entropy describes the distribution of topics in a journal \citep{Hall2008a}
+				\item High values mean the journal deals with a wider range of topics
+			\end{itemize}
+			\[  H(z\rvert c,y) = -\sum_{i=1}^{K} \hat{p}(z_i \rvert c,y) \; log \; \hat{p}(z_i \rvert c, y) \]
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Extra results - Journals}
+
+	\includegraphics[width=\linewidth]{../plots/journals/journal_topics_386.png}
 
 \end{frame}
 
