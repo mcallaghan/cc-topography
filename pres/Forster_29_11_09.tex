@@ -6,6 +6,7 @@
 \usepackage{natbib}
 \usepackage{tikz}
 \usepackage{pgfgantt}
+\usepackage{booktabs}
 
 \usetheme{Boadilla}
 
@@ -171,6 +172,15 @@
 
 \end{frame}
 
+\begin{frame}{Preliminary results - Map}
+
+\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/pca_map.png}
+			\caption{Topic Map, with topics placed according to Principal Component Analysis of topic-term matrix}
+\end{figure}
+
+\end{frame}
+
 
 \begin{frame}{Preliminary results - structure}
 
@@ -280,7 +290,11 @@
 
 \end{frame}
 
-\begin{frame}{Preliminary results - structure}
+
+
+\begin{frame}{Preliminary results - structure - Sustainability}
+
+
 
 \begin{columns}
 	\begin{column}{0.6\linewidth}
@@ -298,6 +312,50 @@
 \end{columns}
 
 \end{frame}
+
+\begin{frame}{Preliminary results - structure - Sustainability}
+
+
+
+\begin{columns}
+	\begin{column}{0.6\linewidth}
+		\begin{center}			
+			\includegraphics[width=\linewidth]{../plots/health_sustain_386.PNG}
+		\end{center}
+	\end{column}
+	\begin{column}{0.4\linewidth}
+		\begin{center}
+			\begin{itemize}
+				\item The flatness of its distribution across documents indicates a topic that occurs
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+%% Sus table
+
+\begin{frame}{Preliminary results - structure - Sustainability}
+\begin{table}
+	\footnotesize
+	\renewcommand{\arraystretch}{2}
+\begin{tabular}{p{0.3\linewidth}p{0.3\linewidth}p{0.3\linewidth}}
+	\toprule 
+	{polici, govern, tax} & {adapt, vulner, strategi}  & {urban, citi, area} \\ 
+	\midrule 
+	How Research-Prioritization Exercises Affect Conservation Policy & Methodological choices in solution-oriented adaptation research: a diagnostic framework & A review of urban ecosystem services: six key challenges for future research  \\ 
+	Role of hydrology and economics in water management policy under increasing uncertainty & When not every response to climate change is a good one: Identifying principles for sustainable adaptation & Lines of Tradition and Recent Approaches to Urban Ecology, Focussing on Germany and the USA \\ 
+	Informing food policy: balancing the evidence & Informed adaptation: Ethical considerations for adaptation researchers and decision-makers & Advancing understanding of the complex nature of urban systems \\ 
+	The identification of priority policy options for UK nature conservation & Future oriented conservation: knowledge governance, uncertainty and learning & Sustainable urban landscapes: South African perspectives on transdisciplinary possibilities \\ 
+	Environmental education policy research challenges and ways research might cope with them & Towards an integrated agenda for adaptation research: theory, practice and policy & A conceptual framework for addressing complexity and unfolding transition dynamics when developing sustainable adaptation strategies in urban water management \\
+	\bottomrule
+\end{tabular} 
+
+\end{table}
+
+\end{frame}
+
 
 \begin{frame}{Preliminary results - growth}
 
@@ -368,13 +426,61 @@ How can we get a sense of which topics are better covered in IPCC reports?
 
 \end{frame}
 
+\begin{frame}{Preliminary results - gaps in coverage}
+
+
+			\includegraphics[width=0.8\linewidth]{../plots/ipcc_topics_wg_386.png}
+
+
+\end{frame}
+
+
+\begin{frame}{Preliminary results - Inter-working Group topics - WG 1 and 3}
+
+\begin{table}
+	
+	
+	\input{../tables/386_wg_1_2}
+	
+\end{table}
+
+\end{frame}
+
+%%%%%%%%
+
+\begin{frame}{Preliminary results - Inter-working Group topics - WG 1 and 3}
+
+\begin{table}
+
+
+\input{../tables/386_wg_1_3}
+
+\end{table}
+
+\end{frame}
+
+%%%%%%%
+
+\begin{frame}{Preliminary results - Inter-working Group topics - WG 2 and 3}
+
+\begin{table}
+
+
+\input{../tables/386_wg_2_3}
+
+\end{table}
+
+\end{frame}
+
+
+
 \begin{frame}{Conclusions}
 
 
 \begin{itemize}
 	\item Endogenously discovered topics make substantive sense of an unmanageable dataset of climate-relevant literature
 	\item Topic modelling discovers over-arching topics such as that on sustainability and research priorities, as well as individual, fast growing topics such as biochar or CCS
-	\item Topics from the same IPCC working group are more likely to be connected to each other.
+	\item Matching documents to IPCC references, we can describe topics that belong to or bridge IPCC working groups
 	\item Quantitative evidence is found to support policy makers' dissatisfaction with a lack of `solution orientation' in IPCC reports \citep{Kowarsch2017} 
 \end{itemize}
 
