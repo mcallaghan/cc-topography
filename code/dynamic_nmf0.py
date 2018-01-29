@@ -149,7 +149,7 @@ def main():
     try:
         qid = int(sys.argv[1])
     except:
-        qid = 365
+        qid = 2355
     # The n in ngram
     try:
         K = int(sys.argv[2])
@@ -160,7 +160,7 @@ def main():
     n_features = 50000
     n_samples = 1000
     ng = 1
-    yrange=list(range(1990,2017))
+    yrange=list(range(1990,2018))
 
 
     global run_id
@@ -410,24 +410,16 @@ def main():
                 tdt.save()
 
     ## Calculate the primary dtopic for each topic
+
     for t in tops:
         try:
-            t.primary_dtopic = TopicDTopic.objects.filter(
+            t.primary_dtopic.add(TopicDTopic.objects.filter(
                 topic=t
-            ).order_by('-score').first().dynamictopic
+            ).order_by('-score').first().dynamictopic)
             t.save()
         except:
             pass
 
-    # dts = DynamicTopic.objects.filter(run_id=run_id)
-    # for dt in dts:
-    #     for y in yrange:
-    #         dtopic = TopicDTopic.objects.filter(
-    #             dynamictopic=dt,topic__year=y
-    #         ).order_by('-score').first()
-    #         topic = dtopic.topic
-    #         topic.primary_dtopic = dt
-    #         topic.save()
 
     stat.error = stat.error + nmf.reconstruction_err_
     stat.errortype = "Frobenius"
