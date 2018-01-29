@@ -89,6 +89,16 @@
 
 \end{frame}
 
+\begin{frame}{Motivation - Update 2018}
+
+Now that 2017 has ended, I have update the query to include papers from 2017 as well.
+
+%% Add projections and real 2017
+
+\end{frame}
+
+
+
 \begin{frame}{Approach - Words, words, words}
 
 \begin{columns}
@@ -140,17 +150,127 @@
 	
 \end{figure}
 
-
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Research Questions}
 \begin{itemize}
-	\item What topics are discovered endogenously from a corpus of > 200,000 abstracts on climate change?
-	\item How do these topics describe the structure of the literature?
-	\item Which topics have grown recently?
-	\item Which topics are better and less well represented in IPCC assessment reports?
+	\item What is the thematic structure of the literature on climate change, and how has this changed over the five assessment periods of the IPCC
+	\item Which topics have had greater or less representation in the IPCC assessment reports?
+	%	\item What topics are discovered endogenously from a corpus of > 200,000 abstracts on climate change?
+	%	\item How do these topics describe the structure of the literature?
+	%	\item Which topics have grown recently?
+	%	\item Which topics are better and less well represented in IPCC assessment reports?
 \end{itemize}
 \end{frame}
+
+%%
+
+\begin{frame}{Methodology - Dynamic Topic Modelling}
+
+The topic models above assume that the topics, and the words that make them up, are stable over time. Two approaches to better model dynamic topics:
+
+\begin{itemize}
+	\item<2->Dynamic Topic Modelling (DTM) \citep{Blei2006} assume that a constant number of topics exists over all topic models, but allows the words in the topics to evolve from one time period to another
+	\item<3->Dynamic Non-negative Matrix Factorisation \citep{Greene2016} has varying numbers of topics in each window and allows for topics to emerge and/or disappear.
+\end{itemize}
+
+\onslide<4->{Where the size and variety of the literature we want to model has increased exponentially, we need an approach that allows for the emergence of new topics.}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% D-NMF
+
+
+\begin{frame}[t]{Dynamic NMF}
+
+\only<1->{\includegraphics[]{C:/Users/galm/Documents/papers/sustainability/plots/VWH_1991}}
+\only<2->{\includegraphics[]{C:/Users/galm/Documents/papers/sustainability/plots/VWH_1992}}
+
+\only<3->{\includegraphics[]{C:/Users/galm/Documents/papers/sustainability/plots/VWH_1993}}
+
+\end{frame}
+
+\begin{frame}[t]{Dynamic NMF}
+
+\includegraphics[width=\linewidth]{C:/Users/galm/Documents/papers/sustainability/plots/conceptual_windows_only}
+
+\end{frame}
+
+\begin{frame}[t]{Dynamic NMF}
+
+\includegraphics[width=\linewidth]{C:/Users/galm/Documents/papers/sustainability/plots/conceptual_annotated_1}
+
+\end{frame}
+
+\begin{frame}[t]{Dynamic NMF}
+
+\includegraphics[width=\linewidth]{C:/Users/galm/Documents/papers/sustainability/plots/conceptual_annotated_2}
+
+\end{frame}
+
+\begin{frame}{Dynamic NMF - application to climate change}
+
+\onslide<1->{
+\begin{itemize}
+	\item Choosing the number of window topics is non-trivial. Data-driven approaches are limited (see below), and human selection is time consuming.
+	\item To facilitate the description of trends over the assessment periods of the IPCC, and to minimize the number of modelling decisions, I consider each IPCC assessment period as a time window.
+\end{itemize}}
+
+\begin{columns}
+	\onslide<2->{
+	\begin{column}{0.5\linewidth}
+
+			\begin{itemize}
+				\item Starting from a logarithmic relationship between the number of documents and the ideal topic number, I compare 5 runs with varying numbers of topics for each window
+		\end{itemize}
+	\end{column}
+	\begin{column}{0.5\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/n_topics}	
+		\end{figure}
+	\end{column}
+}
+\end{columns}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}[t]{Dynamic NMF - number of topics}
+
+\begin{columns}
+	\begin{column}{0.5\linewidth}
+		\textbf{Human topic number criteria}
+		\begin{itemize}
+			\item Intelligibility
+		\end{itemize}
+		\textbf{Data-driven topic number criteria}
+		\begin{itemize}
+			\item Reconstruction accuracy
+		\end{itemize}
+		\onslide<2->{\includegraphics[width=0.8\linewidth]{../plots/topic_validations_AR1}}
+	\end{column}
+	\begin{column}<2->{0.5\linewidth}
+		
+\begin{figure}
+	\includegraphics[width=0.8\linewidth]{../plots/topic_validations_AR2}
+	
+	\includegraphics[width=0.8\linewidth]{../plots/topic_validations_AR3}
+\end{figure}
+	\end{column}
+\end{columns}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% results
 
 
 \begin{frame}{Preliminary results - explanation}
@@ -172,14 +292,14 @@
 
 \end{frame}
 
-\begin{frame}{Preliminary results - Map}
-
-\begin{figure}
-			\includegraphics[width=\linewidth]{../plots/pca_map.png}
-			\caption{Topic Map, with topics placed according to Principal Component Analysis of topic-term matrix}
-\end{figure}
-
-\end{frame}
+%\begin{frame}{Preliminary results - Map}
+%
+%\begin{figure}
+%			\includegraphics[width=\linewidth]{../plots/pca_map.png}
+%			\caption{Topic Map, with topics placed according to Principal Component Analysis of topic-term matrix}
+%\end{figure}
+%
+%\end{frame}
 
 
 \begin{frame}{Preliminary results - structure}
