@@ -93,6 +93,12 @@
 
 Now that 2017 has ended, I have update the query to include papers from 2017 as well.
 
+\medskip
+
+\medskip
+
+These extra 36,000 papers take the total number of documents to 309,697.
+
 %% Add projections and real 2017
 
 \end{frame}
@@ -157,7 +163,8 @@ Now that 2017 has ended, I have update the query to include papers from 2017 as 
 \begin{frame}{Research Questions}
 \begin{itemize}
 	\item What is the thematic structure of the literature on climate change, and how has this changed over the five assessment periods of the IPCC
-	\item Which topics have had greater or less representation in the IPCC assessment reports?
+	\item What can this modelled thematic structure tell us about the past and future relationship between the IPCC and scientific literature on climate change? 
+	%\item Which topics have had greater or less representation in the IPCC assessment reports?
 	%	\item What topics are discovered endogenously from a corpus of > 200,000 abstracts on climate change?
 	%	\item How do these topics describe the structure of the literature?
 	%	\item Which topics have grown recently?
@@ -186,30 +193,30 @@ The topic models above assume that the topics, and the words that make them up, 
 
 \begin{frame}[t]{Dynamic NMF}
 
-\only<1->{\includegraphics[]{C:/Users/galm/Documents/papers/sustainability/plots/VWH_1991}}
-\only<2->{\includegraphics[]{C:/Users/galm/Documents/papers/sustainability/plots/VWH_1992}}
-
-\only<3->{\includegraphics[]{C:/Users/galm/Documents/papers/sustainability/plots/VWH_1993}}
-
-\end{frame}
-
-\begin{frame}[t]{Dynamic NMF}
-
-\includegraphics[width=\linewidth]{C:/Users/galm/Documents/papers/sustainability/plots/conceptual_windows_only}
+%\only<1->{\includegraphics[]{../plots/sustainability/VWH_1991}}
+%\only<2->{\includegraphics[]{../plots/sustainability/VWH_1992}}
+%
+%\only<3->{\includegraphics[]{../plots/sustainability/VWH_1993}}
 
 \end{frame}
 
-\begin{frame}[t]{Dynamic NMF}
-
-\includegraphics[width=\linewidth]{C:/Users/galm/Documents/papers/sustainability/plots/conceptual_annotated_1}
-
-\end{frame}
-
-\begin{frame}[t]{Dynamic NMF}
-
-\includegraphics[width=\linewidth]{C:/Users/galm/Documents/papers/sustainability/plots/conceptual_annotated_2}
-
-\end{frame}
+%\begin{frame}[t]{Dynamic NMF}
+%
+%\includegraphics[width=\linewidth]{C:/Users/galm/Documents/papers/sustainability/plots/conceptual_windows_only}
+%
+%\end{frame}
+%
+%\begin{frame}[t]{Dynamic NMF}
+%
+%\includegraphics[width=\linewidth]{C:/Users/galm/Documents/papers/sustainability/plots/conceptual_annotated_1}
+%
+%\end{frame}
+%
+%\begin{frame}[t]{Dynamic NMF}
+%
+%\includegraphics[width=\linewidth]{C:/Users/galm/Documents/papers/sustainability/plots/conceptual_annotated_2}
+%
+%\end{frame}
 
 \begin{frame}{Dynamic NMF - application to climate change}
 
@@ -252,6 +259,7 @@ The topic models above assume that the topics, and the words that make them up, 
 		\textbf{Data-driven topic number criteria}
 		\begin{itemize}
 			\item Reconstruction accuracy
+			\item Predictive capacity
 		\end{itemize}
 		\onslide<2->{\includegraphics[width=0.8\linewidth]{../plots/topic_validations_AR1}}
 	\end{column}
@@ -273,24 +281,24 @@ The topic models above assume that the topics, and the words that make them up, 
 % results
 
 
-\begin{frame}{Preliminary results - explanation}
-
-\begin{columns}
-	\begin{column}{0.5\linewidth}
-		\begin{center}
-			\includegraphics[width=\linewidth]{../plots/biomass_eg.png}
-		\end{center}
-	\end{column}
-	\begin{column}{0.5\linewidth}
-		\begin{center}
-			\begin{itemize}
-				\item Documents are mixtures of topics, based on the words which occur in them
-			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-
-\end{frame}
+%\begin{frame}{Preliminary results - explanation}
+%
+%\begin{columns}
+%	\begin{column}{0.5\linewidth}
+%		\begin{center}
+%			\includegraphics[width=\linewidth]{../plots/biomass_eg.png}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.5\linewidth}
+%		\begin{center}
+%			\begin{itemize}
+%				\item Documents are mixtures of topics, based on the words which occur in them
+%			\end{itemize}
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%
+%\end{frame}
 
 %\begin{frame}{Preliminary results - Map}
 %
@@ -308,11 +316,11 @@ The topic models above assume that the topics, and the words that make them up, 
 	\begin{column}{0.65\linewidth}
 		\begin{center}	
 			\vspace*{-0.1\linewidth}
-			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372.PNG}
+			\includegraphics[width=\linewidth]{../plots/network_wg_654}
 		\end{center}
 	\end{column}
 	\begin{column}{0.35\linewidth}
-		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
+	%	\includegraphics[width=0.4\linewidth]{../plots/network_wg_key}
 		\begin{center}
 			\begin{itemize}
 				\item A network of comprehensible topics is generated with 100 topics
@@ -325,192 +333,231 @@ The topic models above assume that the topics, and the words that make them up, 
 
 \end{frame}
 
-\begin{frame}{Preliminary results - structure - WGI}
 
-\begin{columns}
-	\begin{column}{0.65\linewidth}
-		\begin{center}
-			\vspace*{-0.1\linewidth}
-			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_1.PNG}
-		\end{center}
-	\end{column}
-	\begin{column}{0.35\linewidth}
-		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
-		\begin{center}
-			\begin{itemize}
-				\item The largest topic in WGI is on models.
-			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-
+\begin{frame}{Preliminary results - Inter-working Group topics - WG 1 and 3}
+	
+	\begin{table}
+		
+		
+		\input{../tables/654_wg_1_2}
+		
+	\end{table}
+	
 \end{frame}
 
-\begin{frame}{Preliminary results - structure - WGII}
+%%%%%%%%
 
-\begin{columns}
-	\begin{column}{0.65\linewidth}
-		\begin{center}
-			\vspace*{-0.1\linewidth}
-			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_2.PNG}
-		\end{center}
-	\end{column}
-	\begin{column}{0.35\linewidth}
-		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
-		\begin{center}
-			\begin{itemize}
-				\item The largest primarily WGII topic is on climate change impacts
-			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-
+\begin{frame}{Preliminary results - Inter-working Group topics - WG 1 and 3}
+	
+	\begin{table}
+		
+		
+		\input{../tables/654_wg_1_3}
+		
+	\end{table}
+	
 \end{frame}
 
-\begin{frame}{Preliminary results - structure - WGIII}
+%%%%%%%
 
-\begin{columns}
-	\begin{column}{0.65\linewidth}
-		\begin{center}
-			\vspace*{-0.1\linewidth}
-			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_3.PNG}
-		\end{center}
-	\end{column}
-	\begin{column}{0.35\linewidth}
-		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
-		\begin{center}
-			\begin{itemize}
-				\item The largest WGIII topic is on emissions reductions.
-			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-
-\end{frame}
-
-\begin{frame}{Preliminary results - structure - other clusters}
-
-\begin{columns}
-	\begin{column}{0.65\linewidth}
-		\begin{center}
-			\vspace*{-0.1\linewidth}
-			\hspace*{-0.1\linewidth}
-			\includegraphics[width=1.25\linewidth]{../plots/network_wg_372_4.PNG}
-		\end{center}
-	\end{column}
-	\begin{column}{0.35\linewidth}
-		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
-		\begin{center}
-			\begin{itemize}
-				\item A fourth cluster of mostly WGII references contains topics on ecosystems, species and habitats
-			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-
+\begin{frame}{Preliminary results - Inter-working Group topics - WG 2 and 3}
+	
+	\begin{table}
+		
+		
+		\input{../tables/654_wg_2_3}
+		
+	\end{table}
+	
 \end{frame}
 
 
-
-\begin{frame}{Preliminary results - structure - Sustainability}
-
-
-
-\begin{columns}
-	\begin{column}{0.6\linewidth}
-		\begin{center}			
-			\includegraphics[width=\linewidth]{../plots/sustainability.PNG}
-		\end{center}
-	\end{column}
-	\begin{column}{0.4\linewidth}
-		\begin{center}
-			\begin{itemize}
-				\item In later assessment periods, a large meta-topic on research priorities and sustainability emerges
-			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-
-\end{frame}
-
-\begin{frame}{Preliminary results - structure - Sustainability}
-
-
-
-\begin{columns}
-	\begin{column}{0.6\linewidth}
-		\begin{center}			
-			\includegraphics[width=\linewidth]{../plots/health_sustain_386.PNG}
-		\end{center}
-	\end{column}
-	\begin{column}{0.4\linewidth}
-		\begin{center}
-			\begin{itemize}
-				\item The flatness of its distribution across documents indicates a topic that occurs
-			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-
-\end{frame}
-
-%% Sus table
-
-\begin{frame}{Preliminary results - structure - Sustainability}
-\begin{table}
-	\footnotesize
-	\renewcommand{\arraystretch}{2}
-\begin{tabular}{p{0.3\linewidth}p{0.3\linewidth}p{0.3\linewidth}}
-	\toprule 
-	{polici, govern, tax} & {adapt, vulner, strategi}  & {urban, citi, area} \\ 
-	\midrule 
-	How Research-Prioritization Exercises Affect Conservation Policy & Methodological choices in solution-oriented adaptation research: a diagnostic framework & A review of urban ecosystem services: six key challenges for future research  \\ 
-	Role of hydrology and economics in water management policy under increasing uncertainty & When not every response to climate change is a good one: Identifying principles for sustainable adaptation & Lines of Tradition and Recent Approaches to Urban Ecology, Focussing on Germany and the USA \\ 
-	Informing food policy: balancing the evidence & Informed adaptation: Ethical considerations for adaptation researchers and decision-makers & Advancing understanding of the complex nature of urban systems \\ 
-	The identification of priority policy options for UK nature conservation & Future oriented conservation: knowledge governance, uncertainty and learning & Sustainable urban landscapes: South African perspectives on transdisciplinary possibilities \\ 
-	Environmental education policy research challenges and ways research might cope with them & Towards an integrated agenda for adaptation research: theory, practice and policy & A conceptual framework for addressing complexity and unfolding transition dynamics when developing sustainable adaptation strategies in urban water management \\
-	\bottomrule
-\end{tabular} 
-
-\end{table}
-
-\end{frame}
-
-
-\begin{frame}{Preliminary results - growth}
-
-\begin{columns}
-	\begin{column}{0.6\linewidth}
-		\begin{center}
-			\includegraphics[width=\linewidth]{../plots/top_20_386.png}
-		\end{center}
-	\end{column}
-	\begin{column}{0.4\linewidth}
-		\begin{center}
-			\begin{itemize}
-				\item Negative emissions related topics have shown strong growth since the end of AR5
-				\item As have topics on cities and extreme weather events
-			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-
-\end{frame}
-
-\begin{frame}{Preliminary results - growth - biochar}
+%\begin{frame}{Preliminary results - structure - WGI}
+%
+%\begin{columns}
+%	\begin{column}{0.65\linewidth}
+%		\begin{center}
+%			\vspace*{-0.1\linewidth}
+%%			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_1.PNG}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.35\linewidth}
+%%		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
+%		\begin{center}
+%			\begin{itemize}
+%				\item The largest topic in WGI is on models.
+%			\end{itemize}
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%
+%\end{frame}
+%
+%\begin{frame}{Preliminary results - structure - WGII}
+%
+%\begin{columns}
+%	\begin{column}{0.65\linewidth}
+%		\begin{center}
+%			\vspace*{-0.1\linewidth}
+%			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_2}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.35\linewidth}
+%		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key}
+%		\begin{center}
+%			\begin{itemize}
+%				\item The largest primarily WGII topic is on climate change impacts
+%			\end{itemize}
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%
+%\end{frame}
+%
+%\begin{frame}{Preliminary results - structure - WGIII}
+%
+%\begin{columns}
+%	\begin{column}{0.65\linewidth}
+%		\begin{center}
+%			\vspace*{-0.1\linewidth}
+%			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_3}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.35\linewidth}
+%		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key}
+%		\begin{center}
+%			\begin{itemize}
+%				\item The largest WGIII topic is on emissions reductions.
+%			\end{itemize}
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%
+%\end{frame}
+%
+%\begin{frame}{Preliminary results - structure - other clusters}
+%
+%\begin{columns}
+%	\begin{column}{0.65\linewidth}
+%		\begin{center}
+%			\vspace*{-0.1\linewidth}
+%			\hspace*{-0.1\linewidth}
+%			\includegraphics[width=1.25\linewidth]{../plots/network_wg_372_4}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.35\linewidth}
+%		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key}
+%		\begin{center}
+%			\begin{itemize}
+%				\item A fourth cluster of mostly WGII references contains topics on ecosystems, species and habitats
+%			\end{itemize}
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%
+%\end{frame}
 
 
-		\begin{center}
-			\includegraphics[width=\linewidth]{../plots/biochar_growth.png}
 
-		\medskip
+%\begin{frame}{Preliminary results - structure - Sustainability}
+%
+%
+%
+%\begin{columns}
+%	\begin{column}{0.6\linewidth}
+%		\begin{center}			
+%			\includegraphics[width=\linewidth]{../plots/sustainability}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.4\linewidth}
+%		\begin{center}
+%			\begin{itemize}
+%				\item In later assessment periods, a large meta-topic on research priorities and sustainability emerges
+%			\end{itemize}
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%
+%\end{frame}
+%
+%\begin{frame}{Preliminary results - structure - Sustainability}
+%
+%
+%
+%\begin{columns}
+%	\begin{column}{0.6\linewidth}
+%		\begin{center}			
+%			\includegraphics[width=\linewidth]{../plots/health_sustain_386}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.4\linewidth}
+%		\begin{center}
+%			\begin{itemize}
+%				\item The flatness of its distribution across documents indicates a topic that occurs
+%			\end{itemize}
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%
+%\end{frame}
+%
+%%% Sus table
+%
+%\begin{frame}{Preliminary results - structure - Sustainability}
+%\begin{table}
+%	\footnotesize
+%	\renewcommand{\arraystretch}{2}
+%\begin{tabular}{p{0.3\linewidth}p{0.3\linewidth}p{0.3\linewidth}}
+%	\toprule 
+%	{polici, govern, tax} & {adapt, vulner, strategi}  & {urban, citi, area} \\ 
+%	\midrule 
+%	How Research-Prioritization Exercises Affect Conservation Policy & Methodological choices in solution-oriented adaptation research: a diagnostic framework & A review of urban ecosystem services: six key challenges for future research  \\ 
+%	Role of hydrology and economics in water management policy under increasing uncertainty & When not every response to climate change is a good one: Identifying principles for sustainable adaptation & Lines of Tradition and Recent Approaches to Urban Ecology, Focussing on Germany and the USA \\ 
+%	Informing food policy: balancing the evidence & Informed adaptation: Ethical considerations for adaptation researchers and decision-makers & Advancing understanding of the complex nature of urban systems \\ 
+%	The identification of priority policy options for UK nature conservation & Future oriented conservation: knowledge governance, uncertainty and learning & Sustainable urban landscapes: South African perspectives on transdisciplinary possibilities \\ 
+%	Environmental education policy research challenges and ways research might cope with them & Towards an integrated agenda for adaptation research: theory, practice and policy & A conceptual framework for addressing complexity and unfolding transition dynamics when developing sustainable adaptation strategies in urban water management \\
+%	\bottomrule
+%\end{tabular} 
+%
+%\end{table}
+%
+%\end{frame}
 
-			\begin{itemize}
-				\item Biochar has emerged as an entirely new topic in the last 10 years
-			\end{itemize}
-		\end{center}
 
-\end{frame}
+%\begin{frame}{Preliminary results - growth}
+%
+%\begin{columns}
+%	\begin{column}{0.6\linewidth}
+%		\begin{center}
+%			\includegraphics[width=\linewidth]{../plots/top_20_386}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.4\linewidth}
+%		\begin{center}
+%			\begin{itemize}
+%				\item Negative emissions related topics have shown strong growth since the end of AR5
+%				\item As have topics on cities and extreme weather events
+%			\end{itemize}
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%
+%\end{frame}
+
+%\begin{frame}{Preliminary results - growth - biochar}
+%
+%
+%		\begin{center}
+%			\includegraphics[width=\linewidth]{../plots/biochar_growth.png}
+%
+%		\medskip
+%
+%			\begin{itemize}
+%				\item Biochar has emerged as an entirely new topic in the last 10 years
+%			\end{itemize}
+%		\end{center}
+%
+%\end{frame}
 
 \begin{frame}{Preliminary results - gaps in coverage}
 
@@ -531,7 +578,7 @@ How can we get a sense of which topics are better covered in IPCC reports?
 \begin{columns}
 	\begin{column}{0.7\linewidth}
 		\begin{center}
-			\includegraphics[width=\linewidth]{../plots/ipcc_topics_386.png}
+			\includegraphics[width=\linewidth]{../plots/ipcc_topics_654.png}
 		\end{center}
 	\end{column}
 	\begin{column}{0.3\linewidth}
@@ -549,113 +596,91 @@ How can we get a sense of which topics are better covered in IPCC reports?
 \begin{frame}{Preliminary results - gaps in coverage}
 
 
-			\includegraphics[width=0.8\linewidth]{../plots/ipcc_topics_wg_386.png}
+			\includegraphics[width=0.8\linewidth]{../plots/ipcc_topics_wg_654.png}
 
 
 \end{frame}
 
-
-\begin{frame}{Preliminary results - Inter-working Group topics - WG 1 and 3}
-
-\begin{table}
+\begin{frame}{Preliminary results - gaps in coverage}
 	
 	
-	\input{../tables/386_wg_1_2}
+	\includegraphics[width=0.8\linewidth]{../plots/ipcc_coverage_by_wg_654.png}
 	
-\end{table}
-
-\end{frame}
-
-%%%%%%%%
-
-\begin{frame}{Preliminary results - Inter-working Group topics - WG 1 and 3}
-
-\begin{table}
-
-
-\input{../tables/386_wg_1_3}
-
-\end{table}
-
-\end{frame}
-
-%%%%%%%
-
-\begin{frame}{Preliminary results - Inter-working Group topics - WG 2 and 3}
-
-\begin{table}
-
-
-\input{../tables/386_wg_2_3}
-
-\end{table}
-
+	
 \end{frame}
 
 
 
-\begin{frame}{Conclusions}
-
-
-\begin{itemize}
-	\item Endogenously discovered topics make substantive sense of an unmanageable dataset of climate-relevant literature
-	\item Topic modelling discovers over-arching topics such as that on sustainability and research priorities, as well as individual, fast growing topics such as biochar or CCS
-	\item Matching documents to IPCC references, we can describe topics that belong to or bridge IPCC working groups
-	\item Quantitative evidence is found to support policy makers' dissatisfaction with a lack of `solution orientation' in IPCC reports \citep{Kowarsch2017} 
-	\item By uncovering the structure at scale of a large collection of documents, and by enabling the discovery of documents relevant to specific topics or combinations of topics, this approach can provide for more comprehensive and salient scientific assessments.
-\end{itemize}
-
+\begin{frame}{Next steps}
+	\begin{itemize}
+		\item Adjusting second stage of model to give more weight to topics with many documents (to better capture emergence)
+		\item Further analysis of new model
+		\item (Manual) comparison of (AR6) topics with AR6 outline
+	\end{itemize}
 \end{frame}
 
+%\begin{frame}{Conclusions}
+%
+%
+%\begin{itemize}
+%	\item Endogenously discovered topics make substantive sense of an unmanageable dataset of climate-relevant literature
+%	\item Topic modelling discovers over-arching topics such as that on sustainability and research priorities, as well as individual, fast growing topics such as biochar or CCS
+%	\item Matching documents to IPCC references, we can describe topics that belong to or bridge IPCC working groups
+%	\item Quantitative evidence is found to support policy makers' dissatisfaction with a lack of `solution orientation' in IPCC reports \citep{Kowarsch2017} 
+%	\item By uncovering the structure at scale of a large collection of documents, and by enabling the discovery of documents relevant to specific topics or combinations of topics, this approach can provide for more comprehensive and salient scientific assessments.
+%\end{itemize}
+%
+%\end{frame}
 
-\begin{frame}{Extra results - Journals}
 
-\begin{columns}
-	\begin{column}{0.55\linewidth}
-		\begin{center}
-			\includegraphics[width=\linewidth]{../plots/journals/journal_papers.png}
-		\end{center}
-	\end{column}
-	\begin{column}{0.45\linewidth}
-		\begin{center}
-			\begin{itemize}
-				\item Nature has been publishing about climate change for a long time
-				\item Plos One has very recently overtaken all other journals
-				\item The number of journals has risen very steeply
-			\end{itemize}
-		\includegraphics[width=0.9\linewidth]{../plots/journals/n_journals.png}
-		\end{center}
-	\end{column}
-\end{columns}
+%\begin{frame}{Extra results - Journals}
+%
+%\begin{columns}
+%	\begin{column}{0.55\linewidth}
+%		\begin{center}
+%			\includegraphics[width=\linewidth]{../plots/journals/journal_papers.png}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.45\linewidth}
+%		\begin{center}
+%			\begin{itemize}
+%				\item Nature has been publishing about climate change for a long time
+%				\item Plos One has very recently overtaken all other journals
+%				\item The number of journals has risen very steeply
+%			\end{itemize}
+%		\includegraphics[width=0.9\linewidth]{../plots/journals/n_journals.png}
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%
+%\end{frame}
 
-\end{frame}
+%\begin{frame}{Extra results - Journals}
 
-\begin{frame}{Extra results - Journals}
+%\begin{columns}
+%	\begin{column}{0.55\linewidth}
+%		\begin{center}
+%			\includegraphics[width=\linewidth]{../plots/journals/journal_entropy_386.png}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.45\linewidth}
+%		\begin{center}
+%			\begin{itemize}
+%				\item Journal Entropy describes the distribution of topics in a journal \citep{Hall2008a}
+%				\item High values mean the journal deals with a wider range of topics
+%			\end{itemize}
+%			\[  H(z\rvert c,y) = -\sum_{i=1}^{K} \hat{p}(z_i \rvert c,y) \; log \; \hat{p}(z_i \rvert c, y) \]
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%
+%\end{frame}
 
-\begin{columns}
-	\begin{column}{0.55\linewidth}
-		\begin{center}
-			\includegraphics[width=\linewidth]{../plots/journals/journal_entropy_386.png}
-		\end{center}
-	\end{column}
-	\begin{column}{0.45\linewidth}
-		\begin{center}
-			\begin{itemize}
-				\item Journal Entropy describes the distribution of topics in a journal \citep{Hall2008a}
-				\item High values mean the journal deals with a wider range of topics
-			\end{itemize}
-			\[  H(z\rvert c,y) = -\sum_{i=1}^{K} \hat{p}(z_i \rvert c,y) \; log \; \hat{p}(z_i \rvert c, y) \]
-		\end{center}
-	\end{column}
-\end{columns}
-
-\end{frame}
-
-\begin{frame}{Extra results - Journals}
-
-	\includegraphics[width=\linewidth]{../plots/journals/journal_topics_386.png}
-
-\end{frame}
+%\begin{frame}{Extra results - Journals}
+%
+%	\includegraphics[width=\linewidth]{../plots/journals/journal_topics_386.png}
+%
+%\end{frame}
 
 
 %\begin{frame}{Outlook}
@@ -728,7 +753,7 @@ How can we get a sense of which topics are better covered in IPCC reports?
 
 \begin{frame}{Frame Title}
 	\small
-	\bibliography{C:/Users/galm/Documents/library/library}
+	\bibliography{../Mendeley.bib}
 \end{frame}
 
 \end{document}
