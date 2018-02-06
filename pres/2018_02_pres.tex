@@ -7,6 +7,7 @@
 \usepackage{tikz}
 \usepackage{pgfgantt}
 \usepackage{booktabs}
+\usepackage{framed}
 
 \usetheme{Boadilla}
 
@@ -64,48 +65,46 @@
 
 \begin{frame}{Motivation}
 
-%\begin{columns}
-%	\begin{column}{0.5\linewidth}
-%		\begin{center}
-%%			\includegraphics[width=0.85\linewidth]{../plots/wos_scopus_docs_time.png}
-%\begin{figure}
-%	\includegraphics[width=0.85\linewidth]{merged_IPCC_spectral.png}
-%	\caption{Source: \citet{Minx2017l} }
-%\end{figure}
-%		\end{center}
-%	\end{column}
-%	\begin{column}{0.5\linewidth}
-%		\begin{center}
-%			\begin{itemize}
-%				\item Comprehensive, credible and relevant assessments become
-%				more challenging as the literature grows
-%			\end{itemize}
-%		\begin{remark}[]
-%			To understand, and to aid, scientific assessments of climate change, we need to machine read the literature
-%		\end{remark}
-%		\end{center}
-%	\end{column}
-%\end{columns}
-
-\begin{figure}
-	\only<1>{
-	\includegraphics[width=\linewidth]{../plots/volume_variety_AR1}	
-}
-\end{figure}
-
-\end{frame}
-
-\begin{frame}{Motivation - Update 2018}
-
-Now that 2017 has ended, I have update the query to include papers from 2017 as well.
-
-\medskip
-
-\medskip
-
-These extra 36,000 papers take the total number of documents to 309,697.
-
-%% Add projections and real 2017
+\begin{columns}
+	\begin{column}{0.5\linewidth}
+		\begin{figure}
+		\includegraphics<1>[width=1\linewidth]{../plots/volume_variety_AR0}
+		\includegraphics<2>[width=1\linewidth]{../plots/volume_variety_AR1}
+		\includegraphics<3>[width=1\linewidth]{../plots/volume_variety_bible_AR1}
+		\includegraphics<4>[width=1\linewidth]{../plots/volume_variety_bible_AR2}
+		\includegraphics<5>[width=1\linewidth]{../plots/volume_variety_bible_AR3}
+		\includegraphics<6>[width=1\linewidth]{../plots/volume_variety_bible_AR4}
+		\includegraphics<7>[width=1\linewidth]{../plots/volume_variety_bible_AR5}
+		\includegraphics<8->[width=1\linewidth]{../plots/volume_variety_bible_AR6}
+		\end{figure}
+	\end{column}
+	\begin{column}{0.5\linewidth}
+		\begin{center}
+		\only<1>{\framebox[1.1\width]{A matrix of documents x words } \par}
+		\only<2>{\framebox[1.1\width]{AR1: 1,848 documents x 3,528 words } \par}
+		\only<3>{\begin{framed}
+			The Luther Bible: 1,189 documents (chapters) x 11,973 words
+			\end{framed}}
+		%\only<3>{\framebox[1.1\width]{The Luther Bible: \par 1,189 documents (chapters) x 11,973 words } \par}
+		\only<4>{\framebox[1.1\width]{AR2: 6,941 documents x 15,781 words } \par}
+		\only<5>{\framebox[1.1\width]{AR3: 18,728 documents x 27,730 words } \par}
+		\only<6>{\framebox[1.1\width]{AR4: 44,000 documents x 45,388 words } \par}
+		\only<7>{\framebox[1.1\width]{AR5: 108,277 documents x 75,553 words } \par}
+		\only<8->{\framebox[1.1\width]{AR6: 128,357 documents x 86,149 words } \par}
+		\end{center}
+		\only<9->{		
+		\begin{center}
+			\begin{itemize}
+				\item Comprehensive, credible and relevant assessments become
+				more challenging as the literature grows
+			\end{itemize}
+		\begin{remark}[]
+			To understand, and to aid, scientific assessments of climate change, we need to machine read the literature
+		\end{remark}
+		\end{center}
+	}
+	\end{column}
+\end{columns}
 
 \end{frame}
 
@@ -116,10 +115,11 @@ These extra 36,000 papers take the total number of documents to 309,697.
 \begin{columns}
 	\begin{column}{0.5\linewidth}
 		\begin{center}
-			\includegraphics[width=\linewidth]{volume_variety_bible.png}
+			\includegraphics[width=\linewidth]{../plots/volume_variety_bible_AR6}
 		\end{center}
 	\end{column}
 	\begin{column}{0.5\linewidth}
+		\textbf{Topic Modelling}
 		\begin{center}
 			\begin{itemize}
 				\item Topic modelling is a way of reducing the dimensionality of a corpus of documents
@@ -139,46 +139,72 @@ These extra 36,000 papers take the total number of documents to 309,697.
 
 \begin{figure}
 	
-	\[V_{i\mu} \]
+	\only<1>{\(V_{i\mu} \) is a term frequency-inverse document frequency matrix of \textit{stemmed} terms} 
+	\only<2>{\[V_{i\mu} \approx (WH)_{i\mu} = \sum_{a=1}^{r}W_{ia}H_{a\mu} \]} %\(V\) is approximated by the product of \(W\) and \(H\)}
 	
-	\includegraphics[width=\linewidth]{../plots/VWH_blank.png}
+	\includegraphics<1>[width=\linewidth]{../plots/VWH_blank.png}
+	\includegraphics<2>[width=\linewidth]{../plots/VWH}
 	
-	\caption{A topic model of 3495 documents on climate change from the year 2000}
+	\only<1>{\caption{A topic model of 3495 documents on climate change from the year 2000}}
 	
-\end{figure}
-
-\end{frame}
-
-
-\begin{frame}{Approach - Words, words, words}
-
-\begin{figure}
-	
-	\[V_{i\mu} \approx (WH)_{i\mu} = \sum_{a=1}^{r}W_{ia}H_{a\mu} \]
-	
-	\includegraphics[width=\linewidth]{../plots/VWH.png}
-	
-	\caption{A topic model of 3495 documents on climate change from the year 2000}
+	\only<2>{\caption{A topic model of 3495 documents on climate change from the year 2000}}
 	
 \end{figure}
 
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Research Questions}
-\begin{itemize}
-	\item What is the thematic structure of the literature on climate change, and how has this changed over the five assessment periods of the IPCC
-	\item What can this modelled thematic structure tell us about the past and future relationship between the IPCC and scientific literature on climate change? 
-	%\item Which topics have had greater or less representation in the IPCC assessment reports?
-	%	\item What topics are discovered endogenously from a corpus of > 200,000 abstracts on climate change?
-	%	\item How do these topics describe the structure of the literature?
-	%	\item Which topics have grown recently?
-	%	\item Which topics are better and less well represented in IPCC assessment reports?
-\end{itemize}
+\begin{columns}
+	\begin{column}<1->{0.5\linewidth}
+		\begin{framed}
+			What is the thematic structure of the literature on climate change, and how has this changed over the five assessment periods of the IPCC
+		\end{framed}
+	\end{column}
+	\begin{column}<2->{0.5\linewidth}
+		\begin{framed}
+			What can this modelled thematic structure tell us about the past and future relationship between the IPCC and scientific literature on climate change? 
+		\end{framed}
+	\end{column}
+\end{columns}
+
+\only<3->{
+\textbf{Steps}
+\begin{enumerate}
+	\item Download documents from Web of Science (WoS)
+	\item Match documents to reference lists from IPCC reports
+	\item Topic model stemmed document abstracts
+\end{enumerate}
+}
 \end{frame}
 
 %%
+
+\begin{frame}{Data - Query}
+\begin{columns}
+	\begin{column}{0.65\linewidth}
+		\tiny
+		(SO=(Climate Alert OR Climate Dynamics OR Climate Policy OR Climatic Change OR Global and Planetary Change OR Global Change Biology OR International Journal of Greenhouse Gas Control OR Mitigation and Adaptation Strategies for Global Change) OR TS=(((CO2 OR "carbon dioxide" OR methane OR CH4 OR "carbon cycle" OR "carbon cycles" OR "carbon cycling" OR "carbon budget*" OR "carbon flux*" OR "carbon mitigation") AND (climat*)) OR (("carbon cycle" OR "carbon cycles" OR "carbon cycling" OR "carbon budget*" OR "carbon flux*" OR "carbon mitigation") AND (atmospher*))) OR TS=("carbon emission*" OR "sequestration of carbon" OR "sequester* carbon" OR "sequestration of CO2" OR "sequester* CO2" OR "carbon tax*" OR "CO2 abatement" OR "CO2 capture" OR "CO2 storage" OR "CO2 sequester*" OR "CO2 sequestration" OR "CO2 sink*" OR "anthropogenic carbon" OR "captur* of carbon dioxide" OR "captur* of CO2" OR "climat* variability" OR "climat* dynamic*" OR "chang* in climat*" OR "climat* proxies" OR "climat* proxy" OR "climat* sensitivity" OR "climat* shift*" OR "coupled ocean-climat*" OR "early climat*" OR "future climat*" OR "past climat*" OR "shift* climat*" OR "shift in climat*") OR TS=("atmospheric carbon dioxide" OR "atmospheric CH4" OR "atmospheric CO2" OR "atmospheric methane" OR "atmospheric N2O" OR "atmospheric nitrous oxide" OR "carbon dioxide emission*" OR "carbon sink*" OR "CH4 emission*" OR "climat* policies" OR "climat* policy" OR "CO2 emission*" OR dendroclimatolog* OR ("emission* of carbon dioxide" NOT nanotube*) OR "emission* of CH4" OR "emission* of CO2" OR "emission* of methane" OR "emission* of N2O" OR "emission* of nitrous oxide" OR "historical climat*" OR IPCC OR "methane emission*" OR "N2O emission*" OR "nitrous oxide emission*") OR TS=("climat* change*" OR "global warming" OR "greenhouse effect" OR "greenhouse gas*" OR "Kyoto Protocol" OR "warming climat*" OR "cap and trade" OR "carbon capture" OR "carbon footprint*" OR "carbon neutral" OR "carbon offset" OR "carbon sequestration" OR "carbon storage" OR "carbon trad*" OR "changing climat*" OR "climat* warming")) NOT PY=2018
+		
+		\normalsize
+		\begin{itemize}
+			\item \citep{Haunschild2016}
+			\item 309,697 documents
+		\end{itemize}
+	\end{column}
+	\begin{column}{0.35\linewidth}
+		\textbf{Caveats}
+		\begin{itemize}
+			\item Not perfect query
+			\item WoS not all peer-reviewed literature
+			\item Missing grey literature
+			\item Missing relevant literature not directly about climate change
+		\end{itemize}
+	\end{column}
+\end{columns}
+\end{frame}
 
 \begin{frame}{Methodology - Dynamic Topic Modelling}
 
