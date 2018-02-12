@@ -168,7 +168,7 @@ def main():
     stat = RunStats.objects.get(run_id=run_id)
     stat.query = Query.objects.get(pk=qid)
     stat.method = "DT"
-    stat.alpha = 0.05
+    stat.alpha = 0.01
     stat.save()
     i = 0
     #ndocs = Doc.objects.filter(query=qid,content__iregex='\w').count()
@@ -357,7 +357,7 @@ def main():
 
     nmf = NMF(
         n_components=K, random_state=1,
-        alpha=.1, l1_ratio=.5
+        alpha=stat.alpha, l1_ratio=.5
     ).fit(B)
 
 

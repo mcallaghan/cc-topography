@@ -206,6 +206,55 @@
 \end{columns}
 \end{frame}
 
+\begin{frame}{Data - IPCC References}
+	\textbf{Matching process}
+	
+	\medskip
+	
+	For each Reference:
+	\begin{itemize}
+		\item Check for case-insensitive title matches
+		\item Calculate the Jaccard similarity score for two word every database document containing the first word and from the same year. Match if the Jaccard score is above 0.45
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Data - IPCC References}
+%\begin{columns}
+	%\begin{column}{0.5\linewidth}
+		\includegraphics[width=\linewidth]{../plots/ipcc_matches}
+	%\end{column}
+%\end{columns}
+\end{frame}
+
+\begin{frame}{Data - Unmatched IPCC References}
+	\tiny
+	\input{../tables/ipcc_matching_sample.tex}
+\end{frame}
+
+\begin{frame}{Data - Unmatched IPCC References}
+
+37\% of IPCC References could be matched to the database of climate-relevant documents
+
+\medskip
+
+\textbf{Reasons for not matching}
+\begin{enumerate}
+	\item<2->Reference is not in WoS (not peer-reviewed, in minor journal)
+	\item<3->Reference is not directly about climate change
+	\item<4->Reference has been incorrectly parsed
+\end{enumerate}
+
+\medskip
+
+\textbf{Observations}
+\begin{itemize}
+	\item<5-> The size of the literature appears to be \textit{much} bigger than our estimate
+	\item<6-> WG3 refers to more literature not directly about climate change, or not in peer-reviewed publications, than WG2, which refers to more than WG1
+\end{itemize}
+
+\end{frame}
+
 \begin{frame}{Methodology - Dynamic Topic Modelling}
 
 The topic models above assume that the topics, and the words that make them up, are stable over time. Two approaches to better model dynamic topics:
@@ -226,10 +275,10 @@ The topic models above assume that the topics, and the words that make them up, 
 \begin{frame}[t]{Dynamic NMF}
 
 
-\only<1->{\includegraphics[]{C:/Users/galm/Documents/papers/sustainability/plots/VWH_1991}}
-\only<2->{\includegraphics[]{C:/Users/galm/Documents/papers/sustainability/plots/VWH_1992}}
+\only<1->{\includegraphics[]{../plots/sustainability/VWH_1991}}
+\only<2->{\includegraphics[]{../plots/sustainability/VWH_1992}}
 
-\only<3->{\includegraphics[]{C:/Users/galm/Documents/papers/sustainability/plots/VWH_1993}}
+\only<3->{\includegraphics[]{../plots/sustainability/VWH_1993}}
 
 \end{frame}
 
