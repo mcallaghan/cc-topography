@@ -135,7 +135,7 @@ def predict(x):
     return(int(round(x_hat)))
 
 def predict(x):
-    a = -70
+    a = -75
     b = 15
     #b = 10
     x_hat = a+b*np.log(x)
