@@ -1,6 +1,8 @@
 \documentclass[9pt]{beamer}
 
-\usepackage[T1]{fontenc}
+
+\usepackage[LGR,T1]{fontenc}
+\usepackage[utf8]{inputenc} 
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{natbib}
@@ -16,6 +18,8 @@
 \definecolor{research}{HTML}{8F84BE}
 \definecolor{skills}{HTML}{7A7A7A}
 \definecolor{rc}{HTML}{AC152A} 
+
+\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
 
 \usefonttheme{professionalfonts}
 
@@ -43,6 +47,27 @@
 	\node[anchor=north east,yshift=2pt] at (current page.north east) {\includegraphics[height=0.8cm]{MCC_Logo_RZ_rgb.jpg}};
 	\end{tikzpicture}}
 
+\begin{frame}{Introduction}
+\begin{columns}
+	\begin{column}{0.6\linewidth}
+		\begin{center}
+			\begin{figure}
+			\includegraphics[width=1\linewidth]{../plots/Hondius_Portrait_of_map-makers}
+			\caption{Portrait of map-makers, Gerard Mercator and Jodocus Hondius (Jodocus Hondius) source: \url{https://commons.wikimedia.org/wiki/File:Hondius_Portrait_of_map-makers.jpg}}
+			\end{figure}
+		\end{center}
+	\end{column}
+	\begin{column}{0.4\linewidth}
+		\begin{center}
+			\begin{itemize}
+				\item<2-> Topography is a description of a landscape
+				\item<3-> Topics (from the Greek \textgreek{τόπος}, place) can describe the features of body of text
+			\end{itemize}
+		\end{center}
+	\end{column}
+	\end{columns}
+\end{frame}
+
 \begin{frame}{Context}
 
 \begin{columns}
@@ -54,7 +79,7 @@
 	\begin{column}{0.5\linewidth}
 	\begin{center}
 		\begin{itemize}
-			\item To contribute evidence-based policy-making on climate change, the IPCC aims to \textit{comprehensively} assess  
+			\item To contribute evidence-based policy-making on climate change, the IPCC aims to \textit{comprehensively} assess scientific literature on climate change 
 			\item These assessments should be aim to balance legitimacy, credibility and relevance \citep{Cash2001}
 		\end{itemize}
 	\end{center}
@@ -126,7 +151,7 @@
 				\item A large matrix of documents x words is factorised by
 				a matrix of topics x words and a matrix of topics x documents
 			\citep{Lee1999}
-				\item Topics describe the latent structure of the document corpus
+				\item Topics describe the latent structure of the document corpus (What is the matter?)
 				
 			\end{itemize}
 		\end{center}
@@ -247,7 +272,7 @@
 
 \medskip
 
-\textbf{Observations}
+\only<5->{\textbf{Observations}}
 \begin{itemize}
 	\item<5-> The size of the literature appears to be \textit{much} bigger than our estimate
 	\item<6-> WG3 refers to more literature not directly about climate change, or not in peer-reviewed publications, than WG2, which refers to more than WG1
@@ -363,6 +388,30 @@ The topic models above assume that the topics, and the words that make them up, 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % results
 
+\begin{frame}{Results}
+
+\begin{columns}
+	\begin{column}{0.5\linewidth}
+		\begin{center}	
+			\includegraphics[width=\linewidth]{../plots/pca_map_portrait}
+		\end{center}
+	\end{column}
+	\begin{column}{0.5\linewidth}
+		\textbf{Outline}	
+		\begin{center}
+			\begin{itemize}
+				\item<2-> Topography
+				\item<3-> Structure
+				\item<4-> Development
+				\item<5-> Representation in past IPCC reports
+				\item<6-> AR6 outlook
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
 
 %\begin{frame}{Preliminary results - explanation}
 %
@@ -393,7 +442,7 @@ The topic models above assume that the topics, and the words that make them up, 
 %\end{frame}
 
 
-\begin{frame}{Preliminary results - structure}
+\begin{frame}{Results - structure}
 
 \begin{columns}
 	\begin{column}{0.65\linewidth}
@@ -406,9 +455,8 @@ The topic models above assume that the topics, and the words that make them up, 
 	%	\includegraphics[width=0.4\linewidth]{../plots/network_wg_key}
 		\begin{center}
 			\begin{itemize}
-				\item A network of comprehensible topics is generated with 100 topics
-				\item Topics can be matched to the IPCC working group from which the majority of the topic documents are referenced in
-				\item Topics from the same working group are \textbf{significantly} more likely to be correlated with each other than those which are not
+				\item<1-> Topics describe comprehensible themes in climate change research
+				\item<2-> Matching topics to the IPCC working group from which the majority of the topics are referenced in, a structure is generated based on topic-document correlations
 			\end{itemize}
 		\end{center}
 	\end{column}
@@ -417,7 +465,7 @@ The topic models above assume that the topics, and the words that make them up, 
 \end{frame}
 
 
-\begin{frame}{Preliminary results - Inter-working Group topics - WG 1 and 3}
+\begin{frame}{Results - Inter-working Group topics - WG 1 and 3}
 	
 	\begin{table}
 		
@@ -428,31 +476,101 @@ The topic models above assume that the topics, and the words that make them up, 
 	
 \end{frame}
 
-%%%%%%%%
+\begin{frame}{Results - Inter-working Group topics - WG 1 and 3}
 
-\begin{frame}{Preliminary results - Inter-working Group topics - WG 1 and 3}
+\begin{table}
 	
-	\begin{table}
-		
-		
-		\input{../tables/654_wg_1_3}
-		
-	\end{table}
 	
+	\input{../tables/654_wg_1_3}
+	
+\end{table}
+
 \end{frame}
 
 %%%%%%%
 
-\begin{frame}{Preliminary results - Inter-working Group topics - WG 2 and 3}
-	
-	\begin{table}
-		
-		
-		\input{../tables/654_wg_2_3}
-		
-	\end{table}
-	
+\begin{frame}{Results - Inter-working Group topics - WG 2 and 3}
+
+\begin{table}
+
+
+\input{../tables/654_wg_2_3}
+
+\end{table}
+
 \end{frame}
+
+%%%%%%%%
+%% RESULTS - DEVELOPMENT
+%\begin{frame}{Results - Development}
+%\only<1->{
+%\begin{figure}
+%	\includegraphics[width=0.8\linewidth]{../plots/development/662_sus}	
+%\end{figure}
+%}
+%\only<1->{
+%	\centering
+%	\textbf{Message}
+%}
+%\end{frame}
+
+\begin{frame}{Results - Development}
+\only<1->{
+	\begin{figure}
+		\includegraphics[width=0.8\linewidth]{../plots/development/662_holocene}	
+	\end{figure}
+}
+\only<1->{
+	\centering
+	\textbf{Basic climate science topics are not as prominent as they were previously}
+}
+\end{frame}
+
+\begin{frame}{Results - Development}
+\only<1->{
+	\begin{figure}
+		\includegraphics[width=0.8\linewidth]{../plots/development/662_sus}	
+	\end{figure}
+}
+\only<1->{
+	\centering
+	\textbf{Sustainable development, and research agendas are more prominent}
+}
+\end{frame}
+
+
+\begin{frame}
+	The documents that underpin this growth
+\end{frame}
+
+\begin{frame}{Results - Development}
+\only<1->{
+	\begin{figure}
+		\includegraphics[width=0.6\linewidth]{../plots/development/ar5_growth}	
+	\end{figure}
+}
+\only<1->{
+	\centering
+	\textbf{Fast growing topics in AR5 were on urban systems, negative emissions, buildings, consumption, biodiversity and risks}
+}
+\end{frame}
+
+\begin{frame}{Results - Development}
+\only<1->{
+\begin{figure}
+	\includegraphics[width=0.8\linewidth]{../plots/development/ar6_growth}	
+\end{figure}
+}
+\only<1->{
+	\centering
+	\textbf{Negative emissions topics continue to grow,}
+}
+\end{frame}
+
+
+%%%%%%%%%
+
+
 
 
 %\begin{frame}{Preliminary results - structure - WGI}
@@ -642,33 +760,47 @@ The topic models above assume that the topics, and the words that make them up, 
 %
 %\end{frame}
 
-\begin{frame}{Preliminary results - gaps in coverage}
+%\begin{frame}{Preliminary results - gaps in coverage}
+%
+%How can we get a sense of which topics are better covered in IPCC reports?
+%
+%\begin{itemize}
+%	\item Each document \(d\) either matches or does not match an IPCC reference
+%	\item For each topic \(h\), we can sum the scores for each category of document
+%	\item The ``IPCC proportion'' of each topic is the proportion of the sum of the document score accounted for by documents which match IPCC references.
+%\end{itemize}
+%
+%\end{frame}
+
+\begin{frame}{Results - topic representation in IPCC reports}
 
 How can we get a sense of which topics are better covered in IPCC reports?
 
-\begin{itemize}
-	\item Each document \(d\) either matches or does not match an IPCC reference
-	\item For each topic \(h\), we can sum the scores for each category of document
-	\item The ``IPCC proportion'' of each topic is the proportion of the sum of the document score accounted for by documents which match IPCC references.
-\end{itemize}
+\medskip
 
+We get a measure of proportionality between two distributions by dividing the each topics share in the IPCC sample by its share in the whole corpus
 
+%\begin{itemize}
+%	\item Each document \(d\) either matches or does not match an IPCC reference
+%	\item For each topic \(h\), we can sum the scores for each category of document
+%	\item The ``IPCC proportion'' of each topic is the proportion of the sum of the document score accounted for by documents which match IPCC references.
+%\end{itemize}
 
 \end{frame}
 
-\begin{frame}{Preliminary results - gaps in coverage}
+\begin{frame}{Results - topic representation in IPCC reports}
 
 \begin{columns}
 	\begin{column}{0.7\linewidth}
 		\begin{center}
-			\includegraphics[width=\linewidth]{../plots/ipcc_topics_654.png}
+			\includegraphics[width=\linewidth]{../plots/ipcc_representation/ipcc_rep_662_all.png}
 		\end{center}
 	\end{column}
 	\begin{column}{0.3\linewidth}
 		\begin{center}
 			\begin{itemize}
 				\item The physical science aspects of climate change, as well topics on impacts, adaptation and scenarios are well covered by the IPCC
-				\item Topics on specific technological solutions (particularly NETs), as well as soils, are less well covered
+				\item Topics on specific technological solutions (particularly NETs), as well as soils and plants are less well represented
 			\end{itemize}
 		\end{center}
 	\end{column}
@@ -676,15 +808,17 @@ How can we get a sense of which topics are better covered in IPCC reports?
 
 \end{frame}
 
-\begin{frame}{Preliminary results - gaps in coverage}
 
 
-			\includegraphics[width=0.8\linewidth]{../plots/ipcc_topics_wg_654.png}
+\begin{frame}{Results - topic representation in IPCC reports}
 
+	\begin{figure}
+			\includegraphics[width=0.8\linewidth]{../plots/ipcc_representation/ipcc_rep_662_ARs}
+	\end{figure}
 
 \end{frame}
 
-\begin{frame}{Preliminary results - gaps in coverage}
+\begin{frame}{Results - topic representation in IPCC reports}
 	
 	
 	\includegraphics[width=0.8\linewidth]{../plots/ipcc_coverage_by_wg_654.png}
@@ -694,13 +828,47 @@ How can we get a sense of which topics are better covered in IPCC reports?
 
 
 
-\begin{frame}{Next steps}
-	\begin{itemize}
-		\item Adjusting second stage of model to give more weight to topics with many documents (to better capture emergence)
-		\item Further analysis of new model
-		\item (Manual) comparison of (AR6) topics with AR6 outline
-	\end{itemize}
+
+
+\begin{frame}{Results - AR6 outlook}
+
+Outlines for the sixth assessment report have already been published.
+
+The words in each chapter were matched to the Topic-Term matrix generated by the model to calculate a [simplified] topic score for each chapter.
+
+These scores were summed and were compared to the corpus in general in the same way as with past reports
+
 \end{frame}
+
+
+\begin{frame}{Results - topic representation in IPCC reports}
+
+\begin{columns}
+	\begin{column}{0.7\linewidth}
+		\begin{center}
+			\includegraphics[width=\linewidth]{../plots/ipcc_representation/ipcc_rep_662_AR6.png}
+		\end{center}
+	\end{column}
+	\begin{column}{0.3\linewidth}
+		\begin{center}
+			\begin{itemize}
+				\item The physical science aspects of climate change, as well topics on impacts, adaptation and scenarios are well covered by the IPCC
+				\item Topics on specific technological solutions (particularly NETs), as well as soils and plants are less well represented
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+
+%\begin{frame}{Next steps}
+%	\begin{itemize}
+%		\item Adjusting second stage of model to give more weight to topics with many documents (to better capture emergence)
+%		\item Further analysis of new model
+%		\item (Manual) comparison of (AR6) topics with AR6 outline
+%	\end{itemize}
+%\end{frame}
 
 %\begin{frame}{Conclusions}
 %
