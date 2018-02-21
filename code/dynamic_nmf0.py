@@ -136,7 +136,7 @@ def predict(x):
 
 def predict(x):
     a = -75
-    b = 15
+    b = 14.5
     #b = 10
     x_hat = a+b*np.log(x)
     if x_hat > x:
