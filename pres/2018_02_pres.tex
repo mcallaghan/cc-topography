@@ -88,7 +88,7 @@
 
 \end{frame}
 
-\begin{frame}{Motivation}
+\begin{frame}{Motivation - Big Literature}
 
 \begin{columns}
 	\begin{column}{0.5\linewidth}
@@ -121,7 +121,7 @@
 		\begin{center}
 			\begin{itemize}
 				\item Comprehensive, credible and relevant assessments become
-				more challenging as the literature grows
+				more challenging as the literature grows \citep{Minx2017l}
 			\end{itemize}
 		\begin{remark}[]
 			To understand, and to aid, scientific assessments of climate change, we need to machine read the literature
@@ -198,9 +198,9 @@
 \only<3->{
 \textbf{Steps}
 \begin{enumerate}
-	\item Download documents from Web of Science (WoS)
-	\item Match documents to reference lists from IPCC reports
-	\item Topic model stemmed document abstracts
+	\item<4-> Download documents from Web of Science (WoS)
+	\item<5-> Match documents to reference lists from IPCC reports
+	\item<6-> Topic model stemmed document abstracts
 \end{enumerate}
 }
 \end{frame}
@@ -239,7 +239,7 @@
 	For each Reference:
 	\begin{itemize}
 		\item Check for case-insensitive title matches
-		\item Calculate the Jaccard similarity score for two word every database document containing the first word and from the same year. Match if the Jaccard score is above 0.45
+		\item Calculate the Jaccard similarity score for two word shingles every database document containing the first word and from the same year. Match if the Jaccard score is above 0.45
 	\end{itemize}
 \end{frame}
 
@@ -465,7 +465,7 @@ The topic models above assume that the topics, and the words that make them up, 
 \end{frame}
 
 
-\begin{frame}{Results - Inter-working Group topics - WG 1 and 3}
+\begin{frame}{Results - Inter-working Group topics - WG 1 and 2}
 	
 	\begin{table}
 		
@@ -540,13 +540,15 @@ The topic models above assume that the topics, and the words that make them up, 
 
 
 \begin{frame}
-	The documents that underpin this growth
+	\begin{figure}
+		\includegraphics[width=\linewidth]{../plots/sus_overview}
+	\end{figure}
 \end{frame}
 
 \begin{frame}{Results - Development}
 \only<1->{
 	\begin{figure}
-		\includegraphics[width=0.6\linewidth]{../plots/development/ar5_growth}	
+		\includegraphics[width=0.8\linewidth]{../plots/ar5_growth_662}	
 	\end{figure}
 }
 \only<1->{
@@ -558,7 +560,7 @@ The topic models above assume that the topics, and the words that make them up, 
 \begin{frame}{Results - Development}
 \only<1->{
 \begin{figure}
-	\includegraphics[width=0.8\linewidth]{../plots/development/ar6_growth}	
+	\includegraphics[width=0.8\linewidth]{../plots/ar6_growth_662}	
 \end{figure}
 }
 \only<1->{
@@ -571,214 +573,19 @@ The topic models above assume that the topics, and the words that make them up, 
 %%%%%%%%%
 
 
-
-
-%\begin{frame}{Preliminary results - structure - WGI}
-%
-%\begin{columns}
-%	\begin{column}{0.65\linewidth}
-%		\begin{center}
-%			\vspace*{-0.1\linewidth}
-%%			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_1.PNG}
-%		\end{center}
-%	\end{column}
-%	\begin{column}{0.35\linewidth}
-%%		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key.PNG}
-%		\begin{center}
-%			\begin{itemize}
-%				\item The largest topic in WGI is on models.
-%			\end{itemize}
-%		\end{center}
-%	\end{column}
-%\end{columns}
-%
-%\end{frame}
-%
-%\begin{frame}{Preliminary results - structure - WGII}
-%
-%\begin{columns}
-%	\begin{column}{0.65\linewidth}
-%		\begin{center}
-%			\vspace*{-0.1\linewidth}
-%			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_2}
-%		\end{center}
-%	\end{column}
-%	\begin{column}{0.35\linewidth}
-%		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key}
-%		\begin{center}
-%			\begin{itemize}
-%				\item The largest primarily WGII topic is on climate change impacts
-%			\end{itemize}
-%		\end{center}
-%	\end{column}
-%\end{columns}
-%
-%\end{frame}
-%
-%\begin{frame}{Preliminary results - structure - WGIII}
-%
-%\begin{columns}
-%	\begin{column}{0.65\linewidth}
-%		\begin{center}
-%			\vspace*{-0.1\linewidth}
-%			\includegraphics[width=1.1\linewidth]{../plots/network_wg_372_3}
-%		\end{center}
-%	\end{column}
-%	\begin{column}{0.35\linewidth}
-%		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key}
-%		\begin{center}
-%			\begin{itemize}
-%				\item The largest WGIII topic is on emissions reductions.
-%			\end{itemize}
-%		\end{center}
-%	\end{column}
-%\end{columns}
-%
-%\end{frame}
-%
-%\begin{frame}{Preliminary results - structure - other clusters}
-%
-%\begin{columns}
-%	\begin{column}{0.65\linewidth}
-%		\begin{center}
-%			\vspace*{-0.1\linewidth}
-%			\hspace*{-0.1\linewidth}
-%			\includegraphics[width=1.25\linewidth]{../plots/network_wg_372_4}
-%		\end{center}
-%	\end{column}
-%	\begin{column}{0.35\linewidth}
-%		\includegraphics[width=0.4\linewidth]{../plots/network_wg_key}
-%		\begin{center}
-%			\begin{itemize}
-%				\item A fourth cluster of mostly WGII references contains topics on ecosystems, species and habitats
-%			\end{itemize}
-%		\end{center}
-%	\end{column}
-%\end{columns}
-%
-%\end{frame}
-
-
-
-%\begin{frame}{Preliminary results - structure - Sustainability}
-%
-%
-%
-%\begin{columns}
-%	\begin{column}{0.6\linewidth}
-%		\begin{center}			
-%			\includegraphics[width=\linewidth]{../plots/sustainability}
-%		\end{center}
-%	\end{column}
-%	\begin{column}{0.4\linewidth}
-%		\begin{center}
-%			\begin{itemize}
-%				\item In later assessment periods, a large meta-topic on research priorities and sustainability emerges
-%			\end{itemize}
-%		\end{center}
-%	\end{column}
-%\end{columns}
-%
-%\end{frame}
-%
-%\begin{frame}{Preliminary results - structure - Sustainability}
-%
-%
-%
-%\begin{columns}
-%	\begin{column}{0.6\linewidth}
-%		\begin{center}			
-%			\includegraphics[width=\linewidth]{../plots/health_sustain_386}
-%		\end{center}
-%	\end{column}
-%	\begin{column}{0.4\linewidth}
-%		\begin{center}
-%			\begin{itemize}
-%				\item The flatness of its distribution across documents indicates a topic that occurs
-%			\end{itemize}
-%		\end{center}
-%	\end{column}
-%\end{columns}
-%
-%\end{frame}
-%
-%%% Sus table
-%
-%\begin{frame}{Preliminary results - structure - Sustainability}
-%\begin{table}
-%	\footnotesize
-%	\renewcommand{\arraystretch}{2}
-%\begin{tabular}{p{0.3\linewidth}p{0.3\linewidth}p{0.3\linewidth}}
-%	\toprule 
-%	{polici, govern, tax} & {adapt, vulner, strategi}  & {urban, citi, area} \\ 
-%	\midrule 
-%	How Research-Prioritization Exercises Affect Conservation Policy & Methodological choices in solution-oriented adaptation research: a diagnostic framework & A review of urban ecosystem services: six key challenges for future research  \\ 
-%	Role of hydrology and economics in water management policy under increasing uncertainty & When not every response to climate change is a good one: Identifying principles for sustainable adaptation & Lines of Tradition and Recent Approaches to Urban Ecology, Focussing on Germany and the USA \\ 
-%	Informing food policy: balancing the evidence & Informed adaptation: Ethical considerations for adaptation researchers and decision-makers & Advancing understanding of the complex nature of urban systems \\ 
-%	The identification of priority policy options for UK nature conservation & Future oriented conservation: knowledge governance, uncertainty and learning & Sustainable urban landscapes: South African perspectives on transdisciplinary possibilities \\ 
-%	Environmental education policy research challenges and ways research might cope with them & Towards an integrated agenda for adaptation research: theory, practice and policy & A conceptual framework for addressing complexity and unfolding transition dynamics when developing sustainable adaptation strategies in urban water management \\
-%	\bottomrule
-%\end{tabular} 
-%
-%\end{table}
-%
-%\end{frame}
-
-
-%\begin{frame}{Preliminary results - growth}
-%
-%\begin{columns}
-%	\begin{column}{0.6\linewidth}
-%		\begin{center}
-%			\includegraphics[width=\linewidth]{../plots/top_20_386}
-%		\end{center}
-%	\end{column}
-%	\begin{column}{0.4\linewidth}
-%		\begin{center}
-%			\begin{itemize}
-%				\item Negative emissions related topics have shown strong growth since the end of AR5
-%				\item As have topics on cities and extreme weather events
-%			\end{itemize}
-%		\end{center}
-%	\end{column}
-%\end{columns}
-%
-%\end{frame}
-
-%\begin{frame}{Preliminary results - growth - biochar}
-%
-%
-%		\begin{center}
-%			\includegraphics[width=\linewidth]{../plots/biochar_growth.png}
-%
-%		\medskip
-%
-%			\begin{itemize}
-%				\item Biochar has emerged as an entirely new topic in the last 10 years
-%			\end{itemize}
-%		\end{center}
-%
-%\end{frame}
-
-%\begin{frame}{Preliminary results - gaps in coverage}
-%
-%How can we get a sense of which topics are better covered in IPCC reports?
-%
-%\begin{itemize}
-%	\item Each document \(d\) either matches or does not match an IPCC reference
-%	\item For each topic \(h\), we can sum the scores for each category of document
-%	\item The ``IPCC proportion'' of each topic is the proportion of the sum of the document score accounted for by documents which match IPCC references.
-%\end{itemize}
-%
-%\end{frame}
-
 \begin{frame}{Results - topic representation in IPCC reports}
 
-How can we get a sense of which topics are better covered in IPCC reports?
+\begin{itemize}
+	\item<1-> How can we get a sense of which topics are better covered in IPCC reports?
+	\item<2-> We get a measure of proportionality between two distributions by dividing the each topics share in the IPCC sample by its share in the whole corpus
+	\item<3-> This and other measures come from literature on the proportionality of electoral systems \citep[e.g][]{Karpov2008}
+\end{itemize}
+
+
 
 \medskip
 
-We get a measure of proportionality between two distributions by dividing the each topics share in the IPCC sample by its share in the whole corpus
+
 
 %\begin{itemize}
 %	\item Each document \(d\) either matches or does not match an IPCC reference
@@ -819,9 +626,18 @@ We get a measure of proportionality between two distributions by dividing the ea
 \end{frame}
 
 \begin{frame}{Results - topic representation in IPCC reports}
-	
-	
-	\includegraphics[width=0.8\linewidth]{../plots/ipcc_coverage_by_wg_654.png}
+
+\begin{columns}
+	\begin{column}{0.7\linewidth}
+				\includegraphics[width=\linewidth]{../plots/ipcc_coverage_by_wg_654.png}
+	\end{column}
+	\begin{column}{0.3\linewidth}
+		\begin{itemize}
+			\item On average, topics that are primarily referenced by working group I report have a higher proportion of constituent documents matching IPCC references
+		\end{itemize}
+	\end{column}
+\end{columns}
+
 	
 	
 \end{frame}
@@ -832,11 +648,13 @@ We get a measure of proportionality between two distributions by dividing the ea
 
 \begin{frame}{Results - AR6 outlook}
 
-Outlines for the sixth assessment report have already been published.
+\begin{itemize}
+	\item<1-> Outlines for the sixth assessment report have already been published
+	\item<2-> The words in each chapter were matched to the Topic-Term matrix generated by the model to calculate a simplified topic score for each chapter
+	\item<3-> These scores were summed and were compared to the corpus in general in the same way as with past reports
+\end{itemize}
 
-The words in each chapter were matched to the Topic-Term matrix generated by the model to calculate a [simplified] topic score for each chapter.
 
-These scores were summed and were compared to the corpus in general in the same way as with past reports
 
 \end{frame}
 
@@ -861,6 +679,41 @@ These scores were summed and were compared to the corpus in general in the same 
 
 \end{frame}
 
+\begin{frame}{Robustness}
+
+Most work focuses on the measuring the sensitivity of the reconstruction error to different framings and parameters of the model. What we are more interested in is checking if the key messages are sound.
+
+\begin{columns}<2->
+	\begin{column}<3->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/aero_share}
+		\end{figure}
+	\end{column}
+
+	\begin{column}<4->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/sus_share}
+		\end{figure}
+	\end{column}
+
+\end{columns}
+\begin{columns}
+
+	\begin{column}<5->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/negative_emissions_share}
+		\end{figure}
+	\end{column}
+
+	\begin{column}<6->{0.33\linewidth}
+	\begin{figure}
+		\includegraphics[width=\linewidth]{../plots/ipcc_rep_simple}
+	\end{figure}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
 
 %\begin{frame}{Next steps}
 %	\begin{itemize}
@@ -870,18 +723,28 @@ These scores were summed and were compared to the corpus in general in the same 
 %	\end{itemize}
 %\end{frame}
 
-%\begin{frame}{Conclusions}
-%
-%
-%\begin{itemize}
-%	\item Endogenously discovered topics make substantive sense of an unmanageable dataset of climate-relevant literature
-%	\item Topic modelling discovers over-arching topics such as that on sustainability and research priorities, as well as individual, fast growing topics such as biochar or CCS
-%	\item Matching documents to IPCC references, we can describe topics that belong to or bridge IPCC working groups
-%	\item Quantitative evidence is found to support policy makers' dissatisfaction with a lack of `solution orientation' in IPCC reports \citep{Kowarsch2017} 
-%	\item By uncovering the structure at scale of a large collection of documents, and by enabling the discovery of documents relevant to specific topics or combinations of topics, this approach can provide for more comprehensive and salient scientific assessments.
-%\end{itemize}
-%
-%\end{frame}
+\begin{frame}{Conclusions}
+
+
+\begin{itemize}
+	\item<1-> Endogenously discovered topics map and make substantive sense of an unmanageable dataset of climate-relevant literature
+	\item<2-> Topic modelling discovers over-arching topics such as that on sustainability and research priorities, as well as specific, fast growing topics such those on negative emissions
+	\item<3-> Some quantitative evidence is found to support policy makers' dissatisfaction with a lack of `solution orientation' in IPCC reports \citep{Kowarsch2017} 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Discussion}
+
+
+\begin{itemize}
+	\item<1-> A perfectly representative relationship between the literature and IPCC reports is not necessarily desirable
+	\item<2-> The IPCC are best placed to decide which aspects of the literature to emphasise
+	\item<3-> A topography of the literature helps to address issues of emphasis from a point of understanding, and to make decisions clear and transparent
+	\item<4-> More generally, maps like this present exciting opportunities to aid the process of literature selection, and to understand the science policy process
+\end{itemize}
+
+\end{frame}
 
 
 %\begin{frame}{Extra results - Journals}
@@ -1000,9 +863,26 @@ These scores were summed and were compared to the corpus in general in the same 
 %
 %\end{frame}
 
+\begin{frame}{A Topography of Climate Change Research}
+\begin{columns}
+	\begin{column}{0.5\linewidth}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[width=1\linewidth]{../plots/Hondius_Portrait_of_map-makers}
+				\caption{Portrait of map-makers, Gerard Mercator and Jodocus Hondius (Jodocus Hondius) source: \url{https://commons.wikimedia.org/wiki/File:Hondius_Portrait_of_map-makers.jpg}}
+			\end{figure}
+		\end{center}
+	\end{column}
+	\begin{column}{0.5\linewidth}
+		\begin{center}
+\includegraphics[width=\linewidth]{../plots/pca_map_portrait}
+		\end{center}
+	\end{column}
+\end{columns}
+\end{frame}
 
 
-\begin{frame}{Frame Title}
+\begin{frame}{Bibliography}
 	\small
 	\bibliography{../Mendeley.bib}
 \end{frame}
