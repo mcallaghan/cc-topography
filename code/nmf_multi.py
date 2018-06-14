@@ -45,6 +45,8 @@ sys.stdout.flush()
 
 # import file for easy access to browser database
 sys.path.append('/home/galm/software/tmv/BasicBrowser/')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "BasicBrowser.settings")
+django.setup()
 
 # sys.path.append('/home/max/Desktop/django/BasicBrowser/')
 import db as db

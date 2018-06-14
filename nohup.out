@@ -1,2325 +1,580 @@
-20
-1
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=5000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 3033.712s.
-5000
-Adding features to db
-done in 14.686s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 780.513s.
-Adding topicterms to db
-done in 6.400s.
-Adding doctopics to db
-done in 9893.675s.
-done! total time: 229 minutes and 58 seconds
-a maximum of 4073.248 MB was used
-20
-2
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=5000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 3153.646s.
-5000
-Adding features to db
-done in 14.572s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 355.683s.
-Adding topicterms to db
-done in 13.025s.
-Adding doctopics to db
-done in 8747.072s.
-done! total time: 205 minutes and 50 seconds
-a maximum of 6503.804 MB was used
-20
-1
-10000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=10000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 2981.741s.
-10000
-Adding features to db
-done in 30.001s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 793.115s.
-Adding topicterms to db
-done in 9.509s.
-Adding doctopics to db
-done in 10922.030s.
-done! total time: 247 minutes and 11 seconds
-a maximum of 4072.224 MB was used
-20
-2
-10000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=10000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 3099.759s.
-10000
-Adding features to db
-done in 30.447s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 323.092s.
-Adding topicterms to db
-done in 18.545s.
-Adding doctopics to db
-done in 8864.362s.
-done! total time: 206 minutes and 46 seconds
-a maximum of 6503.404 MB was used
-20
-1
-50000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=50000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 3036.945s.
-50000
-Adding features to db
-done in 147.463s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 850.913s.
-Adding topicterms to db
-done in 14.227s.
-Adding doctopics to db
-20
-1
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=5000
-610815 documents found
-Extracting tf-idf features for NMF...
 Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 298, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 198, in main
-    tfidf = tfidf_vectorizer.fit_transform(abstracts)
-  File "/usr/local/lib/python3.4/dist-packages/sklearn/feature_extraction/text.py", line 1352, in fit_transform
-    X = super(TfidfVectorizer, self).fit_transform(raw_documents)
-  File "/usr/local/lib/python3.4/dist-packages/sklearn/feature_extraction/text.py", line 839, in fit_transform
-    self.fixed_vocabulary_)
-  File "/usr/local/lib/python3.4/dist-packages/sklearn/feature_extraction/text.py", line 762, in _count_vocab
-    for feature in analyze(doc):
-  File "/usr/local/lib/python3.4/dist-packages/sklearn/feature_extraction/text.py", line 241, in <lambda>
-    tokenize(preprocess(self.decode(doc))), stop_words)
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 183, in __call__
-    return [self.stemmer.stem(t) for t in tokenize(doc)]
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 183, in <listcomp>
-    return [self.stemmer.stem(t) for t in tokenize(doc)]
-  File "/usr/local/lib/python3.4/dist-packages/nltk/stem/snowball.py", line 1016, in stem
-    if word.endswith(suffix):
-KeyboardInterrupt
-20
-1
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=5000
-610815 documents found
+  File "code/do_nmf.py", line 25, in <module>
+    do_nmf(stat.id)
+AttributeError: 'RunStats' object has no attribute 'id'
+Traceback (most recent call last):
+  File "code/do_nmf.py", line 27, in <module>
+    do_nmf(stat.id)
+AttributeError: 'RunStats' object has no attribute 'id'
+
+###############################    
+## Doing NMF on query 2355 with 289335 documents and 100 topics
+
 Extracting tf-idf features for NMF...
-done in 2973.764s.
-5000
-Adding features to db
-multiprocess.pool.RemoteTraceback: 
-"""
+done in 1494.914s.
+Fitting the model with tf-idf features, n_samples=10 and n_features=100000000000...
+/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/decomposition/online_lda.py:536: DeprecationWarning: The default value for 'learning_method' will be changed from 'online' to 'batch' in the release 0.20. This warning was introduced in 0.18.
+  DeprecationWarning)
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 211, in _commit
-    return self.connection.commit()
-psycopg2.IntegrityError: insert or update on table "tmv_app_term_run_id" violates foreign key constraint "tmv_app_term_ru_runstats_id_696891ec_fk_tmv_app_runstats_run_id"
-DETAIL:  Key (runstats_id)=(88) is not present in table "tmv_app_runstats".
-
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 119, in worker
-    result = (True, func(*args, **kwds))
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 44, in mapstar
-    return list(map(*args))
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 109, in add_features
-    term.run_id.add(run_id)
-  File "/usr/local/lib/python3.4/dist-packages/django/db/models/fields/related_descriptors.py", line 885, in add
-    self._add_items(self.target_field_name, self.source_field_name, *objs)
-  File "/usr/local/lib/python3.4/dist-packages/django/db/transaction.py", line 223, in __exit__
-    connection.commit()
-  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 242, in commit
-    self._commit()
-  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 211, in _commit
-    return self.connection.commit()
-  File "/usr/local/lib/python3.4/dist-packages/django/db/utils.py", line 94, in __exit__
-    six.reraise(dj_exc_type, dj_exc_value, traceback)
-  File "/usr/local/lib/python3.4/dist-packages/django/utils/six.py", line 685, in reraise
-    raise value.with_traceback(tb)
-  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/base/base.py", line 211, in _commit
-    return self.connection.commit()
-django.db.utils.IntegrityError: insert or update on table "tmv_app_term_run_id" violates foreign key constraint "tmv_app_term_ru_runstats_id_696891ec_fk_tmv_app_runstats_run_id"
-DETAIL:  Key (runstats_id)=(88) is not present in table "tmv_app_runstats".
-
-"""
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 298, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 214, in main
-    vocab_ids.append(pool.map(add_features,vocab))
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 260, in map
-    return self._map_async(func, iterable, mapstar, chunksize).get()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 599, in get
+  File "code/do_nmf.py", line 25, in <module>
+    do_nmf(stat.pk)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/local.py", line 191, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/app/task.py", line 380, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/tasks.py", line 433, in do_nmf
+    ).fit(tfidf)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/decomposition/online_lda.py", line 552, in fit
+    batch_update=False, parallel=parallel)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/decomposition/online_lda.py", line 433, in _em_step
+    parallel=parallel)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/decomposition/online_lda.py", line 386, in _e_step
+    for idx_slice in gen_even_slices(X.shape[0], n_jobs))
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/parallel.py", line 789, in __call__
+    self.retrieve()
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/parallel.py", line 699, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/usr/lib/python3.4/multiprocessing/pool.py", line 599, in get
     raise self._value
-django.db.utils.IntegrityError: insert or update on table "tmv_app_term_run_id" violates foreign key constraint "tmv_app_term_ru_runstats_id_696891ec_fk_tmv_app_runstats_run_id"
-DETAIL:  Key (runstats_id)=(88) is not present in table "tmv_app_runstats".
+  File "/usr/lib/python3.4/multiprocessing/pool.py", line 383, in _handle_tasks
+    put(task)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/pool.py", line 371, in send
+    CustomizablePickler(buffer, self._reducers).dump(obj)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/pool.py", line 240, in __call__
+    for dumped_filename in dump(a, filename):
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/numpy_pickle.py", line 484, in dump
+    NumpyPickler(f, protocol=protocol).dump(value)
+  File "/usr/lib/python3.4/pickle.py", line 412, in dump
+    self.save(obj)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/numpy_pickle.py", line 278, in save
+    wrapper.write_array(obj, self)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/numpy_pickle.py", line 93, in write_array
+    pickler.file_handle.write(chunk.tostring('C'))
+OSError: [Errno 28] No space left on device
 
-20
-2
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=5000
-610815 documents found
+###############################    
+## Doing NMF on query 2355 with 289335 documents and 100 topics
+
 Extracting tf-idf features for NMF...
-done in 3189.765s.
-5000
-Adding features to db
-done in 15.974s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 339.557s.
+done in 1483.231s.
+Fitting the model with tf-idf features, n_samples=200 and n_features=100000000000...
+violation: 1.0
+violation: 0.301300356623786
+violation: 0.29679437221752303
+violation: 0.2237837016151537
+violation: 0.16250595911291854
+violation: 0.12299867949708293
+violation: 0.09712141721161002
+violation: 0.07760035710448027
+violation: 0.06442327748190071
+violation: 0.055244683961173685
+violation: 0.04698352392309832
+violation: 0.03882029573926344
+violation: 0.03196573256851541
+violation: 0.027148892250199626
+violation: 0.023869109558882724
+violation: 0.021696687290349865
+violation: 0.020204980430694533
+violation: 0.01907168572765434
+violation: 0.018196138714027518
+violation: 0.017440790283137643
+violation: 0.016647025414240024
+violation: 0.01579532215569701
+violation: 0.01493979750031875
+violation: 0.014206983358802057
+violation: 0.013604794804061121
+violation: 0.013048524649654197
+violation: 0.012282735947051003
+violation: 0.01143713588199697
+violation: 0.010575732588099613
+violation: 0.009788613382125876
+violation: 0.009100136743533657
+violation: 0.008533214571746306
+violation: 0.008031219041053191
+violation: 0.007577148102355992
+violation: 0.007131404878331968
+violation: 0.006691734389781734
+violation: 0.006300011410435173
+violation: 0.00594817490480422
+violation: 0.0056411999604810735
+violation: 0.005373604333492755
+violation: 0.005141694174946631
+violation: 0.004940919247314579
+violation: 0.004775680409851202
+violation: 0.00463301389150456
+violation: 0.004514041875969726
+violation: 0.00441363318003554
+violation: 0.004324712593262087
+violation: 0.004238578058448319
+violation: 0.004162222737818946
+violation: 0.004090014275301217
+violation: 0.004006406519991979
+violation: 0.003910731199945552
+violation: 0.0038075621822738675
+violation: 0.0037007261694631866
+violation: 0.0035905756218085074
+violation: 0.0034803479456743946
+violation: 0.0033704497088733344
+violation: 0.003260638019474422
+violation: 0.0031526014473610684
+violation: 0.003043087693252316
+violation: 0.0029370483965531144
+violation: 0.0028404715045029275
+violation: 0.0027523702789329376
+violation: 0.002671725224043232
+violation: 0.0025988192086347233
+violation: 0.002533065551208
+violation: 0.002473278666254103
+violation: 0.0024190819675024167
+violation: 0.0023693190577697455
+violation: 0.0023231589973949736
+violation: 0.0022814188078560445
+violation: 0.00224351929592209
+violation: 0.0022086172787186944
+violation: 0.002176085425677199
+violation: 0.0021456963939786387
+violation: 0.002117124781887303
+violation: 0.002090086493866145
+violation: 0.0020645463538353417
+violation: 0.002040258527929845
+violation: 0.0020171361906432157
+violation: 0.0019951356855433667
+violation: 0.0019741128085252755
+violation: 0.0019537023655155396
+violation: 0.001934421142790954
+violation: 0.0019155554532035103
+violation: 0.0018977018476264837
+violation: 0.001880963323452272
+violation: 0.0018652013223870141
+violation: 0.0018505106394971539
+violation: 0.001836892074755702
+violation: 0.0018243249585002262
+violation: 0.0018131054612058174
+violation: 0.001803298117611791
+violation: 0.0017951226585210596
+violation: 0.0017887598039613806
+violation: 0.0017844072216136504
+violation: 0.0017825932142559084
+violation: 0.0017823315225798475
+violation: 0.0017848275064107097
+violation: 0.0017920107829119659
+violation: 0.0018018731809859975
+violation: 0.0018162721258662465
+violation: 0.0018353285768470482
+violation: 0.0018596774438110106
+violation: 0.0018883584146773987
+violation: 0.0019223291266115504
+violation: 0.001961056537739841
+violation: 0.0020010498971087306
+violation: 0.002040231641159033
+violation: 0.002076612109144184
+violation: 0.002107189871800634
+violation: 0.002131763742568357
+violation: 0.0021371957845375514
+violation: 0.002123297161146499
+violation: 0.0020946178099317254
+violation: 0.0020465701356644434
+violation: 0.0019916830507646
+violation: 0.001924115893447843
+violation: 0.00185349652581136
+violation: 0.0017847740226649368
+violation: 0.001718072707776246
+violation: 0.0016570028347423973
+violation: 0.0016020601979520456
+violation: 0.0015508245171678991
+violation: 0.001503339322557315
+violation: 0.0014600367134411727
+violation: 0.0014207691249828478
+violation: 0.001385743891479511
+violation: 0.0013542797418583127
+violation: 0.0013255994593112752
+violation: 0.0013000008652122744
+violation: 0.0012772283252069942
+violation: 0.00125646497114642
+violation: 0.0012375146921245474
+violation: 0.0012201290513521351
+violation: 0.001204145987880553
+violation: 0.0011893812201893296
+violation: 0.0011756263729601557
+violation: 0.0011627397328384669
+violation: 0.0011505278984464446
+violation: 0.0011388949813390655
+violation: 0.0011278237736060519
+violation: 0.0011171328839070043
+violation: 0.0011068721060151052
+violation: 0.0010969402936238924
+violation: 0.001087307951855583
+violation: 0.0010779352889579517
+violation: 0.0010687757145913122
+violation: 0.0010598088533244122
+violation: 0.0010510180340801425
+violation: 0.0010423980594148246
+violation: 0.001033971653831376
+violation: 0.0010257172739462233
+violation: 0.001017324203341782
+violation: 0.0010092719171555969
+violation: 0.001001332797666316
+violation: 0.0009934134379130668
+violation: 0.0009855815798158428
+violation: 0.0009778342572597865
+violation: 0.0009701490663349029
+violation: 0.0009625557507212704
+violation: 0.0009550377030996537
+violation: 0.0009475926294950073
+violation: 0.0009402382307509433
+violation: 0.0009329587966579663
+violation: 0.0009257709785002343
+violation: 0.0009186722501231681
+violation: 0.0009116520448344207
+violation: 0.0009047290411637703
+violation: 0.0008979125488607098
+violation: 0.0008912283591133889
+violation: 0.0008846969050879187
+violation: 0.0008782335644136056
+violation: 0.0008717776564865667
+violation: 0.0008654458755843567
+violation: 0.0008591825496285999
+violation: 0.000852975694174894
+violation: 0.0008468328227026952
+violation: 0.0008407364247192335
+violation: 0.0008347230894566614
+violation: 0.0008287797740251382
+violation: 0.0008229011305714048
+violation: 0.0008170874350497466
+violation: 0.0008113429761098035
+violation: 0.0008056595493733206
+violation: 0.0008000284240288485
+violation: 0.0007944723747702476
+violation: 0.0007889798738953462
+violation: 0.0007835435934355948
+violation: 0.0007781710245965989
+violation: 0.0007728562059536411
+violation: 0.0007676005894258949
+violation: 0.0007624028279447319
+violation: 0.0007572637587956426
+violation: 0.0007521799060742791
+violation: 0.0007471491658391263
+violation: 0.0007421804810035935
+violation: 0.0007372647876598482
+violation: 0.0007324014614413409
+violation: 0.0007275912944392523
+violation: 1.0
+violation: 0.373417551077299
+violation: 0.03156801356871774
+violation: 0.005846658114079179
+violation: 0.000996781770260465
+violation: 0.00022266782548484412
+violation: 4.1427504084799653e-05
+Converged at iteration 7
+done in 2903.684s.
 Adding topicterms to db
-done in 17.090s.
-Adding doctopics to db
+done in 3649.960s.
+758
+RunStats object (758)
+758
+{'name': 'AR0', 'id': 6, 'end': 1984, 'ar': 0, 'start': 0}
+{'name': 'AR1', 'id': 1, 'end': 1990, 'ar': 1, 'start': 1985}
+{'name': 'AR2', 'id': 2, 'end': 1994, 'ar': 2, 'start': 1991}
+{'name': 'AR3', 'id': 3, 'end': 2000, 'ar': 3, 'start': 1995}
+{'name': 'AR4', 'id': 4, 'end': 2007, 'ar': 4, 'start': 2001}
+{'name': 'AR5', 'id': 5, 'end': 2013, 'ar': 5, 'start': 2008}
+{'name': 'AR6', 'id': 7, 'end': 9998, 'ar': 6, 'start': 2014}
+
+###############################    
+## Doing NMF on query 2355 with 289335 documents and 100 topics
+
 Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 298, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 271, in main
-    dts.append(pool.map(partial(f_gamma, gamma=gamma,
-AttributeError: 'generator' object has no attribute 'append'
-20
-1
-10000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=10000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 3073.816s.
-10000
-Adding features to db
-done in 34.795s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 792.930s.
-Adding topicterms to db
-done in 12.010s.
-Adding doctopics to db
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/fields/related_descriptors.py", line 367, in __get__
+    rel_obj = self.related.get_cached_value(instance)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/fields/mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'wosarticle'
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 298, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 271, in main
-    dts.append(pool.map(partial(f_gamma, gamma=gamma,
-AttributeError: 'generator' object has no attribute 'append'
-code/do_runs.sh: line 12: 26169 Terminated              python3 /home/galm/projects/cc-topography/code/nmf.py $t $n $f
-code/do_runs.sh: line 12: 26379 Terminated              python3 /home/galm/projects/cc-topography/code/nmf.py $t $n $f
-20
-1
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=5000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 2959.808s.
-5000
-Adding features to db
-done in 15.324s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 789.028s.
-Adding topicterms to db
-done in 8.120s.
-making sparse matrix
-Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-MemoryError
-20
-2
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=5000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 3137.704s.
-5000
-Adding features to db
-done in 15.752s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 355.661s.
-Adding topicterms to db
-done in 17.996s.
-making sparse matrix
-Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-MemoryError
-20
-1
-10000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=10000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 2984.722s.
-10000
-Adding features to db
-done in 30.999s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 836.613s.
-Adding topicterms to db
-done in 11.362s.
-making sparse matrix
-Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-MemoryError
-20
-2
-10000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=10000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 3211.370s.
-10000
-Adding features to db
-done in 29.170s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 337.907s.
-Adding topicterms to db
-done in 25.846s.
-making sparse matrix
-Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-MemoryError
-20
-1
-50000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=50000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 2983.222s.
-50000
-Adding features to db
-done in 142.220s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 860.057s.
-Adding topicterms to db
-done in 18.451s.
-making sparse matrix
-Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-MemoryError
-20
-2
-50000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=50000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 3161.076s.
-50000
-Adding features to db
-done in 150.796s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 634.063s.
-Adding topicterms to db
-done in 45.492s.
-making sparse matrix
-Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 373, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in main
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-  File "/home/galm/projects/cc-topography/code/nmf.py", line 283, in <listcomp>
-    gamma = [np.concatenate([x,x,x,x,x,x,x,x,x,x]) for x in gamma]
-MemoryError
-20
-1
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=5000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 2985.769s.
-5000
-Adding features to db
-done in 16.400s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 778.404s.
-Adding topicterms to db
-done in 11.004s.
-making sparse matrix
-done in 21.736s.
-adding 5580196 doctopics to the db
-done in 13386.001s.
-Making the objects took in 5129.931s.
-Adding the objects took in 8192.162s.
-updating features in db
-done in 16.472s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 1857.877s.
-Adding topicterms to db
-done in 13.643s.
-making sparse matrix
-done in 43.366s.
-adding 8817063 doctopics to the db
-done in 27476.595s.
-Making the objects took in 8639.446s.
-Adding the objects took in 18723.397s.
-updating features in db
-done in 17.054s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 3624.948s.
-Adding topicterms to db
-done in 18.228s.
-making sparse matrix
-done in 99.477s.
-adding 13630697 doctopics to the db
-code/do_runs.sh: line 9: 20904 Terminated              python3 /home/galm/projects/cc-topography/code/nmf_multi.py 20 $n $f
-20
-2
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=5000
-610815 documents found
-Extracting tf-idf features for NMF...
-done in 3223.282s.
-5000
-Adding features to db
-done in 17.885s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 332.717s.
-Adding topicterms to db
-done in 17.532s.
-making sparse matrix
-done in 7.074s.
-adding 3086473 doctopics to the db
-###################################
-Starting     NMF.py with K=40, ngrame=1 and n_features=50000
-254099 documents found
-Extracting tf-idf features for NMF...
-done in 1287.967s.
-34990
-Adding features to db
-Traceback (most recent call last):
-  File "code/nmf_multi.py", line 387, in <module>
-    main()
-  File "code/nmf_multi.py", line 223, in main
-    vocab_ids.append(pool.map(add_features,vocab))
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 260, in map
-    return self._map_async(func, iterable, mapstar, chunksize).get()
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 593, in get
-    self.wait(timeout)
-  File "/usr/local/lib/python3.4/dist-packages/multiprocess/pool.py", line 590, in wait
-    self._event.wait(timeout)
-  File "/usr/lib/python3.4/threading.py", line 553, in wait
-    signaled = self._cond.wait(timeout)
-  File "/usr/lib/python3.4/threading.py", line 290, in wait
-    waiter.acquire()
-KeyboardInterrupt
-50
-1
-10000
-###################################
-Starting     NMF.py with K=50, ngrame=1 and n_features=10000
-1000 documents found
-Extracting tf-idf features for NMF...
-done in 5.162s.
-1524
-Adding features to db
-done in 4.465s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 0.938s.
-Adding topicterms to db
-done in 1.663s.
-making sparse matrix
-done in 0.043s.
-adding 4881000 doctopics to the db
-done in 1289.933s.
-Making the objects took in 242.621s.
-Adding the objects took in 1031.436s.
-updating features in db
-done in 4.467s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 0.932s.
-Adding topicterms to db
-done in 1.510s.
-making sparse matrix
-done in 0.045s.
-adding 4881000 doctopics to the db
-done in 2327.511s.
-Making the objects took in 257.220s.
-Adding the objects took in 779.584s.
-done! total time: 60 minutes and 37 seconds
-a maximum of 434.368 MB was used
-20
-1
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=5000
-254099 documents found
-Traceback (most recent call last):
-  File "/home/galm/projects/cc-topography/code/nmf_multi.py", line 390, in <module>
-    main()
-  File "/home/galm/projects/cc-topography/code/nmf_multi.py", line 174, in main
-    abstracts = [re.split("\([C-c]\) [1-2][0-9]{3} Elsevier",x.content)[0] for x in docs.iterator()]
-  File "/home/galm/projects/cc-topography/code/nmf_multi.py", line 174, in <listcomp>
-    abstracts = [re.split("\([C-c]\) [1-2][0-9]{3} Elsevier",x.content)[0] for x in docs.iterator()]
-  File "/usr/local/lib/python3.4/dist-packages/django/db/models/query.py", line 54, in __iter__
-    results = compiler.execute_sql()
-  File "/usr/local/lib/python3.4/dist-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+  File "code/do_nmf.py", line 27, in <module>
+    do_nmf(stat.pk)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/local.py", line 191, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/app/task.py", line 380, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/tasks.py", line 357, in do_nmf
+    abstracts, docsizes, ids, citations = proc_docs(docs, stoplist, stat.fulltext, stat.citations)
+  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 46, in proc_docs
+    citations=[x.wosarticle.tc if x.wosarticle.tc is not None else 0 for x in docs]
+  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 46, in <listcomp>
+    citations=[x.wosarticle.tc if x.wosarticle.tc is not None else 0 for x in docs]
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/fields/related_descriptors.py", line 375, in __get__
+    rel_obj = self.get_queryset(instance=instance).get(**filter_args)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/query.py", line 1179, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 1066, in execute_sql
     cursor.execute(sql, params)
-  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/utils.py", line 79, in execute
-    return super(CursorDebugWrapper, self).execute(sql, params)
-  File "/usr/local/lib/python3.4/dist-packages/django/db/backends/utils.py", line 64, in execute
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/backends/utils.py", line 85, in _execute
     return self.cursor.execute(sql, params)
-  File "<string>", line 12, in __new__
+  File "/usr/lib/python3.4/encodings/utf_8.py", line 15, in decode
+    def decode(input, errors='strict'):
 KeyboardInterrupt
-20
-1
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=5000
-254099 documents found
-Extracting tf-idf features for NMF...
-done in 1238.395s.
-5000
-Adding features to db
-done in 15.995s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 274.921s.
-Adding topicterms to db
-done in 6.824s.
-making sparse matrix
-done in 8.287s.
-adding 2186885 doctopics to the db
-done in 2128.812s.
-Making the objects took in 843.536s.
-Adding the objects took in 1266.966s.
-updating features in db
-done in 15.662s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 519.326s.
-Adding topicterms to db
-done in 10.264s.
-making sparse matrix
-done in 17.657s.
-adding 3476031 doctopics to the db
-done in 3360.511s.
-Making the objects took in 1348.514s.
-Adding the objects took in 1982.189s.
-updating features in db
-done in 21.916s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 1149.243s.
-Adding topicterms to db
-done in 14.476s.
-making sparse matrix
-done in 39.448s.
-adding 5298364 doctopics to the db
-done in 5213.831s.
-Making the objects took in 2164.078s.
-Adding the objects took in 3002.914s.
-updating features in db
-done in 16.581s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 1991.947s.
-Adding topicterms to db
-done in 18.752s.
-making sparse matrix
-done in 54.156s.
-adding 6160464 doctopics to the db
-done in 6158.885s.
-Making the objects took in 2640.107s.
-Adding the objects took in 3469.740s.
-updating features in db
-done in 18.752s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 3241.877s.
-Adding topicterms to db
-done in 22.751s.
-making sparse matrix
-done in 86.345s.
-adding 7535366 doctopics to the db
-done in 7658.828s.
-Making the objects took in 3493.583s.
-Adding the objects took in 4108.673s.
-done! total time: 555 minutes and 38 seconds
-a maximum of 2962.788 MB was used
-20
-2
-5000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=5000
-254099 documents found
-Extracting tf-idf features for NMF...
-done in 1378.024s.
-5000
-Adding features to db
-done in 17.752s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 114.222s.
-Adding topicterms to db
-done in 12.892s.
-making sparse matrix
-done in 2.417s.
-adding 1073831 doctopics to the db
-done in 1156.215s.
-Making the objects took in 420.152s.
-Adding the objects took in 719.656s.
-updating features in db
-done in 16.119s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 347.314s.
-Adding topicterms to db
-done in 18.013s.
-making sparse matrix
-done in 7.001s.
-adding 1533906 doctopics to the db
-done in 1709.281s.
-Making the objects took in 637.484s.
-Adding the objects took in 1048.438s.
-updating features in db
-done in 17.170s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 629.658s.
-Adding topicterms to db
-done in 25.176s.
-making sparse matrix
-done in 12.933s.
-adding 2216836 doctopics to the db
-done in 2443.359s.
-Making the objects took in 926.328s.
-Adding the objects took in 1482.620s.
-updating features in db
-done in 24.574s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 739.362s.
-Adding topicterms to db
-done in 25.490s.
-making sparse matrix
-done in 22.068s.
-adding 2131459 doctopics to the db
-done in 2672.781s.
-Making the objects took in 883.998s.
-Adding the objects took in 1756.046s.
-updating features in db
-done in 16.259s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=5000...
-done in 1079.593s.
-Adding topicterms to db
-done in 30.561s.
-making sparse matrix
-done in 44.970s.
-adding 2453597 doctopics to the db
-done in 2761.149s.
-Making the objects took in 1052.684s.
-Adding the objects took in 1667.218s.
-done! total time: 256 minutes and 28 seconds
-a maximum of 3643.36 MB was used
-20
-1
-10000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=10000
-254099 documents found
-Extracting tf-idf features for NMF...
-done in 1291.420s.
-10000
-Adding features to db
-done in 35.523s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 257.485s.
-Adding topicterms to db
-done in 9.018s.
-making sparse matrix
-done in 7.288s.
-adding 2194203 doctopics to the db
-done in 2292.299s.
-Making the objects took in 825.838s.
-Adding the objects took in 1455.410s.
-updating features in db
-done in 37.925s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 742.612s.
-Adding topicterms to db
-done in 12.345s.
-making sparse matrix
-done in 16.946s.
-adding 3387373 doctopics to the db
-done in 3332.681s.
-Making the objects took in 1343.640s.
-Adding the objects took in 1971.770s.
-updating features in db
-done in 40.022s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 951.395s.
-Adding topicterms to db
-done in 16.290s.
-making sparse matrix
-done in 37.764s.
-adding 5101980 doctopics to the db
-20
-1
-10000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=10000
-254099 documents found
-Extracting tf-idf features for NMF...
-done in 1275.807s.
-10000
-Adding features to db
-done in 28.761s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 266.222s.
-Adding topicterms to db
-done in 9.299s.
-making sparse matrix
-done in 7.425s.
-adding 2194203 doctopics to the db
-done in 2112.688s.
-Making the objects took in 878.481s.
-Adding the objects took in 1220.861s.
-updating features in db
-done in 36.356s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 779.190s.
-Adding topicterms to db
-done in 12.928s.
-making sparse matrix
-done in 17.933s.
-adding 3387373 doctopics to the db
-done in 3079.013s.
-Making the objects took in 1361.856s.
-Adding the objects took in 1696.603s.
-updating features in db
-done in 42.872s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 958.587s.
-Adding topicterms to db
-done in 16.531s.
-making sparse matrix
-done in 38.808s.
-adding 5101980 doctopics to the db
-done in 4745.269s.
-Making the objects took in 2213.782s.
-Adding the objects took in 2499.776s.
-updating features in db
-done in 35.662s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 1100.672s.
-Adding topicterms to db
-done in 19.070s.
-making sparse matrix
-done in 57.155s.
-adding 6011040 doctopics to the db
-done in 5864.850s.
-Making the objects took in 2676.345s.
-Adding the objects took in 3151.892s.
-updating features in db
-done in 42.145s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 2101.159s.
-Adding topicterms to db
-done in 22.374s.
-making sparse matrix
-done in 85.533s.
-adding 7131719 doctopics to the db
-done in 6378.007s.
-Making the objects took in 3447.889s.
-Adding the objects took in 2881.836s.
-done! total time: 486 minutes and 13 seconds
-a maximum of 2962.608 MB was used
-20
-2
-10000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=10000
-254099 documents found
-Extracting tf-idf features for NMF...
-done in 1395.979s.
-10000
-Adding features to db
-done in 36.240s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 109.558s.
-Adding topicterms to db
-done in 17.966s.
-making sparse matrix
-done in 2.592s.
-adding 1025877 doctopics to the db
-done in 1352.204s.
-Making the objects took in 427.685s.
-Adding the objects took in 894.836s.
-updating features in db
-done in 43.303s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 430.721s.
-Adding topicterms to db
-done in 25.100s.
-making sparse matrix
-done in 6.826s.
-adding 1456722 doctopics to the db
-done in 1888.984s.
-Making the objects took in 643.643s.
-Adding the objects took in 1214.314s.
-updating features in db
-done in 43.206s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 829.318s.
-Adding topicterms to db
-done in 30.696s.
-making sparse matrix
-done in 14.341s.
-adding 1895114 doctopics to the db
-done in 2595.381s.
-Making the objects took in 815.790s.
-Adding the objects took in 1740.370s.
-updating features in db
-done in 44.961s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 1043.457s.
-Adding topicterms to db
-done in 31.210s.
-making sparse matrix
-done in 24.251s.
-adding 1848379 doctopics to the db
-done in 2930.082s.
-Making the objects took in 807.510s.
-Adding the objects took in 2079.806s.
-updating features in db
-done in 56.532s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 1341.464s.
-Adding topicterms to db
-done in 34.238s.
-making sparse matrix
-done in 59.775s.
-adding 2060004 doctopics to the db
-done in 3352.595s.
-Making the objects took in 889.759s.
-Adding the objects took in 2415.926s.
-done! total time: 296 minutes and 41 seconds
-a maximum of 3959.528 MB was used
-20
-1
-50000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=50000
-254099 documents found
-Extracting tf-idf features for NMF...
-done in 1306.004s.
-34990
-Adding features to db
-done in 120.830s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 331.181s.
-Adding topicterms to db
-done in 13.295s.
-making sparse matrix
-done in 8.841s.
-adding 2114392 doctopics to the db
-done in 2125.060s.
-Making the objects took in 845.381s.
-Adding the objects took in 1265.196s.
-updating features in db
-done in 113.610s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 853.081s.
-Adding topicterms to db
-done in 15.246s.
-making sparse matrix
-done in 17.900s.
-adding 3366229 doctopics to the db
-done in 3249.183s.
-Making the objects took in 1322.581s.
-Adding the objects took in 1903.773s.
-updating features in db
-done in 113.642s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1700.648s.
-Adding topicterms to db
-done in 19.372s.
-making sparse matrix
-done in 39.273s.
-adding 4997851 doctopics to the db
-done in 4923.997s.
-Making the objects took in 2104.218s.
-Adding the objects took in 2787.348s.
-updating features in db
-done in 116.299s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1562.374s.
-Adding topicterms to db
-done in 22.891s.
-making sparse matrix
-done in 50.539s.
-adding 5899080 doctopics to the db
-done in 5785.265s.
-Making the objects took in 2664.809s.
-Adding the objects took in 3081.375s.
-updating features in db
-done in 134.457s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1938.821s.
-Adding topicterms to db
-done in 26.576s.
-making sparse matrix
-done in 93.626s.
-adding 6969821 doctopics to the db
-done in 7347.821s.
-Making the objects took in 3036.459s.
-Adding the objects took in 4263.956s.
-done! total time: 534 minutes and 29 seconds
-a maximum of 2817.236 MB was used
-20
-2
-50000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=50000
-254099 documents found
-Extracting tf-idf features for NMF...
-done in 1374.805s.
-50000
-Adding features to db
-done in 160.666s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 119.274s.
-Adding topicterms to db
-done in 24.360s.
-making sparse matrix
-done in 3.248s.
-adding 761271 doctopics to the db
-done in 918.348s.
-Making the objects took in 294.311s.
-Adding the objects took in 613.494s.
-updating features in db
-done in 156.094s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 434.006s.
-Adding topicterms to db
-done in 28.069s.
-making sparse matrix
-done in 9.252s.
-adding 1011311 doctopics to the db
-done in 1290.772s.
-Making the objects took in 415.407s.
-Adding the objects took in 859.737s.
-updating features in db
-done in 153.737s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 695.552s.
-Adding topicterms to db
-done in 31.984s.
-making sparse matrix
-done in 20.322s.
-adding 1196857 doctopics to the db
-done in 1620.908s.
-Making the objects took in 449.812s.
-Adding the objects took in 1154.427s.
-updating features in db
-done in 173.743s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 904.723s.
-Adding topicterms to db
-done in 35.373s.
-making sparse matrix
-done in 30.521s.
-adding 1291307 doctopics to the db
-done in 1846.085s.
-Making the objects took in 489.502s.
-Adding the objects took in 1337.289s.
-updating features in db
-done in 186.806s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1822.691s.
-Adding topicterms to db
-done in 37.484s.
-making sparse matrix
-done in 58.824s.
-adding 1370072 doctopics to the db
-done in 2226.955s.
-Making the objects took in 535.482s.
-Adding the objects took in 1670.261s.
-done! total time: 240 minutes and 27 seconds
-a maximum of 3956.048 MB was used
-20
-1
-100000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=100000
-254099 documents found
-Extracting tf-idf features for NMF...
-done in 1286.917s.
-34990
-Adding features to db
-done in 121.849s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
-done in 297.782s.
-Adding topicterms to db
-done in 13.391s.
-making sparse matrix
-done in 8.765s.
-adding 2114392 doctopics to the db
-done in 2146.378s.
-Making the objects took in 823.440s.
-Adding the objects took in 1311.879s.
-updating features in db
-done in 121.520s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
-done in 797.083s.
-Adding topicterms to db
-done in 16.663s.
-making sparse matrix
-done in 18.607s.
-adding 3366229 doctopics to the db
-done in 3183.034s.
-Making the objects took in 1324.483s.
-Adding the objects took in 1841.067s.
-updating features in db
-done in 122.143s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
-done in 1680.881s.
-Adding topicterms to db
-done in 19.281s.
-making sparse matrix
-done in 39.273s.
-adding 4997851 doctopics to the db
-done in 4927.778s.
-Making the objects took in 2071.050s.
-Adding the objects took in 2830.462s.
-updating features in db
-done in 120.032s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
-done in 1502.822s.
-Adding topicterms to db
-done in 23.101s.
-making sparse matrix
-done in 48.235s.
-adding 5899080 doctopics to the db
-done in 5789.203s.
-Making the objects took in 2707.153s.
-Adding the objects took in 3047.850s.
-updating features in db
-done in 145.504s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
-done in 1861.707s.
-Adding topicterms to db
-done in 27.838s.
-making sparse matrix
-done in 93.879s.
-adding 6969821 doctopics to the db
-done in 9027.935s.
-Making the objects took in 3255.060s.
-Adding the objects took in 5725.107s.
-done! total time: 558 minutes and 6 seconds
-a maximum of 2770.016 MB was used
-20
-2
-100000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=100000
-254099 documents found
-Extracting tf-idf features for NMF...
-done in 1373.962s.
-100000
-Adding features to db
-done in 320.534s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
-done in 441.962s.
-Adding topicterms to db
-done in 26.473s.
-making sparse matrix
-done in 5.508s.
-adding 679980 doctopics to the db
-done in 957.519s.
-Making the objects took in 274.219s.
-Adding the objects took in 668.952s.
-updating features in db
-done in 323.257s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
-done in 368.077s.
-Adding topicterms to db
-done in 30.113s.
-making sparse matrix
-done in 12.050s.
-adding 905927 doctopics to the db
-done in 1475.437s.
-Making the objects took in 397.406s.
-Adding the objects took in 1060.924s.
-updating features in db
-done in 345.426s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
-done in 794.855s.
-Adding topicterms to db
-done in 33.028s.
-making sparse matrix
-done in 40.491s.
-adding 1033193 doctopics to the db
-done in 1651.143s.
-Making the objects took in 433.218s.
-Adding the objects took in 1198.413s.
-updating features in db
-done in 343.119s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
-done in 1353.224s.
-Adding topicterms to db
-done in 33.729s.
-making sparse matrix
-done in 55.584s.
-adding 1066179 doctopics to the db
-done in 1700.952s.
-Making the objects took in 411.420s.
-Adding the objects took in 1271.484s.
-updating features in db
-done in 345.581s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=100000...
-done in 1794.139s.
-Adding topicterms to db
-done in 35.198s.
-making sparse matrix
-done in 61.639s.
-adding 1112301 doctopics to the db
-done in 1905.010s.
-Making the objects took in 440.784s.
-Adding the objects took in 1444.719s.
-done! total time: 265 minutes and 14 seconds
-a maximum of 4296.008 MB was used
-20
-1
-10000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=10000
-409031 documents found
-Extracting tf-idf features for NMF...
-done in 1944.425s.
-10000
-Adding features to db
-done in 31.067s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 522.883s.
-Adding topicterms to db
-done in 11.983s.
-making sparse matrix
-done in 11.010s.
-adding 3702716 doctopics to the db
-done in 8372.975s.
-Making the objects took in 2548.994s.
-Adding the objects took in 5795.753s.
-updating features in db
-done in 41.868s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 857.226s.
-Adding topicterms to db
-done in 18.788s.
-making sparse matrix
-done in 27.141s.
-adding 5624222 doctopics to the db
-done in 16694.325s.
-Making the objects took in 3916.004s.
-Adding the objects took in 12731.912s.
-updating features in db
-done in 33.629s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 1351.831s.
-Adding topicterms to db
-done in 24.402s.
-making sparse matrix
-done in 64.197s.
-adding 8468525 doctopics to the db
-done in 23565.461s.
-Making the objects took in 5590.839s.
-Adding the objects took in 17903.933s.
-updating features in db
-done in 34.314s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 2779.970s.
-Adding topicterms to db
-done in 30.617s.
-making sparse matrix
-done in 94.889s.
-adding 10328340 doctopics to the db
-done in 31223.604s.
-Making the objects took in 7145.250s.
-Adding the objects took in 23987.076s.
-updating features in db
-done in 40.832s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 4078.407s.
-Adding topicterms to db
-done in 33.545s.
-making sparse matrix
-done in 145.402s.
-adding 12261204 doctopics to the db
-done in 37263.418s.
-Making the objects took in 8436.234s.
-Adding the objects took in 28709.183s.
-done! total time: 2155 minutes and 49 seconds
-a maximum of 3231.7 MB was used
-20
-2
-10000
-###################################
-Starting     NMF.py with K=20, ngrame=2 and n_features=10000
-409031 documents found
-Extracting tf-idf features for NMF...
-done in 2095.746s.
-10000
-Adding features to db
-done in 33.159s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 191.016s.
-Adding topicterms to db
-done in 28.479s.
-making sparse matrix
-done in 3.783s.
-adding 1792689 doctopics to the db
-done in 5642.303s.
-Making the objects took in 1160.960s.
-Adding the objects took in 4446.563s.
-updating features in db
-done in 34.479s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 409.035s.
-Adding topicterms to db
-done in 32.284s.
-making sparse matrix
-done in 10.958s.
-adding 2258502 doctopics to the db
-done in 7210.802s.
-Making the objects took in 1412.288s.
-Adding the objects took in 5756.195s.
-updating features in db
-done in 39.381s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 1376.039s.
-Adding topicterms to db
-done in 44.636s.
-making sparse matrix
-done in 24.599s.
-adding 3063429 doctopics to the db
-done in 9854.818s.
-Making the objects took in 1941.106s.
-Adding the objects took in 7856.918s.
-updating features in db
-done in 39.006s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 1883.709s.
-Adding topicterms to db
-done in 55.284s.
-making sparse matrix
-done in 47.826s.
-adding 3167198 doctopics to the db
-done in 9851.934s.
-Making the objects took in 1997.858s.
-Adding the objects took in 7795.611s.
-updating features in db
-done in 38.039s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=10000...
-done in 2791.928s.
-Adding topicterms to db
-done in 61.675s.
-making sparse matrix
-done in 99.486s.
-adding 3659744 doctopics to the db
-done in 11895.873s.
-Making the objects took in 2354.990s.
-Adding the objects took in 9466.889s.
-done! total time: 898 minutes and 12 seconds
-a maximum of 4877.884 MB was used
-20
-1
-50000
-###################################
-Starting     NMF.py with K=20, ngrame=1 and n_features=50000
-409031 documents found
-Extracting tf-idf features for NMF...
-done in 1995.746s.
-46212
-Adding features to db
-done in 171.611s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 526.856s.
-Adding topicterms to db
-done in 20.840s.
-making sparse matrix
-done in 14.374s.
-adding 3506615 doctopics to the db
-done in 9989.275s.
-Making the objects took in 2214.948s.
-Adding the objects took in 7754.293s.
-updating features in db
-done in 152.851s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1151.867s.
-Adding topicterms to db
-done in 25.469s.
-making sparse matrix
-done in 28.289s.
-adding 5498515 doctopics to the db
-done in 16841.969s.
-Making the objects took in 3498.037s.
-Adding the objects took in 13308.278s.
-updating features in db
-done in 176.099s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2639.027s.
-Adding topicterms to db
-done in 30.765s.
-making sparse matrix
-done in 62.222s.
-adding 8300097 doctopics to the db
-code/do_runs.sh: line 9: 21833 Terminated              python3 /home/galm/projects/cc-topography/code/nmf_multi.py 20 $n $f
-code/do_runs.sh: line 9: 29398 Terminated              python3 /home/galm/projects/cc-topography/code/nmf_multi.py 20 $n $f
-code/do_runs.sh: line 9: 29400 Terminated              python3 /home/galm/projects/cc-topography/code/nmf_multi.py 20 $n $f
-code/do_runs.sh: line 9: 29402 Terminated              python3 /home/galm/projects/cc-topography/code/nmf_multi.py 20 $n $f
-Extracting tf-idf features for NMF...
-done in 0.103s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.015s.
-Adding topicterms to db
-done in 0.247s.
-Extracting tf-idf features for NMF...
-done in 0.596s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.165s.
-Adding topicterms to db
-done in 0.519s.
-Extracting tf-idf features for NMF...
-done in 1.058s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.191s.
-Adding topicterms to db
-done in 0.662s.
-Extracting tf-idf features for NMF...
-done in 1.143s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.232s.
-Adding topicterms to db
-done in 0.679s.
-Extracting tf-idf features for NMF...
-done in 1.436s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.181s.
-Adding topicterms to db
-done in 0.711s.
-Extracting tf-idf features for NMF...
-done in 2.338s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.424s.
-Adding topicterms to db
-done in 0.932s.
-Extracting tf-idf features for NMF...
-done in 2.365s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.161s.
-Adding topicterms to db
-done in 0.767s.
-Extracting tf-idf features for NMF...
-done in 2.786s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.559s.
-Adding topicterms to db
-done in 0.938s.
-Extracting tf-idf features for NMF...
-done in 3.428s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.377s.
-Adding topicterms to db
-done in 1.370s.
-Extracting tf-idf features for NMF...
-done in 3.729s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.343s.
-Adding topicterms to db
-done in 0.961s.
-Extracting tf-idf features for NMF...
-done in 4.466s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.381s.
-Adding topicterms to db
-done in 1.135s.
-Extracting tf-idf features for NMF...
-done in 4.667s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.614s.
-Adding topicterms to db
-done in 1.211s.
-Extracting tf-idf features for NMF...
-done in 5.113s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.584s.
-Adding topicterms to db
-done in 1.204s.
-Extracting tf-idf features for NMF...
-done in 6.748s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.144s.
-Adding topicterms to db
-done in 1.266s.
-Extracting tf-idf features for NMF...
-done in 6.576s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.365s.
-Adding topicterms to db
-done in 1.378s.
-Extracting tf-idf features for NMF...
-done in 8.216s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.682s.
-Adding topicterms to db
-done in 1.405s.
-Extracting tf-idf features for NMF...
-done in 9.861s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.977s.
-Adding topicterms to db
-done in 1.586s.
-Extracting tf-idf features for NMF...
-done in 13.088s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2.839s.
-Adding topicterms to db
-done in 1.791s.
-Extracting tf-idf features for NMF...
-done in 15.233s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2.890s.
-Adding topicterms to db
-done in 1.941s.
-Extracting tf-idf features for NMF...
-done in 18.532s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 3.840s.
-Adding topicterms to db
-done in 2.142s.
-Extracting tf-idf features for NMF...
-done in 20.981s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 4.538s.
-Adding topicterms to db
-done in 2.254s.
-Extracting tf-idf features for NMF...
-done in 24.976s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 5.432s.
-Adding topicterms to db
-done in 2.511s.
-Extracting tf-idf features for NMF...
-done in 27.555s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 5.818s.
-Adding topicterms to db
-done in 2.544s.
-Extracting tf-idf features for NMF...
-done in 33.606s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 7.297s.
-Adding topicterms to db
-done in 2.938s.
-Extracting tf-idf features for NMF...
-done in 37.215s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 6.245s.
-Adding topicterms to db
-done in 3.095s.
-Extracting tf-idf features for NMF...
-done in 44.796s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 8.031s.
-Adding topicterms to db
-done in 3.417s.
-<QuerySet [<Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, '...(remaining elements truncated)...']>
-[281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300]
-Adding topicterms to db
-done in 0.671s.
-done! total time: 21 minutes and 8 seconds
-a maximum of 1319.008 MB was used
-Extracting tf-idf features for NMF...
-done in 0.110s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.014s.
-Adding topicterms to db
-done in 0.255s.
-Extracting tf-idf features for NMF...
-done in 0.677s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.149s.
-Adding topicterms to db
-done in 0.537s.
-Extracting tf-idf features for NMF...
-done in 1.054s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.202s.
-Adding topicterms to db
-done in 0.650s.
-Extracting tf-idf features for NMF...
-done in 1.146s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.215s.
-Adding topicterms to db
-done in 0.676s.
-Extracting tf-idf features for NMF...
-done in 1.478s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.193s.
-Adding topicterms to db
-done in 0.707s.
-Extracting tf-idf features for NMF...
-done in 2.319s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.402s.
-Adding topicterms to db
-done in 0.752s.
-Extracting tf-idf features for NMF...
-done in 2.358s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.169s.
-Adding topicterms to db
-done in 0.893s.
-Extracting tf-idf features for NMF...
-done in 2.784s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.543s.
-Adding topicterms to db
-done in 0.895s.
-Extracting tf-idf features for NMF...
-done in 3.345s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.377s.
-Adding topicterms to db
-done in 1.226s.
-Extracting tf-idf features for NMF...
-done in 3.691s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.320s.
-Adding topicterms to db
-done in 0.961s.
-Extracting tf-idf features for NMF...
-done in 4.442s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.389s.
-Adding topicterms to db
-done in 1.113s.
-Extracting tf-idf features for NMF...
-done in 4.673s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.593s.
-Adding topicterms to db
-done in 1.363s.
-Extracting tf-idf features for NMF...
-done in 5.216s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.586s.
-Adding topicterms to db
-done in 1.193s.
-Extracting tf-idf features for NMF...
-done in 6.664s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.127s.
-Adding topicterms to db
-done in 1.121s.
-Extracting tf-idf features for NMF...
-done in 6.623s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.363s.
-Adding topicterms to db
-done in 1.484s.
-Extracting tf-idf features for NMF...
-done in 7.971s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.687s.
-Adding topicterms to db
-done in 1.401s.
-Extracting tf-idf features for NMF...
-done in 9.846s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.935s.
-Adding topicterms to db
-done in 1.638s.
-Extracting tf-idf features for NMF...
-done in 13.359s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2.908s.
-Adding topicterms to db
-done in 1.821s.
-Extracting tf-idf features for NMF...
-done in 15.293s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2.914s.
-Adding topicterms to db
-done in 1.868s.
-Extracting tf-idf features for NMF...
-done in 18.444s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 3.713s.
-Adding topicterms to db
-done in 2.300s.
-Extracting tf-idf features for NMF...
-done in 21.623s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 4.661s.
-Adding topicterms to db
-done in 2.098s.
-Extracting tf-idf features for NMF...
-done in 24.082s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 5.409s.
-Adding topicterms to db
-done in 2.282s.
-Extracting tf-idf features for NMF...
-done in 27.820s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 6.196s.
-Adding topicterms to db
-done in 2.732s.
-Extracting tf-idf features for NMF...
-done in 33.395s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 7.465s.
-Adding topicterms to db
-done in 2.976s.
-Extracting tf-idf features for NMF...
-done in 37.125s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 6.123s.
-Adding topicterms to db
-done in 3.041s.
-Extracting tf-idf features for NMF...
-done in 43.695s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 8.044s.
-Adding topicterms to db
-done in 3.083s.
-<QuerySet [<Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, '...(remaining elements truncated)...']>
-[301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340]
-Adding topicterms to db
-done in 0.772s.
-done! total time: 20 minutes and 54 seconds
-a maximum of 1329.3 MB was used
-Extracting tf-idf features for NMF...
-done in 0.105s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.014s.
-Adding topicterms to db
-done in 0.247s.
-Extracting tf-idf features for NMF...
-done in 0.607s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.288s.
-Adding topicterms to db
-done in 0.665s.
-Extracting tf-idf features for NMF...
-done in 0.931s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.235s.
-Adding topicterms to db
-done in 0.728s.
-Extracting tf-idf features for NMF...
-done in 1.280s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.224s.
-Adding topicterms to db
-done in 0.869s.
-Extracting tf-idf features for NMF...
-done in 1.514s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.524s.
-Adding topicterms to db
-done in 0.865s.
-Extracting tf-idf features for NMF...
-done in 2.450s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.396s.
-Adding topicterms to db
-done in 0.953s.
-Extracting tf-idf features for NMF...
-done in 2.377s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.426s.
-Adding topicterms to db
-done in 0.948s.
-Extracting tf-idf features for NMF...
-done in 2.823s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.687s.
-Adding topicterms to db
-done in 1.142s.
-Extracting tf-idf features for NMF...
-done in 3.493s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.293s.
-Adding topicterms to db
-done in 1.962s.
-Extracting tf-idf features for NMF...
-done in 4.030s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.635s.
-Adding topicterms to db
-done in 1.043s.
-Extracting tf-idf features for NMF...
-done in 4.560s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.021s.
-Adding topicterms to db
-done in 1.236s.
-Extracting tf-idf features for NMF...
-done in 4.667s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.884s.
-Adding topicterms to db
-done in 1.220s.
-Extracting tf-idf features for NMF...
-done in 5.197s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.690s.
-Adding topicterms to db
-done in 1.298s.
-Extracting tf-idf features for NMF...
-done in 6.846s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.273s.
-Adding topicterms to db
-done in 1.493s.
-Extracting tf-idf features for NMF...
-done in 6.678s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.704s.
-Adding topicterms to db
-done in 1.428s.
-Extracting tf-idf features for NMF...
-done in 8.185s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.520s.
-Adding topicterms to db
-done in 1.644s.
-Extracting tf-idf features for NMF...
-done in 10.219s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.750s.
-Adding topicterms to db
-done in 1.765s.
-Extracting tf-idf features for NMF...
-done in 13.431s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 3.636s.
-Adding topicterms to db
-done in 2.242s.
-Extracting tf-idf features for NMF...
-done in 15.320s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 5.433s.
-Adding topicterms to db
-done in 1.937s.
-Extracting tf-idf features for NMF...
-done in 18.819s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 6.516s.
-Adding topicterms to db
-done in 2.415s.
-Extracting tf-idf features for NMF...
-done in 22.538s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 6.655s.
-Adding topicterms to db
-done in 2.548s.
-Extracting tf-idf features for NMF...
-done in 25.353s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 5.307s.
-Adding topicterms to db
-done in 2.805s.
-Extracting tf-idf features for NMF...
-done in 28.898s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 7.907s.
-Adding topicterms to db
-done in 2.909s.
-Extracting tf-idf features for NMF...
-done in 34.539s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 12.472s.
-Adding topicterms to db
-done in 3.032s.
-Extracting tf-idf features for NMF...
-done in 38.616s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 13.268s.
-Adding topicterms to db
-done in 3.240s.
-Extracting tf-idf features for NMF...
-done in 45.368s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 15.791s.
-Adding topicterms to db
-done in 3.470s.
-<QuerySet [<Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, '...(remaining elements truncated)...']>
-Traceback (most recent call last):
-  File "code/dynamic_nmf.py", line 382, in <module>
-    main()
-  File "code/dynamic_nmf.py", line 304, in main
-    ).fit(B)
-  File "/usr/local/lib/python3.4/dist-packages/sklearn/decomposition/nmf.py", line 1075, in fit
-    self.fit_transform(X, **params)
-  File "/usr/local/lib/python3.4/dist-packages/sklearn/decomposition/nmf.py", line 1041, in fit_transform
-    beta=self.beta, eta=self.eta)
-  File "/usr/local/lib/python3.4/dist-packages/sklearn/decomposition/nmf.py", line 754, in non_negative_factorization
-    " got (n_components=%r)" % n_components)
-ValueError: Number of components must be positive; got (n_components=15.0)
-Extracting tf-idf features for NMF...
-done in 0.102s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.012s.
-Adding topicterms to db
-done in 0.221s.
-Extracting tf-idf features for NMF...
-done in 0.590s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.307s.
-Adding topicterms to db
-done in 0.680s.
-Extracting tf-idf features for NMF...
-done in 0.952s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.221s.
-Adding topicterms to db
-done in 0.783s.
-Extracting tf-idf features for NMF...
-done in 1.147s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.261s.
-Adding topicterms to db
-done in 0.723s.
-Extracting tf-idf features for NMF...
-done in 1.425s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.520s.
-Adding topicterms to db
-done in 0.850s.
-Extracting tf-idf features for NMF...
-done in 2.391s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.368s.
-Adding topicterms to db
-done in 0.923s.
-Extracting tf-idf features for NMF...
-done in 2.410s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.384s.
-Adding topicterms to db
-done in 1.011s.
-Extracting tf-idf features for NMF...
-done in 2.891s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.636s.
-Adding topicterms to db
-done in 1.085s.
-Extracting tf-idf features for NMF...
-done in 3.566s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.331s.
-Adding topicterms to db
-done in 1.379s.
-Extracting tf-idf features for NMF...
-done in 3.729s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.675s.
-Adding topicterms to db
-done in 1.015s.
-Extracting tf-idf features for NMF...
-done in 4.610s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.034s.
-Adding topicterms to db
-done in 1.090s.
-Extracting tf-idf features for NMF...
-done in 4.754s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.863s.
-Adding topicterms to db
-done in 1.227s.
-Extracting tf-idf features for NMF...
-done in 5.293s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.754s.
-Adding topicterms to db
-done in 1.266s.
-Extracting tf-idf features for NMF...
-done in 6.673s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.296s.
-Adding topicterms to db
-done in 1.496s.
-Extracting tf-idf features for NMF...
-done in 6.788s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.686s.
-Adding topicterms to db
-done in 1.504s.
-Extracting tf-idf features for NMF...
-done in 8.307s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.558s.
-Adding topicterms to db
-done in 1.655s.
-Extracting tf-idf features for NMF...
-done in 10.085s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.736s.
-Adding topicterms to db
-done in 1.674s.
-Extracting tf-idf features for NMF...
-done in 13.242s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 4.025s.
-Adding topicterms to db
-done in 1.981s.
-Extracting tf-idf features for NMF...
-done in 15.363s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 5.307s.
-Adding topicterms to db
-done in 2.064s.
-Extracting tf-idf features for NMF...
-done in 18.633s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 6.311s.
-Adding topicterms to db
-done in 2.133s.
-Extracting tf-idf features for NMF...
-done in 21.988s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 6.744s.
-Adding topicterms to db
-done in 2.477s.
-Extracting tf-idf features for NMF...
-done in 25.324s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 5.244s.
-Adding topicterms to db
-done in 2.744s.
-Extracting tf-idf features for NMF...
-done in 28.139s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 8.012s.
-Adding topicterms to db
-done in 2.769s.
-Extracting tf-idf features for NMF...
-done in 34.207s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 12.016s.
-Adding topicterms to db
-done in 3.137s.
-Extracting tf-idf features for NMF...
-done in 39.410s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 13.430s.
-Adding topicterms to db
-done in 3.119s.
-Extracting tf-idf features for NMF...
-done in 45.547s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 15.729s.
-Adding topicterms to db
-done in 3.287s.
-<QuerySet [<Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, '...(remaining elements truncated)...']>
-[355, 354, 353, 352, 351, 350, 349, 348, 347, 346, 345, 344, 343, 342, 341]
-Adding topicterms to db
-done in 2.491s.
-done! total time: 23 minutes and 37 seconds
-a maximum of 439.372 MB was used
-Extracting tf-idf features for NMF...
-done in 0.101s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.033s.
-Adding topicterms to db
-done in 0.256s.
-Extracting tf-idf features for NMF...
-done in 0.657s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.543s.
-Adding topicterms to db
-done in 0.707s.
-Extracting tf-idf features for NMF...
-done in 0.907s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.616s.
-Adding topicterms to db
-done in 0.779s.
-Extracting tf-idf features for NMF...
-done in 1.161s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.690s.
-Adding topicterms to db
-done in 0.805s.
-Extracting tf-idf features for NMF...
-done in 1.418s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.927s.
-Adding topicterms to db
-done in 0.811s.
-Extracting tf-idf features for NMF...
-done in 2.265s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.187s.
-Adding topicterms to db
-done in 1.045s.
-Extracting tf-idf features for NMF...
-done in 2.302s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 0.947s.
-Adding topicterms to db
-done in 1.545s.
-Extracting tf-idf features for NMF...
-done in 2.782s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2.002s.
-Adding topicterms to db
-done in 1.158s.
-Extracting tf-idf features for NMF...
-done in 3.392s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.054s.
-Adding topicterms to db
-done in 3.329s.
-Extracting tf-idf features for NMF...
-done in 3.871s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2.253s.
-Adding topicterms to db
-done in 1.286s.
-Extracting tf-idf features for NMF...
-done in 4.579s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1.283s.
-Adding topicterms to db
-done in 1.343s.
-Extracting tf-idf features for NMF...
-done in 4.517s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 3.584s.
-Adding topicterms to db
-done in 1.353s.
-Extracting tf-idf features for NMF...
-done in 5.082s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2.971s.
-Adding topicterms to db
-done in 1.417s.
-Extracting tf-idf features for NMF...
-done in 6.401s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 3.899s.
-Adding topicterms to db
-done in 1.538s.
-Extracting tf-idf features for NMF...
-done in 6.568s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2.722s.
-Adding topicterms to db
-done in 1.645s.
-Extracting tf-idf features for NMF...
-done in 7.856s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 3.531s.
-Adding topicterms to db
-done in 1.709s.
-Extracting tf-idf features for NMF...
-done in 9.632s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 4.187s.
-Adding topicterms to db
-done in 1.782s.
-Extracting tf-idf features for NMF...
-done in 12.836s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 5.574s.
-Adding topicterms to db
-done in 2.151s.
-Extracting tf-idf features for NMF...
-done in 14.744s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 5.321s.
-Adding topicterms to db
-done in 2.239s.
-Extracting tf-idf features for NMF...
-done in 17.724s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 7.859s.
-Adding topicterms to db
-done in 2.593s.
-Extracting tf-idf features for NMF...
-done in 20.967s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 9.796s.
-Adding topicterms to db
-done in 2.609s.
-Extracting tf-idf features for NMF...
-done in 23.807s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 7.252s.
-Adding topicterms to db
-done in 2.792s.
-Extracting tf-idf features for NMF...
-done in 27.548s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 23.329s.
-Adding topicterms to db
-done in 3.145s.
-Extracting tf-idf features for NMF...
-done in 33.732s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 17.892s.
-Adding topicterms to db
-done in 3.457s.
-Extracting tf-idf features for NMF...
-done in 37.294s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 29.864s.
-Adding topicterms to db
-done in 3.737s.
-Extracting tf-idf features for NMF...
-done in 43.945s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 34.694s.
-Adding topicterms to db
-done in 4.254s.
-<QuerySet [<Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, <Topic: Topic object>, '...(remaining elements truncated)...']>
-[356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415]
-Adding topicterms to db
-done in 1.069s.
-done! total time: 29 minutes and 31 seconds
-a maximum of 496.756 MB was used
 
-###############################        
-## Doing NMF on query 365 with 254100 documents and 100 topics
-
-Extracting tf-idf features for NMF...
-done in 1278.285s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2948.891s.
-Adding topicterms to db
-done in 173.350s.
-347
-RunStats object
-347
-{'name': 'AR0', 'n': 0, 'years': range(0, 1985)}
-{'name': 'AR1', 'n': 1, 'years': range(1985, 1991)}
-{'name': 'AR2', 'n': 2, 'years': range(1991, 1995)}
-{'name': 'AR3', 'n': 3, 'years': range(1995, 2001)}
-{'name': 'AR4', 'n': 4, 'years': range(2001, 2008)}
-{'name': 'AR5', 'n': 5, 'years': range(2008, 2014)}
-{'name': 'AR6', 'n': 6, 'years': range(2014, 9999)}
-done! total time: 870 minutes and 15 seconds
-a maximum of 5872.004 MB was used
-usage: manage.py nmf [-h] [--version] [-v {0,1,2,3}] [--settings SETTINGS]
-                     [--pythonpath PYTHONPATH] [--traceback] [--no-color]
-                     [--alpha ALPHA] [--limit LIMIT] [--n_features N_FEATURES]
-                     [--n_samples N_SAMPLES] [--ng NG]
-                     qid K
-manage.py nmf: error: argument --alpha: invalid int value: '0.1'
-
-###############################        
-## Doing NMF on query 365 with 254100 documents and 100 topics
-
-Extracting tf-idf features for NMF...
-done in 1291.104s.
-Traceback (most recent call last):
-  File "/home/galm/software/django/tmv/BasicBrowser/manage.py", line 22, in <module>
-    execute_from_command_line(sys.argv)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 367, in execute_from_command_line
-    utility.execute()
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 359, in execute
-    self.fetch_command(subcommand).run_from_argv(self.argv)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 294, in run_from_argv
-    self.execute(*args, **cmd_options)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 345, in execute
-    output = self.handle(*args, **options)
-  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/management/commands/nmf.py", line 80, in handle
-    stat.process_id = os.getpid()
-NameError: name 'os' is not defined
-
-###############################        
-## Doing NMF on query 365 with 254100 documents and 100 topics
-
-Extracting tf-idf features for NMF...
-done in 1302.001s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2598.864s.
-Adding topicterms to db
-done in 93.361s.
-349
-RunStats object
-349
-{'n': 0, 'years': range(0, 1985), 'name': 'AR0'}
-{'n': 1, 'years': range(1985, 1991), 'name': 'AR1'}
-{'n': 2, 'years': range(1991, 1995), 'name': 'AR2'}
-{'n': 3, 'years': range(1995, 2001), 'name': 'AR3'}
-{'n': 4, 'years': range(2001, 2008), 'name': 'AR4'}
-{'n': 5, 'years': range(2008, 2014), 'name': 'AR5'}
-{'n': 6, 'years': range(2014, 9999), 'name': 'AR6'}
-done! total time: 538 minutes and 14 seconds
-a maximum of 4140.768 MB was used
-
-###############################        
-## Doing NMF on query 365 with 254100 documents and 100 topics
-
-Extracting tf-idf features for NMF...
-done in 1248.112s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2456.842s.
-Adding topicterms to db
-done in 111.936s.
-350
-RunStats object
-350
-{'name': 'AR0', 'n': 0, 'years': range(0, 1985)}
-{'name': 'AR1', 'n': 1, 'years': range(1985, 1991)}
-{'name': 'AR2', 'n': 2, 'years': range(1991, 1995)}
-{'name': 'AR3', 'n': 3, 'years': range(1995, 2001)}
-{'name': 'AR4', 'n': 4, 'years': range(2001, 2008)}
-{'name': 'AR5', 'n': 5, 'years': range(2008, 2014)}
-{'name': 'AR6', 'n': 6, 'years': range(2014, 9999)}
-done! total time: 512 minutes and 28 seconds
-a maximum of 4893.692 MB was used
-
-###############################        
-## Doing NMF on query 365 with 254100 documents and 120 topics
-
-Extracting tf-idf features for NMF...
-done in 1327.927s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 3090.666s.
-Adding topicterms to db
-done in 93.902s.
-362
-RunStats object
-362
-{'years': range(0, 1985), 'n': 0, 'name': 'AR0'}
-{'years': range(1985, 1991), 'n': 1, 'name': 'AR1'}
-{'years': range(1991, 1995), 'n': 2, 'name': 'AR2'}
-{'years': range(1995, 2001), 'n': 3, 'name': 'AR3'}
-{'years': range(2001, 2008), 'n': 4, 'name': 'AR4'}
-{'years': range(2008, 2014), 'n': 5, 'name': 'AR5'}
-{'years': range(2014, 9999), 'n': 6, 'name': 'AR6'}
-done! total time: 1056 minutes and 29 seconds
-a maximum of 5439.444 MB was used
-
-###############################        
-## Doing NMF on query 365 with 254100 documents and 80 topics
-
-Extracting tf-idf features for NMF...
-done in 1290.298s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 2233.823s.
-Adding topicterms to db
-done in 107.509s.
-363
-RunStats object
-363
-{'years': range(0, 1985), 'name': 'AR0', 'n': 0}
-{'years': range(1985, 1991), 'name': 'AR1', 'n': 1}
-{'years': range(1991, 1995), 'name': 'AR2', 'n': 2}
-{'years': range(1995, 2001), 'name': 'AR3', 'n': 3}
-{'years': range(2001, 2008), 'name': 'AR4', 'n': 4}
-{'years': range(2008, 2014), 'name': 'AR5', 'n': 5}
-{'years': range(2014, 9999), 'name': 'AR6', 'n': 6}
-done! total time: 1055 minutes and 38 seconds
-a maximum of 4340.408 MB was used
-
-###############################        
-## Doing NMF on query 365 with 254100 documents and 100 topics
+###############################    
+## Doing NMF on query 2355 with 289335 documents and 100 topics
 
 Traceback (most recent call last):
-  File "/home/galm/software/django/tmv/BasicBrowser/manage.py", line 22, in <module>
-    execute_from_command_line(sys.argv)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 367, in execute_from_command_line
-    utility.execute()
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 359, in execute
-    self.fetch_command(subcommand).run_from_argv(self.argv)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 294, in run_from_argv
-    self.execute(*args, **cmd_options)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 345, in execute
-    output = self.handle(*args, **options)
-  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/management/commands/nmf.py", line 59, in handle
-    abstracts, docsizes, ids = proc_docs(docs, stoplist)
-  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 23, in proc_docs
-    abstracts = [re.split("\([C-c]\) [1-2][0-9]{3} Elsevier",x.content)[0] for x in docs.iterator()]
-AttributeError: 'list' object has no attribute 'iterator'
+  File "code/do_nmf.py", line 27, in <module>
+    do_nmf(stat.pk)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/local.py", line 191, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/app/task.py", line 380, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/tasks.py", line 357, in do_nmf
+    abstracts, docsizes, ids, citations = proc_docs(docs, stoplist, stat.fulltext, stat.citations)
+  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 46, in proc_docs
+    citations=[x.wosarticle.tc if x.wosarticle.tc is not None else 0 for x in docs]
+  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 46, in <listcomp>
+    citations=[x.wosarticle.tc if x.wosarticle.tc is not None else 0 for x in docs]
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/fields/related_descriptors.py", line 389, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: Doc has no wosarticle.
 
-###############################        
-## Doing NMF on query 365 with 254100 documents and 100 topics
-
-Traceback (most recent call last):
-  File "/home/galm/software/django/tmv/BasicBrowser/manage.py", line 22, in <module>
-    execute_from_command_line(sys.argv)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 367, in execute_from_command_line
-    utility.execute()
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/__init__.py", line 359, in execute
-    self.fetch_command(subcommand).run_from_argv(self.argv)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 294, in run_from_argv
-    self.execute(*args, **cmd_options)
-  File "/usr/local/lib/python3.4/dist-packages/django/core/management/base.py", line 345, in execute
-    output = self.handle(*args, **options)
-  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/management/commands/nmf.py", line 59, in handle
-    abstracts, docsizes, ids = proc_docs(docs, stoplist)
-  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 28, in proc_docs
-    ids = [x.UT for x in docs.iterator()]
-AttributeError: 'list' object has no attribute 'iterator'
-
-###############################        
-## Doing NMF on query 365 with 254100 documents and 100 topics
+###############################    
+## Doing NMF on query 2355 with 289335 documents and 100 topics
 
 Extracting tf-idf features for NMF...
-done in 1303.397s.
-Fitting the NMF model with tf-idf features, n_samples=1000 and n_features=50000...
-done in 1242.582s.
+done in 1558.790s.
+Fitting the model with tf-idf features, n_samples=200 and n_features=100000000000...
+violation: 1.0
+violation: 0.35246065342419575
+violation: 0.27190346732549137
+violation: 0.18635650595751313
+violation: 0.14278818770714158
+violation: 0.10999732465705409
+violation: 0.0862686991402161
+violation: 0.07438251312012148
+violation: 0.06541368619288586
+violation: 0.05545281291433079
+violation: 0.04638779233131111
+violation: 0.03943482781998653
+violation: 0.0339813087484224
+violation: 0.029293635075919415
+violation: 0.025422319784154802
+violation: 0.022474968284085017
+violation: 0.020599160101923742
+violation: 0.01877904640309408
+violation: 0.016705624935513152
+violation: 0.014657722208563137
+violation: 0.012997630587994684
+violation: 0.011706465315442567
+violation: 0.010777551899210541
+violation: 0.010074939897505584
+violation: 0.009531399287541317
+violation: 0.009002773044803887
+violation: 0.008465830112979965
+violation: 0.007837434469578727
+violation: 0.007246950661341735
+violation: 0.006657652838569171
+violation: 0.00610785377300199
+violation: 0.005562703797415118
+violation: 0.005076673067988248
+violation: 0.004652386572501893
+violation: 0.0042859167142900965
+violation: 0.0039745222130350005
+violation: 0.0036983264032545036
+violation: 0.0034324425435510193
+violation: 0.0031814676436604256
+violation: 0.002984594587232722
+violation: 0.002843201166500816
+violation: 0.0027444370646211545
+violation: 0.0027103152928302917
+violation: 0.002770069070054598
+violation: 0.002952863156656991
+violation: 0.00329911743369616
+violation: 0.0037909425900761067
+violation: 0.004256967462876207
+violation: 0.004404210368459322
+violation: 0.0041953325060150445
+violation: 0.004011123676834964
+violation: 0.004501145395389079
+violation: 0.00606583200508337
+violation: 0.008068033523233266
+violation: 0.00880788049646599
+violation: 0.00725361814083716
+violation: 0.005045262135590532
+violation: 0.0034480172797606286
+violation: 0.0026883228134867818
+violation: 0.002281333225966479
+violation: 0.0020201416731464
+violation: 0.00183875643819537
+violation: 0.0017050908028172732
+violation: 0.0016061030139515851
+violation: 0.001531184559591844
+violation: 0.0014741870718212688
+violation: 0.001430704062549594
+violation: 0.0013966526943630477
+violation: 0.0013703929264936123
+violation: 0.0013533098594884466
+violation: 0.001345400838503562
+violation: 0.001342885663594595
+violation: 0.0013441176159585827
+violation: 0.0013483511239214584
+violation: 0.0013541094155294453
+violation: 0.0013619337703889743
+violation: 0.0013731084742304295
+violation: 0.0013866842234108827
+violation: 0.001402448274020438
+violation: 0.0014208131817671941
+violation: 0.0014434961215039489
+violation: 0.0014711129325560273
+violation: 0.0015028930481573147
+violation: 0.0015389301379519701
+violation: 0.0015801475133741317
+violation: 0.0016269256262083477
+violation: 0.001675208884658712
+violation: 0.001721826408136133
+violation: 0.001770730666409438
+violation: 0.001818262198474217
+violation: 0.0018593024205718366
+violation: 0.0018882460322088733
+violation: 0.0018886647715961598
+violation: 0.0018766781191253256
+violation: 0.001853014661006071
+violation: 0.0018140736947390714
+violation: 0.0017631651045864679
+violation: 0.001696958708421153
+violation: 0.0016068691958875771
+violation: 0.0015355035158806144
+violation: 0.0014626881958759177
+violation: 0.0013905922189254992
+violation: 0.0013226945017164897
+violation: 0.0012623993049731069
+violation: 0.0012066755510836834
+violation: 0.0011539948972581684
+violation: 0.0011039625005972702
+violation: 0.0010584225989282727
+violation: 0.0010181418014936802
+violation: 0.0009805221623642281
+violation: 0.0009469808141138473
+violation: 0.000918849112365624
+violation: 0.000893525555149838
+violation: 0.0008713241375473607
+violation: 0.00085253667350843
+violation: 0.0008350602892380192
+violation: 0.0008208623243832568
+violation: 0.0008092950891213903
+violation: 0.0008002540960326848
+violation: 0.0007925592594418804
+violation: 0.0007852399590769023
+violation: 0.0007788190623197593
+violation: 0.0007731769016309974
+violation: 0.0007689551460910069
+violation: 0.0007658281453644689
+violation: 0.0007629918067436868
+violation: 0.0007608483537003181
+violation: 0.0007593857566689519
+violation: 0.0007591366402297081
+violation: 0.0007597874673364236
+violation: 0.0007613721858219648
+violation: 0.0007637307701993783
+violation: 0.0007662601577454601
+violation: 0.0007699950368226416
+violation: 0.000774431900181556
+violation: 0.0007799461624820939
+violation: 0.0007851845713270927
+violation: 0.0007905842724098634
+violation: 0.0007969063942541442
+violation: 0.0008031837407002368
+violation: 0.000805778445841999
+violation: 0.0008103148409785813
+violation: 0.0008152874661912312
+violation: 0.0008208978807688629
+violation: 0.0008260205028898485
+violation: 0.0008311763342008171
+violation: 0.0008357905601068453
+violation: 0.0008406731463671501
+violation: 0.0008458523324164299
+violation: 0.0008504122933521
+violation: 0.0008546212304262473
+violation: 0.0008580531728577323
+violation: 0.0008606193910401204
+violation: 0.0008621127582377605
+violation: 0.0008625771659935208
+violation: 0.0008619079397777524
+violation: 0.0008600253202162563
+violation: 0.0008563612484413703
+violation: 0.0008499052652772207
+violation: 0.0008397944272504138
+violation: 0.0008283471943110138
+violation: 0.0008152876491430267
+violation: 0.0008014753084716928
+violation: 0.0007864602241239454
+violation: 0.0007701585346171126
+violation: 0.000751919200557576
+violation: 0.0007332444190160536
+violation: 0.0007149722118936981
+violation: 0.0006969207123171039
+violation: 0.0006794233323839923
+violation: 0.0006626522393215097
+violation: 0.0006454531598446364
+violation: 0.000629453380385671
+violation: 0.0006143254863662933
+violation: 0.0006000911485145653
+violation: 0.00058663109527217
+violation: 0.000573943440523788
+violation: 0.0005620441950807547
+violation: 0.0005507991412738737
+violation: 0.0005402801018235795
+violation: 0.0005306493214000212
+violation: 0.0005216500425024328
+violation: 0.0005132800347445045
+violation: 0.0005053899401363909
+violation: 0.0004980361588488592
+violation: 0.000491152437026217
+violation: 0.000484740695565986
+violation: 0.0004788174727963215
+violation: 0.0004732943082531082
+violation: 0.0004680561966587728
+violation: 0.0004631450322543924
+violation: 0.00045857123386627683
+violation: 0.00045322483918322455
+violation: 0.00044855329683720274
+violation: 0.00044436605131881635
+violation: 0.0004405477369282324
+violation: 0.0004370168624466898
+violation: 0.00043376607148075673
+violation: 0.0004306935131920719
+violation: 0.0004277974945449341
+violation: 1.0
+violation: 0.6442320386665736
+violation: 0.08710839212611898
+violation: 0.023078478802231184
+violation: 0.0066416921033712
+violation: 0.001982505496973831
+violation: 0.0006447055298651796
+violation: 0.00020239060275745592
+violation: 6.679849838527133e-05
+Converged at iteration 9
+done in 4006.576s.
 Adding topicterms to db
-done in 87.747s.
-364
-RunStats object
-364
-{'name': 'AR0', 'n': 0, 'years': range(0, 1985)}
-{'name': 'AR1', 'n': 1, 'years': range(1985, 1991)}
-{'name': 'AR2', 'n': 2, 'years': range(1991, 1995)}
-{'name': 'AR3', 'n': 3, 'years': range(1995, 2001)}
-{'name': 'AR4', 'n': 4, 'years': range(2001, 2008)}
-{'name': 'AR5', 'n': 5, 'years': range(2008, 2014)}
-{'name': 'AR6', 'n': 6, 'years': range(2014, 9999)}
-done! total time: 507 minutes and 18 seconds
-a maximum of 3773.712 MB was used
+done in 449.122s.
+764
+RunStats object (764)
+764
+{'ar': 0, 'end': 1984, 'start': 0, 'name': 'AR0', 'id': 6}
+{'ar': 1, 'end': 1990, 'start': 1985, 'name': 'AR1', 'id': 1}
+{'ar': 2, 'end': 1994, 'start': 1991, 'name': 'AR2', 'id': 2}
+{'ar': 3, 'end': 2000, 'start': 1995, 'name': 'AR3', 'id': 3}
+{'ar': 4, 'end': 2007, 'start': 2001, 'name': 'AR4', 'id': 4}
+{'ar': 5, 'end': 2013, 'start': 2008, 'name': 'AR5', 'id': 5}
+{'ar': 6, 'end': 9998, 'start': 2014, 'name': 'AR6', 'id': 7}

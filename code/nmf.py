@@ -1,6 +1,5 @@
 import pickle, string, numpy, getopt, sys, random, time, re, pprint, gc, resource
 import pandas as pd
-import onlineldavb
 import scrapeWoS
 import gensim
 import nltk
@@ -134,7 +133,7 @@ def main():
     stoplist.add('copyright')
 
     #docs = Doc.objects.filter(query=893,content__iregex='\w').values('UT','title','content')
-    docs = Doc.objects.filter(query=365,content__iregex='\w') | Doc.objects.filter(query=354,content__iregex='\w')
+    docs = Doc.objects.filter(query=2355,content__iregex='\w') | Doc.objects.filter(query=354,content__iregex='\w')
     docs = docs#.values('UT','content')
     if limit is not False:
         docs = docs[:limit]
