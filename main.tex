@@ -10,7 +10,8 @@
 \usepackage{auto-pst-pdf}
 \usepackage[colaction]{multicol}
 \usepackage{caption}
-
+\usepackage{svg}
+\usepackage{authblk}
 
 \linespread{1.5}
 
@@ -23,6 +24,11 @@
 		\bigskip
 		
  		{\large\textbf{\@author}}
+ 		
+ 		\bigskip
+ 		
+ 		{\large{Draft current \@date}}
+ 		
 	\end{flushleft}\egroup
 }
 \makeatother
@@ -44,8 +50,10 @@
 \title{A Topic Model of Climate Change Literature}
 \title{Words, words, words: Mapping the Matter of Climate Change Literature}
 \title{A Topography of Climate Change Research}
-\author{Max Callaghan}
+\author[1,2]{Max Callaghan}
 
+\affil[1]{Mercator Research Institute on Global Commons and Climate Change, Torgauer Straße, 10829 Berlin, Germany}
+\affil[2]{School of Earth and Environment, University of Leeds, Leeds LS2 9JT, United Kingdom}
 
 \begin{document}
 \maketitle
@@ -66,27 +74,34 @@ Moreover, the number and variety of papers hinders researchers of the science-po
 	
 %\multicollinenumbers
 \bigskip
-\noindent\textbf{To deal with the wicked problem of climate change, international policy-makers need the IPCC. The IPCC makes maps.}
+\noindent\textbf{To deal with the wicked problem of climate change, international policy-makers need the IPCC. The IPCC as map-makers.}
 
-The IPCC sees its role as to ``assess on a comprehensive, objective, open and transparent basis the scientific, technical and socio-economic information relevant to [...] climate change'' \citep{IPCC2013}. This role is vital for....
+The IPCC sees its role as to ``assess on a comprehensive, objective, open and transparent basis the scientific, technical and socio-economic information relevant to [...] climate change'' \citep{IPCC2013}. Climate science is so broad, multi-disciplinary, and laden with uncertainties and values, that the role of the IPCC as assessment maker is vitally important to developing evidence-based international climate policy.
 Making maps \citep{Edenhofer2015}
 
 
 
 \bigskip
-\noindent\textbf{The task of the IPCC has beome much more difficult with big literature}
+\noindent\textbf{The task of the IPCC has become much more difficult with big literature}
 
-Further, it has been pointed out that, in the age of ``big literature'', providing assessments that are comprehensivene, objective and transparent has become much more difficult \citep{Minx2017l}. 
-Is the map up to date, does it cover everything?
+Further, it has been pointed out that, in the age of ``big literature'', providing assessments that are comprehensive, objective and transparent has become much more difficult \citep{Minx2017l}. 
+
+When IPCC's citations constitute an ever-decreasing proportion of the totality of science on climate change, questions about the map that the IPCC reports produce become more pressing:
+
+- Is the map up to date? Is it complete? Is the perspective representative? 
 
 
 
 %%%%%
 
 \bigskip
-\noindent\textbf{The IPCC, its reports and processes have been the object of study before. These are also hampered problems of scale though}
+\noindent\textbf{The IPCC, its reports and processes have been the object of study before. These are also hampered by problems of scale though}
 
-Various researchers have attempted to do empirical research on the assessment reports, and processes of the inter. alia. the IPCC \citep{jabbour2017} \citep{Bjurström2011}. Policy makers, when asked about their interactions with the IPCC call for a greater focus on solutions \citep{Kowarsch2017}
+Various researchers have attempted to do empirical research on the assessment reports, and processes of inter. alia. the IPCC \citep{jabbour2017} \citep{Bjurström2011} \citep{Hulme2016}. 
+
+Policy makers, when asked about their interactions with the IPCC call for a greater focus on solutions \citep{Kowarsch2017}
+
+These studies are similarly challenged by the the size of the literature. Traditional bibliometric techniques are insufficient.
 
 \bigskip
 \noindent\textbf{Some literature exists on bibliometrics and climate change, but tends not to deal with text}
@@ -118,11 +133,11 @@ The scale of the challenge is depicted in figure \ref{growth}. Less than two tho
 \noindent\textbf{Machine reading to deal with scale problems in the making and assessing of maps}
 	
 
-Clearly, if the IPCC is to continue producing comprehensive assessments, it has to engage in machine-reading in order to remain anchored to the wider literature. Without such an approach, it becomes harder to justify which ever-diminishing proportion of the wider literature is included in assessments. Similarly, it becomes harder to criticise, with quantitavely evidenced claims, the outcomes of assessment processes.
+Clearly, if the IPCC is to continue producing comprehensive assessments, it has to engage in machine-reading in order to remain anchored to the wider literature. Without such an approach, it becomes harder to justify which ever-diminishing proportion of the wider literature is included in assessments. Similarly, it becomes harder to criticise, with quantitatively evidenced claims, the outcomes of assessment processes.
 
 
 \bigskip
-\noindent\textbf{Dimension reduction makes possible the description in reduced form, and with less human bias, unmanageably large datasets}
+\noindent\textbf{Dimension reduction makes possible the description in reduced form, and with less human bias, of unmanageably large datasets}
 
 \citep{Greene2016} \citep{Lee1999}
 
@@ -137,10 +152,23 @@ Machine reading approaches can of course not replace the task of human assessmen
 \bigskip
 \noindent\textbf{This study's contribution. Overarching themes, structure of the literature, development, relation to IPCC}
 
-This study demonstrates how dynamic topic modelling can be used to gain an overview of an otherwise unmanageably large set of literature. This overview, or topography, describes the thematic development of the climate change literature and, in a novelly systematic way, examines how  comprehensively the IPCC has been able to engage with it. In pulling together strands from text-mining, bibliometrics, and the study of science and policy, this study advances our understanding of the literature on climate change and the role of the IPCC in communicating this to policy makers.
+This study demonstrates how dynamic topic modelling can be used to gain an overview of an otherwise unmanageably large body of literature. This overview, or topography, describes the thematic development of the climate change literature and, in a novelly systematic way, examines how  comprehensively the IPCC has been able to engage with it. In pulling together strands from text-mining, bibliometrics, and the study of science and policy, this study advances our understanding of the literature on climate change and the role of the IPCC in communicating this to policy makers.
 
 
 \section*{Results}
+
+\bigskip
+\noindent\textbf{A topographical map of climate change documents shows the broad structure of climate change literature}
+
+Topics cut across both disciplinary, and working group lines - but disciplinary and working group structure remains visible in the map.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=1\linewidth]{plots/tsne.png}
+		\caption{A map of a sample of 10,000 documents about climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE}
+		\label{}
+	\end{center}
+\end{figure}
 
 \begin{figure}
 	\begin{center}
@@ -159,6 +187,15 @@ This study demonstrates how dynamic topic modelling can be used to gain an overv
 \noindent\textbf{Working groups are clustered together [dynamics], with topics like [x] containing documents across working groups and topics like [y] important network nodes}
 
 
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=1\linewidth]{plots/ipcc_representation/ipcc_rep_new665_all.pdf}
+		\caption{Representation and newness of dynamic topics}
+		\label{}
+	\end{center}
+\end{figure}
+
+
 \bigskip
 \noindent\textbf{Sustainability has been an increasingly important theme in an overarching topic about environmental sciences}
 
@@ -167,7 +204,7 @@ This study demonstrates how dynamic topic modelling can be used to gain an overv
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=1\linewidth]{plots/single_topic_3_11046.pdf}
-		\caption{}
+		\caption{Word and document development of the ``Research'' dynamic topic}
 		\label{}
 	\end{center}
 \end{figure}
@@ -175,7 +212,7 @@ This study demonstrates how dynamic topic modelling can be used to gain an overv
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=1\linewidth]{plots/single_topic_3_11020.pdf}
-		\caption{SI}
+		\caption{SI Word and document development of the ``Biochar'' dynamic topic}
 		\label{}
 	\end{center}
 \end{figure}
@@ -184,7 +221,7 @@ This study demonstrates how dynamic topic modelling can be used to gain an overv
 \begin{figure}
 \begin{center}
 	\includegraphics[width=1\linewidth]{plots/single_doc_3_536594.pdf}
-    \caption{SI}
+    \caption{SI Topic make up of a single document}
     \label{}
     \end{center}
 \end{figure}
@@ -200,18 +237,19 @@ This study demonstrates how dynamic topic modelling can be used to gain an overv
 
 Negative emissions in special report on 1.5, demand side chapter in AR6
 
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=1\linewidth]{plots/ipcc_representation/ipcc_rep_new665_all.pdf}
-		\caption{}
-		\label{}
-	\end{center}
-\end{figure}
+
 
 \section*{Discussion}
 
 \bigskip
 \noindent\textbf{Solutions, policies and science}
+
+What do policy-makers mean when they ask for more solutions
+
+\bigskip
+\noindent\textbf{Perfect representation is not necessarily desirable, but the skewedness should be known}
+
+There may be good reasons for a topic to be less prominent in IPCC discussions than in the wider scientific literature, and these reasons can only be understood and acted upon by humans, not by machine-reading. Nevertheless, it is desirable that assessment makers are aware of the relationship 
 
 %Increase in the frequency of the use of the term ``solutions'' \citep{jabbour2017},
 
