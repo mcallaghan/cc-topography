@@ -200,7 +200,7 @@ What is the thematic structure of the literature on climate change, and how has 
 \end{column}
 \begin{column}<2->{0.5\linewidth}
 \begin{framed}
-What can this modelled thematic structure tell us about the past and future relationship between the IPCC and scientific literature on climate change? 
+What can this modelled thematic structure tell us about the relationship between the IPCC and scientific literature on climate change? How do the maps relate to the mapped?
 \end{framed}
 \end{column}
 \end{columns}
@@ -343,20 +343,20 @@ The topic models above assume that the topics, and the words that make them up, 
 \begin{frame}{Results}
 
 \begin{columns}
-	\begin{column}{0.5\linewidth}
-		\begin{center}	
-			\includegraphics[width=\linewidth]{../plots/pca_map_portrait}
-		\end{center}
+	\begin{column}{0.75\linewidth}
+		\begin{figure}	
+			\includegraphics[width=\linewidth]{../tsne_results/plots/run_662_s_100000_p30_blank}
+			\caption{A topographical representation of 100,000 documents on climate change}
+		\end{figure}
 	\end{column}
-	\begin{column}{0.5\linewidth}
+	\begin{column}{0.25\linewidth}
 		\textbf{Outline}	
 		\begin{center}
 			\begin{itemize}
 				\item<2-> Topography
-				\item<3-> Structure
 				\item<4-> Development
-				\item<5-> Representation in past IPCC reports
-				\item<6-> AR6 outlook
+				\item<5-> Representation in IPCC reports
+				%\item<6-> AR6 outlook
 			\end{itemize}
 		\end{center}
 	\end{column}
@@ -364,8 +364,200 @@ The topic models above assume that the topics, and the words that make them up, 
 
 \end{frame}
 
+\begin{frame}{Results - Topography}
+
+\begin{columns}
+	\begin{column}{0.7\linewidth}
+		\begin{figure}	
+			\includegraphics[width=\linewidth]{../tsne_results/plots/run_662_s_100000_p30_oecds}
+			\caption{A topographical representation of 100,000 documents on climate change. Document positions are dictated by topic scores, reduced to two dimensions through t-SNE}
+		\end{figure}
+	\end{column}
+	\begin{column}{0.3\linewidth}	
+		\begin{center}
+			\begin{itemize}
+				\item<2-> t-distributed stochastic neighbour embedding (t-SNE) \citep{vandermaaten2008} places nodes with similar topic scores close together
+				\item<3-> This \textit{projects} the 100-dimensional topic scores onto a conventional 2-dimensional topographical map
+				\item<4-> Topics cut across journal disciplinary categories, but the disciplinary structure remains visible
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Results - Topography}
+
+\begin{columns}
+	\begin{column}{0.7\linewidth}
+		\begin{figure}	
+			\includegraphics[width=\linewidth]{../tsne_results/plots/run_662_s_100000_p30_wgs}
+			\caption{A topographical representation of 100,000 documents on climate change. Document positions are dictated by topic scores, reduced to two dimensions through t-SNE, nodes are coloured by references by IPCC reports}
+		\end{figure}
+	\end{column}
+	\begin{column}{0.3\linewidth}	
+		\begin{center}
+			\begin{itemize}
+				\item<1-> The disciplinary structure fits with the pattern of citations by IPCC reports
+				\item<2-> Citations by IPCC reports are densest in WGI/Natural science topical areas.
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Results - IPCC Representation}
+
+\begin{columns}
+	\begin{column}{0.65\linewidth}
+		\begin{figure}	
+			\includegraphics[width=\linewidth]{../tsne_results/plots/run_662_s_100000_p30_clusters_wgs.png}
+			\caption{Clusters of documents}
+		\end{figure}
+	\end{column}
+	\begin{column}{0.35\linewidth}	
+		\begin{center}
+			\begin{itemize}
+				\item<1-> We can identify clusters of documents, each of which are dominated by topics or clusters of topics
+				\item<2-> 58 is a mixture of economics, policies and taxes, and emissions reductions
+				\item<3-> 41 is on CO2 storage
+				\item<4-> 11 is on species and habitats
+				\item<5-> 33 is on forests
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Results - Topography}
+
+	\begin{figure}	
+		\includegraphics[width=\linewidth]{../plots/single_doc_3_536594.pdf}
+		\caption{How topics describe documents}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}{Results - Development}
+
+\begin{figure}	
+	\includegraphics[width=\linewidth]{../plots/single_topic_3_11046.pdf}
+	\caption{The evolution of topics}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Results - Development}
+
+\begin{figure}	
+	\includegraphics[width=\linewidth]{../plots/single_topic_3_11020.pdf}
+	\caption{The emergence of new topics}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Results - Development}
+
+\begin{figure}	
+	\includegraphics[width=\linewidth]{../plots/ar5_growth_665.png}
+	\caption{The emergence of new topics}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Results - IPCC representation}
+
+\begin{itemize}
+	\item<1-> How can we get a sense of which topics are better covered in IPCC reports?
+	\item<2-> We get a measure of proportionality between two distributions by dividing each topic's share in the IPCC sample by its share in the whole corpus
+	\item<3-> This and other measures come from literature on the proportionality of electoral systems \citep[e.g][]{Karpov2008}
+\end{itemize}
 
 
+\end{frame}
+
+\begin{frame}{Results - IPCC Representation}
+
+\begin{columns}
+	\begin{column}{0.65\linewidth}
+		\begin{figure}	
+			\includegraphics[width=\linewidth]{../plots/ipcc_representation/ipcc_rep_new665_all.pdf}
+			\caption{New and old, better and less well represented topics}
+		\end{figure}
+	\end{column}
+	\begin{column}{0.35\linewidth}	
+		\begin{center}
+			\begin{itemize}
+				\item<1-> Topics on the scientific basis of climate change are well represented in IPCC reports and have been around longer than average
+				\item<2->Topics on impacts have seen lots of recent growth, and are well represented in IPCC reports
+				\item<3->Topics on ``solutions'', or on new technologies or contexts for mitigation have seen lots of recent growth, but are under-represented in IPCC reports
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Robustness}
+
+Most work focuses on the measuring the sensitivity of the reconstruction error to different framings and parameters of the model. What we are more interested in is checking if the key messages are sound.
+
+\begin{columns}<2->
+	\begin{column}<3->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/aero_share}
+		\end{figure}
+	\end{column}
+	
+	\begin{column}<4->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/sus_share}
+		\end{figure}
+	\end{column}
+	
+\end{columns}
+\begin{columns}
+	
+	\begin{column}<5->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/negative_emissions_share}
+		\end{figure}
+	\end{column}
+	
+	\begin{column}<6->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/ipcc_rep_simple}
+		\end{figure}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Conclusions}
+
+
+\begin{itemize}
+	\item<1-> Endogenously discovered topics map and make substantive sense of an unmanageable dataset of climate-relevant literature
+	\item<2-> Topic modelling discovers over-arching topics such as that on sustainability and research priorities, as well as specific, fast growing topics such those on negative emissions
+	\item<3-> Some quantitative evidence is found to support policy makers' dissatisfaction with a lack of `solution orientation' in IPCC reports \citep{Kowarsch2017} 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Discussion}
+
+
+\begin{itemize}
+\item<1-> A perfectly representative relationship between the literature and IPCC reports is not necessarily desirable
+\item<2-> The IPCC are best placed to decide which aspects of the literature to emphasise
+\item<3-> A topography of the literature helps to address issues of emphasis from a point of understanding, and to make decisions clear and transparent
+\item<4-> More generally, maps like this present exciting opportunities to aid the process of literature selection, and to understand the science policy process
+\end{itemize}
+
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -381,6 +573,42 @@ The topic models above assume that the topics, and the words that make them up, 
 
 \appendix
 \backupbegin
+
+\begin{frame}{Robustness}
+
+Most work focuses on the measuring the sensitivity of the reconstruction error to different framings and parameters of the model. What we are more interested in is checking if the key messages are sound.
+
+\begin{columns}<2->
+	\begin{column}<3->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/aero_share}
+		\end{figure}
+	\end{column}
+	
+	\begin{column}<4->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/sus_share}
+		\end{figure}
+	\end{column}
+	
+\end{columns}
+\begin{columns}
+	
+	\begin{column}<5->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/negative_emissions_share}
+		\end{figure}
+	\end{column}
+	
+	\begin{column}<6->{0.33\linewidth}
+		\begin{figure}
+			\includegraphics[width=\linewidth]{../plots/ipcc_rep_simple}
+		\end{figure}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
 
 \begin{frame}{Dynamic NMF - application to climate change}
 
