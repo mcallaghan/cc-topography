@@ -94,7 +94,7 @@ def draw_simple(results,r_ind,fname=None):
         plt.savefig(fname)
         plt.close()
 
-for run_id in [662,758]:
+for run_id in [665]:#,758]:
     #for s_size in [10000,20000,50000,100000,0]:
     for s_size in [100000,0]:
         m, c_ind, r_ind = get_matrix(run_id,s_size)
@@ -113,7 +113,7 @@ for run_id in [662,758]:
             r_ind
         )
         #for p in [40,50,60,70,90,150]:
-        for p in [10,30,200,300]:
+        for p in [10,30,50,200]:
             fname = "../tsne_results/plots/run_{}_s_{}_p_{}.png".format(
                 run_id,
                 s_size,
