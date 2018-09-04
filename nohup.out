@@ -1,0 +1,581 @@
+Traceback (most recent call last):
+  File "code/do_nmf.py", line 25, in <module>
+    do_nmf(stat.id)
+AttributeError: 'RunStats' object has no attribute 'id'
+Traceback (most recent call last):
+  File "code/do_nmf.py", line 27, in <module>
+    do_nmf(stat.id)
+AttributeError: 'RunStats' object has no attribute 'id'
+
+###############################    
+## Doing NMF on query 2355 with 289335 documents and 100 topics
+
+Extracting tf-idf features for NMF...
+done in 1494.914s.
+Fitting the model with tf-idf features, n_samples=10 and n_features=100000000000...
+/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/decomposition/online_lda.py:536: DeprecationWarning: The default value for 'learning_method' will be changed from 'online' to 'batch' in the release 0.20. This warning was introduced in 0.18.
+  DeprecationWarning)
+Traceback (most recent call last):
+  File "code/do_nmf.py", line 25, in <module>
+    do_nmf(stat.pk)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/local.py", line 191, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/app/task.py", line 380, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/tasks.py", line 433, in do_nmf
+    ).fit(tfidf)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/decomposition/online_lda.py", line 552, in fit
+    batch_update=False, parallel=parallel)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/decomposition/online_lda.py", line 433, in _em_step
+    parallel=parallel)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/decomposition/online_lda.py", line 386, in _e_step
+    for idx_slice in gen_even_slices(X.shape[0], n_jobs))
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/parallel.py", line 789, in __call__
+    self.retrieve()
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/parallel.py", line 699, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/usr/lib/python3.4/multiprocessing/pool.py", line 599, in get
+    raise self._value
+  File "/usr/lib/python3.4/multiprocessing/pool.py", line 383, in _handle_tasks
+    put(task)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/pool.py", line 371, in send
+    CustomizablePickler(buffer, self._reducers).dump(obj)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/pool.py", line 240, in __call__
+    for dumped_filename in dump(a, filename):
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/numpy_pickle.py", line 484, in dump
+    NumpyPickler(f, protocol=protocol).dump(value)
+  File "/usr/lib/python3.4/pickle.py", line 412, in dump
+    self.save(obj)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/numpy_pickle.py", line 278, in save
+    wrapper.write_array(obj, self)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/sklearn/externals/joblib/numpy_pickle.py", line 93, in write_array
+    pickler.file_handle.write(chunk.tostring('C'))
+OSError: [Errno 28] No space left on device
+
+###############################    
+## Doing NMF on query 2355 with 289335 documents and 100 topics
+
+Extracting tf-idf features for NMF...
+done in 1483.231s.
+Fitting the model with tf-idf features, n_samples=200 and n_features=100000000000...
+violation: 1.0
+violation: 0.301300356623786
+violation: 0.29679437221752303
+violation: 0.2237837016151537
+violation: 0.16250595911291854
+violation: 0.12299867949708293
+violation: 0.09712141721161002
+violation: 0.07760035710448027
+violation: 0.06442327748190071
+violation: 0.055244683961173685
+violation: 0.04698352392309832
+violation: 0.03882029573926344
+violation: 0.03196573256851541
+violation: 0.027148892250199626
+violation: 0.023869109558882724
+violation: 0.021696687290349865
+violation: 0.020204980430694533
+violation: 0.01907168572765434
+violation: 0.018196138714027518
+violation: 0.017440790283137643
+violation: 0.016647025414240024
+violation: 0.01579532215569701
+violation: 0.01493979750031875
+violation: 0.014206983358802057
+violation: 0.013604794804061121
+violation: 0.013048524649654197
+violation: 0.012282735947051003
+violation: 0.01143713588199697
+violation: 0.010575732588099613
+violation: 0.009788613382125876
+violation: 0.009100136743533657
+violation: 0.008533214571746306
+violation: 0.008031219041053191
+violation: 0.007577148102355992
+violation: 0.007131404878331968
+violation: 0.006691734389781734
+violation: 0.006300011410435173
+violation: 0.00594817490480422
+violation: 0.0056411999604810735
+violation: 0.005373604333492755
+violation: 0.005141694174946631
+violation: 0.004940919247314579
+violation: 0.004775680409851202
+violation: 0.00463301389150456
+violation: 0.004514041875969726
+violation: 0.00441363318003554
+violation: 0.004324712593262087
+violation: 0.004238578058448319
+violation: 0.004162222737818946
+violation: 0.004090014275301217
+violation: 0.004006406519991979
+violation: 0.003910731199945552
+violation: 0.0038075621822738675
+violation: 0.0037007261694631866
+violation: 0.0035905756218085074
+violation: 0.0034803479456743946
+violation: 0.0033704497088733344
+violation: 0.003260638019474422
+violation: 0.0031526014473610684
+violation: 0.003043087693252316
+violation: 0.0029370483965531144
+violation: 0.0028404715045029275
+violation: 0.0027523702789329376
+violation: 0.002671725224043232
+violation: 0.0025988192086347233
+violation: 0.002533065551208
+violation: 0.002473278666254103
+violation: 0.0024190819675024167
+violation: 0.0023693190577697455
+violation: 0.0023231589973949736
+violation: 0.0022814188078560445
+violation: 0.00224351929592209
+violation: 0.0022086172787186944
+violation: 0.002176085425677199
+violation: 0.0021456963939786387
+violation: 0.002117124781887303
+violation: 0.002090086493866145
+violation: 0.0020645463538353417
+violation: 0.002040258527929845
+violation: 0.0020171361906432157
+violation: 0.0019951356855433667
+violation: 0.0019741128085252755
+violation: 0.0019537023655155396
+violation: 0.001934421142790954
+violation: 0.0019155554532035103
+violation: 0.0018977018476264837
+violation: 0.001880963323452272
+violation: 0.0018652013223870141
+violation: 0.0018505106394971539
+violation: 0.001836892074755702
+violation: 0.0018243249585002262
+violation: 0.0018131054612058174
+violation: 0.001803298117611791
+violation: 0.0017951226585210596
+violation: 0.0017887598039613806
+violation: 0.0017844072216136504
+violation: 0.0017825932142559084
+violation: 0.0017823315225798475
+violation: 0.0017848275064107097
+violation: 0.0017920107829119659
+violation: 0.0018018731809859975
+violation: 0.0018162721258662465
+violation: 0.0018353285768470482
+violation: 0.0018596774438110106
+violation: 0.0018883584146773987
+violation: 0.0019223291266115504
+violation: 0.001961056537739841
+violation: 0.0020010498971087306
+violation: 0.002040231641159033
+violation: 0.002076612109144184
+violation: 0.002107189871800634
+violation: 0.002131763742568357
+violation: 0.0021371957845375514
+violation: 0.002123297161146499
+violation: 0.0020946178099317254
+violation: 0.0020465701356644434
+violation: 0.0019916830507646
+violation: 0.001924115893447843
+violation: 0.00185349652581136
+violation: 0.0017847740226649368
+violation: 0.001718072707776246
+violation: 0.0016570028347423973
+violation: 0.0016020601979520456
+violation: 0.0015508245171678991
+violation: 0.001503339322557315
+violation: 0.0014600367134411727
+violation: 0.0014207691249828478
+violation: 0.001385743891479511
+violation: 0.0013542797418583127
+violation: 0.0013255994593112752
+violation: 0.0013000008652122744
+violation: 0.0012772283252069942
+violation: 0.00125646497114642
+violation: 0.0012375146921245474
+violation: 0.0012201290513521351
+violation: 0.001204145987880553
+violation: 0.0011893812201893296
+violation: 0.0011756263729601557
+violation: 0.0011627397328384669
+violation: 0.0011505278984464446
+violation: 0.0011388949813390655
+violation: 0.0011278237736060519
+violation: 0.0011171328839070043
+violation: 0.0011068721060151052
+violation: 0.0010969402936238924
+violation: 0.001087307951855583
+violation: 0.0010779352889579517
+violation: 0.0010687757145913122
+violation: 0.0010598088533244122
+violation: 0.0010510180340801425
+violation: 0.0010423980594148246
+violation: 0.001033971653831376
+violation: 0.0010257172739462233
+violation: 0.001017324203341782
+violation: 0.0010092719171555969
+violation: 0.001001332797666316
+violation: 0.0009934134379130668
+violation: 0.0009855815798158428
+violation: 0.0009778342572597865
+violation: 0.0009701490663349029
+violation: 0.0009625557507212704
+violation: 0.0009550377030996537
+violation: 0.0009475926294950073
+violation: 0.0009402382307509433
+violation: 0.0009329587966579663
+violation: 0.0009257709785002343
+violation: 0.0009186722501231681
+violation: 0.0009116520448344207
+violation: 0.0009047290411637703
+violation: 0.0008979125488607098
+violation: 0.0008912283591133889
+violation: 0.0008846969050879187
+violation: 0.0008782335644136056
+violation: 0.0008717776564865667
+violation: 0.0008654458755843567
+violation: 0.0008591825496285999
+violation: 0.000852975694174894
+violation: 0.0008468328227026952
+violation: 0.0008407364247192335
+violation: 0.0008347230894566614
+violation: 0.0008287797740251382
+violation: 0.0008229011305714048
+violation: 0.0008170874350497466
+violation: 0.0008113429761098035
+violation: 0.0008056595493733206
+violation: 0.0008000284240288485
+violation: 0.0007944723747702476
+violation: 0.0007889798738953462
+violation: 0.0007835435934355948
+violation: 0.0007781710245965989
+violation: 0.0007728562059536411
+violation: 0.0007676005894258949
+violation: 0.0007624028279447319
+violation: 0.0007572637587956426
+violation: 0.0007521799060742791
+violation: 0.0007471491658391263
+violation: 0.0007421804810035935
+violation: 0.0007372647876598482
+violation: 0.0007324014614413409
+violation: 0.0007275912944392523
+violation: 1.0
+violation: 0.373417551077299
+violation: 0.03156801356871774
+violation: 0.005846658114079179
+violation: 0.000996781770260465
+violation: 0.00022266782548484412
+violation: 4.1427504084799653e-05
+Converged at iteration 7
+done in 2903.684s.
+Adding topicterms to db
+done in 3649.960s.
+758
+RunStats object (758)
+758
+{'name': 'AR0', 'id': 6, 'end': 1984, 'ar': 0, 'start': 0}
+{'name': 'AR1', 'id': 1, 'end': 1990, 'ar': 1, 'start': 1985}
+{'name': 'AR2', 'id': 2, 'end': 1994, 'ar': 2, 'start': 1991}
+{'name': 'AR3', 'id': 3, 'end': 2000, 'ar': 3, 'start': 1995}
+{'name': 'AR4', 'id': 4, 'end': 2007, 'ar': 4, 'start': 2001}
+{'name': 'AR5', 'id': 5, 'end': 2013, 'ar': 5, 'start': 2008}
+{'name': 'AR6', 'id': 7, 'end': 9998, 'ar': 6, 'start': 2014}
+
+###############################    
+## Doing NMF on query 2355 with 289335 documents and 100 topics
+
+Traceback (most recent call last):
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/fields/related_descriptors.py", line 367, in __get__
+    rel_obj = self.related.get_cached_value(instance)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/fields/mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'wosarticle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "code/do_nmf.py", line 27, in <module>
+    do_nmf(stat.pk)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/local.py", line 191, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/app/task.py", line 380, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/tasks.py", line 357, in do_nmf
+    abstracts, docsizes, ids, citations = proc_docs(docs, stoplist, stat.fulltext, stat.citations)
+  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 46, in proc_docs
+    citations=[x.wosarticle.tc if x.wosarticle.tc is not None else 0 for x in docs]
+  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 46, in <listcomp>
+    citations=[x.wosarticle.tc if x.wosarticle.tc is not None else 0 for x in docs]
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/fields/related_descriptors.py", line 375, in __get__
+    rel_obj = self.get_queryset(instance=instance).get(**filter_args)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/query.py", line 1179, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 1066, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/lib/python3.4/encodings/utf_8.py", line 15, in decode
+    def decode(input, errors='strict'):
+KeyboardInterrupt
+
+###############################    
+## Doing NMF on query 2355 with 289335 documents and 100 topics
+
+Traceback (most recent call last):
+  File "code/do_nmf.py", line 27, in <module>
+    do_nmf(stat.pk)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/local.py", line 191, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/celery/app/task.py", line 380, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/galm/software/django/tmv/BasicBrowser/tmv_app/tasks.py", line 357, in do_nmf
+    abstracts, docsizes, ids, citations = proc_docs(docs, stoplist, stat.fulltext, stat.citations)
+  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 46, in proc_docs
+    citations=[x.wosarticle.tc if x.wosarticle.tc is not None else 0 for x in docs]
+  File "/home/galm/software/django/tmv/BasicBrowser/utils/text.py", line 46, in <listcomp>
+    citations=[x.wosarticle.tc if x.wosarticle.tc is not None else 0 for x in docs]
+  File "/home/galm/software/django/tmvenv/lib/python3.4/site-packages/django/db/models/fields/related_descriptors.py", line 389, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: Doc has no wosarticle.
+
+###############################    
+## Doing NMF on query 2355 with 289335 documents and 100 topics
+
+Extracting tf-idf features for NMF...
+done in 1558.790s.
+Fitting the model with tf-idf features, n_samples=200 and n_features=100000000000...
+violation: 1.0
+violation: 0.35246065342419575
+violation: 0.27190346732549137
+violation: 0.18635650595751313
+violation: 0.14278818770714158
+violation: 0.10999732465705409
+violation: 0.0862686991402161
+violation: 0.07438251312012148
+violation: 0.06541368619288586
+violation: 0.05545281291433079
+violation: 0.04638779233131111
+violation: 0.03943482781998653
+violation: 0.0339813087484224
+violation: 0.029293635075919415
+violation: 0.025422319784154802
+violation: 0.022474968284085017
+violation: 0.020599160101923742
+violation: 0.01877904640309408
+violation: 0.016705624935513152
+violation: 0.014657722208563137
+violation: 0.012997630587994684
+violation: 0.011706465315442567
+violation: 0.010777551899210541
+violation: 0.010074939897505584
+violation: 0.009531399287541317
+violation: 0.009002773044803887
+violation: 0.008465830112979965
+violation: 0.007837434469578727
+violation: 0.007246950661341735
+violation: 0.006657652838569171
+violation: 0.00610785377300199
+violation: 0.005562703797415118
+violation: 0.005076673067988248
+violation: 0.004652386572501893
+violation: 0.0042859167142900965
+violation: 0.0039745222130350005
+violation: 0.0036983264032545036
+violation: 0.0034324425435510193
+violation: 0.0031814676436604256
+violation: 0.002984594587232722
+violation: 0.002843201166500816
+violation: 0.0027444370646211545
+violation: 0.0027103152928302917
+violation: 0.002770069070054598
+violation: 0.002952863156656991
+violation: 0.00329911743369616
+violation: 0.0037909425900761067
+violation: 0.004256967462876207
+violation: 0.004404210368459322
+violation: 0.0041953325060150445
+violation: 0.004011123676834964
+violation: 0.004501145395389079
+violation: 0.00606583200508337
+violation: 0.008068033523233266
+violation: 0.00880788049646599
+violation: 0.00725361814083716
+violation: 0.005045262135590532
+violation: 0.0034480172797606286
+violation: 0.0026883228134867818
+violation: 0.002281333225966479
+violation: 0.0020201416731464
+violation: 0.00183875643819537
+violation: 0.0017050908028172732
+violation: 0.0016061030139515851
+violation: 0.001531184559591844
+violation: 0.0014741870718212688
+violation: 0.001430704062549594
+violation: 0.0013966526943630477
+violation: 0.0013703929264936123
+violation: 0.0013533098594884466
+violation: 0.001345400838503562
+violation: 0.001342885663594595
+violation: 0.0013441176159585827
+violation: 0.0013483511239214584
+violation: 0.0013541094155294453
+violation: 0.0013619337703889743
+violation: 0.0013731084742304295
+violation: 0.0013866842234108827
+violation: 0.001402448274020438
+violation: 0.0014208131817671941
+violation: 0.0014434961215039489
+violation: 0.0014711129325560273
+violation: 0.0015028930481573147
+violation: 0.0015389301379519701
+violation: 0.0015801475133741317
+violation: 0.0016269256262083477
+violation: 0.001675208884658712
+violation: 0.001721826408136133
+violation: 0.001770730666409438
+violation: 0.001818262198474217
+violation: 0.0018593024205718366
+violation: 0.0018882460322088733
+violation: 0.0018886647715961598
+violation: 0.0018766781191253256
+violation: 0.001853014661006071
+violation: 0.0018140736947390714
+violation: 0.0017631651045864679
+violation: 0.001696958708421153
+violation: 0.0016068691958875771
+violation: 0.0015355035158806144
+violation: 0.0014626881958759177
+violation: 0.0013905922189254992
+violation: 0.0013226945017164897
+violation: 0.0012623993049731069
+violation: 0.0012066755510836834
+violation: 0.0011539948972581684
+violation: 0.0011039625005972702
+violation: 0.0010584225989282727
+violation: 0.0010181418014936802
+violation: 0.0009805221623642281
+violation: 0.0009469808141138473
+violation: 0.000918849112365624
+violation: 0.000893525555149838
+violation: 0.0008713241375473607
+violation: 0.00085253667350843
+violation: 0.0008350602892380192
+violation: 0.0008208623243832568
+violation: 0.0008092950891213903
+violation: 0.0008002540960326848
+violation: 0.0007925592594418804
+violation: 0.0007852399590769023
+violation: 0.0007788190623197593
+violation: 0.0007731769016309974
+violation: 0.0007689551460910069
+violation: 0.0007658281453644689
+violation: 0.0007629918067436868
+violation: 0.0007608483537003181
+violation: 0.0007593857566689519
+violation: 0.0007591366402297081
+violation: 0.0007597874673364236
+violation: 0.0007613721858219648
+violation: 0.0007637307701993783
+violation: 0.0007662601577454601
+violation: 0.0007699950368226416
+violation: 0.000774431900181556
+violation: 0.0007799461624820939
+violation: 0.0007851845713270927
+violation: 0.0007905842724098634
+violation: 0.0007969063942541442
+violation: 0.0008031837407002368
+violation: 0.000805778445841999
+violation: 0.0008103148409785813
+violation: 0.0008152874661912312
+violation: 0.0008208978807688629
+violation: 0.0008260205028898485
+violation: 0.0008311763342008171
+violation: 0.0008357905601068453
+violation: 0.0008406731463671501
+violation: 0.0008458523324164299
+violation: 0.0008504122933521
+violation: 0.0008546212304262473
+violation: 0.0008580531728577323
+violation: 0.0008606193910401204
+violation: 0.0008621127582377605
+violation: 0.0008625771659935208
+violation: 0.0008619079397777524
+violation: 0.0008600253202162563
+violation: 0.0008563612484413703
+violation: 0.0008499052652772207
+violation: 0.0008397944272504138
+violation: 0.0008283471943110138
+violation: 0.0008152876491430267
+violation: 0.0008014753084716928
+violation: 0.0007864602241239454
+violation: 0.0007701585346171126
+violation: 0.000751919200557576
+violation: 0.0007332444190160536
+violation: 0.0007149722118936981
+violation: 0.0006969207123171039
+violation: 0.0006794233323839923
+violation: 0.0006626522393215097
+violation: 0.0006454531598446364
+violation: 0.000629453380385671
+violation: 0.0006143254863662933
+violation: 0.0006000911485145653
+violation: 0.00058663109527217
+violation: 0.000573943440523788
+violation: 0.0005620441950807547
+violation: 0.0005507991412738737
+violation: 0.0005402801018235795
+violation: 0.0005306493214000212
+violation: 0.0005216500425024328
+violation: 0.0005132800347445045
+violation: 0.0005053899401363909
+violation: 0.0004980361588488592
+violation: 0.000491152437026217
+violation: 0.000484740695565986
+violation: 0.0004788174727963215
+violation: 0.0004732943082531082
+violation: 0.0004680561966587728
+violation: 0.0004631450322543924
+violation: 0.00045857123386627683
+violation: 0.00045322483918322455
+violation: 0.00044855329683720274
+violation: 0.00044436605131881635
+violation: 0.0004405477369282324
+violation: 0.0004370168624466898
+violation: 0.00043376607148075673
+violation: 0.0004306935131920719
+violation: 0.0004277974945449341
+violation: 1.0
+violation: 0.6442320386665736
+violation: 0.08710839212611898
+violation: 0.023078478802231184
+violation: 0.0066416921033712
+violation: 0.001982505496973831
+violation: 0.0006447055298651796
+violation: 0.00020239060275745592
+violation: 6.679849838527133e-05
+Converged at iteration 9
+done in 4006.576s.
+Adding topicterms to db
+done in 449.122s.
+764
+RunStats object (764)
+764
+{'ar': 0, 'end': 1984, 'start': 0, 'name': 'AR0', 'id': 6}
+{'ar': 1, 'end': 1990, 'start': 1985, 'name': 'AR1', 'id': 1}
+{'ar': 2, 'end': 1994, 'start': 1991, 'name': 'AR2', 'id': 2}
+{'ar': 3, 'end': 2000, 'start': 1995, 'name': 'AR3', 'id': 3}
+{'ar': 4, 'end': 2007, 'start': 2001, 'name': 'AR4', 'id': 4}
+{'ar': 5, 'end': 2013, 'start': 2008, 'name': 'AR5', 'id': 5}
+{'ar': 6, 'end': 9998, 'start': 2014, 'name': 'AR6', 'id': 7}
+python: can't open file 'tsne_runs.py': [Errno 2] No such file or directory
