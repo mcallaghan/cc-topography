@@ -10,3 +10,4 @@
 *.snm
 *.toc
 *.pyc
+tables/*.pickle
