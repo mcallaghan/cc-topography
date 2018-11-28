@@ -1,3 +1,4 @@
+*.~lock.*
 *.ipynb_check*
 *.aux
 *.bbl

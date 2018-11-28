@@ -39,6 +39,7 @@ def get_matrix(run_id,s_size):
 
     db_matrix = dts.filter(run_id=run_id,score__gt=0.01)
     docs = set(db_matrix.values_list('doc__id',flat=True))
+
     if s_size ==0:
         s_docs = docs
     else:
@@ -96,9 +97,13 @@ def draw_simple(results,r_ind,fname=None):
         plt.close()
 
 for run_id in [1013]:#,758]:
+    np.save("../tsne_results/data/test.npy",run_id)
+    print(run_id)
     #for s_size in [10000,20000,50000,100000,0]:
     for s_size in [100000,0]:
+        print(s_size)
         m, c_ind, r_ind = get_matrix(run_id,s_size)
+        print("got m")
         np.save(
             '../tsne_results/data/run_{}_s_{}_m.npy'.format(
                 run_id,
