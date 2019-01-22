@@ -28,7 +28,7 @@ from MulticoreTSNE import MulticoreTSNE as mTSNE
 
 
 
-run_id = 662
+run_id = 1056
 
 def get_matrix(run_id,s_size):
     stat = RunStats.objects.get(pk=run_id)
@@ -96,9 +96,7 @@ def draw_simple(results,r_ind,fname=None):
         plt.savefig(fname)
         plt.close()
 
-for run_id in [1013]:#,758]:
-    np.save("../tsne_results/data/test.npy",run_id)
-    print(run_id)
+for run_id in [1056]:#,758]:
     #for s_size in [10000,20000,50000,100000,0]:
     for s_size in [100000,0]:
         print(s_size)

@@ -13,6 +13,7 @@ from django.utils import timezone
 from scipy.sparse import csr_matrix, find
 import numpy as np
 from django.core import management
+import os
 
 
 
@@ -20,12 +21,15 @@ sys.stdout.flush()
 
 # import file for easy access to browser database
 sys.path.append('/home/galm/software/django/tmv/BasicBrowser')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "BasicBrowser.settings")
+django.setup()
 
 # sys.path.append('/home/max/Desktop/django/BasicBrowser/')
-import db as db
+import utils.db as db
 from tmv_app.models import *
 from scoping.models import *
 from django.db import connection, transaction
+from django.db.models import Count, Sum
 from utils.text import *
 cursor = connection.cursor()
 
@@ -149,7 +153,7 @@ def main():
     try:
         qid = int(sys.argv[1])
     except:
-        qid = 2355
+        qid = 3769
     # The n in ngram
     try:
         K = int(sys.argv[2])
@@ -162,9 +166,11 @@ def main():
     ng = 1
     yrange=list(range(1990,2018))
 
+    Ks = [10, 25, 40, 60, 80, 100]
+
 
     global run_id
-    run_id = db.init(n_features,ng)
+    run_id = db.init(n_features)
     stat = RunStats.objects.get(run_id=run_id)
     stat.query = Query.objects.get(pk=qid)
     stat.method = "DT"
@@ -177,8 +183,38 @@ def main():
     avdocs = docs.filter(PY=2016).count()
     print(avdocs)
 
-    for ar in AR.objects.filter(ar__gt=0):
-        ys = range(ar.start,ar.end+1)
+    from nltk import wordpunct_tokenize
+    from nltk import WordNetLemmatizer
+    from nltk import sent_tokenize
+    from nltk import pos_tag
+    import string
+    from nltk.corpus import stopwords as sw
+    punct = set(string.punctuation)
+    from nltk.corpus import wordnet as wn
+    stopwords = set(sw.words('english'))
+
+    def lemmatize(token, tag):
+            tag = {
+                'N': wn.NOUN,
+                'V': wn.VERB,
+                'R': wn.ADV,
+                'J': wn.ADJ
+            }.get(tag[0], wn.NOUN)
+            return WordNetLemmatizer().lemmatize(token, tag)
+
+    dlen = docs.count()
+
+    kws = docs.filter(
+        kw__text__iregex='\w+[\-\ ]'
+    ).values('kw__text').annotate(
+        n = Count('pk')
+    ).filter(n__gt=dlen//1000).order_by('-n')
+
+    kw_text = set([x['kw__text'].replace('-',' ') for x in kws])
+    kw_ws = set([x['kw__text'].replace('-',' ').split()[0] for x in kws]) - stopwords
+
+    for iteration, ar in enumerate(AR.objects.filter(ar__gt=0).order_by('ar')):
+        ys = list(range(ar.start,ar.end+1))
         y = ar.ar
 
         print(ys)
@@ -200,11 +236,41 @@ def main():
         ydocs = docs.count()
         print("\n#######################")
         print("IN YEAR {}: {} docs".format(y,ydocs))
-        k = predict(ydocs)
+        k = Ks[iteration]
         print("esimating {} topics...".format(k))
 
-        abstracts, docsizes, ids = proc_docs(docs, stoplist)
+        abstracts, docsizes, ids, citations = proc_docs(docs, stoplist)
         #abstracts, docsizes, ids, stoplist = proc_docs(docs,stoplist)
+
+        def fancy_tokenize(X):
+
+            common_words = set([x.lower() for x in X.split()]) & kw_ws
+            for w in list(common_words):
+                w = w.replace('(','').replace(')','')
+                wpat = "({}\W*\w*)".format(w)
+                wn = [x.lower().replace('-',' ') for x in re.findall(wpat, X, re.IGNORECASE)]
+                kw_matches = set(wn) & kw_text
+                if len(kw_matches) > 0:
+                    for m in kw_matches:
+                        insensitive_m = re.compile(m, re.IGNORECASE)
+                        X = insensitive_m.sub(' ', X)
+                        yield m.replace(" ","-")
+
+            for sent in sent_tokenize(X):
+                for token, tag in pos_tag(wordpunct_tokenize(sent)):
+                    token = token.lower().strip()
+                    if token in stopwords:
+                        continue
+                    if all(char in punct for char in token):
+                        continue
+                    if len(token) < 3:
+                        continue
+                    if all(char in string.digits for char in token):
+                        continue
+                    lemma = lemmatize(token,tag)
+                    yield lemma
+
+        tokenizer = fancy_tokenize
 
         #############################################
         # Use tf-idf features for NMF.
@@ -212,7 +278,7 @@ def main():
         tfidf_vectorizer = TfidfVectorizer(max_df=0.95, min_df=5,
                                            max_features=n_features,
                                            ngram_range=(ng,ng),
-                                           tokenizer=snowball_stemmer(),
+                                           tokenizer=fancy_tokenize,
                                            stop_words=stoplist)
         t0 = time()
         tfidf = tfidf_vectorizer.fit_transform(abstracts)
@@ -232,7 +298,7 @@ def main():
         vocab_ids = vocab_ids[0]
 
         django.db.connections.close_all()
-        topic_ids = db.add_topics(k)
+        topic_ids = db.add_topics(k, run_id)
         for t in topic_ids:
             top = Topic.objects.get(pk=t)
             top.year = y
@@ -255,7 +321,7 @@ def main():
         ldalambda = find(csr_matrix(nmf.components_))
         topics = range(len(ldalambda[0]))
         tts = []
-        pool = Pool(processes=8)
+        pool = Pool(processes=6)
 
         tts.append(pool.map(partial(f_lambda, m=ldalambda,
                         v_ids=vocab_ids,t_ids=topic_ids),topics))
@@ -272,7 +338,7 @@ def main():
 
         chunk_size = 100000
 
-        ps = 16
+        ps = 6
         parallel_add = True
 
         all_dts = []
