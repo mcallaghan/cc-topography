@@ -243,7 +243,7 @@ def main():
         #abstracts, docsizes, ids, stoplist = proc_docs(docs,stoplist)
 
         def fancy_tokenize(X):
-
+            X = X.lower().replace("power plant","power-plant")
             common_words = set([x.lower() for x in X.split()]) & kw_ws
             for w in list(common_words):
                 w = w.replace('(','').replace(')','')
