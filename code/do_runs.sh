@@ -2,7 +2,13 @@
 features=(10000 50000 100000)
 ngrams=(1 2)
 
-python3 /home/galm/software/django/tmv/BasicBrowser/manage.py nmf --alpha 0.1 365 100
+#python3 /home/galm/software/django/tmv/BasicBrowser/manage.py nmf --alpha 0.1 365 100
+
+python dynamic_nmf0.py 3769 80
+
+python dynamic_nmf0.py 3769 100
+
+python dynamic_nmf0.py 3769 120
 
 #python3 /home/galm/software/django/tmv/BasicBrowser/manage.py nmf --alpha 0.05 365 120
 

@@ -12,3 +12,4 @@
 *.toc
 *.pyc
 tables/*.pickle
+network/*
