@@ -1,0 +1,133 @@
+\documentclass{article}
+\usepackage[a4paper, total={7.5in, 10in}]{geometry}
+\geometry{paperwidth=8in, paperheight=16383pt, left=1in, top=40pt, textwidth=6in, marginparsep=20pt, marginparwidth=100pt, textheight=16263pt, footskip=40pt}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{natbib}
+\usepackage{todonotes}
+\usepackage{booktabs}
+\usepackage{lineno}
+\usepackage{color}
+%\usepackage{auto-pst-pdf}
+\usepackage[colaction]{multicol}
+\usepackage{caption}
+\usepackage{svg}
+\usepackage{authblk}
+\usepackage{standalone}
+\usepackage[section]{placeins}
+
+
+\linespread{1.5}
+
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+	\begin{flushleft}
+
+		{\huge\textbf{\@title}}
+
+		\bigskip
+
+ 		{\large\textbf{\@author}}
+
+ 		\bigskip
+
+ 		{\large{Draft current \@date}}
+
+	\end{flushleft}\egroup
+}
+\makeatother
+
+\newcommand{\multicollinenumbers}{
+	\linenumbers
+	\def\makeLineNumber{\docolaction
+		{\makeLineNumberLeft}
+		{}
+		{\makeLineNumberRight}
+		}
+}
+
+\newenvironment{figurehere}
+	{\def\@captype{figure}}
+	{}
+
+% Title
+\title{A Topic Model of Climate Change Literature}
+\title{Words, words, words: Mapping the Matter of Climate Change Literature}
+\title{A Topography of Climate Change Research - Results}
+\author[1,2]{Max Callaghan}
+
+\affil[1]{Mercator Research Institute on Global Commons and Climate Change, Torgauer Straße, 10829 Berlin, Germany}
+\affil[2]{School of Earth and Environment, University of Leeds, Leeds LS2 9JT, United Kingdom}
+
+\begin{document}
+\maketitle
+
+\section{Results}
+
+\setcounter{totalnumber}{200}
+
+	
+\begin{table}[h]
+	\scriptsize
+	\input{tables/growth_table.tex}
+	\caption{Growth in climate change literature}
+	\label{growthtable}
+\end{table}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{plots/literature_size/volume_variety.pdf}
+		%\captionof{figure}
+		\caption{The volume and variety of literature on climate change has grown to unmanageable proportions. Each box represents a document-term matrix (unique documents x unique terms) of the abstracts written in each assessment period. The percentage of documents in which the average word occurs in is given in the key.
+		}
+	
+		\label{growth}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		%\includegraphics[width=1\linewidth]{tsne_results/plots/run_665_s_0_p200_double.pdf}
+		\includegraphics[width=0.85\linewidth]{tsne_results/plots/run_1275_s_0_p100_double.png}
+		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by working group citations (top) and web of science discipline category (bottom). See SI table for topic composition of each grid square}
+		\label{map-double}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.85\linewidth]{plots/ipcc_representation/ipcc_rep_oecds_time.pdf}
+		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by working group citations (top) and web of science discipline category (bottom). See SI table for topic composition of each grid square}
+		\label{oecd_rep}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{center}
+		%\includegraphics[width=1\linewidth]{tsne_results/plots/run_665_s_0_p200_double.pdf}
+		\includegraphics[width=1\linewidth]{tsne_results/plots/run_1275_s_0_p100_evolution.png}
+		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by working group citations (top) and web of science discipline category (bottom). See SI table for topic composition of each grid square}
+		\label{map-double}
+	\end{center}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.85\linewidth]{plots/ipcc_representation/ipcc_rep_new1275_all.pdf}
+		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by working group citations (top) and web of science discipline category (bottom). See SI table for topic composition of each grid square}
+		\label{ipcc_rep}
+	\end{center}
+\end{figure}
+
+
+
+
+\begin{table}[h!]
+	\scriptsize
+	\input{tables/top_topics.tex}
+	\caption{Top 10 topics in climate change literature}
+	\label{top-topics}
+\end{table}	
+
+\end{document}
