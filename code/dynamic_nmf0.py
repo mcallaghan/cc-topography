@@ -153,7 +153,7 @@ def main():
     try:
         qid = int(sys.argv[1])
     except:
-        qid = 3769
+        qid = 6187
     # The n in ngram
     try:
         K = int(sys.argv[2])
@@ -166,7 +166,11 @@ def main():
     ng = 1
     yrange=list(range(1990,2018))
 
-    Ks = [10, 25, 40, 60, 80, 100]
+    Ks = [10, 25, 40, 60, 80, 110]
+    Ks = [15, 35, 55, 80, 90,  100]
+    #Ks = [10, 30, 50, 70, 90, 100]
+
+    #Ks = [10, 25, 40, 70, 90, 110]
 
 
     global run_id
@@ -179,7 +183,7 @@ def main():
     i = 0
     #ndocs = Doc.objects.filter(query=qid,content__iregex='\w').count()
     #avdocs = ndocs/len(yrange)
-    docs = Doc.objects.filter(query=qid,relevant=True,content__iregex='\w')
+    docs = Doc.objects.filter(query=qid, content__iregex='\w')
     avdocs = docs.filter(PY=2016).count()
     print(avdocs)
 
