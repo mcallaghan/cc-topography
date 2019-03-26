@@ -42,7 +42,7 @@ punct = set(string.punctuation)
 from nltk.corpus import wordnet as wn
 stopwords = stoplist
 
-q = Query.objects.get(pk=2355)
+q = Query.objects.get(pk=6187)
 
 def lemmatize(token, tag):
         tag = {
