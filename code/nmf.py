@@ -133,8 +133,7 @@ def main():
     stoplist.add('copyright')
 
     #docs = Doc.objects.filter(query=893,content__iregex='\w').values('UT','title','content')
-    docs = Doc.objects.filter(query=2355,content__iregex='\w') | Doc.objects.filter(query=354,content__iregex='\w')
-    docs = docs#.values('UT','content')
+    docs = Doc.objects.filter(query=6187,content__iregex='\w')
     if limit is not False:
         docs = docs[:limit]
 

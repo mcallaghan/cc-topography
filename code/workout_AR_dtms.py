@@ -107,7 +107,7 @@ def fancy_tokenize(X):
 
 all_ys = range(0,100000)
 
-if "A" == "B":
+if "A" == "A":
     X = []
     vecs = []
     ars = AR.objects.filter(ar__gt=0).order_by('ar')
@@ -151,7 +151,7 @@ for ar in ars:
     print(X_y.shape)
 
 with open("tables/sizes_f_X.pickle", "wb") as f:
-    pickle.dump(X,f)
+    pickle.dump(f_X,f)
 
 with open("tables/f_vecs.pickle", "wb") as f:
-    pickle.dump(vecs,f)
+    pickle.dump(f_vecs,f)
