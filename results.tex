@@ -1,0 +1,206 @@
+\documentclass{article}
+\usepackage[a4paper, total={7.5in, 10in}]{geometry}
+\geometry{paperwidth=10in, 
+	%paperheight=16383pt, 
+	paperheight=8100pt,
+	left=2in, top=40pt, textwidth=6in, marginparsep=20pt, marginparwidth=1.5in, %textheight=16263pt, 
+	textheight=8000pt,
+	footskip=40pt
+}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{natbib}
+\usepackage{todonotes}
+\usepackage{booktabs}
+\usepackage{lineno}
+\usepackage{color}
+%\usepackage{auto-pst-pdf}
+\usepackage[colaction]{multicol}
+\usepackage{caption}
+\usepackage{svg}
+\usepackage{authblk}
+\usepackage{standalone}
+\usepackage[section]{placeins}
+
+
+\linespread{1.5}
+
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+	\begin{flushleft}
+
+		{\huge\textbf{\@title}}
+
+		\bigskip
+
+ 		{\large\textbf{\@author}}
+
+ 		\bigskip
+
+ 		{\large{Draft current \@date}}
+
+	\end{flushleft}\egroup
+}
+\makeatother
+
+\newcommand{\multicollinenumbers}{
+	\linenumbers
+	\def\makeLineNumber{\docolaction
+		{\makeLineNumberLeft}
+		{}
+		{\makeLineNumberRight}
+		}
+}
+
+\newenvironment{figurehere}
+	{\def\@captype{figure}}
+	{}
+
+% Title
+\title{A Topic Model of Climate Change Literature}
+\title{Words, words, words: Mapping the Matter of Climate Change Literature}
+\title{A Topography of Climate Change Research - Results}
+\author[1,2]{Max Callaghan}
+
+\affil[1]{Mercator Research Institute on Global Commons and Climate Change, Torgauer Straße, 10829 Berlin, Germany}
+\affil[2]{School of Earth and Environment, University of Leeds, Leeds LS2 9JT, United Kingdom}
+
+\begin{document}
+\maketitle
+
+\section{Results}
+
+\setcounter{totalnumber}{200}
+
+\subsection{Literature growth}
+	
+\begin{table}[h]
+	\scriptsize
+	\input{tables/growth_table.tex}
+	\caption{Growth in climate change literature}
+	\label{growthtable}
+\end{table}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{plots/literature_size/volume_variety.pdf}
+		%\captionof{figure}
+		\caption{The volume and variety of literature on climate change has grown to unmanageable proportions. Each box represents a document-term matrix (unique documents x unique terms) of the abstracts written in each assessment period. The percentage of documents in which the average word occurs in is given in the key.
+		}
+	
+		\label{growth}
+	\end{center}
+\end{figure}
+
+
+
+%\begin{figure}[h]
+%	\begin{center}
+%		%\includegraphics[width=1\linewidth]{tsne_results/plots/run_665_s_0_p200_double.pdf}
+%		\includegraphics[width=0.85\linewidth]{tsne_results/plots/run_1275_s_0_p100_double.png}
+%		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by working group citations (top) and web of science discipline category (bottom). See SI table for topic composition of each grid square}
+%		\label{map-double}
+%	\end{center}
+%\end{figure}
+
+\subsection{Disciplinary structure}
+
+\todo{Label some topics particularly representative of certain disciplines, and their growth with reference to below}
+
+\begin{figure}[h!]
+	\begin{center}
+		%\includegraphics[width=1\linewidth]{tsne_results/plots/run_665_s_0_p200_double.pdf}
+		\includegraphics[width=1\linewidth]{tsne_results/plots/run_1275_s_0_p100_oecds.png}
+		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by web of science discipline category. See SI table for topic composition of each grid square}
+		\label{map-oecd}
+	\end{center}
+\end{figure}
+
+\begin{itemize}
+	\item The thematic structure of the topics reflects journal disciplinary categories. 
+	\item Different disciplines clearly deal with different themes, although some topics are more interdisciplinary \todo{Show disciplinary entropy of topics in SI, give examples}
+	\item Medicine has the most specialized topic distribution  
+	\item (Some examples of individual topics using the labels to be added)
+\end{itemize}
+
+\bigskip
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.85\linewidth]{plots/ipcc_representation/ipcc_rep_oecds_time.pdf}
+		\caption{The representation within the IPCC of each discipline over time}
+		\label{oecd_rep}
+	\end{center}
+\end{figure}
+
+\begin{itemize}
+	\item The natural sciences have always made up the greatest share of IPCC citations and documents about climate change
+	\item The natural sciences were particularly over-represented in earlier assessment periods
+	\item contrary to what is claimed, the natural sciences are not over-represented as compared to social sciences, these are now the most over-represented
+	\item the disciplines that are under-represented are the agricultural sciences and engineering (also humanities to a small extent although they make up an extremely small share of all documents about climate change)
+	\item (some examples of topics which portray this story - the ones which will be labelled above)
+\end{itemize}
+
+\bigskip
+
+\subsection{IPCC working group structure}
+\todo{Just 4 subplots, mashing together ar1-2, and 3-4}
+\begin{figure}[h!]
+	\begin{center}
+		%\includegraphics[width=1\linewidth]{tsne_results/plots/run_665_s_0_p200_double.pdf}
+		\includegraphics[width=1\linewidth]{tsne_results/plots/run_1275_s_0_p100_evolution.png}
+		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by working group citations. In each assessment period, the largest cluster of documents relating to each of the 10 fastest growing topics is outlined.}
+		\label{map-evolution}
+		
+	\end{center}
+\end{figure}
+
+\begin{itemize}
+	\item The thematic structure is also reflected in the division of labour between IPCC working groups. Documents cited by each working group appear in discrete parts of the map (which correspond also to the disciplinary structure)
+	\item Some topics cut across working groups [e.g. Urban, say more about]
+	\item Some fast growing topics [e.g. health] are well represented in IPCC [WGII], whereas others (particularly on negative emissions) are not so well represented.
+	
+\end{itemize}
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.85\linewidth]{example-image}
+		\caption{Optional figure, instead of above, one large wg map, with the topics below labelled}
+		\label{ipcc_rep}
+	\end{center}
+\end{figure}
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.85\linewidth]{plots/ipcc_representation/ipcc_rep_new1275_all.pdf}
+		\caption{The IPCC representation and age of the topics. Representation shows the log of the share of topic documents in IPCC citations divided by the share of topic documents among all documents. Assessment period occurence shows the assessment period in which the mean topic document was published}
+		\label{ipcc_rep}
+	\end{center}
+\end{figure}
+
+\begin{itemize}
+	\item Those topics that deal with working group III issues (materials and recycling, negative emissions, buildings) are in general fast growing and under-represented in IPCC reports
+	\item Some working group III topics (on scenarios, on policies, and on international trade and cross country comparisons) are however over-represented in IPCC reports [see SI]
+	\item Working group I topics are in general older and better represented. Could also be same topics but new knowledge
+	\item Of the newer topics that are well represented, many are on WG III issues [detail required]
+	\item Are WGII better at reflecting changes in the literature?
+	\item Another plot showing lines for each topic showing growth in literature and growth in ipcc?
+\end{itemize}
+
+\section{SI}
+
+\begin{table}[h!]
+	\scriptsize
+	\input{tables/ipcc_shares_time.tex}
+	\caption{Top 10 topics in climate change literature}
+	\label{top-topics}
+\end{table}	
+
+\begin{table}[h!]
+	\scriptsize
+	\input{tables/top_topics.tex}
+	\caption{Top 10 topics in climate change literature}
+	\label{top-topics}
+\end{table}	
+
+\end{document}

@@ -1,0 +1,48 @@
+2: TI= ("*climat* chang*" OR "*climat* warming*" OR "*global temperature*" OR "*global warming*" OR "*greenhouse gas*" OR "*greenhouse effect*" OR "*greenhouse warming*" ) OR (TI=("*climat*") NOT (TI=("acclimat*") NOT TI=("climat*")))
+
+2: TI= ("*climat* chang*" OR "*climat* warming*" OR "*global temperature*" OR "*global warming*" OR "*greenhouse gas*" OR "*greenhouse effect*" OR "*greenhouse warming*" ) OR (TI=("*climat*") NOT (TI=("acclimat*") NOT TI=("climat*")))
+
+
+#step 2
+r1 = "(\w*climat\w* chang\w*)|(\wclimate\w* warming\*)(\w*global temperature\w*)|(\w*global warming\w*)|(\w*greenhouse gas\w*)|(\w*greenhouse effect\w*)|(\w*greenhouse warming\w*)"
+r2 = "(\w*climat\w*)"
+r3 = "(\w*acclimat\w*)"
+r4 = "(\bclimat\w*)"
+
+step2_1 = set(docs.filter(title__iregex=r1).values_list('pk',flat=True))
+
+step2_2 = set(docs.filter(title__iregex=r2).values_list('pk',flat=True))
+
+step2_3 = set(docs.filter(pk__in=step2_2,title__iregex=r3).exclude(title__iregex=r4).values_list('pk',flat=True))
+
+step2 = step2_1 | (step2_2 - step2_3)
+
+step3 = set(docs.filter(content__iregex=r1).values_list('pk',flat=True))
+
+step4_1 = set(docs.filter(wosarticle__de__iregex=r1).values_list('pk',flat=True))
+
+step4_2 = set(docs.filter(wosarticle__de__iregex=r2).values_list('pk',flat=True))
+
+step4_3 = set(docs.filter(
+  pk__in=step4_2,
+  wosarticle__de__iregex=r3
+).exclude(
+  wosarticle__de__iregex=r4
+).values_list('pk',flat=True))
+
+step4_1_2 = set(docs.filter(wosarticle__kwp__iregex=r1).values_list('pk',flat=True))
+
+step4_2_2 = set(docs.filter(wosarticle__kwp__iregex=r2).values_list('pk',flat=True))
+
+step4_3_2 = set(docs.filter(
+  pk__in=step4_2,
+  wosarticle__kwp__iregex=r3
+).exclude(
+  wosarticle__kwp__iregex=r4
+).values_list('pk',flat=True))
+
+step4__2 = step4_1_2 | (step4_2_2 - step4_3_2)
+
+step5 = step2 | step3 | step4 | step4__2
+
+s5docs = Doc.objects.filter(pk__in=step5)

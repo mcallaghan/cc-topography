@@ -13,6 +13,8 @@
 \usepackage{svg}
 \usepackage{authblk}
 \usepackage{standalone}
+\usepackage[section]{placeins}
+
 
 \linespread{1.5}
 
@@ -204,18 +206,18 @@ Such first results show the promise of topic modelling in the identification of 
 
 In the two panels of the figure, the documents are coloured by the IPCC working group which cites them (if any), and the disciplinary classification according to the Web of Science. The topic structure cuts across working group and disciplinary lines, but the disciplinary and working group structure is clearly visible in the topography. For example, in the south-eastern section of the map, we can see a concentration of documents in the social sciences that were cited by working group III (mitigation).
 
-The topography\_map\_reference.csv file in the supporting materials aids more detailed analysis of the map, describing the topic composition of each square. For example the square whose center is [12.5,-7.5] is made up of the topics \{energi, renew, consumpt\}, \{fuel, fossil, engin\}, \{emiss, reduct, reduc\}, \{countri, develop, trade\} and \{cost, optim, price\}, typical social science, working group III topics. The square whose center is [-17.5,-2.5], containing mostly working group I documents on the other hand, is made of largely by the topic {ozon, stratospher, tropospher} as well as by {increas, concentr, decreas}, and {climat, chang, impact}.
+The topography\_map\_reference.csv [ \url{https://github.com/mcallaghan/cc-topography/blob/master/tables/tsne_topic_index_665.csv}] file in the supporting materials aids more detailed analysis of the map, describing the topic composition of each square. For example the square whose center is [12.5,-7.5] is made up of the topics \{energi, renew, consumpt\}, \{fuel, fossil, engin\}, \{emiss, reduct, reduc\}, \{countri, develop, trade\} and \{cost, optim, price\}, typical social science, working group III topics. The square whose center is [-17.5,-2.5], containing mostly working group I (the physical science basis) documents on the other hand, is made of largely by the topic {ozon, stratospher, tropospher} as well as by {increas, concentr, decreas}, and {climat, chang, impact}.
 
 %\bigskip
 %\noindent\textbf{A topographical map of climate change documents shows the broad structure of climate change literature}
-
+Figure \ref{map-growth} shows the evolution of the landscape of climate change literature over the 6 (including the in progress AR6) assessment periods of the IPCC. In each assessment period, the grid squares which contain a higher (lower) proportion of documents than in the previous assessment period are coloured green (red). This mapping allows us to identify topic areas as they appear in the literature. For example, the square with the center [-12.5,12.5] is composed largely of the topic \{coral, reef, bleach\}, and contained no documents before a sudden growth in AR3. Indeed, the topic of coral bleaching  was little discussed in the context of climate change before AR3, with just two out of 693 results from Web of Science for the terms  "Coral bleaching" AND "climate change" published before 1996. More recently, the square [12.5,12.5] identifies the topic \{biochar, amend, applic\} as a quickly emerging field within climate change in present times.
 
 \begin{figure}
 	\begin{center}
 		%\includegraphics[width=1\linewidth]{tsne_results/plots/run_665_s_0_p200_evolution.pdf}
 		\includegraphics[width=1\linewidth]{tsne_results/plots/run_665_s_0_p200_evolution.png}
 		\caption{The evolution of the landscape of climate change literature}
-		\label{}
+		\label{map-growth}
 	\end{center}
 \end{figure}
 
@@ -236,82 +238,64 @@ The topography\_map\_reference.csv file in the supporting materials aids more de
 %\bigskip
 %\noindent\textbf{Working groups are clustered together [dynamics], with topics like [x] containing documents across working groups and topics like [y] important network nodes}
 
+The dynamic nature of the topic model also allows us to identify changes within topics. SI figure \ref{sus} shows the evolution of the topic \{research, social, issu\}. In this overarching topic on research priorities we can detect an increasing prominence of the word ``sustainability''.
+
+Finally, by comparing the topic distribution across all documents (published before the end of AR5) with the topic distribution across documents that were cited by the IPCC, we can identify those topics which were over- or under- represented, with respect to the underlying literature, in IPCC reports. Figure \ref{representation} plots the representation and novelty of all topics in the model, labelling those topics most under- or over-represented. The topics are coloured according to the working group from which most IPCC citations to its documents came.
+
+The negative slope of the plot shows that the IPCC better represents those topics which have a longer history in the literature. The majority of well represented older topics come from working group I, such as \{aerosol, cloud, radiat\}. New topics in working group II on adaptation and vulnerability are well represented in IPCC reports. However, a cluster of new topics on mitigation issues appear to be under-represented by the IPCC. Moreover, these topics, such as those on buildings, waste, biochar, carbon capture and carbon storage are those that deal with climate solutions.
+
 
 \begin{figure}
 	\begin{center}
 		\includegraphics[width=1\linewidth]{plots/ipcc_representation/ipcc_rep_new665_all.pdf}
 		\caption{Representation and newness of dynamic topics}
-		\label{}
+		\label{representation}
 	\end{center}
 \end{figure}
 
 
-\bigskip
-\noindent\textbf{Sustainability has been an increasingly important theme in an overarching topic about environmental sciences}
+%\bigskip
+%\noindent\textbf{Sustainability has been an increasingly important theme in an overarching topic about environmental sciences}
+%
+%(compare to biochar, which is much more recent)
 
-(compare to biochar, which is much more recent)
-
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=1\linewidth]{plots/single_topic_3_11046.pdf}
-		\caption{Word and document development of the ``Research'' dynamic topic}
-		\label{}
-	\end{center}
-\end{figure}
-
-\begin{figure}
-	\begin{center}
-		\includegraphics[width=1\linewidth]{plots/single_topic_3_11020.pdf}
-		\caption{SI Word and document development of the ``Biochar'' dynamic topic}
-		\label{}
-	\end{center}
-\end{figure}
-
-
-\begin{figure}
-\begin{center}
-	\includegraphics[width=1\linewidth]{plots/single_doc_3_536594.pdf}
-    \caption{SI Topic make up of a single document}
-    \label{}
-    \end{center}
-\end{figure}
-
-\bigskip
-\noindent\textbf{Physical science topics tend to be the oldest, and the most well represented topics}
-
-\bigskip
-\noindent\textbf{Adaptation and impact studies have seen a lot of growth but are well represented in IPCC reports}
-
-\bigskip
-\noindent\textbf{New topics around negative emissions and urban form are very recent and not well represented in IPCC reports.}
-
-Negative emissions in special report on 1.5, demand side chapter in AR6
 
 
 
 \section*{Discussion}
 
-\bigskip
-\noindent\textbf{Solutions, policies and science}
+%\bigskip
+%\noindent\textbf{Solutions, policies and science}
+%
+%What do policy-makers mean when they ask for more solutions
 
-What do policy-makers mean when they ask for more solutions
+The results from a dynamic topic model of climate change literature delineate the structure and evolution of the field, telling its history and identifying areas of rapid growth that are of high relevance for future assessments. Further, they suggest that the demand by policy-makers from the IPCC for a greater focus on solutions is well-founded. Topics related to climate solutions are the least well represented in the IPCC's assessments.
 
-\bigskip
-\noindent\textbf{Perfect representation is not necessarily desirable, but the skewedness should be known}
+%\bigskip
+%\noindent\textbf{Perfect representation is not necessarily desirable, but the skewedness should be known}
+There may well be excellent reasons for over- or under-representation of topics in IPCC reports, and indeed it is the institution of the IPCC, not machines, who can best make judgements about what to include and what not to include. However, it is unclear whether the decisions which resulted in such unequal distributions were made consciously, on the basis of an understanding of the breadth of the extant literature. For future assessments to be relevant, transparent and comprehensive in the age of big literature, these decisions should be supported by machine-supported engagement with the literature as a whole.
 
-There may be good reasons for a topic to be less prominent in IPCC discussions than in the wider scientific literature, and these reasons can only be understood and acted upon by humans, not by machine-reading. Nevertheless, it is desirable that assessment makers are aware of the relationship
 
 %Increase in the frequency of the use of the term ``solutions'' \citep{jabbour2017},
 
-\section*{Methods}
-\label{methods}
-
-
-
-\subsection*{Data}
+%\section*{Methods}
+%\label{methods}
+%
+%
+%
+%\subsection*{Data}
 %This study reproduces the query developed by \citep{Grieneisen2011}, which is carried out on Web of Science. Though not exhaustive, it gives a good coverage of
 
+\pagebreak
+
+
+\input{methods.tex}
+
+
 \end{linenumbers}
+
+
+
 
 %\end{multicols}
 

@@ -1,0 +1,6 @@
+TS= ("*climat*" OR
+"*global temperature*" OR
+"*global warming*" OR
+"*greenhouse gas*" OR
+"*greenhouse effect*" OR
+"*greenhouse warming*" )
