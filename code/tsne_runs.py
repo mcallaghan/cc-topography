@@ -96,7 +96,7 @@ def draw_simple(results,r_ind,fname=None):
         plt.savefig(fname)
         plt.close()
 
-for run_id in [1810,1811,1809,1818,1817,1814]:#,758]:
+for run_id in [1861]:#,758]:
     #for s_size in [10000,20000,50000,100000,0]:
     for s_size in [0]:
         print(s_size)
