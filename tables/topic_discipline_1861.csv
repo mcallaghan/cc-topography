@@ -1,981 +1,981 @@
-dis_share,doctopic__doc__wc__oecd,primary_wg,title
-10.9523179448695,Agricultural Sciences,1,"{absorption, solvent, amine}"
-27.3741867680375,Agricultural Sciences,2,"{adaptation, vulnerability, strategy}"
-10.807839193883,Agricultural Sciences,2,"{adsorption, capacity, adsorbent}"
-5.37097647984613,Agricultural Sciences,1,"{aerosol, forcing, radiative}"
-27.9501508635939,Agricultural Sciences,1,"{air, pollution, quality}"
-10.0705470508248,Agricultural Sciences,1,"{arctic, permafrost, warm}"
-71.5034616433631,Agricultural Sciences,2,"{area, study, high}"
-48.3613884057495,Agricultural Sciences,3,"{biochar, amendment, application}"
-65.241686341073,Agricultural Sciences,2,"{biomass, aboveground, bioenergy}"
-7.96744272956408,Agricultural Sciences,2,"{building, construction, design}"
-12.9037682127779,Agricultural Sciences,1,"{cal, pollen, holocene}"
-19.8912450029437,Agricultural Sciences,1,"{carbonate, mineral, rock}"
-60.8059167352661,Agricultural Sciences,1,"{carbon, low, sink}"
-16.90548348171,Agricultural Sciences,3,"{cement, material, concrete}"
-42.27906876954,Agricultural Sciences,1,"{ch4, oxidation, peat}"
-47.0602628916639,Agricultural Sciences,2,"{change, climatic, shift}"
-19.7564691743588,Agricultural Sciences,1,"{china, province, chinese}"
-40.8359257421045,Agricultural Sciences,1,"{climate, future, warm}"
-4.90399519178898,Agricultural Sciences,1,"{cloud, feedback, radiative}"
-45.3759916599359,Agricultural Sciences,1,"{co2, mol, carbon-dioxide}"
-4.48974907153599,Agricultural Sciences,3,"{coal, combustion, mine}"
-33.9102390534194,Agricultural Sciences,2,"{community, microbial, composition}"
-67.1926019023381,Agricultural Sciences,1,"{concentration, doc, high}"
-4.99090386395202,Agricultural Sciences,2,"{coral, reef, bleaching}"
-20.844502128755,Agricultural Sciences,3,"{cost, benefit, abatement}"
-33.6013128666486,Agricultural Sciences,3,"{country, develop, international}"
-119.416519550429,Agricultural Sciences,2,"{crop, agricultural, irrigation}"
-43.170318815878,Agricultural Sciences,1,"{data, use, satellite}"
-34.7791406221964,Agricultural Sciences,1,"{degree, day, latitude}"
-14.3410766073308,Agricultural Sciences,1,"{delta, isotope, value}"
-34.0661606297287,Agricultural Sciences,2,"{disease, vector, host}"
-37.5236051636469,Agricultural Sciences,2,"{distribution, range, niche}"
-40.7629301008272,Agricultural Sciences,2,"{drought, severe, severity}"
-27.8388925057438,Agricultural Sciences,2,"{economic, development, economy}"
-51.9683028217527,Agricultural Sciences,2,"{ecosystem, net, productivity}"
-80.1236736807712,Agricultural Sciences,2,"{effect, affect, interaction}"
-9.97817576647234,Agricultural Sciences,3,"{electricity, generation, demand}"
-306.313073916654,Agricultural Sciences,3,"{emission, greenhouse-gas, inventory}"
-20.8467854638736,Agricultural Sciences,3,"{energy, demand, source}"
-50.6355946028161,Agricultural Sciences,2,"{environmental, impact, life}"
-20.3256961310653,Agricultural Sciences,2,"{extreme, event, weather}"
-104.898315508885,Agricultural Sciences,2,"{farm, animal, milk}"
-29.8677884644107,Agricultural Sciences,2,"{fire, burn, wildfire}"
-48.0911173960352,Agricultural Sciences,2,"{fish, fishery, marine}"
-9.23440709700086,Agricultural Sciences,2,"{flood, flooding, damage}"
-17.0237725829143,Agricultural Sciences,2,"{flow, stream, low}"
-42.9984799777878,Agricultural Sciences,1,"{flux, measurement, net}"
-44.6805873635892,Agricultural Sciences,2,"{food, web, supply}"
-96.1651095877018,Agricultural Sciences,2,"{forest, stand, tropical}"
-17.7406550085414,Agricultural Sciences,3,"{fuel, fossil, engine}"
-18.1395069844076,Agricultural Sciences,1,"{gas, natural, hydrate}"
-34.0604607812574,Agricultural Sciences,2,"{genetic, diversity, gene}"
-52.2776951145971,Agricultural Sciences,3,"{ghg, greenhouse-gas, mitigation}"
-11.4954094411202,Agricultural Sciences,1,"{glacial, last, interglacial}"
-4.48967409386891,Agricultural Sciences,1,"{glacier, mass, balance}"
-34.4460418311511,Agricultural Sciences,1,"{global, earth, world}"
-11.0222399541473,Agricultural Sciences,2,"{groundwater, recharge, aquifer}"
-66.0926993895962,Agricultural Sciences,2,"{growth, radial, grow}"
-38.0281082793284,Agricultural Sciences,2,"{habitat, conservation, biodiversity}"
-18.8690636617646,Agricultural Sciences,2,"{health, public, mortality}"
-17.2588926118788,Agricultural Sciences,1,"{heat, heating, pump}"
-22.6204468820127,Agricultural Sciences,2,"{household, income, consumption}"
-28.5896338205502,Agricultural Sciences,2,"{human, activity, natural}"
-7.10309050642132,Agricultural Sciences,1,"{hydrogen, cell, steam}"
-3.27595740022308,Agricultural Sciences,1,"{ice, sheet, sea}"
-251.3958500412,Agricultural Sciences,2,"{increase, decrease, due}"
-98.6097805676742,Agricultural Sciences,2,"{index, vulnerability, correlation}"
-9.36967872796809,Agricultural Sciences,2,"{lake, level, diatom}"
-40.2488728256092,Agricultural Sciences,1,"{land, cover, agricultural}"
-29.3156868130303,Agricultural Sciences,2,"{landscape, erosion, disturbance}"
-53.3314666327146,Agricultural Sciences,2,"{leaf, photosynthesis, photosynthetic}"
-64.4039283184203,Agricultural Sciences,2,"{litter, decomposition, microbial}"
-75.3798859434452,Agricultural Sciences,2,"{management, resource, practice}"
-8.07221759135932,Agricultural Sciences,1,"{membrane, separation, selectivity}"
-31.0689879875985,Agricultural Sciences,1,"{methane, oxidation, source}"
-60.6452587043354,Agricultural Sciences,1,"{method, use, approach}"
-56.1112771030066,Agricultural Sciences,1,"{model, simulation, simulate}"
-66.7123545295109,Agricultural Sciences,1,"{n2o, denitrification, nitrous-oxide}"
-29.9156757028268,Agricultural Sciences,2,"{network, design, problem}"
-85.4170188970725,Agricultural Sciences,2,"{nitrogen, nutrient, treatment}"
-6.91845185775859,Agricultural Sciences,1,"{ocean, circulation, deep}"
-26.6645970027795,Agricultural Sciences,3,"{oil, palm, biodiesel}"
-16.8871151837456,Agricultural Sciences,1,"{oxygen, reaction, reactor}"
-8.78370985494953,Agricultural Sciences,1,"{ozone, stratospheric, tropospheric}"
-11.0872438675988,Agricultural Sciences,1,"{pacific, sst, enso}"
-47.8051617993295,Agricultural Sciences,1,"{per, thousand, part}"
-57.6067841844432,Agricultural Sciences,2,"{plant, seed, grow}"
-23.8057885147111,Agricultural Sciences,3,"{policy, government, maker}"
-33.5234431562937,Agricultural Sciences,2,"{population, size, survival}"
-6.28702002069325,Agricultural Sciences,3,"{power, generation, nuclear}"
-21.6622408134932,Agricultural Sciences,1,"{precipitation, annual, moisture}"
-27.23129150145,Agricultural Sciences,3,"{price, market, tax}"
-34.4116025836246,Agricultural Sciences,2,"{process, chemical, base}"
-91.0409404945146,Agricultural Sciences,2,"{production, primary, produce}"
-33.7755011191805,Agricultural Sciences,2,"{project, cdm, projection}"
-24.1393355644172,Agricultural Sciences,2,"{rainfall, monsoon, rain}"
-56.0667280758016,Agricultural Sciences,2,"{rate, high, accumulation}"
-21.8713114575419,Agricultural Sciences,1,"{record, late, early}"
-47.134921882487,Agricultural Sciences,3,"{reduction, reduce, target}"
-39.1282283219393,Agricultural Sciences,2,"{region, regional, south}"
-39.5572942654312,Agricultural Sciences,2,"{research, science, issue}"
-73.8267143229721,Agricultural Sciences,2,"{rice, paddy, field}"
-21.4904498027047,Agricultural Sciences,2,"{risk, disaster, hazard}"
-11.6274978162393,Agricultural Sciences,2,"{river, discharge, basin}"
-71.2169973570465,Agricultural Sciences,2,"{root, fine, shoot}"
-14.0969418083833,Agricultural Sciences,2,"{runoff, catchment, basin}"
-50.6196674006393,Agricultural Sciences,1,"{scale, spatial, large}"
-33.1190318196178,Agricultural Sciences,2,"{scenario, future, impact}"
-19.3980797424163,Agricultural Sciences,1,"{sea, level, rise}"
-82.8698191848722,Agricultural Sciences,2,"{season, day, grow}"
-20.1033432132066,Agricultural Sciences,3,"{sector, industry, industrial}"
-9.57705161517748,Agricultural Sciences,2,"{sediment, erosion, core}"
-58.6263009629462,Agricultural Sciences,2,"{site, elevation, across}"
-11.6231763313354,Agricultural Sciences,1,"{snow, cover, depth}"
-66.8085884632764,Agricultural Sciences,3,"{soc, stock, soil}"
-244.183874838092,Agricultural Sciences,2,"{soil, moisture, content}"
-8.19196413281526,Agricultural Sciences,1,"{solar, radiation, irradiance}"
-50.0832835842681,Agricultural Sciences,2,"{specie, native, invasive}"
-16.6432679238651,Agricultural Sciences,3,"{storage, reservoir, injection}"
-51.1864617051309,Agricultural Sciences,2,"{stress, response, gene}"
-25.1900354424921,Agricultural Sciences,1,"{surface, layer, albedo}"
-50.3389759678588,Agricultural Sciences,2,"{system, performance, hybrid}"
-22.2705292462381,Agricultural Sciences,3,"{technology, cc, development}"
-52.4632024658566,Agricultural Sciences,1,"{temperature, warm, mean}"
-58.3949137231521,Agricultural Sciences,2,"{term, long, short}"
-10.5229038964337,Agricultural Sciences,1,"{transport, road, transportation}"
-90.6681917531535,Agricultural Sciences,2,"{tree, ring, stand}"
-25.1752761244047,Agricultural Sciences,1,"{trend, station, significant}"
-23.986258215347,Agricultural Sciences,1,"{uncertainty, estimate, parameter}"
-7.93942452399676,Agricultural Sciences,2,"{urban, city, urbanization}"
-29.8998378185438,Agricultural Sciences,2,"{vegetation, ndvi, cover}"
-3.90760819495656,Agricultural Sciences,3,"{vehicle, electric, battery}"
-18.1150234556354,Agricultural Sciences,3,"{waste, landfill, solid}"
-59.6970866037891,Agricultural Sciences,2,"{water, irrigation, resource}"
-10.6385893892148,Agricultural Sciences,1,"{wave, coastal, storm}"
-14.7747919842512,Agricultural Sciences,2,"{wetland, coastal, marsh}"
-8.32157742993927,Agricultural Sciences,1,"{wind, speed, turbine}"
-49.3731845103309,Agricultural Sciences,1,"{winter, summer, spring}"
-72.2465651714367,Agricultural Sciences,1,"{year, period, annual}"
-140.887493331245,Agricultural Sciences,2,"{yield, wheat, grain}"
-157.734286248243,Engineering and Technology,1,"{absorption, solvent, amine}"
-35.4276370780562,Engineering and Technology,2,"{adaptation, vulnerability, strategy}"
-103.211870444647,Engineering and Technology,2,"{adsorption, capacity, adsorbent}"
-41.5311850282691,Engineering and Technology,1,"{aerosol, forcing, radiative}"
-113.55031034995,Engineering and Technology,1,"{air, pollution, quality}"
-22.1142751142697,Engineering and Technology,1,"{arctic, permafrost, warm}"
-121.272551347756,Engineering and Technology,2,"{area, study, high}"
-33.4225605988756,Engineering and Technology,3,"{biochar, amendment, application}"
-76.5093392101745,Engineering and Technology,2,"{biomass, aboveground, bioenergy}"
-172.957792111871,Engineering and Technology,2,"{building, construction, design}"
-17.0743960910496,Engineering and Technology,1,"{cal, pollen, holocene}"
-78.059235799034,Engineering and Technology,1,"{carbonate, mineral, rock}"
-145.954733600636,Engineering and Technology,1,"{carbon, low, sink}"
-186.24098625822,Engineering and Technology,3,"{cement, material, concrete}"
-34.2750467101249,Engineering and Technology,1,"{ch4, oxidation, peat}"
-71.9442783433995,Engineering and Technology,2,"{change, climatic, shift}"
-86.5536134812064,Engineering and Technology,1,"{china, province, chinese}"
-54.8202322446521,Engineering and Technology,1,"{climate, future, warm}"
-33.1675352116878,Engineering and Technology,1,"{cloud, feedback, radiative}"
-196.184304202004,Engineering and Technology,1,"{co2, mol, carbon-dioxide}"
-152.457065313927,Engineering and Technology,3,"{coal, combustion, mine}"
-30.5271696244524,Engineering and Technology,2,"{community, microbial, composition}"
-97.5662486498948,Engineering and Technology,1,"{concentration, doc, high}"
-7.0646559184575,Engineering and Technology,2,"{coral, reef, bleaching}"
-181.47970565808,Engineering and Technology,3,"{cost, benefit, abatement}"
-139.859017465747,Engineering and Technology,3,"{country, develop, international}"
-29.3911092791889,Engineering and Technology,2,"{crop, agricultural, irrigation}"
-136.389785583696,Engineering and Technology,1,"{data, use, satellite}"
-60.4439226932477,Engineering and Technology,1,"{degree, day, latitude}"
-19.2196719039035,Engineering and Technology,1,"{delta, isotope, value}"
-24.1101360559947,Engineering and Technology,2,"{disease, vector, host}"
-65.1845190823167,Engineering and Technology,2,"{distribution, range, niche}"
-22.7609393096714,Engineering and Technology,2,"{drought, severe, severity}"
-137.120306779555,Engineering and Technology,2,"{economic, development, economy}"
-30.4237472191609,Engineering and Technology,2,"{ecosystem, net, productivity}"
-115.384962646801,Engineering and Technology,2,"{effect, affect, interaction}"
-178.261498242191,Engineering and Technology,3,"{electricity, generation, demand}"
-935.01361816143,Engineering and Technology,3,"{emission, greenhouse-gas, inventory}"
-300.038712022156,Engineering and Technology,3,"{energy, demand, source}"
-224.433770226896,Engineering and Technology,2,"{environmental, impact, life}"
-38.7548785987651,Engineering and Technology,2,"{extreme, event, weather}"
-37.262072225606,Engineering and Technology,2,"{farm, animal, milk}"
-23.0579960965941,Engineering and Technology,2,"{fire, burn, wildfire}"
-18.0811226482512,Engineering and Technology,2,"{fish, fishery, marine}"
-40.4476145645636,Engineering and Technology,2,"{flood, flooding, damage}"
-111.996035443834,Engineering and Technology,2,"{flow, stream, low}"
-31.0353918565602,Engineering and Technology,1,"{flux, measurement, net}"
-47.1817551652417,Engineering and Technology,2,"{food, web, supply}"
-29.2398597132053,Engineering and Technology,2,"{forest, stand, tropical}"
-202.036446980293,Engineering and Technology,3,"{fuel, fossil, engine}"
-217.532375188955,Engineering and Technology,1,"{gas, natural, hydrate}"
-26.3012018318674,Engineering and Technology,2,"{genetic, diversity, gene}"
-155.090115056358,Engineering and Technology,3,"{ghg, greenhouse-gas, mitigation}"
-33.2461000782254,Engineering and Technology,1,"{glacial, last, interglacial}"
-20.2927991035054,Engineering and Technology,1,"{glacier, mass, balance}"
-104.158470913307,Engineering and Technology,1,"{global, earth, world}"
-36.8971475294465,Engineering and Technology,2,"{groundwater, recharge, aquifer}"
-47.4760492440858,Engineering and Technology,2,"{growth, radial, grow}"
-28.1880722352461,Engineering and Technology,2,"{habitat, conservation, biodiversity}"
-46.0674399437331,Engineering and Technology,2,"{health, public, mortality}"
-145.181778157874,Engineering and Technology,1,"{heat, heating, pump}"
-60.9516598511012,Engineering and Technology,2,"{household, income, consumption}"
-67.2849639736477,Engineering and Technology,2,"{human, activity, natural}"
-130.774893517296,Engineering and Technology,1,"{hydrogen, cell, steam}"
-22.5020251467705,Engineering and Technology,1,"{ice, sheet, sea}"
-362.397715275518,Engineering and Technology,2,"{increase, decrease, due}"
-185.60629726638,Engineering and Technology,2,"{index, vulnerability, correlation}"
-23.0060712099568,Engineering and Technology,2,"{lake, level, diatom}"
-51.7952455739314,Engineering and Technology,1,"{land, cover, agricultural}"
-23.4305886079988,Engineering and Technology,2,"{landscape, erosion, disturbance}"
-16.4224821206574,Engineering and Technology,2,"{leaf, photosynthesis, photosynthetic}"
-26.0329959262823,Engineering and Technology,2,"{litter, decomposition, microbial}"
-94.1851721954023,Engineering and Technology,2,"{management, resource, practice}"
-119.537758964005,Engineering and Technology,1,"{membrane, separation, selectivity}"
-66.3322794455418,Engineering and Technology,1,"{methane, oxidation, source}"
-221.65490128725,Engineering and Technology,1,"{method, use, approach}"
-148.720874022825,Engineering and Technology,1,"{model, simulation, simulate}"
-28.1959575503179,Engineering and Technology,1,"{n2o, denitrification, nitrous-oxide}"
-294.237419897125,Engineering and Technology,2,"{network, design, problem}"
-58.5118954756221,Engineering and Technology,2,"{nitrogen, nutrient, treatment}"
-26.3918221434824,Engineering and Technology,1,"{ocean, circulation, deep}"
-150.45912889736,Engineering and Technology,3,"{oil, palm, biodiesel}"
-243.378720318738,Engineering and Technology,1,"{oxygen, reaction, reactor}"
-35.4922517866601,Engineering and Technology,1,"{ozone, stratospheric, tropospheric}"
-17.8416364890284,Engineering and Technology,1,"{pacific, sst, enso}"
-98.2045666500798,Engineering and Technology,1,"{per, thousand, part}"
-106.847734045764,Engineering and Technology,2,"{plant, seed, grow}"
-119.470619624521,Engineering and Technology,3,"{policy, government, maker}"
-27.4213998748454,Engineering and Technology,2,"{population, size, survival}"
-240.670974122955,Engineering and Technology,3,"{power, generation, nuclear}"
-35.0452733690127,Engineering and Technology,1,"{precipitation, annual, moisture}"
-141.332474813375,Engineering and Technology,3,"{price, market, tax}"
-211.347353742063,Engineering and Technology,2,"{process, chemical, base}"
-149.40138048754,Engineering and Technology,2,"{production, primary, produce}"
-160.978335930533,Engineering and Technology,2,"{project, cdm, projection}"
-31.639436221486,Engineering and Technology,2,"{rainfall, monsoon, rain}"
-83.3928194161798,Engineering and Technology,2,"{rate, high, accumulation}"
-32.0610429827398,Engineering and Technology,1,"{record, late, early}"
-231.021441902586,Engineering and Technology,3,"{reduction, reduce, target}"
-59.6462154333701,Engineering and Technology,2,"{region, regional, south}"
-141.725188463798,Engineering and Technology,2,"{research, science, issue}"
-30.1763480910716,Engineering and Technology,2,"{rice, paddy, field}"
-57.3218647378764,Engineering and Technology,2,"{risk, disaster, hazard}"
-36.9240926226489,Engineering and Technology,2,"{river, discharge, basin}"
-15.8452893029966,Engineering and Technology,2,"{root, fine, shoot}"
-50.4910227997272,Engineering and Technology,2,"{runoff, catchment, basin}"
-108.770435906919,Engineering and Technology,1,"{scale, spatial, large}"
-92.7118188167841,Engineering and Technology,2,"{scenario, future, impact}"
-51.6841166965714,Engineering and Technology,1,"{sea, level, rise}"
-52.3919962368673,Engineering and Technology,2,"{season, day, grow}"
-141.972615940376,Engineering and Technology,3,"{sector, industry, industrial}"
-25.6951586305759,Engineering and Technology,2,"{sediment, erosion, core}"
-55.4409871612036,Engineering and Technology,2,"{site, elevation, across}"
-27.8544812105042,Engineering and Technology,1,"{snow, cover, depth}"
-12.0834034080816,Engineering and Technology,3,"{soc, stock, soil}"
-49.5750722685731,Engineering and Technology,2,"{soil, moisture, content}"
-104.522279567789,Engineering and Technology,1,"{solar, radiation, irradiance}"
-15.5576134323254,Engineering and Technology,2,"{specie, native, invasive}"
-168.666964250321,Engineering and Technology,3,"{storage, reservoir, injection}"
-48.6104805165452,Engineering and Technology,2,"{stress, response, gene}"
-78.7598122636617,Engineering and Technology,1,"{surface, layer, albedo}"
-223.5533513777,Engineering and Technology,2,"{system, performance, hybrid}"
-276.426753283259,Engineering and Technology,3,"{technology, cc, development}"
-83.3754733763364,Engineering and Technology,1,"{temperature, warm, mean}"
-117.186165885717,Engineering and Technology,2,"{term, long, short}"
-87.9332221391051,Engineering and Technology,1,"{transport, road, transportation}"
-17.4090391881847,Engineering and Technology,2,"{tree, ring, stand}"
-60.1833160383569,Engineering and Technology,1,"{trend, station, significant}"
-68.9139752592614,Engineering and Technology,1,"{uncertainty, estimate, parameter}"
-79.7886934140483,Engineering and Technology,2,"{urban, city, urbanization}"
-43.073999146593,Engineering and Technology,2,"{vegetation, ndvi, cover}"
-130.33948722542,Engineering and Technology,3,"{vehicle, electric, battery}"
-125.345189711371,Engineering and Technology,3,"{waste, landfill, solid}"
-117.458345039035,Engineering and Technology,2,"{water, irrigation, resource}"
-62.8414916603942,Engineering and Technology,1,"{wave, coastal, storm}"
-22.8988175458647,Engineering and Technology,2,"{wetland, coastal, marsh}"
-82.2593064774126,Engineering and Technology,1,"{wind, speed, turbine}"
-35.5508414155581,Engineering and Technology,1,"{winter, summer, spring}"
-87.6444973645228,Engineering and Technology,1,"{year, period, annual}"
-49.2800800665464,Engineering and Technology,2,"{yield, wheat, grain}"
-0.655637453673254,Humanities,1,"{absorption, solvent, amine}"
-2.07064364699211,Humanities,2,"{adaptation, vulnerability, strategy}"
-0.541968659680901,Humanities,2,"{adsorption, capacity, adsorbent}"
-0.427638827520503,Humanities,1,"{aerosol, forcing, radiative}"
-1.34190144441989,Humanities,1,"{air, pollution, quality}"
-0.947215854807177,Humanities,1,"{arctic, permafrost, warm}"
-3.22676247440862,Humanities,2,"{area, study, high}"
-0.192862179156891,Humanities,3,"{biochar, amendment, application}"
-0.244763077773592,Humanities,2,"{biomass, aboveground, bioenergy}"
-9.27485396784848,Humanities,2,"{building, construction, design}"
-3.27120358512603,Humanities,1,"{cal, pollen, holocene}"
-0.990258302601756,Humanities,1,"{carbonate, mineral, rock}"
-2.21393037499585,Humanities,1,"{carbon, low, sink}"
-2.96655048895834,Humanities,3,"{cement, material, concrete}"
-0.0431756911681513,Humanities,1,"{ch4, oxidation, peat}"
-3.29765176711466,Humanities,2,"{change, climatic, shift}"
-1.0359585084898,Humanities,1,"{china, province, chinese}"
-3.99317232567502,Humanities,1,"{climate, future, warm}"
-0.249056335068734,Humanities,1,"{cloud, feedback, radiative}"
-0.391512531897537,Humanities,1,"{co2, mol, carbon-dioxide}"
-0.314475274882544,Humanities,3,"{coal, combustion, mine}"
-2.19432446255063,Humanities,2,"{community, microbial, composition}"
-0.596475599212811,Humanities,1,"{concentration, doc, high}"
-0.250548661224568,Humanities,2,"{coral, reef, bleaching}"
-1.26574100400257,Humanities,3,"{cost, benefit, abatement}"
-3.45571290944054,Humanities,3,"{country, develop, international}"
-0.563208403799791,Humanities,2,"{crop, agricultural, irrigation}"
-2.09964596317479,Humanities,1,"{data, use, satellite}"
-0.615345970399795,Humanities,1,"{degree, day, latitude}"
-0.953945091011709,Humanities,1,"{delta, isotope, value}"
-0.991637513523869,Humanities,2,"{disease, vector, host}"
-1.25121027036176,Humanities,2,"{distribution, range, niche}"
-0.531181336902663,Humanities,2,"{drought, severe, severity}"
-3.73335807661809,Humanities,2,"{economic, development, economy}"
-0.913108403442245,Humanities,2,"{ecosystem, net, productivity}"
-2.00171407946697,Humanities,2,"{effect, affect, interaction}"
-1.02982853706135,Humanities,3,"{electricity, generation, demand}"
-7.74240915384521,Humanities,3,"{emission, greenhouse-gas, inventory}"
-3.18618329897495,Humanities,3,"{energy, demand, source}"
-5.03665395171433,Humanities,2,"{environmental, impact, life}"
-1.60642237324829,Humanities,2,"{extreme, event, weather}"
-0.978259462429741,Humanities,2,"{farm, animal, milk}"
-0.39040645557051,Humanities,2,"{fire, burn, wildfire}"
-0.899451364696046,Humanities,2,"{fish, fishery, marine}"
-1.09419349323777,Humanities,2,"{flood, flooding, damage}"
-0.467486367916587,Humanities,2,"{flow, stream, low}"
-0.157653556307317,Humanities,1,"{flux, measurement, net}"
-1.97724043038812,Humanities,2,"{food, web, supply}"
-0.714376713463564,Humanities,2,"{forest, stand, tropical}"
-0.769858900314783,Humanities,3,"{fuel, fossil, engine}"
-0.67835536276981,Humanities,1,"{gas, natural, hydrate}"
-0.883217135798688,Humanities,2,"{genetic, diversity, gene}"
-1.07970509930048,Humanities,3,"{ghg, greenhouse-gas, mitigation}"
-1.37685305877673,Humanities,1,"{glacial, last, interglacial}"
-0.44316079951798,Humanities,1,"{glacier, mass, balance}"
-5.25210756873065,Humanities,1,"{global, earth, world}"
-0.373123672632432,Humanities,2,"{groundwater, recharge, aquifer}"
-0.981749966627621,Humanities,2,"{growth, radial, grow}"
-1.81630092197649,Humanities,2,"{habitat, conservation, biodiversity}"
-3.06482702788213,Humanities,2,"{health, public, mortality}"
-1.13830957079123,Humanities,1,"{heat, heating, pump}"
-1.59277816883868,Humanities,2,"{household, income, consumption}"
-7.3882336293487,Humanities,2,"{human, activity, natural}"
-0.478564740859576,Humanities,1,"{hydrogen, cell, steam}"
-0.758222756472273,Humanities,1,"{ice, sheet, sea}"
-5.19247024326392,Humanities,2,"{increase, decrease, due}"
-2.18428401254972,Humanities,2,"{index, vulnerability, correlation}"
-0.775946307145125,Humanities,2,"{lake, level, diatom}"
-1.32070034601307,Humanities,1,"{land, cover, agricultural}"
-4.49621558834633,Humanities,2,"{landscape, erosion, disturbance}"
-0.243324319155621,Humanities,2,"{leaf, photosynthesis, photosynthetic}"
-0.231668549196553,Humanities,2,"{litter, decomposition, microbial}"
-2.63485663796403,Humanities,2,"{management, resource, practice}"
-0.390245578475137,Humanities,1,"{membrane, separation, selectivity}"
-0.203101015244154,Humanities,1,"{methane, oxidation, source}"
-3.10036511577542,Humanities,1,"{method, use, approach}"
-1.59503096790606,Humanities,1,"{model, simulation, simulate}"
-0.0419075254085981,Humanities,1,"{n2o, denitrification, nitrous-oxide}"
-4.84461985450312,Humanities,2,"{network, design, problem}"
-0.323082896971006,Humanities,2,"{nitrogen, nutrient, treatment}"
-0.427173858064836,Humanities,1,"{ocean, circulation, deep}"
-0.767165465987715,Humanities,3,"{oil, palm, biodiesel}"
-0.59549227834167,Humanities,1,"{oxygen, reaction, reactor}"
-0.43974744477219,Humanities,1,"{ozone, stratospheric, tropospheric}"
-0.598974115404492,Humanities,1,"{pacific, sst, enso}"
-1.62199234578336,Humanities,1,"{per, thousand, part}"
-0.572358214706329,Humanities,2,"{plant, seed, grow}"
-3.65073525325759,Humanities,3,"{policy, government, maker}"
-1.71266394086218,Humanities,2,"{population, size, survival}"
-1.05547949864291,Humanities,3,"{power, generation, nuclear}"
-0.41609570563382,Humanities,1,"{precipitation, annual, moisture}"
-1.94093328256903,Humanities,3,"{price, market, tax}"
-2.5626685546516,Humanities,2,"{process, chemical, base}"
-1.42303591340748,Humanities,2,"{production, primary, produce}"
-5.23434151407357,Humanities,2,"{project, cdm, projection}"
-0.49968134850667,Humanities,2,"{rainfall, monsoon, rain}"
-0.69384059692628,Humanities,2,"{rate, high, accumulation}"
-5.46508897724324,Humanities,1,"{record, late, early}"
-2.5545294249237,Humanities,3,"{reduction, reduce, target}"
-2.02739736639912,Humanities,2,"{region, regional, south}"
-16.0770489208457,Humanities,2,"{research, science, issue}"
-0.402470864770043,Humanities,2,"{rice, paddy, field}"
-2.37458868070798,Humanities,2,"{risk, disaster, hazard}"
-0.980301071104497,Humanities,2,"{river, discharge, basin}"
-0.568882546699459,Humanities,2,"{root, fine, shoot}"
-0.402153913556772,Humanities,2,"{runoff, catchment, basin}"
-2.49275974099556,Humanities,1,"{scale, spatial, large}"
-1.2977985767432,Humanities,2,"{scenario, future, impact}"
-1.95180565858784,Humanities,1,"{sea, level, rise}"
-1.0741247553731,Humanities,2,"{season, day, grow}"
-1.86338389143801,Humanities,3,"{sector, industry, industrial}"
-1.14425357886728,Humanities,2,"{sediment, erosion, core}"
-3.54851540571687,Humanities,2,"{site, elevation, across}"
-0.22927487805495,Humanities,1,"{snow, cover, depth}"
-0.161868790636012,Humanities,3,"{soc, stock, soil}"
-0.718161585107052,Humanities,2,"{soil, moisture, content}"
-1.16924007138217,Humanities,1,"{solar, radiation, irradiance}"
-0.899075988859461,Humanities,2,"{specie, native, invasive}"
-0.564576372132006,Humanities,3,"{storage, reservoir, injection}"
-1.38225332471175,Humanities,2,"{stress, response, gene}"
-0.856344569926057,Humanities,1,"{surface, layer, albedo}"
-2.17861809471121,Humanities,2,"{system, performance, hybrid}"
-3.29168090461592,Humanities,3,"{technology, cc, development}"
-0.832724344130732,Humanities,1,"{temperature, warm, mean}"
-2.94698845073282,Humanities,2,"{term, long, short}"
-0.811862182385504,Humanities,1,"{transport, road, transportation}"
-0.651030666218364,Humanities,2,"{tree, ring, stand}"
-0.966484731860203,Humanities,1,"{trend, station, significant}"
-1.38012028657429,Humanities,1,"{uncertainty, estimate, parameter}"
-4.54881932081362,Humanities,2,"{urban, city, urbanization}"
-0.763953885173028,Humanities,2,"{vegetation, ndvi, cover}"
-0.55616412255488,Humanities,3,"{vehicle, electric, battery}"
-0.831937748225404,Humanities,3,"{waste, landfill, solid}"
-1.50993703423963,Humanities,2,"{water, irrigation, resource}"
-1.09775948863509,Humanities,1,"{wave, coastal, storm}"
-0.634476805690109,Humanities,2,"{wetland, coastal, marsh}"
-0.829666602611589,Humanities,1,"{wind, speed, turbine}"
-1.06611702901173,Humanities,1,"{winter, summer, spring}"
-2.33002650975203,Humanities,1,"{year, period, annual}"
-0.64884578699778,Humanities,2,"{yield, wheat, grain}"
-1.40869533632283,Medical and Health Sciences,1,"{absorption, solvent, amine}"
-5.08436381055048,Medical and Health Sciences,2,"{adaptation, vulnerability, strategy}"
-1.26762556729794,Medical and Health Sciences,2,"{adsorption, capacity, adsorbent}"
-0.851779539345657,Medical and Health Sciences,1,"{aerosol, forcing, radiative}"
-7.66799295261424,Medical and Health Sciences,1,"{air, pollution, quality}"
-1.52930777995357,Medical and Health Sciences,1,"{arctic, permafrost, warm}"
-10.05594406892,Medical and Health Sciences,2,"{area, study, high}"
-0.427484554663915,Medical and Health Sciences,3,"{biochar, amendment, application}"
-0.779299636320435,Medical and Health Sciences,2,"{biomass, aboveground, bioenergy}"
-1.73099075356022,Medical and Health Sciences,2,"{building, construction, design}"
-5.10004729082671,Medical and Health Sciences,1,"{cal, pollen, holocene}"
-1.35668456396195,Medical and Health Sciences,1,"{carbonate, mineral, rock}"
-1.66156754285999,Medical and Health Sciences,1,"{carbon, low, sink}"
-1.55160901771999,Medical and Health Sciences,3,"{cement, material, concrete}"
-0.646459349624134,Medical and Health Sciences,1,"{ch4, oxidation, peat}"
-7.39095414130322,Medical and Health Sciences,2,"{change, climatic, shift}"
-2.65847927464607,Medical and Health Sciences,1,"{china, province, chinese}"
-6.21734381038711,Medical and Health Sciences,1,"{climate, future, warm}"
-0.430017411432372,Medical and Health Sciences,1,"{cloud, feedback, radiative}"
-1.54956269391372,Medical and Health Sciences,1,"{co2, mol, carbon-dioxide}"
-0.711928275139725,Medical and Health Sciences,3,"{coal, combustion, mine}"
-5.66645690768203,Medical and Health Sciences,2,"{community, microbial, composition}"
-4.53837091529112,Medical and Health Sciences,1,"{concentration, doc, high}"
-0.747845662228211,Medical and Health Sciences,2,"{coral, reef, bleaching}"
-2.70133535695027,Medical and Health Sciences,3,"{cost, benefit, abatement}"
-11.4153002595666,Medical and Health Sciences,3,"{country, develop, international}"
-1.36997222098957,Medical and Health Sciences,2,"{crop, agricultural, irrigation}"
-6.91184799931555,Medical and Health Sciences,1,"{data, use, satellite}"
-5.86665894489192,Medical and Health Sciences,1,"{degree, day, latitude}"
-0.647451343840728,Medical and Health Sciences,1,"{delta, isotope, value}"
-56.9040247491886,Medical and Health Sciences,2,"{disease, vector, host}"
-7.35331233279801,Medical and Health Sciences,2,"{distribution, range, niche}"
-2.01726759691287,Medical and Health Sciences,2,"{drought, severe, severity}"
-5.14772546915548,Medical and Health Sciences,2,"{economic, development, economy}"
-1.9063928853283,Medical and Health Sciences,2,"{ecosystem, net, productivity}"
-10.2181888337989,Medical and Health Sciences,2,"{effect, affect, interaction}"
-1.25878625923642,Medical and Health Sciences,3,"{electricity, generation, demand}"
-13.984043523422,Medical and Health Sciences,3,"{emission, greenhouse-gas, inventory}"
-2.18011389863978,Medical and Health Sciences,3,"{energy, demand, source}"
-9.72291484045368,Medical and Health Sciences,2,"{environmental, impact, life}"
-6.69549637763779,Medical and Health Sciences,2,"{extreme, event, weather}"
-5.39481352398285,Medical and Health Sciences,2,"{farm, animal, milk}"
-0.734213576132394,Medical and Health Sciences,2,"{fire, burn, wildfire}"
-4.41606959758128,Medical and Health Sciences,2,"{fish, fishery, marine}"
-3.02628119126696,Medical and Health Sciences,2,"{flood, flooding, damage}"
-1.26398220622784,Medical and Health Sciences,2,"{flow, stream, low}"
-0.637645321926382,Medical and Health Sciences,1,"{flux, measurement, net}"
-11.8554376123368,Medical and Health Sciences,2,"{food, web, supply}"
-1.08177230160328,Medical and Health Sciences,2,"{forest, stand, tropical}"
-1.81420050424285,Medical and Health Sciences,3,"{fuel, fossil, engine}"
-1.6891683659301,Medical and Health Sciences,1,"{gas, natural, hydrate}"
-3.8221343127777,Medical and Health Sciences,2,"{genetic, diversity, gene}"
-2.12096317926679,Medical and Health Sciences,3,"{ghg, greenhouse-gas, mitigation}"
-1.67360784772256,Medical and Health Sciences,1,"{glacial, last, interglacial}"
-0.454234403081487,Medical and Health Sciences,1,"{glacier, mass, balance}"
-9.1573662429303,Medical and Health Sciences,1,"{global, earth, world}"
-0.433803444740865,Medical and Health Sciences,2,"{groundwater, recharge, aquifer}"
-2.38612970344903,Medical and Health Sciences,2,"{growth, radial, grow}"
-4.96600858110011,Medical and Health Sciences,2,"{habitat, conservation, biodiversity}"
-65.2291875516581,Medical and Health Sciences,2,"{health, public, mortality}"
-8.84128600572204,Medical and Health Sciences,1,"{heat, heating, pump}"
-6.7459306354117,Medical and Health Sciences,2,"{household, income, consumption}"
-12.0664685501955,Medical and Health Sciences,2,"{human, activity, natural}"
-1.12109068327343,Medical and Health Sciences,1,"{hydrogen, cell, steam}"
-0.461277836783445,Medical and Health Sciences,1,"{ice, sheet, sea}"
-28.7123471959156,Medical and Health Sciences,2,"{increase, decrease, due}"
-13.9036998481209,Medical and Health Sciences,2,"{index, vulnerability, correlation}"
-0.732535911416892,Medical and Health Sciences,2,"{lake, level, diatom}"
-1.81246386403557,Medical and Health Sciences,1,"{land, cover, agricultural}"
-1.73828312031764,Medical and Health Sciences,2,"{landscape, erosion, disturbance}"
-1.05367621653776,Medical and Health Sciences,2,"{leaf, photosynthesis, photosynthetic}"
-0.747542567682457,Medical and Health Sciences,2,"{litter, decomposition, microbial}"
-3.99057921268021,Medical and Health Sciences,2,"{management, resource, practice}"
-1.26467248745387,Medical and Health Sciences,1,"{membrane, separation, selectivity}"
-1.20450068218203,Medical and Health Sciences,1,"{methane, oxidation, source}"
-10.9910610907057,Medical and Health Sciences,1,"{method, use, approach}"
-5.87150173202233,Medical and Health Sciences,1,"{model, simulation, simulate}"
-0.448237496505975,Medical and Health Sciences,1,"{n2o, denitrification, nitrous-oxide}"
-4.93611816620734,Medical and Health Sciences,2,"{network, design, problem}"
-2.68524469800259,Medical and Health Sciences,2,"{nitrogen, nutrient, treatment}"
-0.739208414522105,Medical and Health Sciences,1,"{ocean, circulation, deep}"
-1.68724122665425,Medical and Health Sciences,3,"{oil, palm, biodiesel}"
-2.22625719940353,Medical and Health Sciences,1,"{oxygen, reaction, reactor}"
-2.5085997540874,Medical and Health Sciences,1,"{ozone, stratospheric, tropospheric}"
-1.93280387201427,Medical and Health Sciences,1,"{pacific, sst, enso}"
-5.20555013947647,Medical and Health Sciences,1,"{per, thousand, part}"
-2.17736836034496,Medical and Health Sciences,2,"{plant, seed, grow}"
-7.05972581792312,Medical and Health Sciences,3,"{policy, government, maker}"
-11.03582724611,Medical and Health Sciences,2,"{population, size, survival}"
-1.30087869058359,Medical and Health Sciences,3,"{power, generation, nuclear}"
-1.88927223521544,Medical and Health Sciences,1,"{precipitation, annual, moisture}"
-2.14689219648938,Medical and Health Sciences,3,"{price, market, tax}"
-3.34688598809359,Medical and Health Sciences,2,"{process, chemical, base}"
-3.30497330043712,Medical and Health Sciences,2,"{production, primary, produce}"
-5.04667336168011,Medical and Health Sciences,2,"{project, cdm, projection}"
-3.64238726906955,Medical and Health Sciences,2,"{rainfall, monsoon, rain}"
-5.02551612179931,Medical and Health Sciences,2,"{rate, high, accumulation}"
-3.76509717209805,Medical and Health Sciences,1,"{record, late, early}"
-5.17372118976886,Medical and Health Sciences,3,"{reduction, reduce, target}"
-6.17214988524985,Medical and Health Sciences,2,"{region, regional, south}"
-13.4279560673323,Medical and Health Sciences,2,"{research, science, issue}"
-1.20265415206614,Medical and Health Sciences,2,"{rice, paddy, field}"
-15.5413779801207,Medical and Health Sciences,2,"{risk, disaster, hazard}"
-1.28809198801811,Medical and Health Sciences,2,"{river, discharge, basin}"
-0.951497642897801,Medical and Health Sciences,2,"{root, fine, shoot}"
-0.636989906010434,Medical and Health Sciences,2,"{runoff, catchment, basin}"
-5.23766917753159,Medical and Health Sciences,1,"{scale, spatial, large}"
-3.35049434692014,Medical and Health Sciences,2,"{scenario, future, impact}"
-3.18116102406852,Medical and Health Sciences,1,"{sea, level, rise}"
-8.01343658907486,Medical and Health Sciences,2,"{season, day, grow}"
-2.5442704558702,Medical and Health Sciences,3,"{sector, industry, industrial}"
-0.465277238832228,Medical and Health Sciences,2,"{sediment, erosion, core}"
-3.00762240315899,Medical and Health Sciences,2,"{site, elevation, across}"
-0.58031882617103,Medical and Health Sciences,1,"{snow, cover, depth}"
-0.371015358939816,Medical and Health Sciences,3,"{soc, stock, soil}"
-1.09930829351957,Medical and Health Sciences,2,"{soil, moisture, content}"
-1.04715969396971,Medical and Health Sciences,1,"{solar, radiation, irradiance}"
-6.00886323664704,Medical and Health Sciences,2,"{specie, native, invasive}"
-1.5276174584876,Medical and Health Sciences,3,"{storage, reservoir, injection}"
-8.17154522728899,Medical and Health Sciences,2,"{stress, response, gene}"
-1.49629780057505,Medical and Health Sciences,1,"{surface, layer, albedo}"
-4.59435214987268,Medical and Health Sciences,2,"{system, performance, hybrid}"
-3.01831231942052,Medical and Health Sciences,3,"{technology, cc, development}"
-10.0917881468534,Medical and Health Sciences,1,"{temperature, warm, mean}"
-5.83631037199019,Medical and Health Sciences,2,"{term, long, short}"
-2.50618109976351,Medical and Health Sciences,1,"{transport, road, transportation}"
-1.49805221192205,Medical and Health Sciences,2,"{tree, ring, stand}"
-3.69412354889068,Medical and Health Sciences,1,"{trend, station, significant}"
-2.68226301603629,Medical and Health Sciences,1,"{uncertainty, estimate, parameter}"
-5.22561108889977,Medical and Health Sciences,2,"{urban, city, urbanization}"
-1.19714194716442,Medical and Health Sciences,2,"{vegetation, ndvi, cover}"
-1.42739097846967,Medical and Health Sciences,3,"{vehicle, electric, battery}"
-2.05976355002133,Medical and Health Sciences,3,"{waste, landfill, solid}"
-3.83291768219975,Medical and Health Sciences,2,"{water, irrigation, resource}"
-5.38785264748025,Medical and Health Sciences,1,"{wave, coastal, storm}"
-0.646120336417616,Medical and Health Sciences,2,"{wetland, coastal, marsh}"
-1.11655115616818,Medical and Health Sciences,1,"{wind, speed, turbine}"
-4.84844623139573,Medical and Health Sciences,1,"{winter, summer, spring}"
-7.70906168728962,Medical and Health Sciences,1,"{year, period, annual}"
-1.97889840412583,Medical and Health Sciences,2,"{yield, wheat, grain}"
-121.261018382333,Natural Sciences,1,"{absorption, solvent, amine}"
-168.914768117261,Natural Sciences,2,"{adaptation, vulnerability, strategy}"
-145.27687452203,Natural Sciences,2,"{adsorption, capacity, adsorbent}"
-206.180060929877,Natural Sciences,1,"{aerosol, forcing, radiative}"
-210.746361996424,Natural Sciences,1,"{air, pollution, quality}"
-194.165426076844,Natural Sciences,1,"{arctic, permafrost, warm}"
-473.222696078276,Natural Sciences,2,"{area, study, high}"
-62.8890109141442,Natural Sciences,3,"{biochar, amendment, application}"
-152.951002914852,Natural Sciences,2,"{biomass, aboveground, bioenergy}"
-73.0653770745981,Natural Sciences,2,"{building, construction, design}"
-288.36722204193,Natural Sciences,1,"{cal, pollen, holocene}"
-230.552260219304,Natural Sciences,1,"{carbonate, mineral, rock}"
-300.818032634843,Natural Sciences,1,"{carbon, low, sink}"
-109.669801037533,Natural Sciences,3,"{cement, material, concrete}"
-127.684489412365,Natural Sciences,1,"{ch4, oxidation, peat}"
-444.765416253566,Natural Sciences,2,"{change, climatic, shift}"
-172.639028928284,Natural Sciences,1,"{china, province, chinese}"
-404.170406409946,Natural Sciences,1,"{climate, future, warm}"
-150.545678893433,Natural Sciences,1,"{cloud, feedback, radiative}"
-284.346651702741,Natural Sciences,1,"{co2, mol, carbon-dioxide}"
-60.1936792552867,Natural Sciences,3,"{coal, combustion, mine}"
-246.26307345785,Natural Sciences,2,"{community, microbial, composition}"
-374.686461206974,Natural Sciences,1,"{concentration, doc, high}"
-147.983204987558,Natural Sciences,2,"{coral, reef, bleaching}"
-108.541569311201,Natural Sciences,3,"{cost, benefit, abatement}"
-188.426740553719,Natural Sciences,3,"{country, develop, international}"
-124.723309077768,Natural Sciences,2,"{crop, agricultural, irrigation}"
-373.848213924109,Natural Sciences,1,"{data, use, satellite}"
-261.082923182845,Natural Sciences,1,"{degree, day, latitude}"
-216.947845916585,Natural Sciences,1,"{delta, isotope, value}"
-134.846006003913,Natural Sciences,2,"{disease, vector, host}"
-324.335044058067,Natural Sciences,2,"{distribution, range, niche}"
-168.326867003158,Natural Sciences,2,"{drought, severe, severity}"
-164.302361519154,Natural Sciences,2,"{economic, development, economy}"
-311.989668795919,Natural Sciences,2,"{ecosystem, net, productivity}"
-386.630984315218,Natural Sciences,2,"{effect, affect, interaction}"
-71.8034490817219,Natural Sciences,3,"{electricity, generation, demand}"
-1032.42396970473,Natural Sciences,3,"{emission, greenhouse-gas, inventory}"
-143.422493837837,Natural Sciences,3,"{energy, demand, source}"
-307.283449094658,Natural Sciences,2,"{environmental, impact, life}"
-261.660993637441,Natural Sciences,2,"{extreme, event, weather}"
-102.911492019153,Natural Sciences,2,"{farm, animal, milk}"
-112.616636221722,Natural Sciences,2,"{fire, burn, wildfire}"
-233.922340520309,Natural Sciences,2,"{fish, fishery, marine}"
-150.154452804342,Natural Sciences,2,"{flood, flooding, damage}"
-221.617521795056,Natural Sciences,2,"{flow, stream, low}"
-238.754113093574,Natural Sciences,1,"{flux, measurement, net}"
-135.365443825174,Natural Sciences,2,"{food, web, supply}"
-227.382545571616,Natural Sciences,2,"{forest, stand, tropical}"
-98.4009097324906,Natural Sciences,3,"{fuel, fossil, engine}"
-155.184317846825,Natural Sciences,1,"{gas, natural, hydrate}"
-220.620502084135,Natural Sciences,2,"{genetic, diversity, gene}"
-127.395957576045,Natural Sciences,3,"{ghg, greenhouse-gas, mitigation}"
-349.922838858024,Natural Sciences,1,"{glacial, last, interglacial}"
-139.736860208125,Natural Sciences,1,"{glacier, mass, balance}"
-428.295052108715,Natural Sciences,1,"{global, earth, world}"
-119.944049346724,Natural Sciences,2,"{groundwater, recharge, aquifer}"
-196.6537411186,Natural Sciences,2,"{growth, radial, grow}"
-353.207110417273,Natural Sciences,2,"{habitat, conservation, biodiversity}"
-129.574001679163,Natural Sciences,2,"{health, public, mortality}"
-143.176265810309,Natural Sciences,1,"{heat, heating, pump}"
-108.223991898968,Natural Sciences,2,"{household, income, consumption}"
-269.660444077831,Natural Sciences,2,"{human, activity, natural}"
-124.883719282043,Natural Sciences,1,"{hydrogen, cell, steam}"
-257.798123853011,Natural Sciences,1,"{ice, sheet, sea}"
-1278.06142722217,Natural Sciences,2,"{increase, decrease, due}"
-655.278079604572,Natural Sciences,2,"{index, vulnerability, correlation}"
-248.189685487648,Natural Sciences,2,"{lake, level, diatom}"
-226.90033802023,Natural Sciences,1,"{land, cover, agricultural}"
-210.471852596959,Natural Sciences,2,"{landscape, erosion, disturbance}"
-170.889693023943,Natural Sciences,2,"{leaf, photosynthesis, photosynthetic}"
-152.251579568515,Natural Sciences,2,"{litter, decomposition, microbial}"
-234.803706405698,Natural Sciences,2,"{management, resource, practice}"
-90.3520417904149,Natural Sciences,1,"{membrane, separation, selectivity}"
-144.612207301961,Natural Sciences,1,"{methane, oxidation, source}"
-392.035206354968,Natural Sciences,1,"{method, use, approach}"
-481.812322486807,Natural Sciences,1,"{model, simulation, simulate}"
-100.87263802637,Natural Sciences,1,"{n2o, denitrification, nitrous-oxide}"
-271.053774042837,Natural Sciences,2,"{network, design, problem}"
-226.592062862988,Natural Sciences,2,"{nitrogen, nutrient, treatment}"
-318.055977357116,Natural Sciences,1,"{ocean, circulation, deep}"
-98.7890864476647,Natural Sciences,3,"{oil, palm, biodiesel}"
-202.564765495167,Natural Sciences,1,"{oxygen, reaction, reactor}"
-162.634261312797,Natural Sciences,1,"{ozone, stratospheric, tropospheric}"
-288.822612157388,Natural Sciences,1,"{pacific, sst, enso}"
-254.666226403134,Natural Sciences,1,"{per, thousand, part}"
-225.951479598004,Natural Sciences,2,"{plant, seed, grow}"
-155.421547642533,Natural Sciences,3,"{policy, government, maker}"
-271.88316917771,Natural Sciences,2,"{population, size, survival}"
-86.6351889366262,Natural Sciences,3,"{power, generation, nuclear}"
-272.248272027107,Natural Sciences,1,"{precipitation, annual, moisture}"
-107.511611508976,Natural Sciences,3,"{price, market, tax}"
-294.217814812288,Natural Sciences,2,"{process, chemical, base}"
-210.902953607272,Natural Sciences,2,"{production, primary, produce}"
-300.425336957341,Natural Sciences,2,"{project, cdm, projection}"
-204.324541148699,Natural Sciences,2,"{rainfall, monsoon, rain}"
-280.504924606873,Natural Sciences,2,"{rate, high, accumulation}"
-468.444484713607,Natural Sciences,1,"{record, late, early}"
-259.428676134016,Natural Sciences,3,"{reduction, reduce, target}"
-346.454093497224,Natural Sciences,2,"{region, regional, south}"
-289.75688199881,Natural Sciences,2,"{research, science, issue}"
-106.973533288364,Natural Sciences,2,"{rice, paddy, field}"
-159.157803611497,Natural Sciences,2,"{risk, disaster, hazard}"
-221.480165531891,Natural Sciences,2,"{river, discharge, basin}"
-133.486190848305,Natural Sciences,2,"{root, fine, shoot}"
-217.189926837658,Natural Sciences,2,"{runoff, catchment, basin}"
-502.503918457694,Natural Sciences,1,"{scale, spatial, large}"
-232.900134720745,Natural Sciences,2,"{scenario, future, impact}"
-347.183200512262,Natural Sciences,1,"{sea, level, rise}"
-340.996946769832,Natural Sciences,2,"{season, day, grow}"
-117.573014457489,Natural Sciences,3,"{sector, industry, industrial}"
-287.441920698349,Natural Sciences,2,"{sediment, erosion, core}"
-265.783208537688,Natural Sciences,2,"{site, elevation, across}"
-155.151028368344,Natural Sciences,1,"{snow, cover, depth}"
-84.4810774843612,Natural Sciences,3,"{soc, stock, soil}"
-379.96980964153,Natural Sciences,2,"{soil, moisture, content}"
-131.57549839814,Natural Sciences,1,"{solar, radiation, irradiance}"
-381.705480889733,Natural Sciences,2,"{specie, native, invasive}"
-151.085227226331,Natural Sciences,3,"{storage, reservoir, injection}"
-291.593620179446,Natural Sciences,2,"{stress, response, gene}"
-412.779680431615,Natural Sciences,1,"{surface, layer, albedo}"
-231.230471791172,Natural Sciences,2,"{system, performance, hybrid}"
-150.935358959212,Natural Sciences,3,"{technology, cc, development}"
-396.860304168707,Natural Sciences,1,"{temperature, warm, mean}"
-396.56334727697,Natural Sciences,2,"{term, long, short}"
-161.942810858623,Natural Sciences,1,"{transport, road, transportation}"
-190.954561952481,Natural Sciences,2,"{tree, ring, stand}"
-311.201973531316,Natural Sciences,1,"{trend, station, significant}"
-217.2302654163,Natural Sciences,1,"{uncertainty, estimate, parameter}"
-129.590222829417,Natural Sciences,2,"{urban, city, urbanization}"
-265.520361107422,Natural Sciences,2,"{vegetation, ndvi, cover}"
-56.6758158398956,Natural Sciences,3,"{vehicle, electric, battery}"
-76.8570867695315,Natural Sciences,3,"{waste, landfill, solid}"
-387.483039858753,Natural Sciences,2,"{water, irrigation, resource}"
-266.422695849968,Natural Sciences,1,"{wave, coastal, storm}"
-154.106652472697,Natural Sciences,2,"{wetland, coastal, marsh}"
-143.758924840733,Natural Sciences,1,"{wind, speed, turbine}"
-396.152805709374,Natural Sciences,1,"{winter, summer, spring}"
-359.723047601766,Natural Sciences,1,"{year, period, annual}"
-183.537237486006,Natural Sciences,2,"{yield, wheat, grain}"
-8.63826073022227,Social Sciences,1,"{absorption, solvent, amine}"
-70.1467743906181,Social Sciences,2,"{adaptation, vulnerability, strategy}"
-8.42390990880872,Social Sciences,2,"{adsorption, capacity, adsorbent}"
-3.74154667902792,Social Sciences,1,"{aerosol, forcing, radiative}"
-22.470921442623,Social Sciences,1,"{air, pollution, quality}"
-8.25812219068087,Social Sciences,1,"{arctic, permafrost, warm}"
-46.5493610336983,Social Sciences,2,"{area, study, high}"
-4.27757105306267,Social Sciences,3,"{biochar, amendment, application}"
-6.96795061531154,Social Sciences,2,"{biomass, aboveground, bioenergy}"
-30.6057936131041,Social Sciences,2,"{building, construction, design}"
-7.77996977345932,Social Sciences,1,"{cal, pollen, holocene}"
-6.2035789388477,Social Sciences,1,"{carbonate, mineral, rock}"
-74.3135117300971,Social Sciences,1,"{carbon, low, sink}"
-19.2810626346559,Social Sciences,3,"{cement, material, concrete}"
-1.36310985463694,Social Sciences,1,"{ch4, oxidation, peat}"
-39.2723688472742,Social Sciences,2,"{change, climatic, shift}"
-42.8174957496653,Social Sciences,1,"{china, province, chinese}"
-44.2444594386906,Social Sciences,1,"{climate, future, warm}"
-3.83961979738053,Social Sciences,1,"{cloud, feedback, radiative}"
-10.6873936961133,Social Sciences,1,"{co2, mol, carbon-dioxide}"
-14.0524912619676,Social Sciences,3,"{coal, combustion, mine}"
-32.3299075390761,Social Sciences,2,"{community, microbial, composition}"
-9.49941445277582,Social Sciences,1,"{concentration, doc, high}"
-3.70228003768274,Social Sciences,2,"{coral, reef, bleaching}"
-54.5613640351369,Social Sciences,3,"{cost, benefit, abatement}"
-145.735094260904,Social Sciences,3,"{country, develop, international}"
-15.2328401251816,Social Sciences,2,"{crop, agricultural, irrigation}"
-31.8660888747718,Social Sciences,1,"{data, use, satellite}"
-10.5496617587312,Social Sciences,1,"{degree, day, latitude}"
-5.94517420876247,Social Sciences,1,"{delta, isotope, value}"
-10.9299050427035,Social Sciences,2,"{disease, vector, host}"
-19.5069376368873,Social Sciences,2,"{distribution, range, niche}"
-11.0004703905528,Social Sciences,2,"{drought, severe, severity}"
-100.398890445129,Social Sciences,2,"{economic, development, economy}"
-14.9175818367722,Social Sciences,2,"{ecosystem, net, productivity}"
-49.8519483205774,Social Sciences,2,"{effect, affect, interaction}"
-32.9640886966253,Social Sciences,3,"{electricity, generation, demand}"
-323.778930861991,Social Sciences,3,"{emission, greenhouse-gas, inventory}"
-59.9446479524945,Social Sciences,3,"{energy, demand, source}"
-80.3816497078361,Social Sciences,2,"{environmental, impact, life}"
-20.6330995777786,Social Sciences,2,"{extreme, event, weather}"
-18.6857608771813,Social Sciences,2,"{farm, animal, milk}"
-5.37769141550595,Social Sciences,2,"{fire, burn, wildfire}"
-14.4226593308763,Social Sciences,2,"{fish, fishery, marine}"
-18.3506620680715,Social Sciences,2,"{flood, flooding, damage}"
-13.3997377834725,Social Sciences,2,"{flow, stream, low}"
-3.68548883293217,Social Sciences,1,"{flux, measurement, net}"
-29.3065447677058,Social Sciences,2,"{food, web, supply}"
-15.719482397649,Social Sciences,2,"{forest, stand, tropical}"
-27.2620892421415,Social Sciences,3,"{fuel, fossil, engine}"
-14.6575720357806,Social Sciences,1,"{gas, natural, hydrate}"
-10.8250017895551,Social Sciences,2,"{genetic, diversity, gene}"
-44.2373726690415,Social Sciences,3,"{ghg, greenhouse-gas, mitigation}"
-9.12979781425669,Social Sciences,1,"{glacial, last, interglacial}"
-4.96823161865741,Social Sciences,1,"{glacier, mass, balance}"
-68.8857697497901,Social Sciences,1,"{global, earth, world}"
-6.74666132472541,Social Sciences,2,"{groundwater, recharge, aquifer}"
-30.7823261750732,Social Sciences,2,"{growth, radial, grow}"
-21.5453447649424,Social Sciences,2,"{habitat, conservation, biodiversity}"
-33.8959068689374,Social Sciences,2,"{health, public, mortality}"
-9.67796450861247,Social Sciences,1,"{heat, heating, pump}"
-64.8266424469143,Social Sciences,2,"{household, income, consumption}"
-48.2419466127046,Social Sciences,2,"{human, activity, natural}"
-7.76644643465653,Social Sciences,1,"{hydrogen, cell, steam}"
-4.71398466502295,Social Sciences,1,"{ice, sheet, sea}"
-106.621482878185,Social Sciences,2,"{increase, decrease, due}"
-70.9405528785952,Social Sciences,2,"{index, vulnerability, correlation}"
-4.7482593468461,Social Sciences,2,"{lake, level, diatom}"
-25.9422924974004,Social Sciences,1,"{land, cover, agricultural}"
-21.6258624267233,Social Sciences,2,"{landscape, erosion, disturbance}"
-2.86701815315814,Social Sciences,2,"{leaf, photosynthesis, photosynthetic}"
-6.54557640398346,Social Sciences,2,"{litter, decomposition, microbial}"
-54.2985987838949,Social Sciences,2,"{management, resource, practice}"
-4.25402838986447,Social Sciences,1,"{membrane, separation, selectivity}"
-3.13528080924353,Social Sciences,1,"{methane, oxidation, source}"
-49.975992828593,Social Sciences,1,"{method, use, approach}"
-42.1200324655784,Social Sciences,1,"{model, simulation, simulate}"
-1.51343988766079,Social Sciences,1,"{n2o, denitrification, nitrous-oxide}"
-79.5195707827821,Social Sciences,2,"{network, design, problem}"
-6.34245926670646,Social Sciences,2,"{nitrogen, nutrient, treatment}"
-6.23181852789921,Social Sciences,1,"{ocean, circulation, deep}"
-24.6075682108554,Social Sciences,3,"{oil, palm, biodiesel}"
-8.28234850025327,Social Sciences,1,"{oxygen, reaction, reactor}"
-5.87356879954097,Social Sciences,1,"{ozone, stratospheric, tropospheric}"
-7.78434553732444,Social Sciences,1,"{pacific, sst, enso}"
-38.5927157318641,Social Sciences,1,"{per, thousand, part}"
-8.97849256071142,Social Sciences,2,"{plant, seed, grow}"
-163.202125764819,Social Sciences,3,"{policy, government, maker}"
-23.7918802629746,Social Sciences,2,"{population, size, survival}"
-27.7108604692876,Social Sciences,3,"{power, generation, nuclear}"
-6.38647431255001,Social Sciences,1,"{precipitation, annual, moisture}"
-136.72563958706,Social Sciences,3,"{price, market, tax}"
-38.509741169529,Social Sciences,2,"{process, chemical, base}"
-30.5159665211019,Social Sciences,2,"{production, primary, produce}"
-69.7969183098506,Social Sciences,2,"{project, cdm, projection}"
-11.6474811844587,Social Sciences,2,"{rainfall, monsoon, rain}"
-17.6142032870271,Social Sciences,2,"{rate, high, accumulation}"
-19.2416669713242,Social Sciences,1,"{record, late, early}"
-72.365414153948,Social Sciences,3,"{reduction, reduce, target}"
-31.4893939192077,Social Sciences,2,"{region, regional, south}"
-162.999377767129,Social Sciences,2,"{research, science, issue}"
-8.121747719547,Social Sciences,2,"{rice, paddy, field}"
-54.1010473815253,Social Sciences,2,"{risk, disaster, hazard}"
-8.54315151242641,Social Sciences,2,"{river, discharge, basin}"
-6.1753831425562,Social Sciences,2,"{root, fine, shoot}"
-7.92047081193386,Social Sciences,2,"{runoff, catchment, basin}"
-40.0588222363997,Social Sciences,1,"{scale, spatial, large}"
-31.8765667861062,Social Sciences,2,"{scenario, future, impact}"
-25.4179247352914,Social Sciences,1,"{sea, level, rise}"
-14.6190737079079,Social Sciences,2,"{season, day, grow}"
-75.1475489067848,Social Sciences,3,"{sector, industry, industrial}"
-4.93190017411221,Social Sciences,2,"{sediment, erosion, core}"
-13.0456973025588,Social Sciences,2,"{site, elevation, across}"
-6.16097011097028,Social Sciences,1,"{snow, cover, depth}"
-4.15641498622907,Social Sciences,3,"{soc, stock, soil}"
-9.68519571039431,Social Sciences,2,"{soil, moisture, content}"
-9.66741070901391,Social Sciences,1,"{solar, radiation, irradiance}"
-7.64810120587309,Social Sciences,2,"{specie, native, invasive}"
-9.20248445592456,Social Sciences,3,"{storage, reservoir, injection}"
-18.2504403676071,Social Sciences,2,"{stress, response, gene}"
-7.66096764180273,Social Sciences,1,"{surface, layer, albedo}"
-37.4243417271893,Social Sciences,2,"{system, performance, hybrid}"
-68.1067509000314,Social Sciences,3,"{technology, cc, development}"
-11.618484500525,Social Sciences,1,"{temperature, warm, mean}"
-52.7125006739175,Social Sciences,2,"{term, long, short}"
-42.4624411610269,Social Sciences,1,"{transport, road, transportation}"
-6.5057977206718,Social Sciences,2,"{tree, ring, stand}"
-20.2675380976283,Social Sciences,1,"{trend, station, significant}"
-28.9488353885935,Social Sciences,1,"{uncertainty, estimate, parameter}"
-55.8687932452348,Social Sciences,2,"{urban, city, urbanization}"
-9.2903296636536,Social Sciences,2,"{vegetation, ndvi, cover}"
-35.3758042859405,Social Sciences,3,"{vehicle, electric, battery}"
-12.6805136883625,Social Sciences,3,"{waste, landfill, solid}"
-26.4348650039177,Social Sciences,2,"{water, irrigation, resource}"
-12.4731838498488,Social Sciences,1,"{wave, coastal, storm}"
-6.30504015774825,Social Sciences,2,"{wetland, coastal, marsh}"
-11.2631557769347,Social Sciences,1,"{wind, speed, turbine}"
-10.4966194628021,Social Sciences,1,"{winter, summer, spring}"
-27.2759647991109,Social Sciences,1,"{year, period, annual}"
-12.5511265625643,Social Sciences,2,"{yield, wheat, grain}"
-0.499174231859128,,1,"{absorption, solvent, amine}"
-0.695849602939334,,2,"{adaptation, vulnerability, strategy}"
-0.386048388812863,,2,"{adsorption, capacity, adsorbent}"
-0.121249922875624,,1,"{aerosol, forcing, radiative}"
-0.707461379578805,,1,"{air, pollution, quality}"
-0.114977111467877,,1,"{arctic, permafrost, warm}"
-0.839217634787491,,2,"{area, study, high}"
-0.25495274706069,,3,"{biochar, amendment, application}"
-0.420882456820188,,2,"{biomass, aboveground, bioenergy}"
-0.927385554488825,,2,"{building, construction, design}"
-0.11633743752448,,1,"{cal, pollen, holocene}"
-0.205487407952296,,1,"{carbonate, mineral, rock}"
-0.91398948241691,,1,"{carbon, low, sink}"
-1.52961218706186,,3,"{cement, material, concrete}"
-0.0344091137253673,,1,"{ch4, oxidation, peat}"
-0.434426538443861,,2,"{change, climatic, shift}"
-0.304585977511009,,1,"{china, province, chinese}"
-0.514996868624049,,1,"{climate, future, warm}"
-0.0704087965281208,,1,"{cloud, feedback, radiative}"
-0.43494780901541,,1,"{co2, mol, carbon-dioxide}"
-0.390921909386221,,3,"{coal, combustion, mine}"
-0.543941516375489,,2,"{community, microbial, composition}"
-0.327218578522654,,1,"{concentration, doc, high}"
-0.0245733800186854,,2,"{coral, reef, bleaching}"
-0.867456537072213,,3,"{cost, benefit, abatement}"
-1.4563525649923,,3,"{country, develop, international}"
-0.274716915565771,,2,"{crop, agricultural, irrigation}"
-0.526386902252152,,1,"{data, use, satellite}"
-0.233945250181598,,1,"{degree, day, latitude}"
-0.133173944999967,,1,"{delta, isotope, value}"
-0.200094160640005,,2,"{disease, vector, host}"
-0.293769568366196,,2,"{distribution, range, niche}"
-0.210691374575963,,2,"{drought, severe, severity}"
-1.48643489718496,,2,"{economic, development, economy}"
-0.181108419218854,,2,"{ecosystem, net, productivity}"
-0.680322105749911,,2,"{effect, affect, interaction}"
-0.703402511244688,,3,"{electricity, generation, demand}"
-5.2339615655205,,3,"{emission, greenhouse-gas, inventory}"
-1.69731617754545,,3,"{energy, demand, source}"
-1.8858765308269,,2,"{environmental, impact, life}"
-0.218860967101012,,2,"{extreme, event, weather}"
-0.424950422830063,,2,"{farm, animal, milk}"
-0.14967234043332,,2,"{fire, burn, wildfire}"
-0.0954154572900353,,2,"{fish, fishery, marine}"
-0.189625096028549,,2,"{flood, flooding, damage}"
-0.342617615953292,,2,"{flow, stream, low}"
-0.108979759301794,,1,"{flux, measurement, net}"
-0.901113243181987,,2,"{food, web, supply}"
-0.145032097299061,,2,"{forest, stand, tropical}"
-1.22726962324079,,3,"{fuel, fossil, engine}"
-0.883887700349403,,1,"{gas, natural, hydrate}"
-0.162297231133496,,2,"{genetic, diversity, gene}"
-0.981265452039285,,3,"{ghg, greenhouse-gas, mitigation}"
-0.253036593663219,,1,"{glacial, last, interglacial}"
-0.0422765709412281,,1,"{glacier, mass, balance}"
-0.987397838696197,,1,"{global, earth, world}"
-0.148652292463156,,2,"{groundwater, recharge, aquifer}"
-0.399370544748183,,2,"{growth, radial, grow}"
-0.247259706802274,,2,"{habitat, conservation, biodiversity}"
-0.632390191911729,,2,"{health, public, mortality}"
-0.58599729815756,,1,"{heat, heating, pump}"
-0.754901652984976,,2,"{household, income, consumption}"
-0.578511855721934,,2,"{human, activity, natural}"
-0.888521851332769,,1,"{hydrogen, cell, steam}"
-0.144563081396349,,1,"{ice, sheet, sea}"
-2.49277220142018,,2,"{increase, decrease, due}"
-1.54325804875854,,2,"{index, vulnerability, correlation}"
-0.0570383937204313,,2,"{lake, level, diatom}"
-0.421599402854575,,1,"{land, cover, agricultural}"
-0.281393699639302,,2,"{landscape, erosion, disturbance}"
-0.0875875597822064,,2,"{leaf, photosynthesis, photosynthetic}"
-0.125484885793266,,2,"{litter, decomposition, microbial}"
-1.03695571256738,,2,"{management, resource, practice}"
-0.341977394517401,,1,"{membrane, separation, selectivity}"
-0.108708966225784,,1,"{methane, oxidation, source}"
-1.17400005917659,,1,"{method, use, approach}"
-0.795904310874183,,1,"{model, simulation, simulate}"
-0.0509618079800614,,1,"{n2o, denitrification, nitrous-oxide}"
-2.25391648239498,,2,"{network, design, problem}"
-0.348497826849435,,2,"{nitrogen, nutrient, treatment}"
-0.165610263241643,,1,"{ocean, circulation, deep}"
-0.807684378049418,,3,"{oil, palm, biodiesel}"
-0.750216929500851,,1,"{oxygen, reaction, reactor}"
-0.286210958767547,,1,"{ozone, stratospheric, tropospheric}"
-0.210186684181311,,1,"{pacific, sst, enso}"
-0.599689967494375,,1,"{per, thousand, part}"
-0.573288115330837,,2,"{plant, seed, grow}"
-1.21878791216009,,3,"{policy, government, maker}"
-0.241363294772227,,2,"{population, size, survival}"
-1.0038038341343,,3,"{power, generation, nuclear}"
-0.17779426932574,,1,"{precipitation, annual, moisture}"
-1.06657438096553,,3,"{price, market, tax}"
-1.47205000957784,,2,"{process, chemical, base}"
-1.15565702745786,,2,"{production, primary, produce}"
-1.20884808243083,,2,"{project, cdm, projection}"
-0.132103915584632,,2,"{rainfall, monsoon, rain}"
-0.395084968426969,,2,"{rate, high, accumulation}"
-0.314256140235721,,1,"{record, late, early}"
-1.62684047917286,,3,"{reduction, reduce, target}"
-0.465516996829805,,2,"{region, regional, south}"
-2.08575282799206,,2,"{research, science, issue}"
-0.100162485238766,,2,"{rice, paddy, field}"
-0.610832442126643,,2,"{risk, disaster, hazard}"
-0.072628145085743,,2,"{river, discharge, basin}"
-0.0990415542596807,,2,"{root, fine, shoot}"
-0.0940919389828997,,2,"{runoff, catchment, basin}"
-0.520459245578862,,1,"{scale, spatial, large}"
-0.691264909662066,,2,"{scenario, future, impact}"
-0.402247176786474,,1,"{sea, level, rise}"
-0.258590471741704,,2,"{season, day, grow}"
-1.45863534107861,,3,"{sector, industry, industrial}"
-0.100842591623814,,2,"{sediment, erosion, core}"
-0.134684688024773,,2,"{site, elevation, across}"
-0.0582646748748517,,1,"{snow, cover, depth}"
-0.0520536601861302,,3,"{soc, stock, soil}"
-0.133477819141039,,2,"{soil, moisture, content}"
-0.462087004255896,,1,"{solar, radiation, irradiance}"
-0.0516564302733968,,2,"{specie, native, invasive}"
-0.278531416312689,,3,"{storage, reservoir, injection}"
-0.282585551365016,,2,"{stress, response, gene}"
-0.368120573104476,,1,"{surface, layer, albedo}"
-1.13123571125239,,2,"{system, performance, hybrid}"
-1.29605708838617,,3,"{technology, cc, development}"
-0.369945991174193,,1,"{temperature, warm, mean}"
-0.753925162154524,,2,"{term, long, short}"
-0.695991687506814,,1,"{transport, road, transportation}"
-0.151250424547931,,2,"{tree, ring, stand}"
-0.519494861931073,,1,"{trend, station, significant}"
-0.316515676585951,,1,"{uncertainty, estimate, parameter}"
-1.57830660719428,,2,"{urban, city, urbanization}"
-0.216823021617544,,2,"{vegetation, ndvi, cover}"
-0.777378456819884,,3,"{vehicle, electric, battery}"
-1.04776410832598,,3,"{waste, landfill, solid}"
-0.656601738455016,,2,"{water, irrigation, resource}"
-0.236716920766711,,1,"{wave, coastal, storm}"
-0.0515620136086581,,2,"{wetland, coastal, marsh}"
-0.365345355086717,,1,"{wind, speed, turbine}"
-0.265791782739484,,1,"{winter, summer, spring}"
-0.563633835952758,,1,"{year, period, annual}"
-0.242794946971897,,2,"{yield, wheat, grain}"
+dis_share,doctopic__doc__wc__oecd,primary_wg,title,dis_share_pre,dis_share_post
+98.6097805676742,Agricultural Sciences,2,"{index, vulnerability, correlation}",45.1680473623377,53.4417332053365
+185.60629726638,Engineering and Technology,2,"{index, vulnerability, correlation}",73.1028075697664,112.503489696614
+2.18428401254972,Humanities,2,"{index, vulnerability, correlation}",0.756984580162513,1.42729943238721
+13.9036998481209,Medical and Health Sciences,2,"{index, vulnerability, correlation}",5.62060858953709,8.28304063786157
+655.278079604572,Natural Sciences,2,"{index, vulnerability, correlation}",310.473621369306,344.804458235259
+70.9405528785952,Social Sciences,2,"{index, vulnerability, correlation}",22.327029402129,48.613523476466
+1.54325804875854,,2,"{index, vulnerability, correlation}",0.280145562882195,1.26311248587634
+20.8467854638736,Agricultural Sciences,3,"{energy, demand, source}",11.983053472003,8.86373199187066
+300.038712022155,Engineering and Technology,3,"{energy, demand, source}",141.514522242529,158.522685116015
+3.18618329897495,Humanities,3,"{energy, demand, source}",1.60678177723818,1.57940152173677
+2.18011389863978,Medical and Health Sciences,3,"{energy, demand, source}",1.19647979501864,0.98363410362113
+143.422493837837,Natural Sciences,3,"{energy, demand, source}",66.6463908712251,76.7761029666123
+59.9446479524945,Social Sciences,3,"{energy, demand, source}",25.85219034368,34.0924576088144
+1.69731617754545,,3,"{energy, demand, source}",0.331520041384469,1.36579613616098
+244.183874838092,Agricultural Sciences,2,"{soil, moisture, content}",139.32034513654,104.863529701552
+49.5750722685731,Engineering and Technology,2,"{soil, moisture, content}",24.4510374542332,25.1240104555408
+0.718161585107052,Humanities,2,"{soil, moisture, content}",0.328729123589777,0.389432461517275
+1.09930829351957,Medical and Health Sciences,2,"{soil, moisture, content}",0.507072055439867,0.592236238079708
+379.96980964153,Natural Sciences,2,"{soil, moisture, content}",201.188617395453,178.781192246075
+9.6851957103943,Social Sciences,2,"{soil, moisture, content}",3.83996974397274,5.84522596642156
+0.133477819141039,,2,"{soil, moisture, content}",0.0147595100335604,0.118718309107479
+45.3759916599359,Agricultural Sciences,1,"{co2, mol, carbon-dioxide}",29.4776217483398,15.8983699115962
+196.184304202004,Engineering and Technology,1,"{co2, mol, carbon-dioxide}",97.6057012818144,98.5773649509699
+0.391512531897537,Humanities,1,"{co2, mol, carbon-dioxide}",0.163036885344035,0.228475646553502
+1.54956269391372,Medical and Health Sciences,1,"{co2, mol, carbon-dioxide}",0.85077134685477,0.698617644387291
+284.346651702741,Natural Sciences,1,"{co2, mol, carbon-dioxide}",159.920563551767,124.426088150978
+10.6873936961133,Social Sciences,1,"{co2, mol, carbon-dioxide}",4.99378169904294,5.69361199707033
+0.43494780901541,,1,"{co2, mol, carbon-dioxide}",0.120908624412148,0.314039184603262
+50.0832835842681,Agricultural Sciences,2,"{specie, native, invasive}",24.0608441160924,26.0224394681757
+15.5576134323254,Engineering and Technology,2,"{specie, native, invasive}",7.4221143548413,8.13523350864986
+0.899075988859461,Humanities,2,"{specie, native, invasive}",0.246865633017184,0.652210355842276
+6.00886323664704,Medical and Health Sciences,2,"{specie, native, invasive}",2.68510540106483,3.32359697198167
+381.705480889733,Natural Sciences,2,"{specie, native, invasive}",190.454900243441,191.250580646292
+7.64810120587309,Social Sciences,2,"{specie, native, invasive}",3.46564224602333,4.18245895984978
+0.0516564302733968,,2,"{specie, native, invasive}",0.00625761412448077,0.045398816148916
+59.6970866037891,Agricultural Sciences,2,"{water, irrigation, resource}",30.4228721518106,29.2742144519782
+117.458345039035,Engineering and Technology,2,"{water, irrigation, resource}",53.7787076885743,63.6680229118231
+1.50993703423963,Humanities,2,"{water, irrigation, resource}",0.614333407236226,0.895603627003405
+3.83291768219975,Medical and Health Sciences,2,"{water, irrigation, resource}",1.98394258321664,1.84897509898311
+387.483039858753,Natural Sciences,2,"{water, irrigation, resource}",196.52309159842,190.959948260335
+26.4348650039177,Social Sciences,2,"{water, irrigation, resource}",10.8051749561789,15.6296900477387
+0.656601738455016,,2,"{water, irrigation, resource}",0.0516040315605911,0.604997706894424
+306.313073916654,Agricultural Sciences,3,"{emission, greenhouse-gas, inventory}",173.372778024723,132.940295891932
+935.01361816143,Engineering and Technology,3,"{emission, greenhouse-gas, inventory}",473.412693769355,461.574697044517
+7.74240915384521,Humanities,3,"{emission, greenhouse-gas, inventory}",3.77674397025442,3.9656651835908
+13.984043523422,Medical and Health Sciences,3,"{emission, greenhouse-gas, inventory}",7.17155746726362,6.77252961387213
+1032.42396970473,Natural Sciences,3,"{emission, greenhouse-gas, inventory}",536.481930351127,495.942039353606
+323.778930861991,Social Sciences,3,"{emission, greenhouse-gas, inventory}",152.541070589116,171.237860272874
+5.2339615655205,,3,"{emission, greenhouse-gas, inventory}",0.965330146822917,4.26863141869758
+96.1651095877018,Agricultural Sciences,2,"{forest, stand, tropical}",50.0265332887728,46.1385762989288
+29.2398597132053,Engineering and Technology,2,"{forest, stand, tropical}",14.7868405251347,14.4528653518052
+0.714376713463564,Humanities,2,"{forest, stand, tropical}",0.188176980365148,0.526199733098416
+1.08177230160328,Medical and Health Sciences,2,"{forest, stand, tropical}",0.41695515441338,0.664684245927925
+227.382545571616,Natural Sciences,2,"{forest, stand, tropical}",122.083477253386,105.29906831823
+15.719482397649,Social Sciences,2,"{forest, stand, tropical}",6.32952560757877,9.38995679007024
+0.145032097299061,,2,"{forest, stand, tropical}",0.0182502896678459,0.126781807631215
+66.7123545295109,Agricultural Sciences,1,"{n2o, denitrification, nitrous-oxide}",36.8755315248516,29.8368230046593
+28.1959575503179,Engineering and Technology,1,"{n2o, denitrification, nitrous-oxide}",14.4145822568896,13.7813752934282
+0.0419075254085981,Humanities,1,"{n2o, denitrification, nitrous-oxide}",0.0151745197390761,0.026733005669522
+0.448237496505975,Medical and Health Sciences,1,"{n2o, denitrification, nitrous-oxide}",0.228341972317807,0.219895524188168
+100.87263802637,Natural Sciences,1,"{n2o, denitrification, nitrous-oxide}",53.1509052283955,47.7217327979746
+1.51343988766079,Social Sciences,1,"{n2o, denitrification, nitrous-oxide}",0.501813530992839,1.01162635666795
+0.0509618079800614,,1,"{n2o, denitrification, nitrous-oxide}",0.00666499321940338,0.044296814760658
+11.6274978162393,Agricultural Sciences,2,"{river, discharge, basin}",6.0924391135806,5.53505870265872
+36.9240926226489,Engineering and Technology,2,"{river, discharge, basin}",19.0096342209688,17.9084151108809
+0.980301071104497,Humanities,2,"{river, discharge, basin}",0.568012604331435,0.412288466773062
+1.28809198801811,Medical and Health Sciences,2,"{river, discharge, basin}",0.752653820256607,0.535438136161553
+221.480165531891,Natural Sciences,2,"{river, discharge, basin}",115.12813816579,106.352027366102
+8.54315151242642,Social Sciences,2,"{river, discharge, basin}",3.7055874389809,4.83756407344553
+0.072628145085743,,2,"{river, discharge, basin}",0.0090670707410682,0.0635610743446748
+56.1112771030066,Agricultural Sciences,1,"{model, simulation, simulate}",30.6827590718652,25.4285180311413
+148.720874022824,Engineering and Technology,1,"{model, simulation, simulate}",64.3398089691483,84.3808573982207
+1.59503096790606,Humanities,1,"{model, simulation, simulate}",0.732334847722573,0.862696120183484
+5.87150173202233,Medical and Health Sciences,1,"{model, simulation, simulate}",2.61967126710189,3.25183046492044
+481.812322486806,Natural Sciences,1,"{model, simulation, simulate}",265.829282817652,215.983039669151
+42.1200324655784,Social Sciences,1,"{model, simulation, simulate}",19.088601059493,23.0314314060854
+0.795904310874183,,1,"{model, simulation, simulate}",0.155174505575024,0.640729805299159
+6.91845185775859,Agricultural Sciences,1,"{ocean, circulation, deep}",3.93559327901893,2.98285857873967
+26.3918221434823,Engineering and Technology,1,"{ocean, circulation, deep}",17.5077915123473,8.88403063113501
+0.427173858064837,Humanities,1,"{ocean, circulation, deep}",0.191477417591498,0.235696440473339
+0.739208414522105,Medical and Health Sciences,1,"{ocean, circulation, deep}",0.393571260870445,0.345619424909085
+318.055977357115,Natural Sciences,1,"{ocean, circulation, deep}",202.158473696232,115.897503660882
+6.2318185278992,Social Sciences,1,"{ocean, circulation, deep}",3.010660513955,3.22115801394421
+0.165610263241643,,1,"{ocean, circulation, deep}",0.127960491740945,0.0376497715006975
+27.9501508635939,Agricultural Sciences,1,"{air, pollution, quality}",17.5672407787533,10.3829100848406
+113.55031034995,Engineering and Technology,1,"{air, pollution, quality}",56.6417732310834,56.9038448922664
+1.34190144441989,Humanities,1,"{air, pollution, quality}",0.536928236929341,0.804973207490551
+7.66799295261424,Medical and Health Sciences,1,"{air, pollution, quality}",3.82863555505882,3.83935739755542
+210.746361996423,Natural Sciences,1,"{air, pollution, quality}",117.907294480385,92.8390675160379
+22.470921442623,Social Sciences,1,"{air, pollution, quality}",9.38785136425637,13.0830700783667
+0.707461379578805,,1,"{air, pollution, quality}",0.16682934134597,0.540632038232835
+9.36967872796809,Agricultural Sciences,2,"{lake, level, diatom}",6.04224090140598,3.32743782656212
+23.0060712099569,Engineering and Technology,2,"{lake, level, diatom}",11.0288158177537,11.9772553922031
+0.775946307145125,Humanities,2,"{lake, level, diatom}",0.453252577001232,0.322693730143893
+0.732535911416892,Medical and Health Sciences,2,"{lake, level, diatom}",0.336548274967017,0.395869717130087
+248.189685487648,Natural Sciences,2,"{lake, level, diatom}",142.7317470484,105.457938439248
+4.7482593468461,Social Sciences,2,"{lake, level, diatom}",1.96731033197393,2.78094901487217
+0.0570383937204313,,2,"{lake, level, diatom}",0.00265604821927532,0.054382345501156
+119.416519550429,Agricultural Sciences,2,"{crop, agricultural, irrigation}",58.298921559742,61.1175979906866
+29.3911092791888,Engineering and Technology,2,"{crop, agricultural, irrigation}",12.2725415769844,17.1185677022045
+0.563208403799791,Humanities,2,"{crop, agricultural, irrigation}",0.211157669175909,0.352050734623882
+1.36997222098957,Medical and Health Sciences,2,"{crop, agricultural, irrigation}",0.512307186113564,0.857665034876008
+124.723309077767,Natural Sciences,2,"{crop, agricultural, irrigation}",54.9981488040859,69.7251602736816
+15.2328401251816,Social Sciences,2,"{crop, agricultural, irrigation}",4.87707784030888,10.3557622848727
+0.274716915565771,,2,"{crop, agricultural, irrigation}",0.0107807694845941,0.263936146081177
+29.3156868130303,Agricultural Sciences,2,"{landscape, erosion, disturbance}",15.2878681330188,14.0278186800114
+23.4305886079988,Engineering and Technology,2,"{landscape, erosion, disturbance}",11.1145243713975,12.3160642366013
+4.49621558834633,Humanities,2,"{landscape, erosion, disturbance}",1.37780983425797,3.11840575408837
+1.73828312031764,Medical and Health Sciences,2,"{landscape, erosion, disturbance}",0.789435602113343,0.948070297752968
+210.471852596958,Natural Sciences,2,"{landscape, erosion, disturbance}",102.395005472235,108.076847124725
+21.6258624267233,Social Sciences,2,"{landscape, erosion, disturbance}",8.85170306161348,12.7741593651098
+0.281393699639301,,2,"{landscape, erosion, disturbance}",0.0112262108496378,0.270167488789664
+3.27595740022308,Agricultural Sciences,1,"{ice, sheet, sea}",2.04672550587965,1.22923189434343
+22.5020251467705,Engineering and Technology,1,"{ice, sheet, sea}",12.9127373477811,9.58928779898936
+0.758222756472273,Humanities,1,"{ice, sheet, sea}",0.357115065557335,0.401107690914938
+0.461277836783445,Medical and Health Sciences,1,"{ice, sheet, sea}",0.249741501606851,0.211536335176595
+257.798123853009,Natural Sciences,1,"{ice, sheet, sea}",169.099906072037,88.6982177809736
+4.71398466502295,Social Sciences,1,"{ice, sheet, sea}",2.36568553670738,2.34829912831558
+0.144563081396349,,1,"{ice, sheet, sea}",0.0660278178785041,0.0785352635178451
+42.9984799777878,Agricultural Sciences,1,"{flux, measurement, net}",27.6432957179765,15.3551842598114
+31.0353918565602,Engineering and Technology,1,"{flux, measurement, net}",17.3715244611199,13.6638673954402
+0.157653556307317,Humanities,1,"{flux, measurement, net}",0.0718633854076663,0.0857901708996509
+0.637645321926382,Medical and Health Sciences,1,"{flux, measurement, net}",0.323085009143218,0.31433240673826
+238.754113093574,Natural Sciences,1,"{flux, measurement, net}",150.341224958782,88.4128881347921
+3.68548883293217,Social Sciences,1,"{flux, measurement, net}",1.83150023478705,1.85398859814512
+0.108979759301794,,1,"{flux, measurement, net}",0.0653398618478814,0.0436398974539124
+57.6067841844432,Agricultural Sciences,2,"{plant, seed, grow}",30.8442785118244,26.7622686008082
+106.847734045764,Engineering and Technology,2,"{plant, seed, grow}",57.4034240946812,49.4443099510832
+0.57235821470633,Humanities,2,"{plant, seed, grow}",0.226065764629568,0.346292450076762
+2.17736836034496,Medical and Health Sciences,2,"{plant, seed, grow}",0.934675828497617,1.24256078733608
+225.951479598004,Natural Sciences,2,"{plant, seed, grow}",120.885608909606,105.065870688396
+8.97849256071142,Social Sciences,2,"{plant, seed, grow}",3.90902183359615,5.06947072711526
+0.573288115330837,,2,"{plant, seed, grow}",0.155918910708247,0.41736920462259
+42.27906876954,Agricultural Sciences,1,"{ch4, oxidation, peat}",22.5694779478303,19.7095908217097
+34.2750467101249,Engineering and Technology,1,"{ch4, oxidation, peat}",15.2387490168571,19.0362976932679
+0.0431756911681513,Humanities,1,"{ch4, oxidation, peat}",0.00953187648364706,0.0336438146845042
+0.646459349624134,Medical and Health Sciences,1,"{ch4, oxidation, peat}",0.379264058951782,0.267195290672352
+127.684489412365,Natural Sciences,1,"{ch4, oxidation, peat}",66.5971688312315,61.0873205811339
+1.36310985463694,Social Sciences,1,"{ch4, oxidation, peat}",0.485451702326644,0.877658152310302
+0.0344091137253673,,1,"{ch4, oxidation, peat}",0.0076856193747884,0.0267234943505789
+251.395850041201,Agricultural Sciences,2,"{increase, decrease, due}",134.320553531492,117.063365197223
+362.397715275518,Engineering and Technology,2,"{increase, decrease, due}",167.041560826305,195.354294831673
+5.19247024326392,Humanities,2,"{increase, decrease, due}",2.2041911964092,2.98827904685472
+28.7123471959156,Medical and Health Sciences,2,"{increase, decrease, due}",14.6733661142938,14.0389810816218
+1278.06142722217,Natural Sciences,2,"{increase, decrease, due}",680.376201808135,597.685225414033
+106.621482878185,Social Sciences,2,"{increase, decrease, due}",42.9932954020694,63.6281874761162
+2.49277220142018,,2,"{increase, decrease, due}",0.511247073455416,1.98152512796477
+75.3798859434452,Agricultural Sciences,2,"{management, resource, practice}",37.0714957244222,38.3083902190231
+94.1851721954022,Engineering and Technology,2,"{management, resource, practice}",42.881816230653,51.3029057139788
+2.63485663796403,Humanities,2,"{management, resource, practice}",0.891750215040314,1.74310642292371
+3.99057921268021,Medical and Health Sciences,2,"{management, resource, practice}",1.89328705532762,2.0972921573526
+234.803706405698,Natural Sciences,2,"{management, resource, practice}",101.86166626516,132.942040140539
+54.2985987838949,Social Sciences,2,"{management, resource, practice}",21.6162786650022,32.6823201188928
+1.03695571256738,,2,"{management, resource, practice}",0.0920434460601478,0.944912266507234
+29.8677884644107,Agricultural Sciences,2,"{fire, burn, wildfire}",16.1534149661696,13.7143734982411
+23.0579960965941,Engineering and Technology,2,"{fire, burn, wildfire}",13.1225819155745,9.9354141810196
+0.39040645557051,Humanities,2,"{fire, burn, wildfire}",0.207534683250705,0.182871772319805
+0.734213576132394,Medical and Health Sciences,2,"{fire, burn, wildfire}",0.309449207106159,0.424764369026235
+112.616636221722,Natural Sciences,2,"{fire, burn, wildfire}",59.9616438288102,52.6549923929113
+5.37769141550594,Social Sciences,2,"{fire, burn, wildfire}",2.24129284294425,3.13639857256169
+0.14967234043332,,2,"{fire, burn, wildfire}",0.0075207960415556,0.142151544391764
+80.1236736807713,Agricultural Sciences,2,"{effect, affect, interaction}",41.4210607465902,38.7026129341811
+115.384962646801,Engineering and Technology,2,"{effect, affect, interaction}",53.0097890560391,62.3696089085419
+2.00171407946697,Humanities,2,"{effect, affect, interaction}",0.793530420872734,1.20818365859424
+10.2181888337989,Medical and Health Sciences,2,"{effect, affect, interaction}",5.28707196086518,4.92881308222003
+386.630984315218,Natural Sciences,2,"{effect, affect, interaction}",197.713766444958,188.917217870261
+49.8519483205774,Social Sciences,2,"{effect, affect, interaction}",18.6964348604169,31.1555134601605
+0.680322105749911,,2,"{effect, affect, interaction}",0.171326716827954,0.508995388921957
+21.8713114575419,Agricultural Sciences,1,"{record, late, early}",12.4369968844355,9.43431457310642
+32.0610429827398,Engineering and Technology,1,"{record, late, early}",17.1082058056596,14.9528338825735
+5.46508897724324,Humanities,1,"{record, late, early}",2.68424152358579,2.78084745365746
+3.76509717209805,Medical and Health Sciences,1,"{record, late, early}",1.78857362572877,1.97652354636929
+468.444484713607,Natural Sciences,1,"{record, late, early}",299.998893892864,168.445590820742
+19.2416669713242,Social Sciences,1,"{record, late, early}",9.81949600863106,9.42217096269319
+0.314256140235722,,1,"{record, late, early}",0.207509129509877,0.106747010725844
+60.8059167352661,Agricultural Sciences,1,"{carbon, low, sink}",34.5117126201866,26.2942041150796
+145.954733600636,Engineering and Technology,1,"{carbon, low, sink}",67.279305585343,78.6754280152927
+2.21393037499585,Humanities,1,"{carbon, low, sink}",0.990308040181894,1.22362233481396
+1.66156754285999,Medical and Health Sciences,1,"{carbon, low, sink}",0.639702849774093,1.0218646930859
+300.818032634843,Natural Sciences,1,"{carbon, low, sink}",156.729339047148,144.088693587696
+74.3135117300971,Social Sciences,1,"{carbon, low, sink}",35.4395744334848,38.8739372966123
+0.91398948241691,,1,"{carbon, low, sink}",0.119740456454254,0.794249025962656
+7.93942452399677,Agricultural Sciences,2,"{urban, city, urbanization}",3.0345625595418,4.90486196445499
+79.7886934140483,Engineering and Technology,2,"{urban, city, urbanization}",29.6401412865862,50.1485521274619
+4.54881932081362,Humanities,2,"{urban, city, urbanization}",1.54199572539009,3.00682359542354
+5.22561108889977,Medical and Health Sciences,2,"{urban, city, urbanization}",2.39955151789699,2.82594469683604
+129.590222829417,Natural Sciences,2,"{urban, city, urbanization}",44.853187891547,84.7370349378696
+55.8687932452348,Social Sciences,2,"{urban, city, urbanization}",19.4459017493801,36.4228914958546
+1.57830660719428,,2,"{urban, city, urbanization}",0.0125122323432414,1.56579437485104
+33.5234431562937,Agricultural Sciences,2,"{population, size, survival}",16.40841940165,17.1102559774127
+27.4213998748454,Engineering and Technology,2,"{population, size, survival}",12.3051078378017,15.1162920370436
+1.71266394086218,Humanities,2,"{population, size, survival}",0.751548568647677,0.961115372214503
+11.03582724611,Medical and Health Sciences,2,"{population, size, survival}",5.50443813088623,5.52839899873168
+271.88316917771,Natural Sciences,2,"{population, size, survival}",134.632661756435,137.250507421275
+23.7918802629746,Social Sciences,2,"{population, size, survival}",10.0208750440191,13.7710052189555
+0.241363294772227,,2,"{population, size, survival}",0.0158440252617116,0.225519269510515
+51.1864617051309,Agricultural Sciences,2,"{stress, response, gene}",23.1940456039296,27.9924161012013
+48.6104805165452,Engineering and Technology,2,"{stress, response, gene}",20.5473118949709,28.0631579608254
+1.38225332471175,Humanities,2,"{stress, response, gene}",0.547245623962254,0.835007700749491
+8.17154522728899,Medical and Health Sciences,2,"{stress, response, gene}",3.41486209718867,4.75661416488181
+291.593620179446,Natural Sciences,2,"{stress, response, gene}",139.493865649378,152.099754530067
+18.2504403676071,Social Sciences,2,"{stress, response, gene}",7.76205640576145,10.4883839618456
+0.282585551365016,,2,"{stress, response, gene}",0.0866630563811862,0.195922494983829
+4.99090386395202,Agricultural Sciences,2,"{coral, reef, bleaching}",2.39492380565664,2.59598005829539
+7.06465591845749,Engineering and Technology,2,"{coral, reef, bleaching}",3.27862181976147,3.78589326278396
+0.250548661224569,Humanities,2,"{coral, reef, bleaching}",0.144429636297404,0.106119024927165
+0.747845662228211,Medical and Health Sciences,2,"{coral, reef, bleaching}",0.27038081916271,0.4774648430655
+147.983204987558,Natural Sciences,2,"{coral, reef, bleaching}",75.9021694858561,72.0810355017016
+3.70228003768274,Social Sciences,2,"{coral, reef, bleaching}",1.47228983715352,2.22999020052921
+0.0245733800186854,,2,"{coral, reef, bleaching}",0.00295379283925628,0.0216195871794291
+19.3980797424163,Agricultural Sciences,1,"{sea, level, rise}",10.4607343202151,8.93734542220123
+51.6841166965714,Engineering and Technology,1,"{sea, level, rise}",26.8293182940469,24.8547984025244
+1.95180565858784,Humanities,1,"{sea, level, rise}",0.853585196677001,1.09822046191084
+3.18116102406852,Medical and Health Sciences,1,"{sea, level, rise}",1.56154136475183,1.61896354666008
+347.183200512262,Natural Sciences,1,"{sea, level, rise}",200.459741525436,146.723458986825
+25.4179247352914,Social Sciences,1,"{sea, level, rise}",10.9927931166045,14.4251316186869
+0.402247176786474,,1,"{sea, level, rise}",0.139304481034841,0.262942695751633
+25.1900354424921,Agricultural Sciences,1,"{surface, layer, albedo}",15.0829066310909,10.1071288114011
+78.7598122636617,Engineering and Technology,1,"{surface, layer, albedo}",38.2883456203916,40.4714666432701
+0.856344569926057,Humanities,1,"{surface, layer, albedo}",0.37271117290957,0.483633397016487
+1.49629780057505,Medical and Health Sciences,1,"{surface, layer, albedo}",0.829080121496842,0.667217679078206
+412.779680431616,Natural Sciences,1,"{surface, layer, albedo}",243.104558691222,169.675121740395
+7.66096764180273,Social Sciences,1,"{surface, layer, albedo}",3.82779924588824,3.83316839591449
+0.368120573104476,,1,"{surface, layer, albedo}",0.132216765819929,0.235903807284547
+90.6681917531534,Agricultural Sciences,2,"{tree, ring, stand}",45.7696929004257,44.8984988527275
+17.4090391881847,Engineering and Technology,2,"{tree, ring, stand}",8.25111967665729,9.15770130808631
+0.651030666218364,Humanities,2,"{tree, ring, stand}",0.238122081945255,0.412908584273109
+1.49805221192205,Medical and Health Sciences,2,"{tree, ring, stand}",0.579072236503119,0.918960013466918
+190.954561952481,Natural Sciences,2,"{tree, ring, stand}",101.802134421911,89.1524275305704
+6.5057977206718,Social Sciences,2,"{tree, ring, stand}",2.76529030900507,3.74050741166671
+0.151250424547931,,2,"{tree, ring, stand}",0.0471594113933112,0.10409101315462
+14.3410766073308,Agricultural Sciences,1,"{delta, isotope, value}",8.23242445116892,6.10865215616186
+19.2196719039035,Engineering and Technology,1,"{delta, isotope, value}",8.89640751426335,10.3232354079496
+0.953945091011708,Humanities,1,"{delta, isotope, value}",0.306626518470091,0.647318572541617
+0.647451343840727,Medical and Health Sciences,1,"{delta, isotope, value}",0.28402784912427,0.363421922228488
+216.947845916585,Natural Sciences,1,"{delta, isotope, value}",136.800608904937,80.1472370116475
+5.94517420876246,Social Sciences,1,"{delta, isotope, value}",2.62134255691189,3.32383165185059
+0.133173944999967,,1,"{delta, isotope, value}",0.0178336937449411,0.115340251255026
+4.48967409386891,Agricultural Sciences,1,"{glacier, mass, balance}",2.5765092144305,1.91316487943841
+20.2927991035054,Engineering and Technology,1,"{glacier, mass, balance}",9.44826270694688,10.8445363965586
+0.44316079951798,Humanities,1,"{glacier, mass, balance}",0.221310177072844,0.221850622445136
+0.454234403081487,Medical and Health Sciences,1,"{glacier, mass, balance}",0.268434572314839,0.185799830766649
+139.736860208125,Natural Sciences,1,"{glacier, mass, balance}",78.255068507952,61.481791700173
+4.96823161865741,Social Sciences,1,"{glacier, mass, balance}",2.29713333291047,2.67109828574694
+0.0422765709412282,,1,"{glacier, mass, balance}",0.0152779559526357,0.0269986149885925
+37.523605163647,Agricultural Sciences,2,"{distribution, range, niche}",18.8626467650784,18.6609583985685
+65.1845190823167,Engineering and Technology,2,"{distribution, range, niche}",30.04242177986,35.1339010592704
+1.25121027036176,Humanities,2,"{distribution, range, niche}",0.563730685862936,0.687479584498819
+7.35331233279801,Medical and Health Sciences,2,"{distribution, range, niche}",3.50723943628894,3.8421252142228
+324.335044058067,Natural Sciences,2,"{distribution, range, niche}",168.617367160868,155.7176768972
+19.5069376368873,Social Sciences,2,"{distribution, range, niche}",8.1877353000786,11.3192023368088
+0.293769568366196,,2,"{distribution, range, niche}",0.0654356363426461,0.22833393202355
+40.7629301008272,Agricultural Sciences,2,"{drought, severe, severity}",17.0147692487913,23.7481608520358
+22.7609393096714,Engineering and Technology,2,"{drought, severe, severity}",9.25236884794595,13.5085704617255
+0.531181336902662,Humanities,2,"{drought, severe, severity}",0.240366124187326,0.290815212715337
+2.01726759691287,Medical and Health Sciences,2,"{drought, severe, severity}",0.823812631278724,1.19345496563415
+168.326867003158,Natural Sciences,2,"{drought, severe, severity}",69.1184457907128,99.2084212124448
+11.0004703905528,Social Sciences,2,"{drought, severe, severity}",4.11040650698455,6.89006388356824
+0.210691374575963,,2,"{drought, severe, severity}",0.0277253446549514,0.182966029921012
+18.1395069844076,Agricultural Sciences,1,"{gas, natural, hydrate}",11.0108698370424,7.12863714736515
+217.532375188955,Engineering and Technology,1,"{gas, natural, hydrate}",111.963838792402,105.568536396555
+0.67835536276981,Humanities,1,"{gas, natural, hydrate}",0.31247023295278,0.36588512981703
+1.6891683659301,Medical and Health Sciences,1,"{gas, natural, hydrate}",1.07932181523874,0.609846550691363
+155.184317846825,Natural Sciences,1,"{gas, natural, hydrate}",85.5420234688093,69.6422943780148
+14.6575720357806,Social Sciences,1,"{gas, natural, hydrate}",6.38624029176466,8.27133174401591
+0.883887700349403,,1,"{gas, natural, hydrate}",0.331824815573859,0.552062884775544
+50.6355946028161,Agricultural Sciences,2,"{environmental, impact, life}",24.6664129422824,25.9691816605339
+224.433770226896,Engineering and Technology,2,"{environmental, impact, life}",101.112339064356,123.301998603167
+5.03665395171433,Humanities,2,"{environmental, impact, life}",2.09303333720028,2.94362061451404
+9.72291484045368,Medical and Health Sciences,2,"{environmental, impact, life}",4.23216936925009,5.48957150622104
+307.283449094658,Natural Sciences,2,"{environmental, impact, life}",139.765096780552,167.518352314107
+80.3816497078361,Social Sciences,2,"{environmental, impact, life}",31.9418103741844,48.4398393336518
+1.8858765308269,,2,"{environmental, impact, life}",0.159617054652925,1.72625947617398
+9.23440709700086,Agricultural Sciences,2,"{flood, flooding, damage}",4.56605296377546,4.66835413322541
+40.4476145645636,Engineering and Technology,2,"{flood, flooding, damage}",18.3098628565575,22.1377146050557
+1.09419349323776,Humanities,2,"{flood, flooding, damage}",0.46778849488799,0.626404998349776
+3.02628119126696,Medical and Health Sciences,2,"{flood, flooding, damage}",1.46983605499774,1.55644513626923
+150.154452804342,Natural Sciences,2,"{flood, flooding, damage}",64.9387398266391,85.215712977704
+18.3506620680715,Social Sciences,2,"{flood, flooding, damage}",6.70748213406953,11.643179934002
+0.189625096028549,,2,"{flood, flooding, damage}",0.044509647229914,0.145115448798635
+21.6622408134932,Agricultural Sciences,1,"{precipitation, annual, moisture}",11.138356594193,10.5238842193003
+35.0452733690127,Engineering and Technology,1,"{precipitation, annual, moisture}",16.9916584322281,18.0531603677632
+0.41609570563382,Humanities,1,"{precipitation, annual, moisture}",0.193351280426403,0.222744425207417
+1.88927223521544,Medical and Health Sciences,1,"{precipitation, annual, moisture}",0.754909421999148,1.13190143915398
+272.248272027107,Natural Sciences,1,"{precipitation, annual, moisture}",139.725879948398,132.522392078711
+6.38647431255001,Social Sciences,1,"{precipitation, annual, moisture}",2.64177344718919,3.74470086536082
+0.17779426932574,,1,"{precipitation, annual, moisture}",0.12663388105029,0.05116038827545
+24.1393355644172,Agricultural Sciences,2,"{rainfall, monsoon, rain}",12.5213234673489,11.6180120970683
+31.639436221486,Engineering and Technology,2,"{rainfall, monsoon, rain}",14.8444618843108,16.7940081116027
+0.49968134850667,Humanities,2,"{rainfall, monsoon, rain}",0.249970529205975,0.249710819300694
+3.64238726906955,Medical and Health Sciences,2,"{rainfall, monsoon, rain}",1.73526978608739,1.90711748298217
+204.324541148699,Natural Sciences,2,"{rainfall, monsoon, rain}",105.728641973218,98.5958991754796
+11.6474811844587,Social Sciences,2,"{rainfall, monsoon, rain}",5.28350558934994,6.36397559510875
+0.132103915584632,,2,"{rainfall, monsoon, rain}",0.0246574590309827,0.107446456553649
+16.90548348171,Agricultural Sciences,3,"{cement, material, concrete}",8.83908058146454,8.06640290024554
+186.24098625822,Engineering and Technology,3,"{cement, material, concrete}",77.9361495100698,108.303172260013
+2.96655048895834,Humanities,3,"{cement, material, concrete}",1.08803735218901,1.87851313676934
+1.55160901771999,Medical and Health Sciences,3,"{cement, material, concrete}",0.744642296711955,0.80525800687222
+109.669801037533,Natural Sciences,3,"{cement, material, concrete}",47.0392652518035,62.6305357857301
+19.2810626346559,Social Sciences,3,"{cement, material, concrete}",7.55308851043648,11.7279741242195
+1.52961218706186,,3,"{cement, material, concrete}",0.342312771899476,1.18729941516238
+50.3389759678588,Agricultural Sciences,2,"{system, performance, hybrid}",26.0320030865755,24.3069728812831
+223.5533513777,Engineering and Technology,2,"{system, performance, hybrid}",101.059949859601,122.493401518098
+2.17861809471121,Humanities,2,"{system, performance, hybrid}",0.907776748682078,1.27084134602913
+4.59435214987268,Medical and Health Sciences,2,"{system, performance, hybrid}",2.3675070630387,2.22684508683397
+231.230471791172,Natural Sciences,2,"{system, performance, hybrid}",117.778338299077,113.452133492095
+37.4243417271893,Social Sciences,2,"{system, performance, hybrid}",16.5210126158028,20.9033291113865
+1.13123571125239,,2,"{system, performance, hybrid}",0.185650893517867,0.945584817734524
+16.6432679238651,Agricultural Sciences,3,"{storage, reservoir, injection}",9.72619686929161,6.91483244321059
+168.666964250321,Engineering and Technology,3,"{storage, reservoir, injection}",84.4863928897172,84.1805713606038
+0.564576372132006,Humanities,3,"{storage, reservoir, injection}",0.176118044284035,0.388458327847971
+1.5276174584876,Medical and Health Sciences,3,"{storage, reservoir, injection}",0.741254528579637,0.786362929907967
+151.085227226332,Natural Sciences,3,"{storage, reservoir, injection}",76.1616426177736,74.9235846085582
+9.20248445592454,Social Sciences,3,"{storage, reservoir, injection}",4.11193146948115,5.09055298644341
+0.278531416312689,,3,"{storage, reservoir, injection}",0.0593002004843468,0.219231215828342
+6.28702002069325,Agricultural Sciences,3,"{power, generation, nuclear}",3.55572572566668,2.73129429502658
+240.670974122955,Engineering and Technology,3,"{power, generation, nuclear}",115.938801905758,124.729956836313
+1.05547949864291,Humanities,3,"{power, generation, nuclear}",0.389217250673139,0.666262247969767
+1.30087869058359,Medical and Health Sciences,3,"{power, generation, nuclear}",0.716925948568131,0.58395274201546
+86.6351889366262,Natural Sciences,3,"{power, generation, nuclear}",41.1418996803529,45.4932892562727
+27.7108604692876,Social Sciences,3,"{power, generation, nuclear}",11.3503934993331,16.3604669699544
+1.0038038341343,,3,"{power, generation, nuclear}",0.241785423254195,0.762018410880105
+17.2588926118788,Agricultural Sciences,1,"{heat, heating, pump}",8.16290198323363,9.09599062864516
+145.181778157874,Engineering and Technology,1,"{heat, heating, pump}",65.2031347086994,79.97855882167
+1.13830957079123,Humanities,1,"{heat, heating, pump}",0.400687824916031,0.737621745875197
+8.84128600572204,Medical and Health Sciences,1,"{heat, heating, pump}",3.67555380796832,5.16543299253792
+143.176265810309,Natural Sciences,1,"{heat, heating, pump}",68.3740176810025,74.8022481293069
+9.67796450861246,Social Sciences,1,"{heat, heating, pump}",4.19350586736394,5.48445864124853
+0.58599729815756,,1,"{heat, heating, pump}",0.191718236613676,0.394279061543883
+19.8912450029437,Agricultural Sciences,1,"{carbonate, mineral, rock}",10.7053799506218,9.1858650523219
+78.0592357990339,Engineering and Technology,1,"{carbonate, mineral, rock}",38.6289583771981,39.4296296396841
+0.990258302601756,Humanities,1,"{carbonate, mineral, rock}",0.415199949542634,0.575058353059122
+1.35668456396195,Medical and Health Sciences,1,"{carbonate, mineral, rock}",0.620983638889155,0.735477790016139
+230.552260219304,Natural Sciences,1,"{carbonate, mineral, rock}",131.666391454402,98.8858687649017
+6.2035789388477,Social Sciences,1,"{carbonate, mineral, rock}",2.62628880297534,3.57729013587236
+0.205487407952296,,1,"{carbonate, mineral, rock}",0.0656670164255075,0.139820391526789
+66.8085884632764,Agricultural Sciences,3,"{soc, stock, soil}",34.4681842416516,32.3404042216248
+12.0834034080816,Engineering and Technology,3,"{soc, stock, soil}",5.76247149509226,6.32074737129277
+0.161868790636012,Humanities,3,"{soc, stock, soil}",0.0462473262555088,0.115621464380503
+0.371015358939816,Medical and Health Sciences,3,"{soc, stock, soil}",0.161128428655268,0.209787122680206
+84.4810774843612,Natural Sciences,3,"{soc, stock, soil}",36.4640156148322,48.0170618695293
+4.15641498622907,Social Sciences,3,"{soc, stock, soil}",1.34779992740835,2.8086150588207
+0.0520536601861302,,3,"{soc, stock, soil}",0.00293956319383519,0.049114096992295
+65.241686341073,Agricultural Sciences,2,"{biomass, aboveground, bioenergy}",35.0718239025484,30.1698624385249
+76.5093392101745,Engineering and Technology,2,"{biomass, aboveground, bioenergy}",35.7946237900218,40.7147154201526
+0.244763077773592,Humanities,2,"{biomass, aboveground, bioenergy}",0.157991891099074,0.0867711866745182
+0.779299636320436,Medical and Health Sciences,2,"{biomass, aboveground, bioenergy}",0.296019148551516,0.482982520796583
+152.951002914852,Natural Sciences,2,"{biomass, aboveground, bioenergy}",80.6413445227543,72.3096583920981
+6.96795061531155,Social Sciences,2,"{biomass, aboveground, bioenergy}",2.93001177418643,4.03793884112512
+0.420882456820188,,2,"{biomass, aboveground, bioenergy}",0.04405384890426,0.376828607915928
+4.90399519178897,Agricultural Sciences,1,"{cloud, feedback, radiative}",2.72274230877388,2.1812528830151
+33.1675352116878,Engineering and Technology,1,"{cloud, feedback, radiative}",17.6193475882127,15.5481876234753
+0.249056335068734,Humanities,1,"{cloud, feedback, radiative}",0.130164335579741,0.118891999488992
+0.430017411432372,Medical and Health Sciences,1,"{cloud, feedback, radiative}",0.238741226884862,0.191276184547509
+150.545678893433,Natural Sciences,1,"{cloud, feedback, radiative}",90.8558415996447,59.6898372937876
+3.83961979738053,Social Sciences,1,"{cloud, feedback, radiative}",1.75044130441793,2.0891784929626
+0.0704087965281208,,1,"{cloud, feedback, radiative}",0.016400856951342,0.0540079395767789
+72.2465651714367,Agricultural Sciences,1,"{year, period, annual}",41.1719559104747,31.0746092609617
+87.6444973645228,Engineering and Technology,1,"{year, period, annual}",45.2697609194648,42.374149924861
+2.33002650975203,Humanities,1,"{year, period, annual}",1.03803467124562,1.29199183850641
+7.70906168728961,Medical and Health Sciences,1,"{year, period, annual}",3.61958248511373,4.08869211693741
+359.723047601766,Natural Sciences,1,"{year, period, annual}",212.480589650934,147.242457950826
+27.2759647991109,Social Sciences,1,"{year, period, annual}",12.1546656524986,15.1212991466123
+0.563633835952757,,1,"{year, period, annual}",0.181128496056027,0.38250533989673
+7.96744272956408,Agricultural Sciences,2,"{building, construction, design}",4.1670317828982,3.8004109466659
+172.957792111871,Engineering and Technology,2,"{building, construction, design}",68.5214617433755,104.43339646144
+9.27485396784848,Humanities,2,"{building, construction, design}",4.57914367692479,4.69571029092368
+1.73099075356022,Medical and Health Sciences,2,"{building, construction, design}",0.867163087027255,0.863827666532964
+73.0653770745982,Natural Sciences,2,"{building, construction, design}",30.498646484343,42.5667305902549
+30.6057936131041,Social Sciences,2,"{building, construction, design}",12.9644763215562,17.6413172915479
+0.927385554488825,,2,"{building, construction, design}",0.0706133362649977,0.856772218223827
+27.8388925057438,Agricultural Sciences,2,"{economic, development, economy}",13.487381661098,14.3515108446458
+137.120306779555,Engineering and Technology,2,"{economic, development, economy}",60.9874191858057,76.1328875937491
+3.73335807661809,Humanities,2,"{economic, development, economy}",1.51023764022953,2.22312043638856
+5.14772546915548,Medical and Health Sciences,2,"{economic, development, economy}",2.66276878382852,2.48495668532697
+164.302361519154,Natural Sciences,2,"{economic, development, economy}",73.3257054515489,90.9766560676065
+100.398890445129,Social Sciences,2,"{economic, development, economy}",41.0862755912726,59.3126148538564
+1.48643489718496,,2,"{economic, development, economy}",0.240988961858176,1.24544593532678
+20.1033432132066,Agricultural Sciences,3,"{sector, industry, industrial}",9.61533227116858,10.4880109420381
+141.972615940376,Engineering and Technology,3,"{sector, industry, industrial}",66.5367967009425,75.434733887929
+1.86338389143801,Humanities,3,"{sector, industry, industrial}",0.816432666066665,1.04695122537134
+2.5442704558702,Medical and Health Sciences,3,"{sector, industry, industrial}",1.22260260252123,1.31102636311035
+117.573014457489,Natural Sciences,3,"{sector, industry, industrial}",51.623306349537,65.9497081079512
+75.1475489067848,Social Sciences,3,"{sector, industry, industrial}",30.7208418713992,44.4267070353857
+1.45863534107861,,3,"{sector, industry, industrial}",0.310364948404365,1.14827039267424
+21.4904498027047,Agricultural Sciences,2,"{risk, disaster, hazard}",9.7315599711681,11.7588898315366
+57.3218647378763,Engineering and Technology,2,"{risk, disaster, hazard}",25.8922409713713,31.4296237665045
+2.37458868070798,Humanities,2,"{risk, disaster, hazard}",0.829344952305019,1.54524372840297
+15.5413779801207,Medical and Health Sciences,2,"{risk, disaster, hazard}",6.95366451830041,8.58771346182025
+159.157803611497,Natural Sciences,2,"{risk, disaster, hazard}",63.2403040725616,95.9174995389368
+54.1010473815253,Social Sciences,2,"{risk, disaster, hazard}",21.3176763847378,32.7833709967874
+0.610832442126643,,2,"{risk, disaster, hazard}",0.0341472747878764,0.576685167338766
+28.5896338205501,Agricultural Sciences,2,"{human, activity, natural}",14.511911999943,14.0600839891075
+67.2849639736477,Engineering and Technology,2,"{human, activity, natural}",33.3535668013918,33.9283031157789
+7.3882336293487,Humanities,2,"{human, activity, natural}",2.73916193420032,4.64907169514838
+12.0664685501955,Medical and Health Sciences,2,"{human, activity, natural}",6.36532330009961,5.6994714603352
+269.66044407783,Natural Sciences,2,"{human, activity, natural}",137.379879005654,132.280565072178
+48.2419466127046,Social Sciences,2,"{human, activity, natural}",21.1715838900844,27.0703627226203
+0.578511855721934,,2,"{human, activity, natural}",0.0590307079622572,0.519481147759676
+11.0872438675988,Agricultural Sciences,1,"{pacific, sst, enso}",6.25560053840985,4.83164332918895
+17.8416364890284,Engineering and Technology,1,"{pacific, sst, enso}",8.82262993445061,9.0190065545778
+0.598974115404492,Humanities,1,"{pacific, sst, enso}",0.242934634368508,0.356039481035984
+1.93280387201427,Medical and Health Sciences,1,"{pacific, sst, enso}",0.962519279911248,0.969431470114755
+288.822612157388,Natural Sciences,1,"{pacific, sst, enso}",172.383149884298,116.439462273091
+7.78434553732445,Social Sciences,1,"{pacific, sst, enso}",3.66482037701597,4.11952516030849
+0.210186684181311,,1,"{pacific, sst, enso}",0.149221160232607,0.0609655239487038
+34.0604607812574,Agricultural Sciences,2,"{genetic, diversity, gene}",14.2559127332056,19.8043591396615
+26.3012018318674,Engineering and Technology,2,"{genetic, diversity, gene}",10.9929910434474,15.3069130657308
+0.883217135798688,Humanities,2,"{genetic, diversity, gene}",0.345335508196287,0.537881627602401
+3.8221343127777,Medical and Health Sciences,2,"{genetic, diversity, gene}",1.63429289140311,2.18587827572258
+220.620502084135,Natural Sciences,2,"{genetic, diversity, gene}",100.449913862051,120.170588222084
+10.8250017895551,Social Sciences,2,"{genetic, diversity, gene}",4.41385139042381,6.41115039913126
+0.162297231133496,,2,"{genetic, diversity, gene}",0.0225563519166817,0.139740879216815
+104.898315508885,Agricultural Sciences,2,"{farm, animal, milk}",48.7908570698276,56.1012992714253
+37.262072225606,Engineering and Technology,2,"{farm, animal, milk}",14.0186245794377,23.2434476461684
+0.978259462429741,Humanities,2,"{farm, animal, milk}",0.358918353092411,0.61934110933733
+5.39481352398285,Medical and Health Sciences,2,"{farm, animal, milk}",2.18765973338153,3.20548916073945
+102.911492019153,Natural Sciences,2,"{farm, animal, milk}",44.9939918968928,57.9175001222594
+18.6857608771813,Social Sciences,2,"{farm, animal, milk}",6.06506217100432,12.620698706177
+0.424950422830063,,2,"{farm, animal, milk}",0.0180870867150434,0.40686333611502
+10.9523179448695,Agricultural Sciences,1,"{absorption, solvent, amine}",5.65148823835402,5.30082970651552
+157.734286248242,Engineering and Technology,1,"{absorption, solvent, amine}",66.8882532717846,90.8460100839677
+0.655637453673255,Humanities,1,"{absorption, solvent, amine}",0.212242914427312,0.443394539245943
+1.40869533632283,Medical and Health Sciences,1,"{absorption, solvent, amine}",0.69813976685089,0.709902590221886
+121.261018382333,Natural Sciences,1,"{absorption, solvent, amine}",56.3918827081717,64.8691356741599
+8.63826073022226,Social Sciences,1,"{absorption, solvent, amine}",3.67845450267984,4.95980622754243
+0.499174231859128,,1,"{absorption, solvent, amine}",0.0407982382390404,0.458375993620088
+17.7406550085414,Agricultural Sciences,3,"{fuel, fossil, engine}",10.7925776887254,6.94807731981606
+202.036446980293,Engineering and Technology,3,"{fuel, fossil, engine}",104.440849731723,97.5955130587147
+0.769858900314783,Humanities,3,"{fuel, fossil, engine}",0.352148823519714,0.41771007679507
+1.81420050424285,Medical and Health Sciences,3,"{fuel, fossil, engine}",0.857460076095366,0.956740428147485
+98.4009097324906,Natural Sciences,3,"{fuel, fossil, engine}",51.4079244499114,46.9929852825791
+27.2620892421415,Social Sciences,3,"{fuel, fossil, engine}",12.9641139350952,14.2979753070463
+1.22726962324079,,3,"{fuel, fossil, engine}",0.349086244136082,0.878183379104712
+10.5229038964337,Agricultural Sciences,1,"{transport, road, transportation}",6.03381453947205,4.48908935696166
+87.933222139105,Engineering and Technology,1,"{transport, road, transportation}",42.6681663102607,45.2650558288442
+0.811862182385505,Humanities,1,"{transport, road, transportation}",0.342375884808574,0.46948629757693
+2.50618109976351,Medical and Health Sciences,1,"{transport, road, transportation}",1.24775318085075,1.25194780922064
+161.942810858623,Natural Sciences,1,"{transport, road, transportation}",90.1947043673537,71.7481064912689
+42.4624411610269,Social Sciences,1,"{transport, road, transportation}",16.4725822995936,25.9898588614333
+0.695991687506814,,1,"{transport, road, transportation}",0.112590117192612,0.583401570314202
+29.8998378185438,Agricultural Sciences,2,"{vegetation, ndvi, cover}",15.6970582615693,14.2027795569746
+43.073999146593,Engineering and Technology,2,"{vegetation, ndvi, cover}",21.1966081045635,21.8767751162559
+0.763953885173028,Humanities,2,"{vegetation, ndvi, cover}",0.278504248862338,0.48544963631069
+1.19714194716442,Medical and Health Sciences,2,"{vegetation, ndvi, cover}",0.482837993695643,0.714303953468772
+265.520361107422,Natural Sciences,2,"{vegetation, ndvi, cover}",148.123611090051,117.39675001737
+9.2903296636536,Social Sciences,2,"{vegetation, ndvi, cover}",3.54690586253488,5.74342380111872
+0.216823021617544,,2,"{vegetation, ndvi, cover}",0.0462100325393877,0.170612989078157
+31.0689879875986,Agricultural Sciences,1,"{methane, oxidation, source}",18.3464595099177,12.7223698285902
+66.3322794455418,Engineering and Technology,1,"{methane, oxidation, source}",35.8654842033345,30.4667952422073
+0.203101015244154,Humanities,1,"{methane, oxidation, source}",0.113285410402496,0.0898156048416585
+1.20450068218203,Medical and Health Sciences,1,"{methane, oxidation, source}",0.772503453808427,0.431997228373606
+144.61220730196,Natural Sciences,1,"{methane, oxidation, source}",89.4667396164114,55.1454676855485
+3.13528080924353,Social Sciences,1,"{methane, oxidation, source}",1.53224398133887,1.60303682790466
+0.108708966225784,,1,"{methane, oxidation, source}",0.0116486744139756,0.0970602918118081
+3.90760819495656,Agricultural Sciences,3,"{vehicle, electric, battery}",1.99999376696273,1.90761442799383
+130.33948722542,Engineering and Technology,3,"{vehicle, electric, battery}",56.3682829621684,73.9708927617449
+0.55616412255488,Humanities,3,"{vehicle, electric, battery}",0.184527968174801,0.371636154380079
+1.42739097846967,Medical and Health Sciences,3,"{vehicle, electric, battery}",0.715150028414089,0.712240950055579
+56.6758158398956,Natural Sciences,3,"{vehicle, electric, battery}",24.0254780649941,32.6503377749014
+35.3758042859405,Social Sciences,3,"{vehicle, electric, battery}",12.218716897954,23.1570873879864
+0.777378456819884,,3,"{vehicle, electric, battery}",0.12068741351891,0.656691043300974
+53.3314666327146,Agricultural Sciences,2,"{leaf, photosynthesis, photosynthetic}",31.0419301994096,22.2895364333049
+16.4224821206574,Engineering and Technology,2,"{leaf, photosynthesis, photosynthetic}",7.87096601424998,8.55130197669052
+0.243324319155621,Humanities,2,"{leaf, photosynthesis, photosynthetic}",0.101960855238328,0.141363463917293
+1.05367621653776,Medical and Health Sciences,2,"{leaf, photosynthesis, photosynthetic}",0.353991111420599,0.699685105117163
+170.889693023943,Natural Sciences,2,"{leaf, photosynthesis, photosynthetic}",104.426390692274,66.4633023316691
+2.86701815315814,Social Sciences,2,"{leaf, photosynthesis, photosynthetic}",1.21540714363087,1.65161100952727
+0.0875875597822064,,2,"{leaf, photosynthesis, photosynthetic}",0.00500827297526955,0.0825792868069368
+18.1150234556354,Agricultural Sciences,3,"{waste, landfill, solid}",9.76206508053699,8.35295837509837
+125.345189711371,Engineering and Technology,3,"{waste, landfill, solid}",60.121714085593,65.2232696317693
+0.831937748225405,Humanities,3,"{waste, landfill, solid}",0.34860782556841,0.483329922656994
+2.05976355002133,Medical and Health Sciences,3,"{waste, landfill, solid}",0.8430764499441,1.21624953110717
+76.8570867695316,Natural Sciences,3,"{waste, landfill, solid}",34.6851490338638,42.1719377356675
+12.6805136883625,Social Sciences,3,"{waste, landfill, solid}",5.39319793083374,7.28731575752877
+1.04776410832598,,3,"{waste, landfill, solid}",0.126657231788226,0.921106876537751
+27.3741867680375,Agricultural Sciences,2,"{adaptation, vulnerability, strategy}",10.4064684108715,16.967718357166
+35.4276370780562,Engineering and Technology,2,"{adaptation, vulnerability, strategy}",14.8179168539892,20.6097202240668
+2.07064364699211,Humanities,2,"{adaptation, vulnerability, strategy}",0.706150801353928,1.36449284563818
+5.08436381055048,Medical and Health Sciences,2,"{adaptation, vulnerability, strategy}",2.41706029644258,2.6672527254233
+168.914768117261,Natural Sciences,2,"{adaptation, vulnerability, strategy}",67.7051197057687,101.209648411492
+70.1467743906181,Social Sciences,2,"{adaptation, vulnerability, strategy}",27.9516051582228,42.1951692323952
+0.695849602939334,,2,"{adaptation, vulnerability, strategy}",0.0200259814533131,0.675823621486021
+8.19196413281527,Agricultural Sciences,1,"{solar, radiation, irradiance}",4.84418222143357,3.3477819113817
+104.522279567789,Engineering and Technology,1,"{solar, radiation, irradiance}",46.0478409916672,58.4741218026711
+1.16924007138217,Humanities,1,"{solar, radiation, irradiance}",0.597317864263072,0.571922207119095
+1.04715969396971,Medical and Health Sciences,1,"{solar, radiation, irradiance}",0.581546181006712,0.465613512962997
+131.57549839814,Natural Sciences,1,"{solar, radiation, irradiance}",82.4459347178953,49.1295636802444
+9.6674107090139,Social Sciences,1,"{solar, radiation, irradiance}",4.17571088363717,5.49169982537674
+0.462087004255896,,1,"{solar, radiation, irradiance}",0.105668416233163,0.356418588022733
+20.844502128755,Agricultural Sciences,3,"{cost, benefit, abatement}",10.8773014082957,9.96720072045928
+181.47970565808,Engineering and Technology,3,"{cost, benefit, abatement}",85.4238828696285,96.0557609550066
+1.26574100400257,Humanities,3,"{cost, benefit, abatement}",0.636488824304208,0.629252179698357
+2.70133535695027,Medical and Health Sciences,3,"{cost, benefit, abatement}",1.32413858668097,1.3771967702693
+108.541569311202,Natural Sciences,3,"{cost, benefit, abatement}",50.2782737553218,58.2632955558797
+54.5613640351369,Social Sciences,3,"{cost, benefit, abatement}",26.3733728437304,28.1879911914067
+0.867456537072213,,3,"{cost, benefit, abatement}",0.215810060820084,0.651646476252129
+8.32157742993927,Agricultural Sciences,1,"{wind, speed, turbine}",4.73829873393782,3.58327869600147
+82.2593064774124,Engineering and Technology,1,"{wind, speed, turbine}",38.301241811752,43.9580065431261
+0.829666602611589,Humanities,1,"{wind, speed, turbine}",0.418037253105261,0.411629349506328
+1.11655115616818,Medical and Health Sciences,1,"{wind, speed, turbine}",0.473668866668673,0.642811693560041
+143.758924840733,Natural Sciences,1,"{wind, speed, turbine}",80.6692889380864,63.0896359026473
+11.2631557769347,Social Sciences,1,"{wind, speed, turbine}",3.93720974965676,7.32594602727789
+0.365345355086717,,1,"{wind, speed, turbine}",0.0847923808014991,0.280552974285218
+10.807839193883,Agricultural Sciences,2,"{adsorption, capacity, adsorbent}",5.45673972194894,5.35109947193406
+103.211870444647,Engineering and Technology,2,"{adsorption, capacity, adsorbent}",36.854352105783,66.3542170397006
+0.541968659680901,Humanities,2,"{adsorption, capacity, adsorbent}",0.205194719550454,0.336773940130446
+1.26762556729794,Medical and Health Sciences,2,"{adsorption, capacity, adsorbent}",0.565247204692157,0.70175814855215
+145.27687452203,Natural Sciences,2,"{adsorption, capacity, adsorbent}",50.5629087478233,94.713965774205
+8.42390990880872,Social Sciences,2,"{adsorption, capacity, adsorbent}",3.21251897597481,5.21139093283392
+0.386048388812863,,2,"{adsorption, capacity, adsorbent}",0.0244226290233917,0.361625759789471
+40.8359257421045,Agricultural Sciences,1,"{climate, future, warm}",21.1146174079126,19.7213083341919
+54.8202322446521,Engineering and Technology,1,"{climate, future, warm}",28.0317799539745,26.7884522906779
+3.99317232567502,Humanities,1,"{climate, future, warm}",1.55779364386078,2.43537868181424
+6.21734381038711,Medical and Health Sciences,1,"{climate, future, warm}",2.94665520554658,3.26733962270186
+404.170406409945,Natural Sciences,1,"{climate, future, warm}",227.487032450859,176.683373959085
+44.2444594386906,Social Sciences,1,"{climate, future, warm}",19.7673526518242,24.4771067868663
+0.514996868624049,,1,"{climate, future, warm}",0.209055040668786,0.305941827955262
+11.6231763313354,Agricultural Sciences,1,"{snow, cover, depth}",5.90337290209123,5.7129678986486
+27.8544812105042,Engineering and Technology,1,"{snow, cover, depth}",14.3552777675929,13.4992034429112
+0.22927487805495,Humanities,1,"{snow, cover, depth}",0.0961871117964493,0.133087766258501
+0.58031882617103,Medical and Health Sciences,1,"{snow, cover, depth}",0.214708595256144,0.365610230914886
+155.151028368344,Natural Sciences,1,"{snow, cover, depth}",87.7127851906184,67.4382431777254
+6.16097011097028,Social Sciences,1,"{snow, cover, depth}",2.50809081024868,3.65287930072162
+0.0582646748748517,,1,"{snow, cover, depth}",0.015281158296024,0.0429835165788276
+73.8267143229721,Agricultural Sciences,2,"{rice, paddy, field}",35.6028336349534,38.2238806880189
+30.1763480910716,Engineering and Technology,2,"{rice, paddy, field}",13.2147417149634,16.9616063761081
+0.402470864770043,Humanities,2,"{rice, paddy, field}",0.0994411258962577,0.303029738873785
+1.20265415206614,Medical and Health Sciences,2,"{rice, paddy, field}",0.532143850692568,0.670510301373572
+106.973533288364,Natural Sciences,2,"{rice, paddy, field}",52.3371567099917,54.636376578372
+8.121747719547,Social Sciences,2,"{rice, paddy, field}",2.47237904907431,5.64936867047268
+0.100162485238766,,2,"{rice, paddy, field}",0.00868493235160881,0.0914775528871576
+52.4632024658566,Agricultural Sciences,1,"{temperature, warm, mean}",29.0507393749036,23.4124630909532
+83.3754733763364,Engineering and Technology,1,"{temperature, warm, mean}",38.4292821027018,44.9460617354083
+0.832724344130732,Humanities,1,"{temperature, warm, mean}",0.356903960906445,0.475820383224288
+10.0917881468534,Medical and Health Sciences,1,"{temperature, warm, mean}",4.71949094226337,5.37049698495775
+396.860304168707,Natural Sciences,1,"{temperature, warm, mean}",217.147796316932,179.712507851776
+11.618484500525,Social Sciences,1,"{temperature, warm, mean}",4.65732142394469,6.96116307658031
+0.369945991174193,,1,"{temperature, warm, mean}",0.157964062993259,0.211981928180933
+11.0222399541473,Agricultural Sciences,2,"{groundwater, recharge, aquifer}",5.31581085322075,5.70642910092657
+36.8971475294465,Engineering and Technology,2,"{groundwater, recharge, aquifer}",18.076706114167,18.8202986731519
+0.373123672632432,Humanities,2,"{groundwater, recharge, aquifer}",0.125982143337934,0.247141529294498
+0.433803444740865,Medical and Health Sciences,2,"{groundwater, recharge, aquifer}",0.16257403716995,0.271166532671302
+119.944049346724,Natural Sciences,2,"{groundwater, recharge, aquifer}",56.7300643114898,63.2139850352331
+6.74666132472541,Social Sciences,2,"{groundwater, recharge, aquifer}",3.07399801485478,3.67266330987063
+0.148652292463156,,2,"{groundwater, recharge, aquifer}",0.00580448849155484,0.142847803971601
+47.0602628916639,Agricultural Sciences,2,"{change, climatic, shift}",26.39606501226,20.6641978794039
+71.9442783433995,Engineering and Technology,2,"{change, climatic, shift}",36.8916409593317,35.0503966476688
+3.29765176711466,Humanities,2,"{change, climatic, shift}",1.56101722991169,1.73663453720297
+7.39095414130322,Medical and Health Sciences,2,"{change, climatic, shift}",3.91768019351656,3.47327394778666
+444.765416253567,Natural Sciences,2,"{change, climatic, shift}",254.984725571499,189.780690682065
+39.2723688472742,Social Sciences,2,"{change, climatic, shift}",18.2609210311696,21.0114478161047
+0.434426538443861,,2,"{change, climatic, shift}",0.103813782703551,0.33061275574031
+43.170318815878,Agricultural Sciences,1,"{data, use, satellite}",22.6221700133778,20.5481488025001
+136.389785583696,Engineering and Technology,1,"{data, use, satellite}",64.449309371214,71.9291892586823
+2.09964596317478,Humanities,1,"{data, use, satellite}",0.837570022437094,1.26207594073769
+6.91184799931556,Medical and Health Sciences,1,"{data, use, satellite}",3.07159183192494,3.83703122435405
+373.848213924109,Natural Sciences,1,"{data, use, satellite}",199.469676049929,174.37853787418
+31.8660888747718,Social Sciences,1,"{data, use, satellite}",12.0374684791013,19.8286203956705
+0.526386902252152,,1,"{data, use, satellite}",0.135691468617038,0.390695433635115
+33.1190318196178,Agricultural Sciences,2,"{scenario, future, impact}",16.4625230835795,16.6565087360384
+92.7118188167842,Engineering and Technology,2,"{scenario, future, impact}",41.6440183915476,51.0677034918763
+1.2977985767432,Humanities,2,"{scenario, future, impact}",0.48896712316141,0.808831453581793
+3.35049434692014,Medical and Health Sciences,2,"{scenario, future, impact}",1.35922991454886,1.99126443237129
+232.900134720745,Natural Sciences,2,"{scenario, future, impact}",116.585971563124,116.314163157623
+31.8765667861061,Social Sciences,2,"{scenario, future, impact}",14.8127206953605,17.0638460907455
+0.691264909662066,,2,"{scenario, future, impact}",0.0867830555555922,0.604481854106473
+20.3256961310653,Agricultural Sciences,2,"{extreme, event, weather}",9.58677787351537,10.7389182575499
+38.7548785987651,Engineering and Technology,2,"{extreme, event, weather}",15.8499580699397,22.9046021503345
+1.60642237324829,Humanities,2,"{extreme, event, weather}",0.617429786289282,0.988992586959002
+6.69549637763779,Medical and Health Sciences,2,"{extreme, event, weather}",3.09390145015932,3.60159492747847
+261.660993637441,Natural Sciences,2,"{extreme, event, weather}",126.558681373344,135.102312264097
+20.6330995777786,Social Sciences,2,"{extreme, event, weather}",8.29043509944984,12.3426644783288
+0.218860967101012,,2,"{extreme, event, weather}",0.0706455567594503,0.148215410341562
+39.1282283219393,Agricultural Sciences,2,"{region, regional, south}",19.3659528806145,19.7590147971848
+59.6462154333701,Engineering and Technology,2,"{region, regional, south}",27.3919433458472,32.2542720875228
+2.02739736639912,Humanities,2,"{region, regional, south}",0.943950872852348,1.08344649354678
+6.17214988524985,Medical and Health Sciences,2,"{region, regional, south}",2.96801148779982,3.2013581712937
+346.454093497224,Natural Sciences,2,"{region, regional, south}",183.08526762649,163.368825870733
+31.4893939192077,Social Sciences,2,"{region, regional, south}",12.7695537215566,18.7198401976512
+0.465516996829805,,2,"{region, regional, south}",0.14368904574289,0.321827951086915
+34.7791406221964,Agricultural Sciences,1,"{degree, day, latitude}",17.921429246774,16.8577113754222
+60.4439226932476,Engineering and Technology,1,"{degree, day, latitude}",25.5395274306314,34.904291082165
+0.615345970399795,Humanities,1,"{degree, day, latitude}",0.265537839392034,0.349808131007761
+5.86665894489192,Medical and Health Sciences,1,"{degree, day, latitude}",2.79253453128848,3.07393040162582
+261.082923182845,Natural Sciences,1,"{degree, day, latitude}",136.453557588999,124.629365593845
+10.5496617587312,Social Sciences,1,"{degree, day, latitude}",4.13244291544415,6.4172188432871
+0.233945250181598,,1,"{degree, day, latitude}",0.0170762461463957,0.216869004035202
+56.0667280758016,Agricultural Sciences,2,"{rate, high, accumulation}",32.7390824726373,23.3276456031645
+83.3928194161798,Engineering and Technology,2,"{rate, high, accumulation}",38.8629465366337,44.5298728795468
+0.69384059692628,Humanities,2,"{rate, high, accumulation}",0.27619657792903,0.41764401899725
+5.02551612179931,Medical and Health Sciences,2,"{rate, high, accumulation}",2.35633009167568,2.66906389517203
+280.504924606872,Natural Sciences,2,"{rate, high, accumulation}",157.937776609955,122.567147996918
+17.6142032870271,Social Sciences,2,"{rate, high, accumulation}",8.21591881133144,9.39828447569566
+0.395084968426969,,2,"{rate, high, accumulation}",0.0596914603351388,0.33539350809183
+22.6204468820127,Agricultural Sciences,2,"{household, income, consumption}",7.67469909635905,14.9457477856537
+60.9516598511012,Engineering and Technology,2,"{household, income, consumption}",24.994018682605,35.957641168496
+1.59277816883869,Humanities,2,"{household, income, consumption}",0.667493801857301,0.925284366981382
+6.7459306354117,Medical and Health Sciences,2,"{household, income, consumption}",2.61226734228183,4.13000706603443
+108.223991898968,Natural Sciences,2,"{household, income, consumption}",39.874718163282,68.3492737356868
+64.8266424469143,Social Sciences,2,"{household, income, consumption}",20.224314531496,44.6023279154183
+0.754901652984976,,2,"{household, income, consumption}",0.0426079378583983,0.712293715126577
+34.0661606297287,Agricultural Sciences,2,"{disease, vector, host}",17.6559990072311,16.3719820731623
+24.1101360559947,Engineering and Technology,2,"{disease, vector, host}",10.9571932971925,13.1528706170081
+0.991637513523869,Humanities,2,"{disease, vector, host}",0.427086113718311,0.564551399805559
+56.9040247491886,Medical and Health Sciences,2,"{disease, vector, host}",28.6712067546184,28.2036054881667
+134.846006003913,Natural Sciences,2,"{disease, vector, host}",66.2604020807158,68.5856039231979
+10.9299050427035,Social Sciences,2,"{disease, vector, host}",4.78914415764792,6.14076088505556
+0.200094160640005,,2,"{disease, vector, host}",0.0249502484582272,0.175143912181777
+40.2488728256091,Agricultural Sciences,1,"{land, cover, agricultural}",21.5417233625539,18.7071494630552
+51.7952455739314,Engineering and Technology,1,"{land, cover, agricultural}",25.4856594289591,26.3091622443623
+1.32070034601307,Humanities,1,"{land, cover, agricultural}",0.49898269068238,0.821717655330691
+1.81246386403557,Medical and Health Sciences,1,"{land, cover, agricultural}",0.937793172129418,0.874670691906151
+226.900338020231,Natural Sciences,1,"{land, cover, agricultural}",116.434852412236,110.465485607996
+25.9422924974004,Social Sciences,1,"{land, cover, agricultural}",9.9719984766978,15.9702940207026
+0.421599402854575,,1,"{land, cover, agricultural}",0.030617826992626,0.390981575861949
+58.6263009629462,Agricultural Sciences,2,"{site, elevation, across}",33.9735420772645,24.6527588856817
+55.4409871612036,Engineering and Technology,2,"{site, elevation, across}",27.9973064644452,27.4429625605473
+3.54851540571687,Humanities,2,"{site, elevation, across}",1.56485857203431,1.98365683368256
+3.00762240315899,Medical and Health Sciences,2,"{site, elevation, across}",1.56200989913595,1.44509424806276
+265.783208537687,Natural Sciences,2,"{site, elevation, across}",146.272685985065,119.510522552621
+13.0456973025587,Social Sciences,2,"{site, elevation, across}",5.55801489533776,7.48768240722098
+0.134684688024773,,2,"{site, elevation, across}",0.0156808530517572,0.119003834973015
+33.9102390534194,Agricultural Sciences,2,"{community, microbial, composition}",14.151214219881,19.7583502511262
+30.5271696244524,Engineering and Technology,2,"{community, microbial, composition}",14.3002453900062,16.2269242344462
+2.19432446255063,Humanities,2,"{community, microbial, composition}",0.833163773790779,1.36116068875985
+5.66645690768203,Medical and Health Sciences,2,"{community, microbial, composition}",2.68113868508043,2.98438972631212
+246.26307345785,Natural Sciences,2,"{community, microbial, composition}",109.859147924882,136.403925532968
+32.3299075390761,Social Sciences,2,"{community, microbial, composition}",11.2461953400711,21.083712199005
+0.543941516375489,,2,"{community, microbial, composition}",0.0124998735814437,0.531441642794045
+9.57705161517748,Agricultural Sciences,2,"{sediment, erosion, core}",5.39137741567188,4.18567419950563
+25.6951586305759,Engineering and Technology,2,"{sediment, erosion, core}",12.9956952021823,12.6990745182025
+1.14425357886728,Humanities,2,"{sediment, erosion, core}",0.70903662042836,0.435216958438917
+0.465277238832228,Medical and Health Sciences,2,"{sediment, erosion, core}",0.149032591885112,0.316244646947116
+287.44192069835,Natural Sciences,2,"{sediment, erosion, core}",168.105425826583,119.336494871765
+4.93190017411221,Social Sciences,2,"{sediment, erosion, core}",2.49383615362384,2.43806402048837
+0.100842591623814,,2,"{sediment, erosion, core}",0.0439458503256349,0.0568967412981793
+4.48974907153599,Agricultural Sciences,3,"{coal, combustion, mine}",2.71355701118688,1.77619206034912
+152.457065313927,Engineering and Technology,3,"{coal, combustion, mine}",84.6300262805246,67.8268590572453
+0.314475274882544,Humanities,3,"{coal, combustion, mine}",0.112978758817091,0.201496516065453
+0.711928275139725,Medical and Health Sciences,3,"{coal, combustion, mine}",0.399732784517703,0.312161838473764
+60.1936792552866,Natural Sciences,3,"{coal, combustion, mine}",31.4048130706514,28.7888661846353
+14.0524912619676,Social Sciences,3,"{coal, combustion, mine}",5.44549953882728,8.60699172314035
+0.390921909386221,,3,"{coal, combustion, mine}",0.126663498622908,0.264258410763313
+8.78370985494952,Agricultural Sciences,1,"{ozone, stratospheric, tropospheric}",5.42936866384024,3.3543411911093
+35.4922517866602,Engineering and Technology,1,"{ozone, stratospheric, tropospheric}",22.0664951888157,13.425697552596
+0.43974744477219,Humanities,1,"{ozone, stratospheric, tropospheric}",0.244493270122673,0.195254174649517
+2.5085997540874,Medical and Health Sciences,1,"{ozone, stratospheric, tropospheric}",1.61293280050529,0.895612191807393
+162.634261312797,Natural Sciences,1,"{ozone, stratospheric, tropospheric}",105.769363555067,56.8648977577299
+5.87356879954097,Social Sciences,1,"{ozone, stratospheric, tropospheric}",3.89078678216586,1.98278201737511
+0.286210958767547,,1,"{ozone, stratospheric, tropospheric}",0.0886853458726831,0.197525612894864
+66.0926993895962,Agricultural Sciences,2,"{growth, radial, grow}",35.6110009047427,30.4816984848534
+47.4760492440858,Engineering and Technology,2,"{growth, radial, grow}",20.647424285839,26.8286067700968
+0.981749966627621,Humanities,2,"{growth, radial, grow}",0.423923289801397,0.557826676826224
+2.38612970344903,Medical and Health Sciences,2,"{growth, radial, grow}",1.07237234091162,1.31371688718421
+196.6537411186,Natural Sciences,2,"{growth, radial, grow}",103.113790552107,93.539950566494
+30.7823261750733,Social Sciences,2,"{growth, radial, grow}",11.6280352049127,19.1542909701604
+0.399370544748183,,2,"{growth, radial, grow}",0.0441793175456408,0.355191227202542
+19.7564691743588,Agricultural Sciences,1,"{china, province, chinese}",8.60357828535727,11.1528908890015
+86.5536134812064,Engineering and Technology,1,"{china, province, chinese}",37.37826108086,49.1753524003462
+1.0359585084898,Humanities,1,"{china, province, chinese}",0.517125113133714,0.518833395356087
+2.65847927464607,Medical and Health Sciences,1,"{china, province, chinese}",0.992663246588092,1.66581602805798
+172.639028928284,Natural Sciences,1,"{china, province, chinese}",72.5620485968553,100.076980331429
+42.8174957496653,Social Sciences,1,"{china, province, chinese}",16.1723568328966,26.6451389167686
+0.304585977511009,,1,"{china, province, chinese}",0.0212398885957565,0.283346088915253
+10.0705470508248,Agricultural Sciences,1,"{arctic, permafrost, warm}",5.18586769610826,4.88467935471659
+22.1142751142697,Engineering and Technology,1,"{arctic, permafrost, warm}",11.630487417136,10.4837513152376
+0.947215854807177,Humanities,1,"{arctic, permafrost, warm}",0.432433480167235,0.514782374639942
+1.52930777995357,Medical and Health Sciences,1,"{arctic, permafrost, warm}",0.86643769497457,0.661883028094482
+194.165426076844,Natural Sciences,1,"{arctic, permafrost, warm}",105.773486473182,88.3919396036615
+8.25812219068087,Social Sciences,1,"{arctic, permafrost, warm}",3.2396788303554,5.01844336032548
+0.114977111467877,,1,"{arctic, permafrost, warm}",0.0376100863633181,0.0773670251045591
+44.6805873635892,Agricultural Sciences,2,"{food, web, supply}",19.3011945266056,25.3720329185953
+47.1817551652417,Engineering and Technology,2,"{food, web, supply}",18.5158301737826,28.6659249914589
+1.97724043038812,Humanities,2,"{food, web, supply}",0.881464079642413,1.09577635074571
+11.8554376123368,Medical and Health Sciences,2,"{food, web, supply}",4.92436739501443,6.93103776604252
+135.365443825174,Natural Sciences,2,"{food, web, supply}",60.0584502302331,75.3069935949407
+29.3065447677059,Social Sciences,2,"{food, web, supply}",10.428497399608,18.8780473680979
+0.901113243181987,,2,"{food, web, supply}",0.0542889525124164,0.84682429066957
+9.97817576647234,Agricultural Sciences,3,"{electricity, generation, demand}",5.33851773709834,4.63965802937398
+178.261498242191,Engineering and Technology,3,"{electricity, generation, demand}",82.5629057025607,95.6985840650275
+1.02982853706135,Humanities,3,"{electricity, generation, demand}",0.434883498927854,0.594945038133498
+1.25878625923642,Medical and Health Sciences,3,"{electricity, generation, demand}",0.578652188525267,0.68013407071115
+71.803449081722,Natural Sciences,3,"{electricity, generation, demand}",31.4150439949061,40.3884050868157
+32.9640886966252,Social Sciences,3,"{electricity, generation, demand}",12.9663851298805,19.9977035667448
+0.703402511244688,,3,"{electricity, generation, demand}",0.074663546425826,0.628738964818862
+14.7747919842512,Agricultural Sciences,2,"{wetland, coastal, marsh}",8.29371106356831,6.4810809206829
+22.8988175458648,Engineering and Technology,2,"{wetland, coastal, marsh}",11.7767909049795,11.1218041236827
+0.634476805690109,Humanities,2,"{wetland, coastal, marsh}",0.159603224567339,0.474873581122771
+0.646120336417616,Medical and Health Sciences,2,"{wetland, coastal, marsh}",0.272910520357723,0.373096042345166
+154.106652472697,Natural Sciences,2,"{wetland, coastal, marsh}",76.3740245865948,77.7326278861021
+6.30504015774824,Social Sciences,2,"{wetland, coastal, marsh}",2.4872691188851,3.81777103886314
+0.0515620136086581,,2,"{wetland, coastal, marsh}",0.00373621098846093,0.0478258026201972
+39.5572942654312,Agricultural Sciences,2,"{research, science, issue}",19.3568495015179,20.1998484322066
+141.725188463798,Engineering and Technology,2,"{research, science, issue}",69.9349743894873,71.7899038338027
+16.0770489208457,Humanities,2,"{research, science, issue}",5.7945177056424,10.2825312152033
+13.4279560673323,Medical and Health Sciences,2,"{research, science, issue}",6.30211726521626,7.12527363981591
+289.75688199881,Natural Sciences,2,"{research, science, issue}",139.999168618106,149.757713380704
+162.999377767129,Social Sciences,2,"{research, science, issue}",64.4119992577701,98.587378509359
+2.08575282799206,,2,"{research, science, issue}",0.243038805842653,1.84271402214941
+25.1752761244047,Agricultural Sciences,1,"{trend, station, significant}",13.5080781572536,11.6671979671511
+60.1833160383569,Engineering and Technology,1,"{trend, station, significant}",28.4557508023604,31.7245224312616
+0.966484731860203,Humanities,1,"{trend, station, significant}",0.393561323720991,0.572923408139212
+3.69412354889068,Medical and Health Sciences,1,"{trend, station, significant}",1.73426854082684,1.95961996192356
+311.201973531316,Natural Sciences,1,"{trend, station, significant}",165.768592044175,145.433381487141
+20.2675380976283,Social Sciences,1,"{trend, station, significant}",8.39169674118392,11.8758413564444
+0.519494861931073,,1,"{trend, station, significant}",0.235961337819976,0.283533524111097
+48.3613884057495,Agricultural Sciences,3,"{biochar, amendment, application}",14.04363503555,34.3177533701997
+33.4225605988757,Engineering and Technology,3,"{biochar, amendment, application}",11.766754840199,21.6556164619789
+0.192862179156891,Humanities,3,"{biochar, amendment, application}",0.0651696302619189,0.127692548894972
+0.427484554663915,Medical and Health Sciences,3,"{biochar, amendment, application}",0.218019920820366,0.209464633843549
+62.8890109141442,Natural Sciences,3,"{biochar, amendment, application}",18.7143195564172,44.1746913577272
+4.27757105306267,Social Sciences,3,"{biochar, amendment, application}",1.56617928624358,2.71139176681908
+0.25495274706069,,3,"{biochar, amendment, application}",0.0109228081660701,0.24402993889462
+23.986258215347,Agricultural Sciences,1,"{uncertainty, estimate, parameter}",12.3474863602216,11.6387718551253
+68.9139752592613,Engineering and Technology,1,"{uncertainty, estimate, parameter}",31.3056366290933,37.608338630168
+1.38012028657429,Humanities,1,"{uncertainty, estimate, parameter}",0.430594586978489,0.9495256995958
+2.68226301603629,Medical and Health Sciences,1,"{uncertainty, estimate, parameter}",1.33296356756679,1.34900393819379
+217.2302654163,Natural Sciences,1,"{uncertainty, estimate, parameter}",111.29505492191,105.935210494389
+28.9488353885935,Social Sciences,1,"{uncertainty, estimate, parameter}",14.0979744049051,14.8508609836884
+0.316515676585951,,1,"{uncertainty, estimate, parameter}",0.0545126042709356,0.262003072315016
+5.37097647984613,Agricultural Sciences,1,"{aerosol, forcing, radiative}",3.11972718694193,2.25124929290418
+41.5311850282692,Engineering and Technology,1,"{aerosol, forcing, radiative}",23.5733931602937,17.9577918679755
+0.427638827520503,Humanities,1,"{aerosol, forcing, radiative}",0.1727193376932,0.254919489827302
+0.851779539345657,Medical and Health Sciences,1,"{aerosol, forcing, radiative}",0.400226726588816,0.451552812756842
+206.180060929877,Natural Sciences,1,"{aerosol, forcing, radiative}",125.183093917419,80.9969670124604
+3.74154667902792,Social Sciences,1,"{aerosol, forcing, radiative}",1.95960840704966,1.78193827197827
+0.121249922875624,,1,"{aerosol, forcing, radiative}",0.0478514802238576,0.0733984426517666
+85.4170188970725,Agricultural Sciences,2,"{nitrogen, nutrient, treatment}",44.4989341399129,40.9180847571595
+58.5118954756221,Engineering and Technology,2,"{nitrogen, nutrient, treatment}",26.4288425398594,32.0813958309542
+0.323082896971006,Humanities,2,"{nitrogen, nutrient, treatment}",0.112545335804782,0.210537561166224
+2.68524469800259,Medical and Health Sciences,2,"{nitrogen, nutrient, treatment}",1.15047025814697,1.53477443985562
+226.592062862988,Natural Sciences,2,"{nitrogen, nutrient, treatment}",117.416467249076,109.175595613912
+6.34245926670645,Social Sciences,2,"{nitrogen, nutrient, treatment}",2.50816703738725,3.83429222931921
+0.348497826849435,,2,"{nitrogen, nutrient, treatment}",0.0238187057116887,0.324679121137746
+14.0969418083833,Agricultural Sciences,2,"{runoff, catchment, basin}",7.58248501589754,6.51445679248579
+50.4910227997272,Engineering and Technology,2,"{runoff, catchment, basin}",25.3022509534003,25.1887646874058
+0.402153913556772,Humanities,2,"{runoff, catchment, basin}",0.249656709342639,0.152497204214134
+0.636989906010434,Medical and Health Sciences,2,"{runoff, catchment, basin}",0.274040852620702,0.362949053389732
+217.189926837658,Natural Sciences,2,"{runoff, catchment, basin}",113.246481158768,103.943445678891
+7.92047081193386,Social Sciences,2,"{runoff, catchment, basin}",4.22854655684459,3.69192425508925
+0.0940919389828997,,2,"{runoff, catchment, basin}",0.0311661412792219,0.0629257977036778
+17.0237725829143,Agricultural Sciences,2,"{flow, stream, low}",9.05587838843707,7.96789419447723
+111.996035443834,Engineering and Technology,2,"{flow, stream, low}",51.5244929578579,60.4715424859755
+0.467486367916587,Humanities,2,"{flow, stream, low}",0.207528442379084,0.259957925537503
+1.26398220622784,Medical and Health Sciences,2,"{flow, stream, low}",0.647750140475986,0.616094511618021
+221.617521795056,Natural Sciences,2,"{flow, stream, low}",113.179222787871,108.438299007185
+13.3997377834725,Social Sciences,2,"{flow, stream, low}",6.24172972100193,7.15800806247059
+0.342617615953292,,2,"{flow, stream, low}",0.124602009485347,0.218015606467945
+34.4116025836246,Agricultural Sciences,2,"{process, chemical, base}",18.2937263502808,16.1178762333438
+211.347353742063,Engineering and Technology,2,"{process, chemical, base}",98.9733537853792,112.369812638587
+2.5626685546516,Humanities,2,"{process, chemical, base}",1.04695633390592,1.51571222074568
+3.34688598809359,Medical and Health Sciences,2,"{process, chemical, base}",1.66248229453175,1.68440369356184
+294.217814812288,Natural Sciences,2,"{process, chemical, base}",147.939459036844,146.278355775447
+38.509741169529,Social Sciences,2,"{process, chemical, base}",16.3202237479086,22.1895174216203
+1.47205000957784,,2,"{process, chemical, base}",0.383879901971695,1.08817010760614
+71.2169973570464,Agricultural Sciences,2,"{root, fine, shoot}",41.6285615251607,29.5884358318858
+15.8452893029966,Engineering and Technology,2,"{root, fine, shoot}",6.92317680026821,8.92188290587876
+0.568882546699459,Humanities,2,"{root, fine, shoot}",0.150841819922675,0.418040726776784
+0.951497642897801,Medical and Health Sciences,2,"{root, fine, shoot}",0.397711624456759,0.553786018441042
+133.486190848306,Natural Sciences,2,"{root, fine, shoot}",76.9824774699337,56.5037133783722
+6.17538314255621,Social Sciences,2,"{root, fine, shoot}",2.53392013050459,3.64146301205161
+0.0990415542596807,,2,"{root, fine, shoot}",0.00708964435685199,0.0919519099028287
+91.0409404945147,Agricultural Sciences,2,"{production, primary, produce}",46.9314162683889,44.1095242261255
+149.40138048754,Engineering and Technology,2,"{production, primary, produce}",67.7920823470197,81.6006976324437
+1.42303591340748,Humanities,2,"{production, primary, produce}",0.565950713466727,0.857085199940754
+3.30497330043712,Medical and Health Sciences,2,"{production, primary, produce}",1.628159907871,1.67681339256612
+210.902953607272,Natural Sciences,2,"{production, primary, produce}",105.274176675312,105.628776931959
+30.5159665211019,Social Sciences,2,"{production, primary, produce}",11.6227172326528,18.8932492884492
+1.15565702745786,,2,"{production, primary, produce}",0.25035941470259,0.905297612755266
+23.805788514711,Agricultural Sciences,3,"{policy, government, maker}",11.2809918338306,12.5247966808805
+119.470619624521,Engineering and Technology,3,"{policy, government, maker}",57.6750581814563,61.7954145830001
+3.65073525325759,Humanities,3,"{policy, government, maker}",1.47163994454625,2.17909530871134
+7.05972581792312,Medical and Health Sciences,3,"{policy, government, maker}",3.21232910902841,3.84739670889471
+155.421547642533,Natural Sciences,3,"{policy, government, maker}",66.2884755241632,89.1330721183697
+163.202125764819,Social Sciences,3,"{policy, government, maker}",69.0163381634686,94.1857876013498
+1.21878791216009,,3,"{policy, government, maker}",0.143611655253394,1.07517625690669
+51.9683028217528,Agricultural Sciences,2,"{ecosystem, net, productivity}",27.8096708889735,24.1586319327792
+30.4237472191609,Engineering and Technology,2,"{ecosystem, net, productivity}",15.1894702065191,15.2342214744784
+0.913108403442245,Humanities,2,"{ecosystem, net, productivity}",0.259311370578366,0.65379703286388
+1.9063928853283,Medical and Health Sciences,2,"{ecosystem, net, productivity}",0.944804009020819,0.961580591316276
+311.989668795919,Natural Sciences,2,"{ecosystem, net, productivity}",159.038601087267,152.951067708652
+14.9175818367722,Social Sciences,2,"{ecosystem, net, productivity}",6.04259340544641,8.87498843132583
+0.181108419218854,,2,"{ecosystem, net, productivity}",0.012683772813029,0.168424646405825
+140.887493331245,Agricultural Sciences,2,"{yield, wheat, grain}",61.6133062973073,79.2741870339372
+49.2800800665464,Engineering and Technology,2,"{yield, wheat, grain}",20.756768946853,28.522820640475
+0.64884578699778,Humanities,2,"{yield, wheat, grain}",0.273134844990678,0.375710942007102
+1.97889840412583,Medical and Health Sciences,2,"{yield, wheat, grain}",0.565841008212927,1.4130573959129
+183.537237486006,Natural Sciences,2,"{yield, wheat, grain}",84.9141302300394,98.6231072559675
+12.5511265625643,Social Sciences,2,"{yield, wheat, grain}",4.15458996288501,8.39653659967929
+0.242794946971897,,2,"{yield, wheat, grain}",0.0450646387943194,0.197730308177577
+8.07221759135932,Agricultural Sciences,1,"{membrane, separation, selectivity}",3.74249348359545,4.32972410776388
+119.537758964005,Engineering and Technology,1,"{membrane, separation, selectivity}",48.7738663429873,70.7635435821129
+0.390245578475137,Humanities,1,"{membrane, separation, selectivity}",0.178595610650912,0.211649967824225
+1.26467248745387,Medical and Health Sciences,1,"{membrane, separation, selectivity}",0.678845150240189,0.585827337213683
+90.3520417904149,Natural Sciences,1,"{membrane, separation, selectivity}",33.3633499303407,56.988691860074
+4.25402838986447,Social Sciences,1,"{membrane, separation, selectivity}",1.55251273398599,2.70151565587848
+0.341977394517401,,1,"{membrane, separation, selectivity}",0.0529415778480629,0.289035816669338
+52.277695114597,Agricultural Sciences,3,"{ghg, greenhouse-gas, mitigation}",25.2164388109755,27.0612563036215
+155.090115056358,Engineering and Technology,3,"{ghg, greenhouse-gas, mitigation}",71.8738947351124,83.2162203212462
+1.07970509930048,Humanities,3,"{ghg, greenhouse-gas, mitigation}",0.509433401128624,0.570271698171859
+2.12096317926679,Medical and Health Sciences,3,"{ghg, greenhouse-gas, mitigation}",0.872278203064618,1.20989000524143
+127.395957576045,Natural Sciences,3,"{ghg, greenhouse-gas, mitigation}",53.5341919773313,73.8617655987142
+44.2373726690415,Social Sciences,3,"{ghg, greenhouse-gas, mitigation}",17.276957002235,26.9604156668065
+0.981265452039285,,3,"{ghg, greenhouse-gas, mitigation}",0.100593170214233,0.880672281825052
+48.0911173960352,Agricultural Sciences,2,"{fish, fishery, marine}",24.3811005207781,23.7100168752571
+18.0811226482512,Engineering and Technology,2,"{fish, fishery, marine}",8.39626219018933,9.68440389299132
+0.899451364696046,Humanities,2,"{fish, fishery, marine}",0.569993465095734,0.329457899600312
+4.41606959758128,Medical and Health Sciences,2,"{fish, fishery, marine}",2.15914791298848,2.2569216845928
+233.922340520309,Natural Sciences,2,"{fish, fishery, marine}",113.895248367688,120.027092152621
+14.4226593308763,Social Sciences,2,"{fish, fishery, marine}",5.96519692141271,8.45746240946363
+0.0954154572900353,,2,"{fish, fishery, marine}",0.0055923591799712,0.0898230981100641
+26.6645970027795,Agricultural Sciences,3,"{oil, palm, biodiesel}",13.9838163443865,12.6807806583931
+150.45912889736,Engineering and Technology,3,"{oil, palm, biodiesel}",73.2881537078385,77.1708555835505
+0.767165465987715,Humanities,3,"{oil, palm, biodiesel}",0.299026207565942,0.468139258421773
+1.68724122665425,Medical and Health Sciences,3,"{oil, palm, biodiesel}",0.966017130048104,0.721224096606147
+98.7890864476647,Natural Sciences,3,"{oil, palm, biodiesel}",47.7071748113846,51.0819116362809
+24.6075682108554,Social Sciences,3,"{oil, palm, biodiesel}",11.8307822108163,12.7767860000391
+0.807684378049418,,3,"{oil, palm, biodiesel}",0.0898424573122221,0.717841920737195
+58.3949137231521,Agricultural Sciences,2,"{term, long, short}",31.4691833010517,26.9257304221004
+117.186165885717,Engineering and Technology,2,"{term, long, short}",58.3544328386355,58.8302663064927
+2.94698845073282,Humanities,2,"{term, long, short}",1.2179052099557,1.72908324077712
+5.83631037199019,Medical and Health Sciences,2,"{term, long, short}",2.92741663929743,2.90889373269275
+396.56334727697,Natural Sciences,2,"{term, long, short}",216.979636035745,179.583711241222
+52.7125006739175,Social Sciences,2,"{term, long, short}",22.6996104160204,30.0128902578973
+0.753925162154524,,2,"{term, long, short}",0.205421523279741,0.548503638874783
+18.8690636617646,Agricultural Sciences,2,"{health, public, mortality}",7.66958883756297,11.1912523764588
+46.0674399437331,Engineering and Technology,2,"{health, public, mortality}",20.5512185833281,25.511523007872
+3.06482702788213,Humanities,2,"{health, public, mortality}",1.18514021918205,1.87968680870007
+65.229187551658,Medical and Health Sciences,2,"{health, public, mortality}",31.252351592672,33.9602886516699
+129.574001679164,Natural Sciences,2,"{health, public, mortality}",53.81278439802,75.7612172811435
+33.8959068689374,Social Sciences,2,"{health, public, mortality}",12.7376961331757,21.1582107357618
+0.632390191911729,,2,"{health, public, mortality}",0.0400381068142647,0.592352085097464
+64.4039283184203,Agricultural Sciences,2,"{litter, decomposition, microbial}",34.9290434273968,29.4748848910237
+26.0329959262823,Engineering and Technology,2,"{litter, decomposition, microbial}",12.5765315663337,13.4536836940243
+0.231668549196553,Humanities,2,"{litter, decomposition, microbial}",0.0809270735355224,0.150741475661031
+0.747542567682457,Medical and Health Sciences,2,"{litter, decomposition, microbial}",0.378042286742695,0.369500280939762
+152.251579568515,Natural Sciences,2,"{litter, decomposition, microbial}",81.5658699024071,70.6857096661076
+6.54557640398346,Social Sciences,2,"{litter, decomposition, microbial}",2.46062832036227,4.08494808362117
+0.125484885793266,,2,"{litter, decomposition, microbial}",0.0114286713606528,0.114056214432614
+22.2705292462381,Agricultural Sciences,3,"{technology, cc, development}",11.2949455240142,10.9755837222239
+276.426753283259,Engineering and Technology,3,"{technology, cc, development}",147.189806053647,129.236947229613
+3.29168090461592,Humanities,3,"{technology, cc, development}",1.33254637240206,1.95913453221385
+3.01831231942052,Medical and Health Sciences,3,"{technology, cc, development}",1.62880057774192,1.3894970878646
+150.935358959212,Natural Sciences,3,"{technology, cc, development}",73.8774501630698,77.0579087961421
+68.1067509000313,Social Sciences,3,"{technology, cc, development}",32.4217459966087,35.6850049034228
+1.29605708838617,,3,"{technology, cc, development}",0.274468982992165,1.02158810539401
+27.23129150145,Agricultural Sciences,3,"{price, market, tax}",14.141079338129,13.0902121633209
+141.332474813375,Engineering and Technology,3,"{price, market, tax}",70.1190975202966,71.2133772930779
+1.94093328256903,Humanities,3,"{price, market, tax}",0.818415571319308,1.12251771124972
+2.14689219648938,Medical and Health Sciences,3,"{price, market, tax}",1.05231941969791,1.09429120027658
+107.511611508976,Natural Sciences,3,"{price, market, tax}",51.3735750232181,56.1380364857577
+136.72563958706,Social Sciences,3,"{price, market, tax}",64.4329188189041,72.292720768155
+1.06657438096553,,3,"{price, market, tax}",0.337529466786637,0.729044914178891
+33.6013128666486,Agricultural Sciences,3,"{country, develop, international}",18.0325899787973,15.5680705386217
+139.859017465747,Engineering and Technology,3,"{country, develop, international}",73.2257273785459,66.6332900872016
+3.45571290944054,Humanities,3,"{country, develop, international}",1.38063945352112,2.07507345591943
+11.4153002595666,Medical and Health Sciences,3,"{country, develop, international}",5.35987702571681,6.05455187767936
+188.426740553719,Natural Sciences,3,"{country, develop, international}",94.4714501054314,93.9552904482875
+145.735094260904,Social Sciences,3,"{country, develop, international}",69.5525489773306,76.1825452835728
+1.4563525649923,,3,"{country, develop, international}",0.140902373111994,1.31545019188031
+49.3731845103309,Agricultural Sciences,1,"{winter, summer, spring}",27.7161128844611,21.6527725914709
+35.5508414155581,Engineering and Technology,1,"{winter, summer, spring}",18.254364291498,17.2937616326585
+1.06611702901173,Humanities,1,"{winter, summer, spring}",0.534310619906502,0.531806409105226
+4.84844623139573,Medical and Health Sciences,1,"{winter, summer, spring}",2.40566766039492,2.44162289818697
+396.152805709374,Natural Sciences,1,"{winter, summer, spring}",231.388017840732,164.764787868648
+10.4966194628021,Social Sciences,1,"{winter, summer, spring}",4.52987642314095,5.96674303966114
+0.265791782739485,,1,"{winter, summer, spring}",0.168668989246788,0.0971227934926965
+47.8051617993294,Agricultural Sciences,1,"{per, thousand, part}",27.016563526026,20.7885982733034
+98.2045666500799,Engineering and Technology,1,"{per, thousand, part}",48.8966124083064,49.3077179162195
+1.62199234578336,Humanities,1,"{per, thousand, part}",0.633580370836871,0.988411974946488
+5.20555013947647,Medical and Health Sciences,1,"{per, thousand, part}",2.31601235427655,2.87945524857611
+254.666226403134,Natural Sciences,1,"{per, thousand, part}",152.245267030419,102.420959372714
+38.592715731864,Social Sciences,1,"{per, thousand, part}",16.2962826222526,22.2964331096114
+0.599689967494375,,1,"{per, thousand, part}",0.0815706134951553,0.51811935399922
+7.10309050642133,Agricultural Sciences,1,"{hydrogen, cell, steam}",3.96304966708857,3.14004083933275
+130.774893517296,Engineering and Technology,1,"{hydrogen, cell, steam}",73.9651129293182,56.8092759449421
+0.478564740859576,Humanities,1,"{hydrogen, cell, steam}",0.203273913659188,0.275290827200388
+1.12109068327343,Medical and Health Sciences,1,"{hydrogen, cell, steam}",0.573649657230046,0.54744102604338
+124.883719282043,Natural Sciences,1,"{hydrogen, cell, steam}",66.0962866055363,58.7874326765069
+7.76644643465653,Social Sciences,1,"{hydrogen, cell, steam}",4.6235694492984,3.14287698535814
+0.88852185133277,,1,"{hydrogen, cell, steam}",0.516743348631104,0.371778502701665
+67.1926019023381,Agricultural Sciences,1,"{concentration, doc, high}",41.0360841723841,26.1565177299539
+97.5662486498949,Engineering and Technology,1,"{concentration, doc, high}",47.8026104193791,49.7620450528239
+0.596475599212811,Humanities,1,"{concentration, doc, high}",0.288457944701196,0.308017654511616
+4.53837091529112,Medical and Health Sciences,1,"{concentration, doc, high}",2.16072297428386,2.37698157532642
+374.686461206974,Natural Sciences,1,"{concentration, doc, high}",218.989727574072,155.6967336329
+9.49941445277582,Social Sciences,1,"{concentration, doc, high}",4.83832590274681,4.66108855002899
+0.327218578522654,,1,"{concentration, doc, high}",0.13108289751226,0.196135681010393
+82.8698191848722,Agricultural Sciences,2,"{season, day, grow}",43.0755218020876,39.7942973827847
+52.3919962368673,Engineering and Technology,2,"{season, day, grow}",23.843419741905,28.5460365027166
+1.0741247553731,Humanities,2,"{season, day, grow}",0.465017980489164,0.609106774883935
+8.01343658907486,Medical and Health Sciences,2,"{season, day, grow}",3.41599397978696,4.59565939041706
+340.996946769832,Natural Sciences,2,"{season, day, grow}",183.269659142473,157.727287627358
+14.6190737079079,Social Sciences,2,"{season, day, grow}",5.85403631250006,8.76503739540779
+0.258590471741704,,2,"{season, day, grow}",0.0741191068916301,0.184471364850073
+71.5034616433631,Agricultural Sciences,2,"{area, study, high}",35.5375925473074,35.9616316949734
+121.272551347756,Engineering and Technology,2,"{area, study, high}",54.491110334624,66.780910505765
+3.22676247440862,Humanities,2,"{area, study, high}",1.25949340432319,1.96726907008543
+10.05594406892,Medical and Health Sciences,2,"{area, study, high}",4.68686580352897,5.36390339801721
+473.222696078277,Natural Sciences,2,"{area, study, high}",234.675588172489,238.547107905786
+46.5493610336982,Social Sciences,2,"{area, study, high}",16.6410646996413,29.9082963340568
+0.839217634787491,,2,"{area, study, high}",0.10056990118428,0.738647733603211
+29.9156757028268,Agricultural Sciences,2,"{network, design, problem}",14.9299532407081,14.9857224621186
+294.237419897125,Engineering and Technology,2,"{network, design, problem}",116.744830961115,177.492193527203
+4.84461985450312,Humanities,2,"{network, design, problem}",1.82415632581216,3.02046352869096
+4.93611816620734,Medical and Health Sciences,2,"{network, design, problem}",2.3690000981558,2.56711806805154
+271.053774042837,Natural Sciences,2,"{network, design, problem}",118.507201138814,152.546572904026
+79.519570782782,Social Sciences,2,"{network, design, problem}",30.3478407637365,49.1717300190459
+2.25391648239498,,2,"{network, design, problem}",0.194965010241944,2.05895147215303
+60.6452587043354,Agricultural Sciences,1,"{method, use, approach}",31.0558694538433,29.5893892504922
+221.65490128725,Engineering and Technology,1,"{method, use, approach}",96.0055845360352,125.624915577032
+3.10036511577542,Humanities,1,"{method, use, approach}",1.06378978321056,2.03657533256485
+10.9910610907057,Medical and Health Sciences,1,"{method, use, approach}",4.84285324439091,6.13975174233476
+392.035206354967,Natural Sciences,1,"{method, use, approach}",193.188793003102,198.846413351858
+49.975992828593,Social Sciences,1,"{method, use, approach}",18.048895465043,31.92709736355
+1.17400005917659,,1,"{method, use, approach}",0.102696582192778,1.07130347698381
+12.9037682127779,Agricultural Sciences,1,"{cal, pollen, holocene}",7.20127797098566,5.70249024179222
+17.0743960910496,Engineering and Technology,1,"{cal, pollen, holocene}",7.25262117222291,9.82177491882674
+3.27120358512603,Humanities,1,"{cal, pollen, holocene}",1.53455781158802,1.736645773538
+5.10004729082671,Medical and Health Sciences,1,"{cal, pollen, holocene}",2.70728223947728,2.39247238581001
+288.36722204193,Natural Sciences,1,"{cal, pollen, holocene}",181.628150944579,106.739071097352
+7.77996977345931,Social Sciences,1,"{cal, pollen, holocene}",4.01111689671988,3.76885287673944
+0.11633743752448,,1,"{cal, pollen, holocene}",0.0167655880540676,0.0995718494704127
+50.6196674006393,Agricultural Sciences,1,"{scale, spatial, large}",26.5617734948625,24.0578939057768
+108.77043590692,Engineering and Technology,1,"{scale, spatial, large}",51.0367234589064,57.7320149504373
+2.49275974099556,Humanities,1,"{scale, spatial, large}",0.916755358173027,1.57600438282253
+5.23766917753159,Medical and Health Sciences,1,"{scale, spatial, large}",2.5007270328574,2.73694214467419
+502.503918457695,Natural Sciences,1,"{scale, spatial, large}",268.72530991837,233.778608539322
+40.0588222363997,Social Sciences,1,"{scale, spatial, large}",16.6413507258302,23.4174715105696
+0.520459245578862,,1,"{scale, spatial, large}",0.117488409059843,0.402970836519018
+38.0281082793284,Agricultural Sciences,2,"{habitat, conservation, biodiversity}",18.8697012368066,19.1583897936501
+28.1880722352461,Engineering and Technology,2,"{habitat, conservation, biodiversity}",13.6568304330166,14.5308631486091
+1.81630092197649,Humanities,2,"{habitat, conservation, biodiversity}",0.405831517885208,1.41046940409128
+4.96600858110011,Medical and Health Sciences,2,"{habitat, conservation, biodiversity}",2.36769425276339,2.59831432833672
+353.207110417272,Natural Sciences,2,"{habitat, conservation, biodiversity}",161.468939395717,191.738171021553
+21.5453447649424,Social Sciences,2,"{habitat, conservation, biodiversity}",9.21609609774063,12.3292486672018
+0.247259706802274,,2,"{habitat, conservation, biodiversity}",0.00569893673551475,0.241560770066759
+16.8871151837456,Agricultural Sciences,1,"{oxygen, reaction, reactor}",8.63803778329659,8.24907740044903
+243.378720318738,Engineering and Technology,1,"{oxygen, reaction, reactor}",115.731539587089,127.64534073849
+0.59549227834167,Humanities,1,"{oxygen, reaction, reactor}",0.196709374359335,0.398782903982334
+2.22625719940353,Medical and Health Sciences,1,"{oxygen, reaction, reactor}",1.16107809045358,1.06517910894994
+202.564765495167,Natural Sciences,1,"{oxygen, reaction, reactor}",91.2514745112443,111.313290983923
+8.28234850025327,Social Sciences,1,"{oxygen, reaction, reactor}",3.19124689267679,5.09110160757649
+0.750216929500851,,1,"{oxygen, reaction, reactor}",0.174697117492214,0.575519812008637
+47.134921882487,Agricultural Sciences,3,"{reduction, reduce, target}",24.7242010128309,22.4107208696561
+231.021441902586,Engineering and Technology,3,"{reduction, reduce, target}",114.440697806596,116.579984429353
+2.5545294249237,Humanities,3,"{reduction, reduce, target}",1.18471847041358,1.36981095451011
+5.17372118976885,Medical and Health Sciences,3,"{reduction, reduce, target}",2.47423409119218,2.66283504689195
+259.428676134016,Natural Sciences,3,"{reduction, reduce, target}",125.815510006903,133.613166127113
+72.365414153948,Social Sciences,3,"{reduction, reduce, target}",34.0754732461342,38.2899409078137
+1.62684047917286,,3,"{reduction, reduce, target}",0.572865105119827,1.05397537405304
+33.7755011191804,Agricultural Sciences,2,"{project, cdm, projection}",16.9870420286905,16.7884590904899
+160.978335930533,Engineering and Technology,2,"{project, cdm, projection}",90.2824180640544,70.6873159363185
+5.23434151407357,Humanities,2,"{project, cdm, projection}",2.09041844935149,3.14392306472208
+5.04667336168011,Medical and Health Sciences,2,"{project, cdm, projection}",2.49896783380543,2.54606339809729
+300.425336957341,Natural Sciences,2,"{project, cdm, projection}",146.468207332597,153.957129624746
+69.7969183098506,Social Sciences,2,"{project, cdm, projection}",34.3956636214645,35.401254688386
+1.20884808243083,,2,"{project, cdm, projection}",0.192427651269534,1.0164204311613
+10.6385893892148,Agricultural Sciences,1,"{wave, coastal, storm}",5.00142777971228,5.6371616095025
+62.8414916603942,Engineering and Technology,1,"{wave, coastal, storm}",29.8707149839189,32.970776676475
+1.09775948863509,Humanities,1,"{wave, coastal, storm}",0.411142773531225,0.686616715103869
+5.38785264748025,Medical and Health Sciences,1,"{wave, coastal, storm}",2.53767195230698,2.85018069517327
+266.422695849968,Natural Sciences,1,"{wave, coastal, storm}",134.626658454742,131.796037395226
+12.4731838498487,Social Sciences,1,"{wave, coastal, storm}",5.00726210670459,7.46592174314418
+0.236716920766711,,1,"{wave, coastal, storm}",0.14924929023075,0.0874676305359605
+11.4954094411202,Agricultural Sciences,1,"{glacial, last, interglacial}",6.35938941244534,5.13602002867482
+33.2461000782253,Engineering and Technology,1,"{glacial, last, interglacial}",16.5813589518472,16.6645515338421
+1.37685305877673,Humanities,1,"{glacial, last, interglacial}",0.7800565196925,0.596796539084227
+1.67360784772256,Medical and Health Sciences,1,"{glacial, last, interglacial}",0.829975734092536,0.842964421544735
+349.922838858024,Natural Sciences,1,"{glacial, last, interglacial}",230.370144163182,119.552694694843
+9.12979781425669,Social Sciences,1,"{glacial, last, interglacial}",4.32172562350886,4.80807219074784
+0.253036593663219,,1,"{glacial, last, interglacial}",0.118029353752135,0.135007239911084
+34.446041831151,Agricultural Sciences,1,"{global, earth, world}",19.038067388308,15.4078455134505
+104.158470913308,Engineering and Technology,1,"{global, earth, world}",58.9559847811513,45.202486132157
+5.25210756873065,Humanities,1,"{global, earth, world}",1.98857188769697,3.26353568103369
+9.1573662429303,Medical and Health Sciences,1,"{global, earth, world}",4.90542558931528,4.24753125741999
+428.295052108716,Natural Sciences,1,"{global, earth, world}",247.007159312194,181.287892796527
+68.88576974979,Social Sciences,1,"{global, earth, world}",34.2858003535822,34.5999693962079
+0.987397838696197,,1,"{global, earth, world}",0.183113142364285,0.804284696331913
