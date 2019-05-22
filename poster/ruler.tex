@@ -1,0 +1,23 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% rulers
+% initialise counters
+%\newcounter{skalax}
+\setcounter{skalax}{-1}
+%\newcounter{skalay}
+\setcounter{skalay}{-1}
+% put text
+\multiput(0,-0.2)(1,0){31}{\stepcounter{skalax}\makebox(0,0)[t]{\scriptsize\arabic{skalax}}}
+\multiput(-0.8,0)(0,1){31}{\stepcounter{skalay}\makebox(0,0)[l]{\scriptsize\arabic{skalay}}}
+% put lines
+\newcommand{\oldline}{\linethickness}
+\linethickness{0.1mm}
+\multiput(0,0)(0,1){30}{\line(1,0){30}} % fine grid
+\multiput(0,0)(1,0){30}{\line(0,1){30}}
+\linethickness{0.4mm}
+\multiput(0,0)(0,5){7}{\line(1,0){30}}  % medium grid
+\multiput(0,0)(5,0){7}{\line(0,1){30}}
+\linethickness{0.8mm}
+\multiput(0,0)(10,0){4}{\line(0,1){30}} % coarse grid
+\multiput(0,0)(0,10){4}{\line(1,0){30}}
+\linethickness{\oldline}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

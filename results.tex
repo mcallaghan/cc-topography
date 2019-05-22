@@ -25,6 +25,8 @@
 
 \linespread{1.5}
 
+\bibliographystyle{apalike}
+
 \makeatletter
 \renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
 	\begin{flushleft}
@@ -73,6 +75,10 @@
 \setcounter{totalnumber}{200}
 
 \subsection{Literature growth}
+
+The literature on climate change has grown rapidly \citep{Grieneisen2011}. The implications for the IPCC are discussed in \citep{Minx2017l}. Since that study's publication, growth has continued (see SI figure x.)
+
+Not only are more articles being published, the range of themes being discussed in the context of climate change (see for example recently zika and biochar, which were not to be found at all before ARs 6 and 5 respectively) has expanded.
 	
 \begin{table}[h]
 	\scriptsize
@@ -80,6 +86,8 @@
 	\caption{Growth in climate change literature}
 	\label{growthtable}
 \end{table}
+
+Topic modelling helps us to map out the literature, and make sense of broad patterns in the distribution of documents and their words. In this way, we can answer questions about the growth of the climate change literature, and its representation in IPCC assessment reports. The answers to these questions can help inform IPCC processes, and understand how the IPCC functions.
 
 %\begin{figure}[h]
 %	\begin{center}
@@ -103,14 +111,14 @@
 %	\end{center}
 %\end{figure}
 
-\subsection{Disciplinary structure}
+\subsection{Topic structure of literature maps to broad disciplinary categories}
 
-\todo{Label some topics particularly representative of certain disciplines, and their growth with reference to below}
+%\todo{Label some topics particularly representative of certain disciplines, and their growth with reference to below}
 
 \begin{figure}[h!]
 	\begin{center}
 		%\includegraphics[width=1\linewidth]{tsne_results/plots/run_665_s_0_p200_double.pdf}
-		\includegraphics[width=1\linewidth]{tsne_results/plots/run_1275_s_0_p100_oecds.png}
+		\includegraphics[width=1\linewidth]{tsne_results/plots/run_1771_s_0_p200_all_topic_words_oecds.png}
 		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by web of science discipline category. See SI table for topic composition of each grid square}
 		\label{map-oecd}
 	\end{center}
@@ -119,15 +127,21 @@
 \begin{itemize}
 	\item The thematic structure of the topics reflects journal disciplinary categories. 
 	\item Different disciplines clearly deal with different themes, although some topics are more interdisciplinary \todo{Show disciplinary entropy of topics in SI, give examples}
-	\item Medicine has the most specialized topic distribution  
-	\item (Some examples of individual topics using the labels to be added)
+	%\item Medicine has the most specialized topic distribution  
+	\item Topics in the south of the map (coal, oil, gas, cement, power) show a strong mix of social sciences and engineering
 \end{itemize}
 
 \bigskip
 
+\subsection{Contrary to suggestions, the social sciences are over-represented in IPCC reports, while agricultural sciences and engineering are under-represented}
+
+
+\citep{Bjurström2011} and \citep{Victor2015} point to an under-representation of social science literature within the IPCC, and a dominance of the natural sciences
+
+
 \begin{figure}[h!]
 	\begin{center}
-		\includegraphics[width=0.85\linewidth]{plots/ipcc_representation/ipcc_rep_oecds_time.pdf}
+		\includegraphics[width=0.85\linewidth]{plots/ipcc_representation/ipcc_rep_oecds_simplified.pdf}
 		\caption{The representation within the IPCC of each discipline over time}
 		\label{oecd_rep}
 	\end{center}
@@ -135,20 +149,24 @@
 
 \begin{itemize}
 	\item The natural sciences have always made up the greatest share of IPCC citations and documents about climate change
-	\item The natural sciences were particularly over-represented in earlier assessment periods
-	\item contrary to what is claimed, the natural sciences are not over-represented as compared to social sciences, these are now the most over-represented
-	\item the disciplines that are under-represented are the agricultural sciences and engineering (also humanities to a small extent although they make up an extremely small share of all documents about climate change)
-	\item (some examples of topics which portray this story - the ones which will be labelled above)
+	\item The ratio of these two proportions tells us whether a certain discipline is over-represented or under-represented
+	\item The natural are indeed slightly over-represented
+	\item Although the Social sciences were under-represented in the past, by AR5, they were the most over-represented discipline
+
 \end{itemize}
 
 \bigskip
 
-\subsection{IPCC working group structure}
-\todo{Just 4 subplots, mashing together ar1-2, and 3-4}
+\subsection{Solution oriented topics have seen rapid growth, which has not been matched by coverage in the IPCC}
+
+The topic model allows us to dig deeper into the content of the types of documents which are under-represented in the IPCC, as well as helping us understand how the thematic structure of the literature has developed.
+
+
+%\todo{Just 4 subplots, mashing together ar1-2, and 3-4}
 \begin{figure}[h!]
 	\begin{center}
 		%\includegraphics[width=1\linewidth]{tsne_results/plots/run_665_s_0_p200_double.pdf}
-		\includegraphics[width=1\linewidth]{tsne_results/plots/run_1275_s_0_p100_evolution.png}
+		\includegraphics[width=1\linewidth]{tsne_results/plots/run_1771_s_0_p200_evolution_4.png}
 		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by working group citations. In each assessment period, the largest cluster of documents relating to each of the 10 fastest growing topics is outlined.}
 		\label{map-evolution}
 		
@@ -157,74 +175,120 @@
 
 \begin{itemize}
 	\item The thematic structure is also reflected in the division of labour between IPCC working groups. Documents cited by each working group appear in discrete parts of the map (which correspond also to the disciplinary structure)
-	\item Some topics cut across working groups [e.g. Urban, say more about]
-	\item Some fast growing topics [e.g. health] are well represented in IPCC [WGII], whereas others (particularly on negative emissions) are not so well represented.
+	\item A number of different patterns of growth are visible. Adsorption was a fast growing topic in AR5, but had few IPCC citations, while risk and adaptation were fast growing, with many WGII citations
+
+	%\item Some fast growing topics [e.g. health] are well represented in IPCC [WGII], whereas others (particularly on negative emissions) are not so well represented.
 	
 \end{itemize}
 
-\begin{figure}[h!]
-	\begin{center}
-		\includegraphics[width=0.85\linewidth]{example-image}
-		\caption{Optional figure, instead of above, one large wg map, with the topics below labelled}
-		\label{ipcc_rep}
-	\end{center}
-\end{figure}
+%\begin{figure}[h!]
+%	\begin{center}
+%		\includegraphics[width=0.85\linewidth]{example-image}
+%		\caption{Optional figure, instead of above, one large wg map, with the topics below labelled}
+%		\label{ipcc_rep}
+%	\end{center}
+%\end{figure}
+
+\bigskip
+
+\noindent By plotting each topic's newness and IPCC representation, we can dig down into the types of topics which are over or under represented
 
 \begin{figure}[h!]
 	\begin{center}
-		\includegraphics[width=0.85\linewidth]{plots/ipcc_representation/ipcc_rep_new1275_all.pdf}
+		\includegraphics[width=0.85\linewidth]{plots/ipcc_representation/ipcc_rep_new1771_all.pdf}
 		\caption{The IPCC representation and age of the topics. Representation shows the log of the share of topic documents in IPCC citations divided by the share of topic documents among all documents. Assessment period occurence shows the assessment period in which the mean topic document was published}
 		\label{ipcc_rep}
 	\end{center}
 \end{figure}
 
 \begin{itemize}
-	\item Those topics that deal with working group III issues (materials and recycling, negative emissions, buildings) are in general fast growing and under-represented in IPCC reports
-	\item Some working group III topics (on scenarios, on policies, and on international trade and cross country comparisons) are however over-represented in IPCC reports [see SI]
-	\item Working group I topics are in general older and better represented. Could also be same topics but new knowledge
-	\item Of the newer topics that are well represented, many are on WG III issues [detail required]
-	\item Are WGII better at reflecting changes in the literature?
-	\item Another plot showing lines for each topic showing growth in literature and growth in ipcc?
+	\item Those topics that deal with working group III issues (negative emissions, buildings) are in general fast growing and under-represented in IPCC reports
+	%\item Some working group III topics (on scenarios, on policies, and on international trade and cross country comparisons) are however over-represented in IPCC reports [see SI]
+	\item Working group I topics are in general older and better represented. 
+	\item Of the newer topics that are well represented, many are on WG II issues 
+	%\item Are WGII better at reflecting changes in the literature?
+	%\item Another plot showing lines for each topic showing growth in literature and growth in ipcc?
 \end{itemize}
 
+Within working group III, those topics which have more citations from the social sciences are better represented (SI figure x.) These are general topics about policy options, and international politics. Those topics which are not well represented are on specific solutions, such as vehicles, buildings, and negative emissions. 
+
+While there may be a need for more social science knowledge in IPCC assessments, this analysis makes it clear that this is rather a task for social scientists to produce more knowledge, than for the IPCC to reflect it better. 
+
+Further, given Policymakers' demands for more solution-oriented knowledge, the IPCC may do well to make efforts to cover more of the literature on individual solutions.
+
+It may be argued that the technical solution-oriented knowledge is not yet in a proper form for synthesis by the IPCC. Although this is not an argument made for WGII (where the relationship between social science percentage and IPCC coverage for topics is not found), it would then be a task for the social sciences to produce research on solution oriented topics: increasing, for example, the less than 5\% of the research on biochar that is published by social scientists.
+
+
+
 \section{SI}
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=0.85\linewidth]{plots/run_1771_wgs_socsci.pdf}
+		\caption{}
+		\label{ipcc_rep}
+	\end{center}
+\end{figure}
+
 
 \subsection{Glossary}
 
-ncep
-fco
-pfc
-otcs
-dtr
-sres
-petm
-amf
-sf5cf3
-clc
-cwd
-etm
-cmip5
-cmip3
-mofs
-sdm
-mmms
-cop21
-c3n4
-sdg
-indc
+
+\noindent\textbf{ncep:} National Centers for Environmental Protection
+
+\noindent\textbf{fco:} Fugacity of Carbon Dioxide
+
+\noindent\textbf{pfc:} Perflourocompound
+	
+\noindent\textbf{otcs:} Open Top Chambers
+
+\noindent\textbf{dtr:} Diurnal Temperature Range
+
+\noindent\textbf{sres:} Special Report on Emissions Scenarios
+
+\noindent\textbf{petm:} Paleocene Eocene Thermal Maximum
+
+\noindent\textbf{amf:}  Arbuscular Mycorrhizal Fungal
+
+\noindent\textbf{sf5cf3:} trifluoromethyl sulfur pentafluoride (A Potent Greenhouse Gas Identified in the Atmosphere, 2000)
+
+\noindent\textbf{clc:} Chemical Looping Combustion
+
+\noindent\textbf{cwd:} Coarse woody debris
+
+\noindent\textbf{etm:} Enhanced Thematic Mapper (NASA satellite sensor)
+
+\noindent\textbf{cmip5:} Coupled Model Intercomparison Project 5 (Starting 2008)
+
+\noindent\textbf{cmip3:} Coupled Model Intercomparison Project phase 3 (2005-2006)
+
+\noindent\textbf{mofs:} metal-organic frameworks (for CO2 storage)
+
+\noindent\textbf{sdm:} statistical-dynamical model
+
+\noindent\textbf{mmms:} Mixed Matrix Membranes (for CO2 capture)
+
+\noindent\textbf{cop21:} 21 Conference of Parties (Paris 2015) 
+
+\noindent\textbf{c3n4:} Carbon nitride (a synthetic nanomaterial used for hydrogen production)
+
+\noindent\textbf{sdg:} Sustainable Development Goals
+
+\noindent\textbf{indc:} Intended Nationally Determined Contributions
 
 \begin{table}[h!]
 	\scriptsize
 	\input{tables/ipcc_shares_time.tex}
-	\caption{Top 10 topics in climate change literature}
+	\caption{Topics and their representation}
 	\label{top-topics}
 \end{table}	
 
-\begin{table}[h!]
-	\scriptsize
-	\input{tables/top_topics.tex}
-	\caption{Top 10 topics in climate change literature}
-	\label{top-topics}
-\end{table}	
+%\begin{table}[h!]
+%	\scriptsize
+%	\input{tables/top_topics.tex}
+%	\caption{Top 10 topics in climate change literature}
+%	\label{top-topics}
+%\end{table}
+
+\bibliography{Mendeley}	
 
 \end{document}

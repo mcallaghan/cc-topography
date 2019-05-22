@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thema: Poster
+% Autor: Musterman
+% Datum: 12.05
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\documentclass[a0,portrait]{a0poster}
+%\documentclass[portrait,a0,posterdraft]{a0poster}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Paket zum Erzeugen der Spalten
+\usepackage{multicol}
+\usepackage{picture}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Eingabekodierung
+%\usepackage[ansinew]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ae} %wenn Ulaute nicht gehen
+
+\usepackage[ngerman]{babel}
+%\begin{übler Trick um die Orinalüberschrift zu unterdrücken}
+\addto{\captionsngerman}{\renewcommand*{\refname}{}} %Literaturüberschfit unterdrücken
+%\ende{übler Trick}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% für Farbe
+\usepackage{color} 
+\definecolor{darkgreen}{rgb}{0,0.5,0} 
+\definecolor{darkblue}{rgb}{0,0,0.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mathepaket
+\usepackage{amsmath} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ist für Boxen (wie das hier benutzte Ovalbox) zuständig
+\usepackage{fancybox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Graphikpaket, ermöglicht png, jpg und pdf bilder
+\usepackage{graphicx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Seiteneinstellungen
+\renewcommand\baselinestretch{1.35}
+\parskip=0.5\baselineskip
+
+\parindent0mm %Einrücktiefe der ersten Zeile eines Absatzes
+\topmargin-28pt
+\marginparwidth0mm
+
+%Ränder rechts/links
+\oddsidemargin-13pt
+\evensidemargin-13pt
+\textwidth785mm
+%\textheight1140mm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Eigene Definitionen zur Erleichterung des Satzes
+\newcommand{\spaltenbreite}{25}   % Spaltenbreite für Bilder
+\newcommand{\bildbreite}{25cm}    % Einheitliche Bildbreite
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Box- und Spalteneinstellungen
+\setlength{\fboxrule}{3.25mm} %Definiert die Linienstärke für nachfolgende fbox- und framebox-Befehle
+\setlength{\fboxsep}{5mm} %Abstand zwischen Rahmen und Text bei den /fbox und /framebox Befehlen.
+\setlength{\columnsep}{15mm}     %Spaltenabstand
+\setlength{\columnseprule}{0pt}  %Balken zwischen Spalten {0pt}->keine Balken
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Einheitslänge für picture-Umgebungen
+%\setlength{\unitlength}{1.0cm}
+\unitlength1cm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Grafikpfad, hier liegen alle Bilder
+%\graphicspath{{images/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zaehler fuer lineale. Sie werden gebraucht, wenn das Linealmacro
+% included wird
+\newcounter{skalax}
+\newcounter{skalay}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Kopf, hier funktioniert alles mit 'put'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\parbox{\textwidth}
+%{
+  \begin{center}
+    \vspace*{0.022\textheight}
+   % Titel und Autor
+   
+    {\huge \smallskip\textbf{A Topography of Climate Change Literature\\[-0.003\textheight]}%[0.03\textheight]
+    \vspace*{0.018\textheight}}
+    {\LARGE \textbf{Max Callaghan}}
+    
+  \end{center}
+  % Logos einbinden (per Hand plazieren)
+  \begin{picture}(0,0)
+    \put(70.0 , 4.6){\includegraphics[width=80mm]{../pres/MCC_Logo_RZ_rgb.jpg}}
+%    \put(71.8 , 2.8){\LARGE \textsf{\textbf{MCC Berlin}}}
+    \put(35.0 , 8.6){\includegraphics[width=80mm]{../pres/logo_hbs.jpg}}
+    
+    \put(0.0  , 4.3){\includegraphics[width=120mm]{../pres/University_of_Leeds_Logo.png}}
+  \end{picture}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Einstellung des Eckenradius' der ovalen Boxen (\Ovalbox)
+\cornersize*{5mm}
+
+
+\linethickness{0.1mm}
+\setlength{\fboxrule}{2.25mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% neuer Kasten
+\Ovalbox
+{
+  \parbox{\textwidth}{
+      
+      
+  \begin{minipage}[b]{0.4\linewidth}
+	
+	\begin{center}
+		\begin{picture}(\textwidth, 0.64\textwidth)
+		\put(0,0.005){\includegraphics[width=0.99\textwidth]{../plots/literature_size/pubs_time}}
+		\put(0.2,0.3){\parbox{720pt}{{\bf \small Fig. 1:} \small Growth in climate change literature}}
+		%\input{ruler}
+		\end{picture}
+	\end{center}
+
+	\end{minipage}
+	\begin{minipage}[b]{0.4\linewidth}
+		asdflkj
+%		%\begin{center}
+%		\begin{picture}(\textwidth, 0.64\textwidth)
+%				\scriptsize
+%				\put(0,0.005){\input{../tables/growth_table_large.tex}}
+%	%			\caption{Growth in climate change literature}
+%	%			\label{growthtable}
+%	%		\end{table}
+%		\end{picture}
+%		%\end{center}
+	\end{minipage}
+
+      
+  }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% neuer Kasten
+\vspace*{0.002\textheight}
+\Ovalbox
+{
+  \parbox{\textwidth}{    	
+    	\begin{minipage}{0.6\linewidth}
+    		
+    			\begin{center}
+    			\begin{picture}(\textwidth, \textwidth)
+    			\put(0,0.005\textwidth){\includegraphics[width=.99\textwidth]{../tsne_results/plots/run_1771_s_0_p200_all_topic_words_oecds.png}}
+    			\put(0.2,0.3){\parbox{720pt}{{\bf \small Fig. 1:} \small A topical map of climate change literature}}
+    			%\input{ruler}
+    			\end{picture}
+    		\end{center}
+    		
+   		\end{minipage}
+
+
+
+
+
+  }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% neuer Kasten
+\vspace*{0.002\textheight}
+\Ovalbox%\fbox
+{
+  \parbox{\textwidth}{
+    \begin{multicols}{3}
+      
+Representation and conclusions
+      
+    \end{multicols}
+  }
+}
+
+\end{document}
