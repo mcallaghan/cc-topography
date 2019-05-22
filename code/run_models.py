@@ -21,7 +21,8 @@ sw.add('copyright')
 q = Query.objects.get(pk=6187)
 for m in ["NM","LD"]:
     for a in [0.01,0.05,0.1]:
-        for k in [80,90,100,110,120,130,140,150]:
+        #for k in [80,90,100,110,120,130,140,150]:
+        for k in [150]:
             if m=="LD":
                 alpha=a*10
             else:
@@ -32,11 +33,11 @@ for m in ["NM","LD"]:
                     alpha=alpha,
                     fancy_tokenization=True,
                     max_df=0.9,
-                    max_iter=200,
+                    max_iter=500,
                     method=m,
                     min_freq=50,
                     ngram=1,
-                    query=q
+                    query=q,
                 )
             except:
                 continue
