@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[a4paper, total={180mm, 260mm}]{geometry}
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{natbib}
@@ -13,6 +13,7 @@
 \usepackage{svg}
 \usepackage{authblk}
 \usepackage{standalone}
+
 \usepackage[section]{placeins}
 
 
@@ -70,7 +71,7 @@
 
 \bigskip
 
-\noindent We know that the scientific literature on climate change is growing rapidly \cite{Grieneisen2011}, and that this growth poses problems for the IPCC, whose task it is to provide a comprehensive and transparent summary of it \cite{Minx2017l}. Despite this, we know little about thematic trends within the literature, or how the IPCC performs in reflecting this growing body of knowledge on climate change. Understanding these trends is a crucial task if we are to assess and improve comprehensiveness in global environmental assessments.
+\noindent We know that the scientific literature on climate change is growing rapidly \cite{Grieneisen2011}, and that this growth poses problems for the IPCC. Their task of providing a comprehensive and transparent summary of the literature on climate change is severely challenged by the growth of the literature \cite{Minx2017l}. Despite this, we know little about thematic trends within the literature, or how the IPCC performs in reflecting this growing body of knowledge on climate change. Understanding these trends is a crucial task if we are to assess and improve comprehensiveness in global environmental assessments.
 
 \begin{table}
 	{\scriptsize
@@ -81,11 +82,15 @@
 
 Table \ref{tab} depicts the scale of the challenge to the IPCC. In the years since the publication of AR5, as much literature has been published as in the 30 years previously. Moreover, not only are more articles being published, but the vocabulary of climate knowledge has expanded. While the 8,539 documents published in AR2 contained 12,480 unique words, the 201,606 documents published in AR6 contain a vocabulary of 94,746 unique words.
 
-Such analysis provides a limited insight into the evolution of the literature since 1980s. We use topic modelling to produce a topographic map.  \todo{expand}
+The zika virus, the sustainable development goals, intended nationally determined contributions and mixed matrix membranes are all significant parts of the literature since 2014 which were simply not discussed in the context of climate change before the last IPCC report. In the context of this expanding vocabulary, this study employs topic modelling to draw out patterns in the content of scientific literature. Topic modelling is an unsupervised machine-learning technique, where patterns of word co-occurrences in documents are used to learn a set of topics which can be used to describe the corpus \cite{Blei2012}, and it is applied here for the first time to the whole scientific literature on climate change.
+
+\subsection*{A Topography of Climate Change}
+
+Topics, from the greek word ``topos" (meaning place), refer here to concepts or themes within the literature. In this sense, the topographic map shown in figure 1 \textit{situates} the 400,000 documents about climate change in a topical landscape derived from the 140 topics discovered through topic modelling. Using t-distributed stochastic network embedding (t-SNE)\cite{vandermaaten2008} as a dimensionality reduction technique, the 140 dimensional topic space is \textit{projected} onto two dimensions, such that documents with similar topical content are placed next to each other.
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=1\linewidth]{tsne_results/plots/run_1861_s_0_p100_all_topic_words_oecds_big.png}
+		\includegraphics[width=180mm]{tsne_results/plots/run_1861_s_0_p100_all_topic_words_oecds.png}
 		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by web of science discipline category. Topic labels are placed in the center of each of the large clusters of documents associated with each topic. }
 		\label{oecd_topic_map}
 	\end{center}
@@ -97,13 +102,23 @@ It was argued after the fifth assessment report that the IPCC needs to do more t
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=0.85\linewidth]{plots/ipcc_representation/ipcc_rep_oecds_simplified_short.pdf}
-		\caption{The representation within the IPCC of each discipline over time}
+		\includegraphics[width=180mm]{plots_pub/big_panel_representation.pdf}
+		\caption{\textbf{a)} the representation of each discipline in IPCC reports, \textbf{b)} the representation and social science proportion of WG 3 topics, \textbf{c)} The representation and novelty of all topics }
 		\label{oecd_rep}
 	\end{center}
 \end{figure}
 
+
 Looked at this way, we see that the social sciences were indeed under-represented in earlier assessment reports, but by the fifth assessment report were over-represented. Although economics was previously over-represented among social sciences, while others were under-represented, more subdisciplines of the social sciences are now over-represented.
+
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=180mm]{tsne_results/plots/run_1861_s_0_p100_evolution_4.png}
+		\caption{Evolution of the landscape of climate change literature}
+		\label{oecd_topic_map}
+	\end{center}
+\end{figure}
 
 
 
