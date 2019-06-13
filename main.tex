@@ -71,9 +71,9 @@
 
 \bigskip
 
-\noindent We know that the scientific literature on climate change is growing rapidly \cite{Grieneisen2011, Haunschild2016}, and that this growth poses problems for the IPCC. Their task of providing a comprehensive and transparent summary of the literature on climate change is severely challenged by the growth of the literature: the proportion of the literature that gets cited by the IPCC is dwindling \cite{Minx2017l}. In the light of policymakers' demand for more solutions-oriented knowledge from assessments \cite{Kowarsch2017}; calls for more representation of certain disciplines in IPCC reports \cite{Victor2015, Barnes2013}; and criticism of bias in the knowledge reflected by the IPCC \cite{Bjurström2011, Hulme2010}, what gets cited and what doesn't is more salient than ever.
+\noindent We live in an age of ``Big Literature'' 
+\cite{Nunez-Mir2016}, where the science of climate change is expanding rapidly \cite{Grieneisen2011, Haunschild2016}. In the five years since the publication of the last IPCC assessment report \cite{IPCC2014c}, 201,606 papers were published (see Table \ref{tab}). This is almost as much as the 204,585 papers published during the first five assessment periods, a period of nearly 30 years. The vocabulary of the literature has also expanded - from 2,000 unique words in AR1 to 94,746 words so far in AR6 - indicating that the field has incorporated new content. For example, the zika virus, which was mentioned in 182 articles from 2014-2018, had never before been discussed in the titles or abstracts of articles relating to climate change. Yet it has emerged as a topic of high relevance: the incidence of the virus, the outbreak of which in Brazil in 2016 was declared a public health emergency by the WHO, is set to increase under rising global temperatures \cite{Rao2019}. Similar rapid emergences can be seen for [Intended] Nationally Determined Contributions ([I]NDCs) and Sustainable Development Goals (SDGs) in AR6, and Biochar and REDD (The United Nations Collaborative Programme on Reducing Emissions from Deforestation and Forest Degradation in Developing Countries) in AR5, among others. This large and rapidly evolving literature demands innovative machine-reading methods to enable understanding of the field at scale.
 
-However, we know little about thematic trends within the literature, or how the IPCC performs in reflecting different parts of this growing body of knowledge on climate change. We lack an overview of the literature itself, and without this, our understanding of the IPCC \cite{} lacks the context of the literature which it is supposed to assess. Mapping out this literature, and its reflection in IPCC reports is a crucial task if we are to assess and improve the IPCC's comprehensiveness.
 
 \begin{table}[htp]
 	{\scriptsize
@@ -82,34 +82,43 @@ However, we know little about thematic trends within the literature, or how the 
 	\label{tab}
 \end{table}
 
-Table \ref{tab} depicts the scale of the challenge faced by the IPCC. Since the publication of the fifth assessment report (AR5), almost as much literature has been published as in the 30 years previously. Moreover, not only are more articles being published, but the vocabulary of climate knowledge has expanded. While the 8,539 documents published in AR2 contained 12,480 unique words, the 201,606 documents published in AR6 contain a vocabulary of 94,746 unique words.
 
-The zika virus, the Sustainable Development Goals (SDGs), Intended Nationally Determined Contributions (INDCs), and mixed matrix membranes (MMMs) are all significant parts of the literature since 2014 which were simply not discussed in the context of climate change before the last IPCC report. In view of this expanding vocabulary, this study employs topic modelling to draw out patterns in the content of scientific literature. Topic modelling is an unsupervised machine-learning technique, where patterns of word co-occurrences in documents are used to learn a set of topics which can be used to describe the corpus \cite{Blei2012}. It is applied here for the first time to the whole scientific literature on climate change.
+Research synthesis offers structured methodologies for integrating knowledge from bodies of evidence \cite{Chalmers2002}. Systematic reviews, which are common in the health sciences, collect all literature relevant to a specific question, in order to establish whether findings are consistent and generalisable \cite{Mulrow597}. Already in 1994, systematic review was being proposed as an answer to the ``small mountain of information'' presented by two million annual publications in biomedical literature \cite{Mulrow597}. Although climate change faces a similar scale problem, systematic review is little used in the field \cite{Berrang-Ford2015}. Systematic maps are a more recent methodological development, which show the state of the evidence in a broad subject area \cite{James2016}. There have been high profile calls to broaden the applications of evidence mapping in sustainable development \cite{McKinnon2015}, and they are similar underused in climate change, with only 25 of the more than 400,000 relevant papers containing the phrase "systematic map" in the abstract or title. 
 
-\subsection*{A Topography of Climate Change Research}
 
-Topics, from the greek word ``topos" (meaning place), refer here to concepts or themes within the literature. Using the same geographic-thematic metaphor, the topographic map shown in figure 1 \textit{situates} the 400,000 documents about climate change in a topical landscape derived from the 140 topics discovered through topic modelling. Using t-distributed stochastic network embedding \cite{vandermaaten2008} (t-SNE) as a dimensionality reduction technique, the 140 dimensional topic space is \textit{projected} onto two dimensions, such that documents with similar topical content are placed next to each other. If scientists, in global environmental assessments, act as mapmakers \cite{Edenhofer2015}, this topography, as a broad outline of the features of the research landscape, help understand the relationship of the map to the mapped.
+In the research synthesis field, researchers are introducing new methods from natural language processing and machine-learning to scale up synthesis work \cite{OMara-Eves2015, Westgate2018a}. In the same way, this study uses topic modelling \cite{Blei2010} to map out the vast body of evidence on climate change. Topic modelling is an unsupervised machine-learning technique, where patterns of word co-occurrences in documents are used to learn a set of topics which can be used to describe the corpus. The word topic derives from the Greek word for place (topos), and by \textit{situating} the documents in a reduced-form projection of their thematic content (see Figure \ref{oecd_topic_map}), we create a \textit{topographic map} of the literature on climate change. Such a systematic engagement with the thematic content of the climate science is missing from the literature so far.%To our knowledge, this is the first 
 
-To make the map readable, we find clusters of documents relating to each topic, and superimpose the topic label in the center of each cluster (see methods for a more detailed description). Documents are coloured by their categorisation in the Web of Science into broad disciplinary categories, showing us how the topical content of the documents fits into disciplinary structures. Across the map, it is clear that different disciplines focus on different groups of topics, with more natural science research on the left hand side of the map, more engineering in the upper right and right, more agricultural sciences at the bottom of the map, and more social sciences on the inner right.
+Systematic maps can have several uses: from the identification of knowledge gaps and gluts to the can identification of authors or institutions with expertise on a subject. The map in this paper also has several potential uses, but we focus here on using the map to understand the evolution of relationship between the five IPCC assessment reports and the wider literature on climate change. Big Literature in climate change poses a great challenge to the IPCC, who's mandate is to comprehensively assess the science of climate change \cite{IPCC2013}. The ratio of studies cited in IPCC reports to the number or relevant studies has declined from 60\% to 20\%  \cite{Minx2017l}, thus increasing the risk of a lack of comprehensiveness, or even bias.  
 
-\todo{Get rid of numbers, replace with letters ?}
+What gets included in IPCC reports is also much discussed. Policymakers demand more solution-oriented knowledge \cite{Kowarsch2017}, and there have been calls for the inclusion of more knowledge from the social sciences \cite{Victor2015}. But what we say about the literature cited in the IPCC has often been limited by a failure to consider the context of the wider literature. 
+A scientometric study from 2011 claimed that the IPCC gave a greater \textit{emphasis} to natural sciences and, within the social sciences, to economics \cite{Bjurström2011}. This claim has subsequently been interpreted as a disciplinary bias by the IPCC \cite{Hulme2010, Corbera2016} towards the natural sciences, but the study operationalised disciplinary emphasis as simply the share of citations from each field, and was based on analysis of the Third Assessment report, published in 2001. In the following sections, we compare distributions of literature in the subset that is cited by the IPCC and the wider corpora, to analyse the \textit{representation}, proportional or otherwise, of scientific fields, as well as of topics.
 
-The map also allows us to examine topics consisting of research from across disciplines. With reference to figure \ref{dis-entropy} which shows the disciplinary diversity of each topic, we can see that research on coral comes almost exclusively from the natural sciences, while papers discussing socioeconomic issues come from a variety of disciplines. 
+\subsection*{Proportionality in IPCC citations}
 
-The map plays an important role in generating knowledge about what we do and do not know about climate change. Though not strictly systematic, in that all studies have been checked for relevance and categorised by hand, it moves in the direction of evidence maps, or systematic maps \cite{McKinnon2015, James2016}, by categorising and quantifying the literature and its uptake by the IPCC. The approach is weakly systematic in the sense that the studies are selected according transparent criteria (see methods), and are categorised consistently by the topic model. Further, that the categories are learnt from the data without human input, means that we can find patterns we didn't know we were looking for. 
 
+Figure \ref{oecd_rep}.a shows that the social sciences were indeed under-represented in the third assessment report, but by the fifth assessment report were over-represented. Likewise, other social sciences than economics have become better represented since AR3  (see figure \ref{subfield}f) with social \& economic geography (4.3\% of the literature), political science (1.0\%), and sociology (0.8\%) showing improved representation in AR5 compared to AR3, and Social and economic geography, political science, and other social sciences better represented than economics when taking into account the distribution of studies in the literature. 
+
+This challenges what we think we know about the IPCC. The social sciences, by now, are actually the best represented field, with a share in the literature cited by IPCC reports [1.5] times as high as in the literature at large.  On the other hand the Agricultural Sciences and Engineering \& Technology have been consistently under-represented, with [2.5] and [3.5] times the share of studies in the wider literature than in the literature cited by the IPCC in AR5 respectively. % (Humanities are also underrepresented, but making up only 0.9\% of the wider literature, the proportionality is particularly sensitive).
 
 \begin{figure}[htp]
 	\begin{center}
-		\includegraphics[width=180mm]{plots_pub/all_topic_words_oecds.pdf}
+		\includegraphics[width=180mm]{plots_pub/all_topic_words_oecds.png}
 		\caption{A map of the literature on climate change. Document positions are obtained by reducing the topic scores to two dimensions via t-SNE Documents are coloured by web of science discipline category. Topic labels are placed in the center of each of the large clusters of documents associated with each topic. }
 		\label{oecd_topic_map}
 	\end{center}
 \end{figure}
 
-\subsection*{Disciplinary bias in IPCC citations?}
 
-It was argued after the fifth assessment report that the IPCC needed to do more to incorporate knowledge from the social sciences \cite{Victor2015}. Further, a scientometric study from 2011 claimed that the IPCC gave a greater \textit{emphasis} to natural sciences and, within the social sciences, to economics \cite{Bjurström2011}. This claim has been interpreted as a disciplinary bias by the IPCC \cite{Hulme2010, Corbera2016}, but the study operationalised disciplinary emphasis as simply the share of citations from each field, and was based on analysis of the Third Assessment report, published in 2001. The share of citations in each discipline does not take into account the distribution of climate change research across disciplines in the wider literature. Here we look at \textit{representativeness}, that is, the share of IPCC citations in each field divided by the share of all climate related documents in that field, and carry out this analysis across assessment periods.
+%\subsection*{A Topography of Climate Change Research}
+
+Figure \ref{oecd_topic_map} shows the 400,000 documents on climate change in our dataset in a dimensionality reduction enabled representation of their topic structure, with topic labels placed near clusters of documents highly relevant to each topic. The map shows the high proportion of the natural sciences in climate change research, and the large proportion of the topic space dominated by natural science publications. These two features of the landscape account for the proportionally high share of natural science publications in IPCC citations.
+
+The thematic structure of the literature also maps well to the disciplinary structure, with clusters of social science topics, such as \textbf{policy}, \textbf{research}, \textbf{sector} and \textbf{growth} in the centre right of the graph, and natural sciences on the left. With reference to figure \ref{dis-entropy}, we can identify the topics which are more or less distributed across disciplines. \textbf{Coral}, for example, is almost exclusively discussed in the natural sciences, while papers on socio-economic issues are discussed in a variety of disciplines. Further, by using the topographical map, we can dig down further into the subject matter that is more or less proportionately represented, within and across disciplines.
+
+
+
+
+
 
 \begin{figure}[htp]
 	\begin{center}
@@ -119,20 +128,12 @@ It was argued after the fifth assessment report that the IPCC needed to do more 
 	\end{center}
 \end{figure}
 
-
-Looked at this way (Figure 2.a), we see that the social sciences were indeed under-represented in the third assessment report, but by the fifth assessment report were over-represented. The disciplines under-represented in IPCC reports (with respect to the distribution of studies in the wider literature) are in fact Agricultural Sciences, Engineering \& Technology and Humanities (although the humanities make up a very small proportion of the literature). In each field, the under-representation has been present across assessment reports.
-
-
-A similar story is visible within the social sciences (see figure \ref{subfield}f). 
-Economics was previously over-represented among social sciences, while other subfields were under-represented.
-In AR5, though, the share of economics citations in the IPCC was close to that in the wider literature, while social \& economic geography (4.3\% of the literature), political science (1.0\%), and sociology (0.8\%) were better represented than in AR3 and above or close to a proportional representation. 
-
-With more up to date data and a more comprehensive method, both results contradict previous evidence on disciplinary representation in the IPCC. This new evidence is a compelling reason to rethink our view of the relationship between disciplinary knowledge and the IPCC. %, and to further investigate the content of the documents that are more less proportionately represented in the IPCC.
+ %, and to further investigate the content of the documents that are more less proportionately represented in the IPCC.
 
 
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=180mm]{plots_pub/topic_evolution_4.pdf}
+		\includegraphics[width=180mm]{plots_pub/topic_evolution_4.png}
 		\caption{Evolution of the landscape of climate change literature}
 		\label{evolution-map}
 	\end{center}
@@ -140,26 +141,27 @@ With more up to date data and a more comprehensive method, both results contradi
 
 \subsection*{Supply and demand for solutions-oriented knowledge}
 
-Beyond the disciplinary categories analysed so far, the topographical map helps us to dig down further into the themes that are more or less proportionately represented. Figures \ref{oecd_rep}b and \ref{oecd_rep}c plot the representation of the topics. Figure \ref{oecd_rep}c shows that topics more commonly cited by IPCC working group I are older and largely better represented in IPCC reports. It makes intuitive sense that these topics, for example on ozone, oceans, clouds, aerosols and sea levels, are older, predominantly cited by WG I, and well cited by IPCC reports, as these are some of the core topics of the physical science of climate change.
+Figures \ref{oecd_rep}b and \ref{oecd_rep}c plot the representation of the topics shown in the map. Figure \ref{oecd_rep}c shows that topics more commonly cited by IPCC working group I are older and largely better represented in IPCC reports. It makes intuitive sense that these topics, for example \textbf{ozone}, \textbf{oceans}, \textbf{clouds}, \textbf{aerosols} and \textbf{sea levels}, are older, predominantly cited by WG I, and well cited by IPCC reports, as these are some of the core topics of the physical science of climate change.
 
-The topics in the lower right of the graph are the most pertinent to the question of whether the IPCC is well representing knowledge on climate change. These topics are newer and until now have been under-represented in IPCC reports. They are the topics that could be seen as potential gaps in the IPCC's coverage of the science. These topics are primarily in working group III, on the mitigation of climate change, with the exception of adsorption, CLC and hydrogen which are primarily of relevance to WG III but are miscategorised due to the low number of citations of relevant documents \footnote{For example, the word ``capacity" is relevant to the adsorption topic, so documents talking about adaptive capacity receive a low relevance score for that topic. Because only very few documents highly relevant to the adsorption topic (in that they talk about adsorption or adsorptive capacity) are cited by the IPCC, and many of the weakly relevant documents are cited by the IPCC, the sum of the topic scores of the weakly relevant WG II documents outweighs the sum of the topic scores of the strongly relevant WG III documents}. and citations of tangentially relevant documents by other working groups
+The topics in the lower right of the graph are the most pertinent to the question of whether the IPCC is well representing knowledge on climate change. These topics are newer and until now have been under-represented in IPCC reports. They are the topics that could be seen as potential gaps in the IPCC's coverage of the science. Because they are new areas of knowledge, they may be highly salient in a periodic assessment process. These topics are primarily in working group III (mitigation), with the exception of adsorption, CLC and hydrogen which are primarily of relevance to WG III but are miscategorised due to the low number of citations of relevant documents and citations of tangentially relevant documents by other working groups \footnote{For example, the word ``capacity" is relevant to the adsorption topic, so documents talking about adaptive capacity receive a low relevance score for that topic. Because only very few documents highly relevant to the adsorption topic (in that they talk about adsorption or adsorptive capacity) are cited by the IPCC, and many of the weakly relevant documents are cited by the IPCC, the sum of the topic scores of the weakly relevant WG II documents outweighs the sum of the topic scores of the strongly relevant WG III documents}.
 
-Although it is not surprising that these newer topics are less well represented than the older topics that make up the core of the physical science research on climate change, the difference between these new topics and other new topics that are better represented is intriguing. This difference is visible in figure \ref{evolution-map}, where the fastest growing topics in each period are labelled, and the documents are coloured according to the working group, if any, which cites them. In AR5, the clusters of documents around the \textbf{adsorption}, \textbf{buildings}, and \textbf{biochar} topics contain few IPCC citations, whereas the clusters around \textbf{food}, \textbf{health}, \textbf{adaptation}, and \textbf{GHGs} contain more. This is also evident in figure \ref{oecd_rep}c, where these topics display corresponding representation values. The IPCC, then, has been better at integrating new knowledge from these topics, and in general better at integrating new knowledge from WG II  than WG III topics.
+Although it is perhaps not surprising that these newer topics are less well represented than the older topics that make up the core of the physical science research on climate change, the difference between these new topics and other new topics that are better represented is intriguing. This difference is visible in figure \ref{evolution-map}, where the fastest growing topics in each period are labelled, and the documents are coloured according to the working group, if any, which cites them. In AR5, the clusters of documents around the \textbf{adsorption}, \textbf{buildings}, and \textbf{biochar} topics contain few IPCC citations, whereas the clusters around \textbf{food}, \textbf{health}, \textbf{adaptation}, and \textbf{GHGs} contain more. This is also evident in figure \ref{oecd_rep}c, where these topics display corresponding representation values. The IPCC, then, has been better at integrating new knowledge from these topics, and in general better at integrating new knowledge from WG II  than WG III topics.
 
-Within WG III topics, those that are well represented contain a greater proportion of social science research (figure \ref{oecd_rep}b). Topics on countries, policy, and prices are close to a proportional representation and are made up of around 30\% social science research. Waste, biochar, cement and coal, are more than 3 times more prevalent in the wider literature than in the literature cited by the IPCC, and are made up of around 5\% social science research. This pattern is not visible in other working groups (see Figure \ref{socsci-wgs}), and complicates the perception of the under-representation of the social sciences.
+Within WG III topics, those that are well represented contain a greater proportion of social science research (figure \ref{oecd_rep}b). The topics \textbf{countries}, \textbf{policy}, and \textbf{prices} are close to a proportional representation and are made up of around 30\% social science research. \textbf{Waste}, \textbf{biochar}, \textbf{cement} and \textbf{coal}, are more than 3 times more prevalent in the wider literature than in the literature cited by the IPCC, and are made up of around 5\% social science research. This pattern is not visible in other working groups (see Figure \ref{socsci-wgs}), and complicates the perception of the under-representation of the social sciences.
 
 
-Recalling policymakers' demands for more solution-oriented assessments \cite{Kowarsch2017}, we could also interpret the topics that are newer and under-represented as ``solutions-relevant''. Many deal with negative emissions, or with mitigation (or to a lesser extent adaptation) options in the transport, buildings and power sectors. All are arguably related to climate solutions. However, while policymakers' demands for solutions-oriented knowledge were rather about policy options, these under-represented new topics deal with more technical solutions.
+Recalling policymakers' demands for more solution-oriented assessments \cite{Kowarsch2017}, we could also interpret the topics that are newer and under-represented as ``solutions-relevant''. Many deal with negative emissions, or with mitigation (or to a lesser extent adaptation) options in the transport, buildings and power sectors. All are arguably related to climate solutions. However, while policymakers' demands for solutions-oriented knowledge were rather about policy options, these under-represented new topics deal with more technical solutions and are found rather in technical disciplines within engineering \& technology and the agricultural sciences.
 
 \subsection*{The IPCC as an informed decision-maker on topical representation}
 
 Deciding on the optimal proportion of each topic's literature to be cited by the IPCC is not a trivial task. A perfectly proportional representation of each topic is almost certainly not optimal, and as such, decisions about which topics to over-, or under- represent are best made by experts, not by a computer. Indeed, the IPCC itself is the best-placed institution to make these decisions. But in the age of ``Big Literature'' \cite{Nunez-Mir2016}, these decision should at best be underpinned by systematic knowledge of the landscape of the literature, and made in discussion with the wider research community, funders, policymakers and other stakeholders.
 
-The analysis in this study provide a useful input to this discussion. It could be argued that the under-represented technical literature on specific technological or sectoral solutions is not relevant to policymakers, and that working group III should give more weight to evidence about general policy instruments such as carbon taxes. Conversely, one could argue that establishing a technical understanding of specific climate solutions is as important a task as establishing a technical understanding of the physical science of climate change. The desire for more social science research in IPCC reports may imply, given the evidence here, that more social science research on climate change needs to be produced and funded, rather than that the IPCC should cite more of what already exists. Or, one could argue that, in light of the evidence that there is little social science research on solutions-relevant, under-represented topics, that the social sciences could do more to address more technical or specific solutions topics such as negative emissions, green concrete, or waste and recycling.
+The analysis in this study provide a useful input to this discussion. It could be argued that the under-represented technical literature on specific technological or sectoral solutions is not relevant to policymakers, and that working group III should give more weight to evidence about general policy instruments such as carbon taxes. Conversely, one could argue that establishing a technical understanding of specific climate solutions is as important a task as establishing a technical understanding of the physical science of climate change. The desire for more social science research in IPCC reports may imply, given the evidence here, that more social science research on climate change needs to be produced and funded, rather than that the IPCC should cite more of what already exists. Or, one could argue that, in light of the evidence that there is little social science research on solutions-relevant, under-represented topics, that the social sciences could do more to address technical or specific solutions such as negative emissions, green concrete, or waste and recycling.
 
-An understanding of the topography of the literature helps bring these arguments to the foreground, and allows them to be made in an informed way. Machine reading the literature in this way is not without its limitations though, and indeed many are apparent in this analysis. The corpus of potentially relevant literature is of course much wider than what is included in this study. The analysis excludes studies about climate change that do not match our query, studies relevant to tackling climate change that do not mention it specifically, studies written in languages other than English (unless the abstract has been translated), studies not indexed in the Web of Science, and reports published outside peer reviewed journals, not to mention Indigenous knowledge \cite{Ford2016b}. Despite this, unless the social science literature in the above categories is systematically less often cited by the IPCC than the social science literature that was analysed in this study, or the solutions-relevant literature in the above categories is systematically more cited by the IPCC, then the two main conclusions of this study hold. 
+An understanding of the topography of the literature helps bring these arguments to the foreground, and allows them to be made in an informed way. Machine reading the literature in this way is not without its limitations though, and indeed many are apparent in this analysis. The corpus of potentially relevant literature is of course much wider than what is included in this study. The analysis excludes studies about climate change that do not match our query, studies relevant to tackling climate change that do not mention it specifically, studies written in languages other than English (unless the abstract has been translated), studies not indexed in the Web of Science, and reports published outside peer reviewed journals, not to mention Indigenous knowledge \cite{Ford2016b}. Despite this, unless the social science literature in the above categories is cited systematically less often  by the IPCC than the social science literature that was analysed in this study, then the main conclusions of this study hold. Topic models also carry limitations, and do not present the \textit{objective} truth about a corpus, given that they can be sensitive to modeller choices, such as the number of topics. However, the observations about the under-representation of solutions-relevant topics are robust across a broad range of topic numbers \ref{top-rep-ks}.
 
-Ultimately, computers can only \textit{assist} humans in understanding a climate change literature which is produced by human individuals and institutions.  As in other areas of machine learning \cite{Barocas2016}, computational assessments of the literature run the risk of reproducing biases or gaps in the training data. However, just as with other applications of machine learning, machine-reading the science of climate change can provide information that helps us to understand gaps in what we have knowledge about, and potential biases, or options for emphasis, in how we represent that knowledge in the IPCC. %Machine learning approaches to understanding scientific literature are already latently present in our engagement with  when we use academic search engines or are recommended articles 
+Computational methods then, provide \textit{assistance} to humans in understanding a climate change literature that is produced by human individuals and institutions.  As in other areas of machine learning \cite{Barocas2016}, computational assessments of the literature run the risk of reproducing biases or gaps in the training data. However, just as with other applications of machine learning, machine-reading the science of climate change can provide information that helps us to understand gaps in what we have knowledge about, and potential biases, or options for emphasis, in how we represent that knowledge in the IPCC. In this way, we can more effectively meet the challenges posed by Big Literature to global environmental assessments.
+%Machine learning approaches to understanding scientific literature are already latently present in our engagement with  when we use academic search engines or are recommended articles 
 
 \end{linenumbers}
 
@@ -167,110 +169,9 @@ Ultimately, computers can only \textit{assist} humans in understanding a climate
 
 %\listoffigures
 \linespread{1}
-%\bibliography{Mendeley}
-\begin{thebibliography}{10}
-	
-	\bibitem{Bjurström2011}
-	Andreas Bjurstr{\"{o}}m and Merritt Polk.
-	\newblock {Physical and economic bias in climate change research: A
-		scientometric study of IPCC Third Assessment Report}.
-	\newblock {\em Climatic Change}, 108(1):1--22, 2011.
-	
-	\bibitem{Grieneisen2011}
-	Michael Grieneisen and Minghua Zhang.
-	\newblock {The Current Status of Climate Change Research}.
-	\newblock {\em Nature Climate Change}, 1:72--73, 2011.
-	
-	\bibitem{Haunschild2016}
-	Robin Haunschild, Lutz Bornmann, and Werner Marx.
-	\newblock {Climate Change Research in View of Bibliometrics}.
-	\newblock {\em PLoS ONE}, 11(7):1--19, 2016.
-	
-	\bibitem{Minx2017l}
-	Jan~C. Minx, Max Callaghan, William~F. Lamb, Jennifer Garard, and Ottmar
-	Edenhofer.
-	\newblock {Learning about climate change solutions in the IPCC and beyond}.
-	\newblock {\em Environmental Science {\&} Policy}, 2017.
-	
-	\bibitem{Kowarsch2017}
-	Martin Kowarsch, Jason Jabbour, Christian Flachsland, Marcel T.~J. Kok, Robert
-	Watson, Peter~M. Haas, Jan~C. Minx, Joseph Alcamo, Jennifer Garard, Pauline
-	Riousset, L{\'{a}}szl{\'{o}} Pint{\'{e}}r, Cameron Langford, Yulia Yamineva,
-	Christoph von Stechow, Jessica O'Reilly, and Ottmar Edenhofer.
-	\newblock {A road map for global environmental assessments}.
-	\newblock {\em Nature Climate Change}, 7(6):379--382, 2017.
-	
-	\bibitem{Victor2015}
-	{David G. Victor}.
-	\newblock {Embed the social sciences in climate policy - David Victor}.
-	\newblock {\em Nature}, 520:7--9, 2015.
-	
-	\bibitem{Barnes2013}
-	Jessica Barnes, Michael Dove, Myanna Lahsen, Andrew Mathews, Pamela McElwee,
-	Roderick McIntosh, Frances Moore, Jessica O'Reilly, Ben Orlove, Rajindra
-	Puri, Harvey Weiss, and Karina Yager.
-	\newblock {Contribution of anthropology to the study of climate change}.
-	\newblock {\em Nature Climate Change}, 3(6):541--544, 2013.
-	
-	\bibitem{Hulme2010}
-	Mike Hulme and Martin Mahony.
-	\newblock {Climate change: What do we know about the IPCC?}
-	\newblock {\em Progress in Physical Geography}, 34(5):705--718, 2010.
-	
-	\bibitem{Blei2012}
-	David Blei, Lawrence Carin, and David Dunson.
-	\newblock {Probabilistic topic models}.
-	\newblock {\em Communications of the ACM}, 55(4):77--84, 2012.
-	
-	\bibitem{vandermaaten2008}
-	Laurens van~der Maaten and Geoffrey Hinton.
-	\newblock {Visualizing Data using t-SNE}.
-	\newblock {\em Journal of Machine Learning Research}, 9:2579--2605, 2008.
-	
-	\bibitem{Edenhofer2015}
-	Ottmar Edenhofer and Martin Kowarsch.
-	\newblock {Cartography of pathways: A new model for environmental policy
-		assessments}.
-	\newblock {\em Environmental Science and Policy}, 51:56--64, 2015.
-	
-	\bibitem{McKinnon2015}
-	Madeleine~C McKinnon, Samantha~H Cheng, Ruth Garside, Yuta~J Masuda, and
-	Daniel~C Miller.
-	\newblock {Sustainability: Map the evidence}.
-	\newblock {\em Nature}, 528(7581):185--187, 2015.
-	
-	\bibitem{James2016}
-	Katy~L. James, Nicola~P. Randall, and Neal~R. Haddaway.
-	\newblock {A methodology for systematic mapping in environmental sciences}.
-	\newblock {\em Environmental Evidence}, 5(1):1--13, 2016.
-	
-	\bibitem{Corbera2016}
-	Esteve Corbera, Laura Calvet-Mir, Hannah Hughes, and Matthew Paterson.
-	\newblock {Patterns of authorship in the IPCC Working Group III report}.
-	\newblock {\em Nature Climate Change}, 6(1):94--99, 2016.
-	
-	\bibitem{Nunez-Mir2016}
-	Gabriela~C. Nunez-Mir, Basil~V. Iannone, Bryan~C. Pijanowski, Ningning Kong,
-	Songlin Fei, and Richard Fitzjohn.
-	\newblock {Automated content analysis: addressing the big literature challenge
-		in ecology and evolution}.
-	\newblock {\em Methods in Ecology and Evolution}, 7(11):1262--1272, 2016.
-	
-	\bibitem{Ford2016b}
-	James~D. Ford, Laura Cameron, Jennifer Rubis, Michelle Maillet, Douglas
-	Nakashima, Ashlee~Cunsolo Willox, and Tristan Pearce.
-	\newblock {Including indigenous knowledge and experience in IPCC assessment
-		reports}.
-	\newblock {\em Nature Climate Change}, 6(4):349--353, 2016.
-	
-	\bibitem{Barocas2016}
-	Solon Barocas and Andrew~D Selbst.
-	\newblock {Big Data's Disparate Impact}.
-	\newblock {\em California Law Review}, 104:671--732, 2016.
-	
-\end{thebibliography}
+\bibliography{Mendeley}
 \bibliographystyle{unsrt}
 
-%\include{methods}
+\include{methods}
 
 \end{document}
