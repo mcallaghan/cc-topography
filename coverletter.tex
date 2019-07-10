@@ -1,0 +1,134 @@
+\documentclass{letter}
+\usepackage{letterbib}
+\usepackage{natbib}
+\usepackage{geometry}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{tikzpagenodes}
+\geometry{
+	a4paper,
+	left=20mm,
+	right=60mm,
+	marginparwidth=50mm,
+	top=30mm,
+}
+
+
+
+
+\def\myyshifttop{0}
+\def\mypagetop{0}
+
+\newcommand{\marpartop}[1]% content, color
+{   \begin{tikzpicture}[remember picture, overlay]
+	\ifthenelse{\thepage=\mypagetop}{}{\xdef\myyshifttop{0}}        
+	\xdef\mypagetop{\thepage}
+	\node[below right, yshift=\myyshifttop, text width=\marginparwidth-4pt, inner sep=2pt] (tempnode) at (current page marginpar area.north west) {#1};
+	\path (current page marginpar area.north west);
+	\pgfgetlastxy{\tempxone}{\tempyone}
+	\path (tempnode.south west);
+	\pgfgetlastxy{\tempxtwo}{\tempytwo}
+	\pgfmathsetmacro{\diffy}{(\tempytwo-\tempyone)}
+	\xdef\myyshifttop{\diffy}
+	\end{tikzpicture}
+}
+
+\def\myyshiftbot{0}
+\def\mypagebot{0}
+
+\newcommand{\marparbot}[1]% content, color
+{   \begin{tikzpicture}[remember picture, overlay]
+	\ifthenelse{\thepage=\mypagebot}{}{\xdef\myyshiftbot{0}}        
+	\xdef\mypagebot{\thepage}
+	\node[above right, yshift=\myyshiftbot, text width=\marginparwidth-4pt, inner sep=2pt] (tempnode) at (current page marginpar area.south west) {#1};
+	\path (current page marginpar area.south west);
+	\pgfgetlastxy{\tempxone}{\tempyone}
+	\path (tempnode.north west);
+	\pgfgetlastxy{\tempxtwo}{\tempytwo}
+	\pgfmathsetmacro{\diffy}{(\tempytwo-\tempyone)}
+	\xdef\myyshiftbot{\diffy}
+	\end{tikzpicture}
+}
+
+
+
+
+\signature{Max Callaghan}
+
+
+
+\begin{document}
+		
+	\begin{letter}{Bronwyn Wake \\ Chief Editor \\ \textit{Nature Climate Change}}
+		
+		
+		
+		\begin{tikzpicture}[remember picture, overlay]
+		\node [anchor=north west, shift={(-1mm,0mm)}]  at (current page text area.north west) {\footnotesize\textbf{MCC} Torgauer Str. 12-15 \textbar\ 10829 Berlin \textbar\  Germany
+		};
+		\end{tikzpicture}
+		
+		\begin{tikzpicture}[remember picture, overlay]
+		\node [anchor=south, shift={(-1mm,5mm)}]  at (current page text area.north east) {\includegraphics[width=4cm]{pres/MCC_Logo_RZ_rgb.jpg}
+		};
+		\end{tikzpicture}
+		
+		\marpartop{\textcolor[HTML]{0067a1}{\footnotesize\textsf{Mercator Research Institute on Global Commons and Climate Change (MCC) gemeinnützige GmbH}\\ \bigskip}%
+			\par\textsf{\textbf{Max W. Callaghan}}%
+			\par\textsf{PhD Candidate}%
+			\par\textsf{Applied Sustainability Science}%
+			\par\textsf{Torgauer Str. 12-15}
+			\par\textsf{10829 Berlin | Germany}
+			\par\textsf{tel +49 (0) 30 338 55 27 - 245}
+			\par\textsf{fax +49 (0) 30 338 55 37 - 102}
+			\par\textsf{mail callaghan@mcc-berlin.net}
+			\par\textsf{web www.mcc-berlin.net}
+		}
+	
+		\marparbot{
+			\footnotesize
+			Director \\
+			Prof. Dr. Ottmar Edenhofer \\
+			\medskip
+			Bank Account \\
+			Sparkasse Berlin \\
+			iban DE58 1005 0000 0190 1246 36 \\
+			bic  BELADEBEXXX \\
+			\medskip
+			Amtsgericht Charlottenburg \\
+			HRB 142902 B \\
+			\medskip
+			MCC was founded jointly by the Stiftung Mercator and the Potsdam Institute for Climate Impact Research
+		}
+	
+		\date{}
+		
+
+
+   \opening{\today \\ \\ Dear Bronwyn Wake,}
+
+   I herewith submit on behalf of my co-authors the manuscript ``A Topography of Climate Change Litereature'' for consideration as a letter in Nature Climate Change.
+
+We believe this letter addresses a crucial challenge affecting the broad climate change community: namely, the field's rapidly expanding literature. This phenomenon - there are more than 45,000 papers published on climate change each year - means understanding the field in its entirety is more difficult than ever. 
+This is particularly relevant for the IPCC, given their mandate of providing comprehensive, objective and transparent assessments of he literature. 
+
+Moreover, this challenge has also hampered how we have attempted to understand how the IPCC engages with the literature. Such attempts \cite{Bjurström2011, Hulme2010, Victor2015, Corbera2016, Kowarsch2017} have often been based on qualitiative perceptions, or out of date data with insufficient methodological sophistication to contrast patterns in IPCC citations with patterns in the wider literature.
+
+Our study has two innovations which allow us advance the current state of knowledge on the the IPCC and the field it is tasked with assessing. First, we set the complete set of IPCC citations into the context of the wider literature, allowing us to show which disciplines have been over or under-represented.  Contrary to previous claims, the social sciences are over-represented in IPCC reports. This is because the proportion of social science articles among publications cited by the IPCC is higher than the proportion of social science articles among all publications on climate change. 
+Second, our use of topic modelling allows us to dig down into the content of articles more or less represented in the IPCC. This provides the basis for our second main conclusion, that literature on technical solutions (such as negative emissions, buildings or cities) is growing fast and, even compared to other fast-growing literatures, has been under-represented in IPCC reports.
+
+These insights have several implications across the community, and we further point out how the map we produce can enhance our understanding of the field and contribute to improving processes involved in the production of global environmental assessments.
+
+\closing{Yours Sincerely,}
+
+
+\bibliography{Mendeley}
+\bibliographystyle{unsrt}
+
+\end{letter}
+\end{document}

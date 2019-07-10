@@ -51,18 +51,27 @@
 		
 	\subsection*{Data}
 	
-	This study reproduces the query developed by \citep{Grieneisen2011}, which is carried out on the Web of Science core collection. Though not exhaustive, the Web of Science gives a good coverage of the literature in major peer-reviewed journals.	Each document is assigned to an assessment period according to the timeline shown in table 1.
+	This study reproduces the query developed by \citep{Grieneisen2011}, which is carried out on the Web of Science core collection. Though not exhaustive, the Web of Science gives a good coverage of the literature in major peer-reviewed journals. The Web of Science data gives us a disciplinary classification (based on the journal) and publication year, among other metadata, for each document.	Each document is assigned to an assessment period according to the timeline shown in table 1.
 	
-	We use the references scraped from IPCC assessment reports from \citep{Minx2017l}, and attempt to match these with the results from the web of science. Table \todo{}[x] shows the percentage of IPCC citations matched in each working group for each assessment report.
+	We use the references scraped from IPCC assessment reports from \citep{Minx2017l}, and attempt to match these with the results from the Web of Science. We use doc2vec similarity scores \cite{Le2014} to identify the 500 most similar titles for each reference, and count the document as a match if the jaccard similarity score of the two word shingles of the reference title and the document title is greater than 0.5 \cite{Khabsa2014}. Table \ref{ipcc-matching} shows the percentage of IPCC citations matched in each working group for each assessment report. This is significantly lower in earlier periods, as data coverage and quality of citation databases is lower for earlier periods. Matching in WG III is also lower, suggesting a greater share of non-peer review literature, or literature not directly mentioning climate change, but related to it's mitigation (for example on energy policy).
+	
+		\begin{table}[htp]
+			\begin{center}
+		\input{tables/ipcc_matching.tex}
+	\caption{IPCC matching}
+	\label{ipcc-matching}
+	\end{center}
+\end{table}
+	
 		
 	\subsection*{Pre-processing}
 	
-	Data quality in earlier Web of Science results is poorer, and some documents have missing abstracts. In the quantification of the size of the literature and its vocabulary in table [], titles are substituted for abstracts where they are not available.  The words of the documents are lemmatized/stemmed, replacing different forms of the same word (i.e. word/words) with a single instance. Commonly occuring words, or ``stopwords'' are removed, as are all words shorter than 3 characters, and all words containing only punctuation or numbers.
+	Data quality in earlier Web of Science results is poorer, and some documents have missing abstracts. In the quantification of the size of the literature and its vocabulary in table \ref{tab}, titles are substituted for abstracts where they are not available.  The words of the documents are lemmatized, replacing different forms of the same word (i.e. word/words) with a single instance. Commonly occurring words, or ``stopwords'' are removed, as are all words shorter than 3 characters, and all words containing only punctuation or numbers.
 	
 	The documents are transformed into a document-term matrix, where each row represents a document, and each column represents a unique word.  Each cell contains the number of that column's terms in that document. Only terms which occur more than once are considered.
 	
 	For the calculation of the topic model, documents with missing abstracts are ignored, and the document term matrix is transformed into a document
-	frequency-inverse document frequency (tf-idf) matrix, where scores are scaled according to the frequency of their occurence in the corpus. This gives more weight to terms which appear in few documents, and less weight to those which appear in many.
+	frequency-inverse document frequency (tf-idf) matrix, where scores are scaled according to the frequency of their occurrence in the corpus. This gives more weight to terms which appear in few documents, and less weight to those which appear in many.
 	
 	\begin{equation}
 	tf(t,d) = f_{t,d} \mathrm{,}\quad idf(t,D) = \log\frac{N}{|\{d \in D:t \in d\}|}
@@ -82,7 +91,7 @@
 	
 	\subsubsection*{Model selection}
 	
-	Topic models are calculated for 70, 80, 90, 100, 110, 120, 130 and 140 topics. The relative usefulness of each model was assessed subjectively by the authors, based on inspection of the online visualisation tool, and the spreadsheet \textbf{topic\_comparison.xlsx} accompanying the supporting information. The spreadsheet shows each set of topics in adjacent columns. Topics from each model are placed next to the topics with the largest number of each topic's 10 highest scoring words in common. This helps authors to find an appropriate level of granularity for the analysis. 
+	Topic models are calculated for 70, 80, 90, 100, 110, 120, 130, 140 and 150 topics. The run with 150 topics was discarded as it contained a topic to which no terms or documents were assigned. The relative usefulness of each model was assessed subjectively by the authors, based on inspection of the online visualisation tool, and the spreadsheet \textbf{topic\_comparison.xlsx} accompanying the supporting information. The spreadsheet shows each set of topics in adjacent columns. Topics from each model are placed next to the topics with the largest number of each topic's 10 highest scoring words in common. This helps authors to find an appropriate level of granularity for the analysis. 
 			
 	\subsubsection*{Topic Representation and Newness}
 	
@@ -104,6 +113,9 @@
 	\begin{equation}
 		\hat{p}(f|z) = \sum_{d:z_d=z} \hat{p} (f|d) \hat{p} (d|z)
 	\end{equation}
+	
+	\subsubsection*{Topic Map}
+	The topic model gives us the location of each document in a 140 dimensional topic space, with each dimension corresponding to a that document's \textit{topic-ness} in a given topic. t-Distributed Stochastic Neighbour Embedding (t-SNE) is a dimensionality reduction technique which we use to represent each document's topic scores in 2 dimensions \cite{vandermaaten2008}.
 
 	\begin{figure}
 		\begin{center}
@@ -196,9 +208,10 @@
 	\end{linenumbers}
 
 \linespread{1}
+
 %\bibliography{Mendeley}
 
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 	
 	\bibitem{Grieneisen2011}
 	Michael Grieneisen and Minghua Zhang.
@@ -211,10 +224,20 @@
 	\newblock {Learning about climate change solutions in the IPCC and beyond}.
 	\newblock {\em Environmental Science {\&} Policy}, 2017.
 	
+	\bibitem{Le2014}
+	Quoc~V. Le and Tomas Mikolov.
+	\newblock {Distributed Representations of Sentences and Documents}.
+	\newblock {\em ICML}, 32, 2014.
+	
+	\bibitem{Khabsa2014}
+	Madian Khabsa and C~Lee Giles.
+	\newblock {The number of scholarly documents on the public web}.
+	\newblock {\em PLoS ONE}, 9(5), 2014.
+	
 	\bibitem{Lee1999}
 	D~D Lee and H~S Seung.
 	\newblock {Learning the parts of objects by non-negative matrix factorization.}
-	\newblock {\em Nature}, 401(6755):788--91, 1999.
+	\newblock {\em Nature}, 401(6755):788--791, 1999.
 	
 	\bibitem{Pedregosa2011}
 	Fabian Pedregosa, Ga{\"{e}}l Varoquaux, Alexandre Gramfort, Vincent Michel,
@@ -235,6 +258,11 @@
 	\newblock {\em Proceedings of the Conference on Empirical Methods in Natural
 		Language Processing - EMNLP '08}, pages 363--371, 2008.
 	
+	\bibitem{vandermaaten2008}
+	Laurens van~der Maaten and Geoffrey Hinton.
+	\newblock {Visualizing Data using t-SNE}.
+	\newblock {\em Journal of Machine Learning Research}, 9:2579--2605, 2008.
+	
 	\bibitem{Meehl2007}
 	Gerald~A. Meehl, Curt Covey, Thomas Delworth, Mojib Latif, Bryant McAvaney,
 	John~F.B. Mitchell, Ronald~J. Stouffer, and Karl~E. Taylor.
@@ -244,7 +272,6 @@
 	88(9):1383--1394, 2007.
 	
 \end{thebibliography}
-
 
 \bibliographystyle{unsrt}
 
