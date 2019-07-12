@@ -14,6 +14,8 @@
 \usepackage{authblk}
 \usepackage{standalone}
 \usepackage[section]{placeins}
+\usepackage{xr}
+\externaldocument{main}
 
 \makeatletter
 \renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
@@ -40,9 +42,12 @@
 	\title{Words, words, words: Mapping the Matter of Climate Change Literature}
 	\title{A Topography of Climate Change Research - Methods}
 	\author[1,2]{Max Callaghan}
+	\author[1,2]{Jan Minx}
+	\author[2]{Piers M. Forster}
 	
 	\affil[1]{Mercator Research Institute on Global Commons and Climate Change, Torgauer Straße, 10829 Berlin, Germany}
-	\affil[2]{School of Earth and Environment, University of Leeds, Leeds LS2 9JT, United Kingdom}
+	\affil[2]{Priestley International Centre for Climate, University of Leeds, Leeds LS2 9JT, United Kingdom}
+	
 	\maketitle
 	\begin{linenumbers}
 	
@@ -58,7 +63,7 @@
 		\begin{table}[htp]
 			\begin{center}
 		\input{tables/ipcc_matching.tex}
-	\caption{IPCC matching}
+	\caption{The proportion of citations in each report that could be matched with a document from the Web of Science}
 	\label{ipcc-matching}
 	\end{center}
 \end{table}
@@ -92,6 +97,11 @@
 	\subsubsection*{Model selection}
 	
 	Topic models are calculated for 70, 80, 90, 100, 110, 120, 130, 140 and 150 topics. The run with 150 topics was discarded as it contained a topic to which no terms or documents were assigned. The relative usefulness of each model was assessed subjectively by the authors, based on inspection of the online visualisation tool, and the spreadsheet \textbf{topic\_comparison.xlsx} accompanying the supporting information. The spreadsheet shows each set of topics in adjacent columns. Topics from each model are placed next to the topics with the largest number of each topic's 10 highest scoring words in common. This helps authors to find an appropriate level of granularity for the analysis. 
+	
+	\subsubsection*{Topic assignment to working groups}
+	\label{topic-wg}
+	A topic's score for each working group is calculated by summing the document-topic scores for all documents cited by that working group. We call the topic's primary working group that working group for which the above sum is the highest, but in some cases, where there are very few IPCC citations of documents related to a topic this can be misleading . For example, the word ``capacity" is relevant to the adsorption topic, so documents talking about adaptive capacity receive a low score for the topic. Because only very few documents highly relevant to the topic (in that they talk about adsorption or adsorptive capacity) are cited by the IPCC, and many of the weakly relevant documents are cited by the IPCC, the sum of the topic scores of the weakly relevant documents outweighs the sum of the topic scores of the strongly relevant documents, meaning that the topic is mistakenly assigned to working group II when it is more properly relevant to working group III.
+	
 			
 	\subsubsection*{Topic Representation and Newness}
 	

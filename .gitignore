@@ -13,4 +13,5 @@
 *.pyc
 tables/*.pickle
 tables/docs.csv
+tables/doctopics.csv
 network/*

@@ -6,8 +6,9 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{tikz}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
+\usepackage{url}
+\usepackage{xifthen}
+
 
 \usepackage{tikzpagenodes}
 \geometry{
@@ -87,8 +88,11 @@
 			\par\textsf{tel +49 (0) 30 338 55 27 - 245}
 			\par\textsf{fax +49 (0) 30 338 55 37 - 102}
 			\par\textsf{mail callaghan@mcc-berlin.net}
-			\par\textsf{web www.mcc-berlin.net}
+			\par\textsf{web \url{www.mcc-berlin.net}}
 		}
+
+
+		
 	
 		\marparbot{
 			\footnotesize
@@ -108,21 +112,16 @@
 	
 		\date{}
 		
+		
 
 
    \opening{\today \\ \\ Dear Bronwyn Wake,}
 
    I herewith submit on behalf of my co-authors the manuscript ``A Topography of Climate Change Litereature'' for consideration as a letter in Nature Climate Change.
 
-We believe this letter addresses a crucial challenge affecting the broad climate change community: namely, the field's rapidly expanding literature. This phenomenon - there are more than 45,000 papers published on climate change each year - means understanding the field in its entirety is more difficult than ever. 
-This is particularly relevant for the IPCC, given their mandate of providing comprehensive, objective and transparent assessments of he literature. 
+``Big literature'' - dealing with a vast and rapidly expanding body of publications - poses new, and largely neglected challenges for climate change assessments and how we understand them. For example, we estimate a total of 350,000 new publications on climate change to emerge (only) in the Web of Science during the Sixth Assessment Cycle of the Intergovernmental Panel on Climate Change spanning from 2015 to 2022. Big data and machine learning methods need to be applied for keeping an overview of developments in the scientific landscape and to analyse how past IPCC assessments have engaged with the avaailable literature. So far, attempts \cite{Bjurström2011, Hulme2010, Victor2015, Corbera2016, Kowarsch2017} have often been based on qualitiative perceptions, or incomplete data with insufficient methodological sophistication.
 
-Moreover, this challenge has also hampered how we have attempted to understand how the IPCC engages with the literature. Such attempts \cite{Bjurström2011, Hulme2010, Victor2015, Corbera2016, Kowarsch2017} have often been based on qualitiative perceptions, or out of date data with insufficient methodological sophistication to contrast patterns in IPCC citations with patterns in the wider literature.
-
-Our study has two innovations which allow us advance the current state of knowledge on the the IPCC and the field it is tasked with assessing. First, we set the complete set of IPCC citations into the context of the wider literature, allowing us to show which disciplines have been over or under-represented.  Contrary to previous claims, the social sciences are over-represented in IPCC reports. This is because the proportion of social science articles among publications cited by the IPCC is higher than the proportion of social science articles among all publications on climate change. 
-Second, our use of topic modelling allows us to dig down into the content of articles more or less represented in the IPCC. This provides the basis for our second main conclusion, that literature on technical solutions (such as negative emissions, buildings or cities) is growing fast and, even compared to other fast-growing literatures, has been under-represented in IPCC reports.
-
-These insights have several implications across the community, and we further point out how the map we produce can enhance our understanding of the field and contribute to improving processes involved in the production of global environmental assessments.
+In this study we use machine-learning to provide a comprehensive, thematic map of the more than 400,000 articles on climate change published in the Web of Science to date. We perceive two innovations that allow us advance the current state of knowledge on the IPCC and the field it is tasked with assessing. First, our thematic map allows us to situate a complete set of IPCC citations into the context of the wider literature and analyse disciplinary representation adequately.  We find that contrary to previous claims, the social sciences are over-represented in IPCC reports.Second, the use of machine learning methods in creating the map allows us to analyse the content of publications more or less represented in the IPCC. We find that literature on technical solutions (such as negative emissions, buildings or cities) is growing fast and, even compared to other fast-growing literatures, has been under-represented in IPCC reports. We point towards a variety of other applications of such a comprehensive, thematic literature map within global environmetal assessments as well as the broad field of research synthesis. Our findings have direct implications for addressing growing demands for more solution-oriented climate change assessments that are also more firmly rooted in the social sciences.
 
 \closing{Yours Sincerely,}
 
