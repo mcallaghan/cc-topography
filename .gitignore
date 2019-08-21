@@ -1,3 +1,6 @@
+README.html
+*~
+pr/*
 *.~lock.*
 *.ipynb_check*
 *.aux
@@ -13,4 +16,6 @@
 *.pyc
 tables/*.pickle
 tables/docs.csv
+tables/doctopics.csv
 network/*
+*#*
