@@ -62,16 +62,19 @@
 		
 		\subsection*{Data}
 		
-		This study reproduces the query developed by \citep{Grieneisen2011}, which is carried out on the Web of Science core collection. Though not exhaustive, the Web of Science gives a good coverage of the literature in major peer-reviewed journals. The Web of Science data gives us a disciplinary classification (based on the journal) and publication year, among other metadata, for each document.	Each document is assigned to an assessment period according to the timeline shown in table 1.
+		This study reproduces the query developed by \citep{Grieneisen2011}, which is carried out on the Web of Science core collection. We downloaded the results of the query on March 19, 2019. Though not exhaustive, the Web of Science gives a good coverage of the literature in major peer-reviewed journals. The Web of Science data gives us a disciplinary classification (based on the journal) and publication year, among other metadata, for each document.	Each document is assigned to an assessment period according to the timeline shown in table 1.
 		
 		We also tested the query documented in \cite{Haunschild2016}, by checking a random sample of documents exclusive to it. We found that the majority of additional documents were not relevant, and decided to use only the query from \cite{Grieneisen2011}.
 		
 		We use the references scraped from IPCC assessment reports from \citep{Minx2017l}, and attempt to match these with the results from the Web of Science. We use doc2vec similarity scores \cite{Le2014} to identify the 500 most similar titles for each reference, and count the document as a match if the jaccard similarity score of the two word shingles of the reference title and the document title is greater than 0.5 \cite{Khabsa2014}. Table \ref{ipcc-matching} shows the percentage of IPCC citations matched in each working group for each assessment report. This is significantly lower in earlier periods, as data coverage and quality of citation databases is lower for earlier periods. Matching in WG III is also lower, suggesting a greater share of non-peer review literature, or literature not directly mentioning climate change, but related to its mitigation (for example on energy policy).
 		
+		We analysed by hand a sample of 100 IPCC references which could not be matched and found that 46\% of these references were not in the Web of Science at all, 53\% were in the Web of Science but not in our query, and 1 document was in our query but had mistakenly been identified as not being so. This was due a different version of the title appearing in the IPCC citation and the Web of Science record. 
+		
+		
 		\begin{table}[htp]
 			\begin{center}
 				\input{../tables/ipcc_matching.tex}
-				\caption{The proportion of citations in each report that could be matched with a document from the Web of Science}
+				\caption{The proportion of citations in each report that could be matched with a document in our query from the Web of Science}
 				\label{ipcc-matching}
 			\end{center}
 		\end{table}
@@ -141,6 +144,7 @@
 		
 		\subsection*{Glossary}
 		
+		\noindent\textbf{co2:} Carbon Dioxide
 		
 		\noindent\textbf{ncep:} National Centers for Environmental Protection
 		
@@ -182,7 +186,7 @@
 		
 		\noindent\textbf{sdg:} Sustainable Development Goals
 		
-		\noindent\textbf{indc:} Intended Nationally Determined Contributions
+		\noindent\textbf{(i)ndc:} (Intended) Nationally Determined Contributions
 		
 		
 	\end{linenumbers}
@@ -199,7 +203,7 @@
 	\begin{figure}
 		\begin{center}
 			\includegraphics[width=1\linewidth]{../plots_pub/topic_oecd_entropy.pdf}
-			\caption{SI Disciplinary Entropy}
+			\caption{Disciplinary Entropy of Topics. Coloured bars show the proportion of each topic made up of papers from each disciplinary category. Crosses show the Disciplinary Entropy of each topic (see methods for details).}
 			\label{dis-entropy}
 		\end{center}
 	\end{figure}	
@@ -209,7 +213,7 @@
 	\begin{figure}
 		\begin{center}
 			\includegraphics[width=1\linewidth]{../plots_pub/single_doc_3_536594_1861.pdf}
-			\caption{SI Topic make up of a single document}
+			\caption{Topic make up of a single document. The Doc Term Matrix shows the number of occurrences of each term in the document. The Topic Term Matrix shows the topic score of each term-topic combination. The Doc Topic Matrix shows the document-topic score for each topic. This topic makeup of the document shown is illustrated by the bars in the top left. Words highly associated with each topic that occur in the document are highlighted. All values are real, although the doc-term matrix is scaled by the inverse-document frequency before being used in the model.}
 			\label{doc-topic}
 		\end{center}
 	\end{figure}
@@ -217,7 +221,7 @@
 	\begin{figure}
 		\begin{center}
 			\includegraphics[width=1\linewidth]{../plots_pub/ipcc_rep_wcs_simplified.pdf}
-			\caption{SI Representation by subfield}
+			\caption{IPCC Representation by subfield. Representation is the share of the subset of documents being cited by the IPCC divided by the share of the subset in the whole literature. We plot on a log scale so that 0.5 is equally distant to 1 as 2; plot labels show real values.}
 			\label{subfield}
 		\end{center}
 	\end{figure}
@@ -225,7 +229,7 @@
 	\begin{figure}
 		\begin{center}
 			\includegraphics[width=1\linewidth]{../plots_pub/wgs_socsci.pdf}
-			\caption{SI Social science \& representation in topics across working groups}
+			\caption{SI Social science \& representation in topics across working groups. Representation is the share of the subset of documents being cited by the IPCC divided by the share of the subset in the whole literature. Social science proportion shows the proportion of the total document-topic score coming from documents in the social sciences.}
 			\label{socsci-wgs}
 		\end{center}
 	\end{figure}
@@ -233,7 +237,7 @@
 	\begin{figure}
 		\begin{center}
 			\includegraphics[width=1\linewidth]{../plots_pub/topic_rep_ks.pdf}
-			\caption{Topic representation over different values of K (number of topics). Topics in the upper or lower 6.66th percentile of either dimension are labelled}
+			\caption{Topic representation over different values of K (number of topics). Topics in the upper or lower 6.66th percentile of either dimension are labelled. Representation is the share of the subset of documents being cited by the IPCC divided by the share of the subset in the whole literature. Assessment period occurrence refers to the center of a topic's distribution across assessment periods (see methods for further details).}
 			\label{top-rep-ks}
 		\end{center}
 	\end{figure}
