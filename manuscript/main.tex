@@ -2,7 +2,7 @@
 \usepackage[a4paper, total={180mm, 260mm}]{geometry}
 \usepackage{graphicx}
 \usepackage{url}
-\usepackage{natbib}
+%\usepackage{natbib}
 \usepackage{todonotes}
 \usepackage{booktabs}
 \usepackage{lineno}
@@ -14,9 +14,13 @@
 \usepackage{authblk}
 \usepackage{standalone}
 \usepackage{xr}
-\externaldocument{methods}
+
+\externaldocument{extended_figures}
 
 \usepackage[section]{placeins}
+
+%\setcitestyle{square, citesep={,}}
+
 
 
 \linespread{1.5}
@@ -31,18 +35,12 @@
 		
 		{\large\textbf{\@author}}
 		
-		\bigskip
-		
-		{\large{Draft current \@date}}
-		
 	\end{flushleft}\egroup
 }
 \makeatother
 
 
 % Title
-\title{A Topic Model of Climate Change Literature}
-\title{Words, words, words: Mapping the Matter of Climate Change Literature}
 \title{A Topography of Climate Change Research}
 \author[1,2]{Max Callaghan}
 \author[1,2]{Jan Minx}
@@ -64,7 +62,7 @@
 		\bigskip
 		
 		\noindent We live in an age of ``Big Literature'' 
-		\cite{Nunez-Mir2016, Minx2017l}, where the science of climate change is expanding exponentially \cite{Grieneisen2011, Haunschild2016}. In the five years since the publication of the last IPCC assessment report \cite{IPCC2014c}, 202,000 papers on climate change were published in the Web of Science (WoS) (see Table \ref{tab}). This is almost as much as the 205,000 papers identified in the same query \cite{Grieneisen2011} during the first five assessment periods; a period of nearly 30 years. Around 350,000 new publications can be expected for before the sixth assessment report (AR6) of the Intergovernmental Panel on Climate Change (IPCC), based on current growth patterns (Figure \ref{pub-growth}). Moreover, from the expansion of the literature's vocabulary (see methods) - from 2,000 unique words in the first assessment period to 95,000 words so far in the sixth - we can observe the literature's increasing diversity of content. For example, the zika virus, mentioned in 182 articles from 2014-2018, had never before been discussed in the titles or abstracts of articles relating to climate change. Yet it has emerged as a topic of high relevance: the incidence of the virus, whose outbreak in Brazil in 2016 was declared a public health emergency by the World Health Organization, is set to increase under rising global temperatures \cite{Rao2019}. Similar rapid emergence patterns can be seen for Intended Nationally Determined Contributions (INDCs) in AR6, and Biochar in AR5, among others\footnote{The glossary in SI contains a complete list of the acronyms shown in the table}.
+		\cite{Nunez-Mir2016, Minx2017l}, where the science of climate change is expanding exponentially \cite{Grieneisen2011, Haunschild2016}. In the five years since the publication of the last IPCC assessment report \cite{IPCC2014c}, 202,000 papers on climate change were published in the Web of Science (WoS) (see Table \ref{tab}). This is almost as much as the 205,000 papers identified in the same query \cite{Grieneisen2011} during the first five assessment periods; a period of nearly 30 years. Around 350,000 new publications can be expected for before the sixth assessment report (AR6) of the Intergovernmental Panel on Climate Change (IPCC), based on current growth patterns (Figure \ref{pub-growth}). Moreover, from the expansion of the literature's vocabulary (see methods) - from 2,000 unique words in the first assessment period to 95,000 words so far in the sixth - we can observe the literature's increasing diversity of content. For example, the zika virus, mentioned in 182 articles from 2014-2018, had never before been discussed in the titles or abstracts of articles relating to climate change. Yet it has emerged as a topic of high relevance: the incidence of the virus, whose outbreak in Brazil in 2016 was declared a public health emergency by the World Health Organization, is set to increase under rising global temperatures \cite{Rao2019}. Similar rapid emergence patterns can be seen for Intended Nationally Determined Contributions (INDCs) in AR6, and Biochar in AR5, among others.
 		
 		\begin{figure}[htp]
 			\begin{center}
@@ -79,25 +77,52 @@
 			\begin{center}
 				{\scriptsize
 					\input{../tables/growth_table.tex}}
-				\caption{Growth of Literature on Climate Change. A glossary of acronyms is provided in SI}
+				\caption{Growth of Literature on Climate Change. A glossary of acronyms is provided in the note below}
 				\label{tab}
 			\end{center}
 		\end{table}
+	
+		\section*{}
+		\textbf{Note - definition of acronyms}: 		\textbf{co2:} Carbon Dioxide, 	
+		\textbf{ncep:} National Centers for Environmental Protection,
+		\textbf{fco:} Fugacity of Carbon Dioxide,
+		\textbf{pfc:} Perflourocompound
+		\textbf{otcs:} Open Top Chambers
+		\textbf{dtr:} Diurnal Temperature Range
+		\textbf{sres:} Special Report on Emissions Scenarios (200)
+		\textbf{petm:} Paleocene Eocene Thermal Maximum
+		\textbf{amf:}  Arbuscular Mycorrhizal Fungal
+		\textbf{sf5cf3:} trifluoromethyl sulfur pentafluoride (A Potent Greenhouse Gas Identified in the Atmosphere, 2000)
+		\textbf{clc:} Chemical Looping Combustion
+		\textbf{cwd:} Coarse woody debris
+		\textbf{etm:} Enhanced Thematic Mapper (NASA satellite sensor)
+		\textbf{cmip5:} Coupled Model Intercomparison Project 5 (Starting 2008)
+		\textbf{cmip3:} Coupled Model Intercomparison Project phase 3 (first published 2007 \cite{Meehl2007})
+		\textbf{mofs:} metal-organic frameworks (for CO2 storage)
+		\textbf{sdm:} statistical-dynamical model
+		\textbf{mmms:} Mixed Matrix Membranes (for CO2 capture)
+		\textbf{cop21:} 21st Conference of Parties (Paris 2015) 
+		\textbf{c3n4:} Carbon nitride (a synthetic nanomaterial used for hydrogen production)
+		\textbf{sdg:} Sustainable Development Goals
+		\textbf{(i)ndc:} (Intended) Nationally Determined Contributions	
 		
-		Big literature poses at least three challenges for scientific policy advice and science itself: \emph{First}, established procedures in scientific assessments like those conducted by the IPCC struggle to address the exploding literature base. For example, the ratio of studies cited in IPCC reports to the number of studies on climate change in the WoS has declined from 60\% to 20\%  \cite{Minx2017l}, posing a rapidly growing risk of selection bias. The exponentially increasing volume of literature means that the provision of ``comprehensive, objective, open and transparent'' assessments of the available scientific literature, as defined in the principles governing IPCC work \cite{IPCC2013}, is no longer possible by traditional means. 
+		\section*{}	
+
+		
+		Big literature poses at least three challenges for scientific policy advice and science itself: First, established procedures in scientific assessments like those conducted by the IPCC struggle to address the exploding literature base. For example, the ratio of studies cited in IPCC reports to the number of studies on climate change in the WoS has declined from 60\% to 20\%  \cite{Minx2017l}, posing a rapidly growing risk of selection bias. The exponentially increasing volume of literature means that the provision of ``comprehensive, objective, open and transparent'' assessments of the available scientific literature, as defined in the principles governing IPCC work \cite{IPCC2013}, is no longer possible by traditional means. 
 		Machine reading and learning methods, among other data science applications, are required to enable an understanding of the field of climate change research at scale. 
-		\emph{Second}, evidence synthesis - the enterprise of reviewing the literature based on a formal and systematic set of methods \cite{Chalmers2002} - becomes increasingly important for aggregating and consolidating rapidly emerging knowledge and enabling scientific assessments to do their job. 
-		Yet traditional methods of evidence synthesis themselves are pushed to their limits by the large amount of scientific publications. The field of evidence synthesis technology, which tries to streamline human tasks through machine learning at the different stages of the review process, is still in its infancy \cite{Beller2018}. \emph{Finally}, overwhelming amounts of literature may be a major reason why studies of scientific assessments \cite{Bjurström2011} do not offer robust quantification for their claims about the relationship between report citations and the underlying literature. 
+		Second, evidence synthesis - the enterprise of reviewing the literature based on a formal and systematic set of methods \cite{Chalmers2002} - becomes increasingly important for aggregating and consolidating rapidly emerging knowledge and enabling scientific assessments to do their job. 
+		Yet traditional methods of evidence synthesis themselves are pushed to their limits by the large amount of scientific publications. The field of evidence synthesis technology, which tries to streamline human tasks through machine learning at the different stages of the review process, is still in its infancy \cite{Beller2018}. Finally, overwhelming amounts of literature may be a major reason why studies of scientific assessments \cite{Bjurstroem2011} do not offer robust quantification for their claims about the relationship between report citations and the underlying literature. 
 		
 		This study uses topic modelling \cite{Blei2010} to map the vast body of evidence on climate change. Topic modelling is an unsupervised machine-learning technique, where patterns of word co-occurrences are used to learn a set of topics, groups of words, which describe the corpus. 
-		The word topic derives from the Greek word for place (topos), and by \textit{situating} the documents in a reduced-form projection of their thematic content (Figure \ref{oecd_topic_map}), we create a \textit{topographic map} of the literature on climate change. Such a systematic engagement with the thematic content of the climate science is missing from the literature so far. 
+		The word topic derives from the Greek word for place (topos), and by situating the documents in a reduced-form projection of their thematic content (Figure \ref{oecd_topic_map}), we create a topographic map of the literature on climate change. Such a systematic engagement with the thematic content of the climate science is missing from the literature so far. 
 		We then use this map to understand how IPCC reports have represented the available climate change literature and re-evaluate claims of bias based on a more comprehensive understanding of the available climate science. 
 		We enrich the discussion on representation by discussing topics as well as disciplines. 
 		
 		
-		\subsection*{Mapping the landscape of climate change literature}
+		%\subsection*{Mapping the landscape of climate change literature}
 		
-		Figure \ref{oecd_topic_map} shows a \emph{thematic} or \emph{topographic map} of the 378,000 publications on climate change in our dataset with abstracts. Using non-negative matrix factorization \cite{Lee1999}, the 140 topics are machine-learned from the papers' abstracts (see methods for details). The topic scores of each document are reduced to the two dimensions shown through t-distributed stochastic neighbour embedding (t-SNE) \cite{vandermaaten2008}. \footnote{A full list of topics and related words, and a list of documents, their positions on the map, and their related topics are given in the SI}. The two dimensions represent a projection of the 140-dimensional topic scores of each document that seeks to preserve small distances between topically similar documents.
+		Figure \ref{oecd_topic_map} shows a thematic or topographic map of the 378,000 publications on climate change in our dataset with abstracts. Using non-negative matrix factorization \cite{Lee1999}, the 140 topics are machine-learned from the papers' abstracts (see methods for details). The topic scores of each document are reduced to the two dimensions shown through t-distributed stochastic neighbour embedding (t-SNE) \cite{vandermaaten2008} (a full list of topics and related words, and a list of documents, their positions on the map, and their related topics are given in the supplementary material). The two dimensions represent a projection of the 140-dimensional topic scores of each document that seeks to preserve small distances between topically similar documents.
 		
 		
 		\begin{figure}[htp]
@@ -113,13 +138,13 @@
 		Our map covers a broad range of topics, with related topics in clusters. Generally, topics related to climate science and impacts are on the left, while solution-oriented topics are on the right. More fine-grained research areas can also be distinguished. For example, publications related to urban infrastructure (\textbf{buildings}, \textbf{cement}, \textbf{waste}) are located on the right, physical climate impacts (\textbf{sea-level}, \textbf{droughts}  or [crop] \textbf{yield}) are in the lower left and energy systems are in upper right. Larger groups of documents at the fringes of the map relate mainly to one or two specific topics like \textbf{biochar} or \textbf{coral}. Interestingly, scenarios feature centrally in the map, at the interface between different scientific communities. This corresponds to their integrative nature in IPCC reports \cite{Moss2010}. %This map of the thematic structure of the literature could be useful for individual scientific communities or for climate change assessments.
 		
 		
-		The disciplinary composition of this research topography indicated by the different colours in Figure \ref{oecd_topic_map} highlights the dominance of natural sciences in climate change research. More than 60\% of the literature is published in natural science journals. Similarly, 115 of 140 topics contain a greater share of publications from natural science journals than any other discipline. We calculate disciplinary entropy of topics as a measure of their degree of interdisciplinarity (Figure \ref{dis-entropy} and methods for details). This shows how research on \textbf{health}, \textbf{food}, or \textbf{policy} comes from a range of disciplines, while research on \textbf{ice} or \textbf{oceans} comes almost exclusively from the natural sciences). 
+		The disciplinary composition of this research topography indicated by the different colours in Figure \ref{oecd_topic_map} highlights the dominance of natural sciences in climate change research. More than 60\% of the literature is published in natural science journals. Similarly, 115 of 140 topics contain a greater share of publications from natural science journals than any other discipline. We calculate disciplinary entropy of topics as a measure of their degree of interdisciplinarity (Extended Data Figure \ref{dis-entropy} and methods for details). This shows how research on \textbf{health}, \textbf{food}, or \textbf{policy} comes from a range of disciplines, while research on \textbf{ice} or \textbf{oceans} comes almost exclusively from the natural sciences). 
 		
 		
 		\begin{figure}
 			\begin{center}
 				\includegraphics[width=180mm]{../plots_pub/topic_evolution_4.png}
-				\caption{Evolution of the landscape of climate change literature. In each period, the 10 fastest growing topics are labelled. Where documents could be matched to IPCC citations, they are coloured by the working group citing them.}
+				\caption{Evolution of the landscape of climate change literature. In each period, the 10 fastest growing topics are labelled. Where documents could be matched to IPCC citations, they are coloured by the working group citing them. Panel a) shows documents from assessment periods 1-3, b) shows documents from assessment period 4, c) shows documents from assessment period 5, and d) shows documents published during assessment period 6.}
 				\label{evolution-map}
 			\end{center}
 		\end{figure}
@@ -128,9 +153,9 @@
 		The identification of new topics as they emerge, particularly as these are identified without prior knowledge of the literature, can help researchers and assessment-makers to keep abreast of a quickly evolving field.
 		
 		
-		\subsection*{Research representation in IPCC reports}
-		We apply our topic map to understand how IPCC assessments represent the science and respond to policymakers' and consulted experts' demands for more solution-oriented knowledge \cite{Kowarsch2017}.  Several studies have identified, made, or repeated claims of a disciplinary bias of IPCC assessments towards the natural sciences, and within the social sciences towards economics \cite{Bjurström2011, Victor2015, Hulme2010, Corbera2016}. Where these claims were based on an analysis of IPCC citations \cite{Bjurström2011}, they assess this without measurable baseline. 
-		In view of the organisation's mandate to provide ``comprehensive, objective, open and transparent'' assessments of the available science \cite{IPCC2013}, our dataset of publications allows us - albeit imperfectly, as discussed in the concluding section - to study representation with a meaningful baseline. Further we provide an update to the last quantitative assessment of IPCC citations \cite{Bjurström2011}, which looked only at AR3. 
+		%\subsection*{Research representation in IPCC reports}
+		We apply our topic map to understand how IPCC assessments represent the science and respond to policymakers' and consulted experts' demands for more solution-oriented knowledge \cite{Kowarsch2017}.  Several studies have identified, made, or repeated claims of a disciplinary bias of IPCC assessments towards the natural sciences, and within the social sciences towards economics \cite{Bjurstroem2011, Victor2015, Hulme2010, Corbera2016}. Where these claims were based on an analysis of IPCC citations \cite{Bjurstroem2011}, they assess this without measurable baseline. 
+		In view of the organisation's mandate to provide ``comprehensive, objective, open and transparent'' assessments of the available science \cite{IPCC2013}, our dataset of publications allows us - albeit imperfectly, as discussed in the concluding section - to study representation with a meaningful baseline. Further we provide an update to the last quantitative assessment of IPCC citations \cite{Bjurstroem2011}, which looked only at AR3. 
 		This baseline forms a starting point for informed discussion about how to represent the literature according to the IPCC's priorities.  
 		
 		
@@ -147,7 +172,7 @@
 		
 		The topics in the lower right of the graph are the most pertinent to the question of whether the IPCC is well representing knowledge on climate change. They are newer and until now have been under-represented in IPCC reports. Their novelty may be highly salient in a periodic assessment process. These topics are primarily in working group III, on mitigation and are ``solutions-relevant''. But while policymakers' demands for solutions-oriented IPCC assessments were often focussed on policy options, these under-represented new topics deal with more technical solutions and are found in technical disciplines within engineering \& technology and the agricultural sciences.
 		
-		Further, WGIII topics that are well represented contain a greater proportion of social science research (figure \ref{oecd_rep}b). The topics \textbf{countries}, \textbf{policy}, and \textbf{prices} are close to a proportional representation and are made up of around 30\% social science research. \textbf{Waste}, \textbf{biochar}, and \textbf{cement}, are more than 3 times more prevalent in the wider literature than in the literature cited by the IPCC, and are made up of around 5\% social science research. This pattern is not visible in other working groups (Figure \ref{socsci-wgs}).
+		Further, WGIII topics that are well represented contain a greater proportion of social science research (figure \ref{oecd_rep}b). The topics \textbf{countries}, \textbf{policy}, and \textbf{prices} are close to a proportional representation and are made up of around 30\% social science research. \textbf{Waste}, \textbf{biochar}, and \textbf{cement}, are more than 3 times more prevalent in the wider literature than in the literature cited by the IPCC, and are made up of around 5\% social science research. This pattern is not visible in other working groups (Extended Data Figure \ref{socsci-wgs}).
 		
 		The difference between under-represented new topics and new topics that are better represented is intriguing. This is visible in figure \ref{evolution-map}, where in AR5, the clusters of documents around the, \textbf{buildings} and \textbf{biochar} topics contain few IPCC citations, whereas the clusters around, \textbf{adaptation} and \textbf{food} contain more. As shown in figure \ref{oecd_rep}c, \textbf{buildings} and \textbf{biochar} are 3.34 and 3.61 times more prevalent in the literature than in IPCC citations, while \textbf{food} is 1.22 times more prevalent in the literature and \textbf{adaptation} is 2.22 times more prevalent in IPCC citations respectively. %The IPCC, has been better at integrating new knowledge from these topics, and in general better at integrating new knowledge from WGII than WGIII topics.
 		
@@ -164,7 +189,7 @@
 		\end{figure}
 		
 		
-		\subsection*{Machine-learning for climate change assessments}
+		%\subsection*{Machine-learning for climate change assessments}
 		
 		
 
@@ -181,23 +206,146 @@
 		One advantage of topic modelling is that outcomes are not determined by any categorisation scheme imposed by the modeller, facilitating the discovery of ``unsearched'' for topics. 
 		Highlighting recent research on, for example, membranes, biochar or e-vehicles, could prompt discussion in the scoping process about their inclusion in chapter outlines.
 		This mode of discovery can act as a complement to human expertise, which may be better at identifying under-researched niches, existing biases or knowledge requirements.
-		The methods shown here could also aid other processes in the production of IPCC reports, such as the identification of potential authors to achieve a better balance across sectors, regions and genders \cite{Corbera2016}. The possible benefits or risks of using data science methods for IPCC processes constitutes an important area for future research.
+		The methods shown here could also be extended to aid other processes in the production of IPCC reports, such as the identification of potential authors to achieve a better balance across sectors and regions \cite{Corbera2016}. The possible benefits or risks of using data science methods for IPCC processes constitutes an important area for future research.
 		Outside of the IPCC, this approach is part of ongoing attempts to make use of machine learning within evidence synthesis. This topographic map is a new approach to rapidly mapping very large literatures. 
 		
 		Our dataset of more than 400,000 publications represents a wealth of knowledge on climate change and climate solutions, but is by no means exhaustive. We repeat an established query \cite{Haunschild2016}, granting that it may have imperfections. Furthermore, we miss publications not in WoS  (some small journals, some books, and most grey literature, not to mention indigenous knowledge \cite{Ford2016b}); and studies relevant for the work of the IPCC, that do not directly mention climate change (for example on energy policy). We argue that this remains a reasonable system boundary given data availability, and stress that documents not included in our study alter our findings only if they have systematically different patterns of citation by the IPCC. 
 		A future topography could be improved by making use of more sources of climate change knowledge, extracting and classifying information from full texts, or exploring author networks and interdisciplinarity. 
 		Most importantly, exploring machine learning applications that support IPCC authors in their assessments would prepare the IPCC for the age of big literature.
 		
+		\section*{Methods}
+		
+		\subsection*{Data}
+		
+		This study reproduces the query developed by Grieneisen and Zhang \cite{Grieneisen2011}, which is carried out on the Web of Science core collection. We downloaded the results of the query on March 19, 2019. Though not exhaustive, the Web of Science gives a good coverage of the literature in major peer-reviewed journals. The Web of Science data gives us a disciplinary classification (based on the journal) and publication year, among other metadata, for each document.	Each document is assigned to an assessment period according to the timeline shown in table 1.
+		
+		We also tested the query documented in \cite{Haunschild2016}, by checking a random sample of documents exclusive to it. We found that the majority of additional documents were not relevant, and decided to use only the query from \cite{Grieneisen2011}.
+		
+		We use the references scraped from IPCC assessment reports from Minx et al. \cite{Minx2017l}, and attempt to match these with the results from the Web of Science. We use doc2vec similarity scores \cite{Le2014} to identify the 500 most similar titles for each reference, and count the document as a match if the jaccard similarity score of the two word shingles of the reference title and the document title is greater than 0.5 \cite{Khabsa2014}. Extended Data Table \ref{ipcc-matching} shows the percentage of IPCC citations matched in each working group for each assessment report. This is significantly lower in earlier periods, as data coverage and quality of citation databases is lower for earlier periods. Matching in WG III is also lower, suggesting a greater share of non-peer review literature, or literature not directly mentioning climate change, but related to its mitigation (for example on energy policy).
+		
+		We analysed by hand a sample of 100 IPCC references which could not be matched and found that 46\% of these references were not in the Web of Science at all, 53\% were in the Web of Science but not in our query, and 1 document was in our query but had mistakenly been identified as not being so. This was due a different version of the title appearing in the IPCC citation and the Web of Science record. 
+		
+		
+		\begin{table}[htp]
+			\begin{center}
+				\input{../tables/ipcc_matching.tex}
+				\caption{The proportion of citations in each report that could be matched with a document in our query from the Web of Science}
+				\label{ipcc-matching}
+			\end{center}
+		\end{table}
+	
+
+		
+		
+		\subsection*{Pre-processing}
+		
+		Data quality in earlier Web of Science results is poorer, and some documents have missing abstracts. In the quantification of the size of the literature and its vocabulary in table \ref{tab}, titles are substituted for abstracts where they are not available.  The words of the documents are lemmatized, replacing different forms of the same word (i.e. word/words) with a single instance. Commonly occurring words, or ``stopwords'' are removed, as are all words shorter than 3 characters, and all words containing only punctuation or numbers.
+		
+		The documents are transformed into a document-term matrix, where each row represents a document, and each column represents a unique word.  Each cell contains the number of that column's terms in that document. Only terms which occur more than once are considered.
+		
+		For the calculation of the topic model, documents with missing abstracts are ignored, and the document term matrix is transformed into a document
+		frequency-inverse document frequency (tf-idf) matrix, where scores are scaled according to the frequency of their occurrence in the corpus. This gives more weight to terms which appear in few documents, and less weight to those which appear in many.
+		
+		\begin{equation}
+		tf(t,d) = f_{t,d} \mathrm{,}\quad idf(t,D) = \log\frac{N}{|\{d \in D:t \in d\}|}
+		\end{equation} 
+		
+		\subsection*{Topic Model}
+		
+		We use non-negative Matrix Factorisation (NMF) \cite{Lee1999}, an approach to topic modelling which factorises the term-frequency-inverse document frequency matrix \( V \) into the matrices \(W\), the topic-term matrix, and \( H \) the document-topic matrix, whose product approximates \(V\):
+		
+		\begin{equation}
+		V_{i\mu} \approx (WH)_{i\mu} = \sum_{a=1}^{r}W_{ia}H_{a\mu}
+		\end{equation}
+		
+		As demonstrated in Extended Data Figure \ref{doc-topic}, each topic is represented as a set of word scores, and each document a set of topic scores. The combination of the two approach the word scores in the document. For clarity in the figure, these are shown as simple counts, but in the model these are scaled according to each term's frequency within the corpus as explained above.
+		
+		Topics are calculated using the scikitlearn library \cite{Pedregosa2011}, and are saved in a database and topic visualisation system based on that developed by Chaney and Blei \cite{Chaney2012}. The system adds new functionality to and combines it with a system for managing sets of documents and queries. The code and additional information is published online at \url{https://github.com/mcallaghan/tmv}. 	
+		
+		\subsubsection*{Model selection}
+		
+		Topic models are calculated for 70, 80, 90, 100, 110, 120, 130, 140 and 150 topics. The run with 150 topics was discarded as it contained a topic to which no terms or documents were assigned. The relative usefulness of each model was assessed subjectively by the authors, based on inspection of the online visualisation tool, and the spreadsheet \textbf{topic\_comparison.xlsx} accompanying the supporting information. The spreadsheet shows each set of topics in adjacent columns. Topics from each model are placed next to the topics with the largest number of each topic's 10 highest scoring words in common. This helps authors to find an appropriate level of granularity for the analysis. Statistical methods for the selection of topic model parameters are available but they do not necessarily align with human perceptions of topic model quality \cite{Chang2009}. We make a judgement based on subjective criteria, but for transparency publish the results of the analysis for different numbers of topics in Extended Data Figure \ref{top-rep-ks}. The main conclusions drawn about the rapid growth and under-representation of solutions-relevant topics are stable across models.
+		
+		
+		\subsubsection*{Topic assignment to working groups}
+		\label{topic-wg}
+		A topic's score for each working group is calculated by summing the document-topic scores for all documents cited by that working group. We call the topic's primary working group that working group for which the above sum is the highest, but in some cases, where there are very few IPCC citations of documents related to a topic this can be misleading . For example, the word ``capacity" is relevant to the adsorption topic, so documents talking about adaptive capacity receive a low score for the topic. Because only very few documents highly relevant to the topic (in that they talk about adsorption or adsorptive capacity) are cited by the IPCC, and many of the weakly relevant documents are cited by the IPCC, the sum of the topic scores of the weakly relevant documents outweighs the sum of the topic scores of the strongly relevant documents, meaning that the topic is mistakenly assigned to working group II when it is more properly relevant to working group III. We point out that topics are in any case mixtures of documents cited by different working groups, and stress that the colouring of the topics by working group is merely illustrative.
+		
+		
+		\subsubsection*{Topic Representation and Newness}
+		
+		To calculate topic representation in IPCC reports we divide each topic's share in the subsample of documents cited by IPCC reports by its share in the whole corpus (excluding documents published after the last assessment report). Disciplinary representation is calculated in the same way.
+		
+		We calculate a topic's total score as the sum of document-topic scores. A topic's window score is the sum of document-topic scores considering only documents in the given time window. To represent a topic's newness, we multiply each assessment period number by the share of it's total score occurring in that window, and take the mean of these scores. A topic in which 100\% of documents which make it up occurred in assessment period 1 (6) would thereby receive a score of 1 (6), while a topic evenly distributed across all assessment periods would receive a score of 3.5.
+		
+		
+		\subsubsection*{Disciplinary Entropy}
+		
+		Disciplinary Entropy inverts the measurement of a conference's topical diversity suggested in \cite{Hall2008}, by measuring a topic \(z\)'s entropy \(H\), where 
+		
+		\begin{equation}
+		H(f|z) = -\sum_{i=1}^K \hat{p}(f|z) \log \hat{p}(f|z) 
+		\end{equation}
+		
+		based on the empirical distribution of a field \(f\) in the documents \(d\) in each topic:
+		
+		\begin{equation}
+		\hat{p}(f|z) = \sum_{d:z_d=z} \hat{p} (f|d) \hat{p} (d|z)
+		\end{equation}
+		
+		It is an indication of the diversity of disciplines within the set of documents related to a topic. 
+		
+		\subsubsection*{Topic Map}
+		The topic model gives us the location of each document in a 140 dimensional topic space, with each dimension corresponding to a that document's ``topic-ness'' in a given topic. t-Distributed Stochastic Neighbour Embedding (t-SNE) is a dimensionality reduction technique which we use to represent each document's topic scores in 2 dimensions \cite{vandermaaten2008}. Documents are placed on the map such that documents with similar combinations of topics are close together.
+		
+		Datasets showing the documents considered, the topics, and the associations between topics and documents are are published alongside this piece \cite{Callaghan2019}
+		
 		
 	\end{linenumbers}
+
+	\section*{Author Information}
 	
-	\appendix
+	\subsection*{Author Contribution Statement}
+	M.C. and J.M. designed the research. M.C. performed the analysis. M.C., J.M. and P.M.F analysed the results. M.C. wrote the manuscript with contributions from all authors.
+	
+	\subsection*{Corresponding Author}
+	Correspondence to Max Callaghan
+	
+	\section*{Acknowledgements}
+	Max Callaghan is supported by a PhD stipend from the Heinrich Böll Stiftung. Jan Minx acknowledges funding from the German Federal Ministry of Research and Education within the PEGASOS project (grant reference: 01LA1826A)
+	
+	\section*{Data Availability}
+
+	Three datasets from this study are available at \url{https://doi.org/10.6084/m9.figshare.9009665}
+	
+	\medskip\noindent
+	\texttt{docs.csv} contains a list of the documents considered in this study, along with basic metadata and their position on the map. For copyright reasons, the full metadata from Web of Science can not be published. To reproduce the analysis, it would be necessary to download the abstracts for the papers shown, either using the Web of Science IDs provided, or the query documented in \cite{Grieneisen2011}.
+	
+	\medskip\noindent
+	\texttt{topics.csv} Contains a list of the topics, along with their features discussed in this paper. The top 10 words associated with each topic are also shown
+	
+	\medskip\noindent
+	\texttt{doctopics.csv} Contains a list of document-topic scores, which can be cross-referenced with the document and topic ids in \texttt{docs.csv} and \texttt{topics.csv}.
+	
+	\medskip\noindent
+	\texttt{topic\_comparison.xlsx} shows models with different numbers of topics. It was used to select the topic model used for analysis in this paper.
+	
+	\section*{Code Availability}
+	
+	The code used to produce this paper is available at https://github.com/mcallaghan/cc-topography
+	
+	\section*{Ethics Declarations}
+
+	\subsection*{Competing Interests}
+	The authors declare no competing interests.
 	
 	%\listoffigures
 	\linespread{1}
 	\bibliography{Mendeley}
 	
-	\bibliographystyle{unsrt}
+	\bibliographystyle{natunsrt}
+	
+
 	
 	%	\include{methods}
 	
