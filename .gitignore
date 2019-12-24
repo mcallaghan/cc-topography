@@ -1,3 +1,7 @@
+manuscript/figures*
+manuscript/main_sub*
+manuscript/response*
+._sync_*
 README.html
 *~
 pr/*
