@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[a4paper, total={180mm, 260mm}]{geometry}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{lineno}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{authblk}
+
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+	\begin{flushleft}
+		
+		{\huge\textbf{\@title}}
+		
+		\bigskip
+		
+		{\large\textbf{\@author}}
+		
+	\end{flushleft}\egroup
+}
+\makeatother
+
+
+% Title
+\title{A Topography of Climate Change Research - Supplementary Tables}
+\author[1,2]{Max Callaghan}
+\author[1,2]{Jan Minx}
+\author[2]{Piers M. Forster}
+
+\affil[1]{Mercator Research Institute on Global Commons and Climate Change, Torgauer Straße, 10829 Berlin, Germany}
+\affil[2]{Priestley International Centre for Climate, University of Leeds, Leeds LS2 9JT, United Kingdom}
+
+\begin{document}
+	\maketitle
+	
+	\renewcommand\thetable{Supplementary .\arabic{table}}  
+	
+		\begin{table}[htp]
+			\begin{center}
+				\begin{tabular}{lrrrrr}
+					\toprule
+					AR &  1 &   2 &   3 &   4 &   5 \\
+					WG &    &     &     &     &     \\
+					\midrule
+					1  & 8\% & 25\% & 37\% & 47\% & 58\% \\
+					2  & 6\% & 12\% & 30\% & 38\% & 47\% \\
+					3  & 3\% &  9\% & 15\% & 22\% & 35\% \\
+					\bottomrule
+				\end{tabular}
+				
+				\caption*{Supplementary Table 1: The proportion of citations in each report that could be matched with a document in our query from the Web of Science}
+				\label{ipcc-matching}
+			\end{center}
+		\end{table}
+	
+\end{document}
