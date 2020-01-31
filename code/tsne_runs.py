@@ -96,8 +96,7 @@ def draw_simple(results,r_ind,fname=None):
         plt.savefig(fname)
         plt.close()
 
-for run_id in [1861]:#,758]:
-    #for s_size in [10000,20000,50000,100000,0]:
+for run_id in [1861]:
     for s_size in [0]:
         print(s_size)
         m, c_ind, r_ind = get_matrix(run_id,s_size)

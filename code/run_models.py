@@ -21,8 +21,7 @@ sw.add('copyright')
 q = Query.objects.get(pk=6187)
 for m in ["NM","LD"]:
     for a in [0.01,0.05,0.1]:
-        #for k in [80,90,100,110,120,130,140,150]:
-        for k in [150]:
+        for k in [80,90,100,110,120,130,140,150]:
             if m=="LD":
                 alpha=a*10
             else:
