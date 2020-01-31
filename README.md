@@ -28,12 +28,14 @@ We then plot this space onto what we call a "Topographic Map" which we can gener
 
 ![Figure 2](tsne_results/plots/run_1861_s_0_p100_all_topic_words_oecds.png)
 
+The labels are placed by finding, using dbscan, clusters of documents associated with each topic, and placing a topic label in the center of each of those clusters.
+
 Within our database, we match the documents in our query with a set of IPCC citations which we entered into our database. This means we have a subset of climate change relevant documents from the Web of Science which were cited by the IPCC. For any group of documents, we can the proportion of IPCC cited documents belonging to that group with the share of all documents that belong to that group. If the proportion of IPCC cited documents belonging to that group is higher, then we can say that that group is "over-represented" in IPCC citations. This is clearly not an evaluation of how things *should be* but simply an observation of representation that is not perfectly proportional (it doesn't necessarily have to be!)
 
 
 ![Figure 3](plots_pub/big_panel_representation.png)
 
-We look at the over- or under- represented groups of documents. This is interesting because some differences are surprising and some fit in with impresssions we get from other sources. 
+We look at the over- or under- represented groups of documents, generating figures to explore this in `code/topic_dis.ipynb`. This is interesting because some differences are surprising and some fit in with impresssions we get from other sources. 
 
 In Figure 3.a we see that the social sciences, by AR5, are over-represented, while engineering & technology and agricultural sciences are under-represented. This is surprising, because there was a general feeling in the literature that the IPCC was not doing a good job of incorporating social science knowledge. This was mostly based on a study by Bjurström and Polk in 2011, although this study only looked at the distribution of IPCC citations across disciplines, but did not put this distribution into the context of the wider research landscape.
 
