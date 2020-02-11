@@ -16,9 +16,11 @@ The results of the topic model are analysed with the scripts and notebooks conta
 
 ## A Topography of Climate Change Research
 
-In the paper we look at 400,000 articles about climate change which we downloaded from the Web of Science (these are not included in the data published for copyright reasons).
+In the paper we look at 400,000 articles about climate change which we downloaded from the Web of Science (these are not included in the data published for copyright reasons). 
 
 ![Figure 1 ](plots/literature_size/pubs_time_wgb.png)
+
+The number of papers published each year continues to grow, and the job of the Intergovernmental Panel on Climate Change (IPCC) to comprehensively assess the literature gets harder and harder.
 
 We produce a topic model of these papers' abstracts, using Non-Negative Matrix Factorisation (NMF). The script `code/run_models.py` sets up a variety of these models with different parameters. These are run and saved into a database according to https://github.com/mcallaghan/tmv, which is a django application that manages scientific documents and topic models.
 
